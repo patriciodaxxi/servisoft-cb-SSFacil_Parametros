@@ -84,10 +84,10 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
       Top = 1
       Width = 1309
       Height = 578
-      ActivePage = TS_NFE_Imp
+      ActivePage = TS_NFE_Geral
       ActivePageDefault = TS_NFE_Geral
       Align = alClient
-      TabIndex = 1
+      TabIndex = 0
       TabOrder = 0
       FixedDimension = 19
       object TS_NFE_Geral: TRzTabSheet

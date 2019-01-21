@@ -195,19 +195,6 @@ begin
   DBCheckBox118.Visible := (fDMCadParametros.cdsParametrosUSA_VENDEDOR.AsString = 'S');
 end;
 
-procedure TfrmCadParametro.prc_Consultar;
-begin
-  fDMCadParametros.cdsParametros.Close;
-  fDMCadParametros.sdsParametros.CommandText := fDMCadParametros.ctCommand + ' WHERE ID = 1 ';
-  fDMCadParametros.cdsParametros.Open;
-  if fDMCadParametros.cdsParametros.IsEmpty then
-  begin
-    fDMCadParametros.cdsParametros.Insert;
-    fDMCadParametros.cdsParametrosID.AsInteger := 1;
-    btnAlterarClick(nil);
-  end;
-
-end;
 
 procedure TfrmCadParametro.btnConfirmarClick(Sender: TObject);
 begin

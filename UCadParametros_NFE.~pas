@@ -152,10 +152,10 @@ begin
   fDMCadParametros := TDMCadParametros.Create(Self);
   oDBUtils.SetDataSourceProperties(Self, fDMCadParametros);
   RzPageControl3.ActivePage := TS_NFE_Geral;
-  prc_Consultar;
+  fDMCadParametros.prc_Consultar;
+  fDMCadParametros.prc_Consultar_
 
   DirectoryEdit14.Text := fDMCadParametros.cdsParametros_NFeEND_ARQUIVO_SUFRAMA.AsString;
-
 end;
 
 procedure TfrmCadParametros_NFE.prc_Consultar;
@@ -199,6 +199,8 @@ begin
   if MessageDlg('Deseja cancelar alteração/inclusão do registro?',mtConfirmation,[mbYes,mbNo],0) = mrNo then
     exit;
   fDMCadParametros.cdsParametros_NFe.CancelUpdates;
+  if fDMCadParametros.cdsParametros.Active then
+    fDMCadParametros.cdsParametros.CancelUpdates;
   pnlGeral.Enabled           := not(pnlGeral.Enabled);
   btnConfirmar.Enabled     := not(btnConfirmar.Enabled);
   btnAlterar.Enabled       := not(btnAlterar.Enabled);

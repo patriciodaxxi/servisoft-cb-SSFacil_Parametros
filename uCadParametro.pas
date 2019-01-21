@@ -110,6 +110,8 @@ type
     Label239: TLabel;
     DirectoryEdit8: TDirectoryEdit;
     DBEdit25: TDBEdit;
+    Label103: TLabel;
+    DBEdit13: TDBEdit;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);

@@ -5409,7 +5409,7 @@ object DMCadParametros: TDMCadParametros
   end
   object dsParametros_Lote: TDataSource
     DataSet = cdsParametros_Lote
-    Left = 440
+    Left = 432
     Top = 200
   end
   object dspParametros_Lote: TDataSetProvider
@@ -5768,7 +5768,7 @@ object DMCadParametros: TDMCadParametros
   end
   object dsParametros_Com: TDataSource
     DataSet = cdsParametros_Com
-    Left = 440
+    Left = 432
     Top = 259
   end
   object dspParametros_Com: TDataSetProvider
@@ -6334,5 +6334,80 @@ object DMCadParametros: TDMCadParametros
     DataSet = sdsParametros_Imp
     Left = 72
     Top = 535
+  end
+  object sdsParametros_OC: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM PARAMETROS_OC'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 328
+    Top = 315
+    object sdsParametros_OCID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object sdsParametros_OCOBS_OC: TMemoField
+      FieldName = 'OBS_OC'
+      BlobType = ftMemo
+      Size = 1
+    end
+    object sdsParametros_OCUSAR_GERAR_COBRANCA: TStringField
+      FieldName = 'USAR_GERAR_COBRANCA'
+      Size = 1
+    end
+    object sdsParametros_OCPERMITIR_ENT_MAIOR: TStringField
+      FieldName = 'PERMITIR_ENT_MAIOR'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_OCUSA_NOMEPROD_FORN_OC: TStringField
+      FieldName = 'USA_NOMEPROD_FORN_OC'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object cdsParametros_OC: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspParametros_OC'
+    Left = 400
+    Top = 315
+    object cdsParametros_OCID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsParametros_OCOBS_OC: TMemoField
+      FieldName = 'OBS_OC'
+      BlobType = ftMemo
+      Size = 1
+    end
+    object cdsParametros_OCUSAR_GERAR_COBRANCA: TStringField
+      FieldName = 'USAR_GERAR_COBRANCA'
+      Size = 1
+    end
+    object cdsParametros_OCPERMITIR_ENT_MAIOR: TStringField
+      FieldName = 'PERMITIR_ENT_MAIOR'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_OCUSA_NOMEPROD_FORN_OC: TStringField
+      FieldName = 'USA_NOMEPROD_FORN_OC'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsParametros_OC: TDataSource
+    DataSet = cdsParametros_OC
+    Left = 432
+    Top = 315
+  end
+  object dspParametros_OC: TDataSetProvider
+    DataSet = sdsParametros_OC
+    Left = 365
+    Top = 316
   end
 end

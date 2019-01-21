@@ -153,6 +153,7 @@ begin
   oDBUtils.SetDataSourceProperties(Self, fDMCadParametros);
   RzPageControl3.ActivePage := TS_NFE_Geral;
   fDMCadParametros.prc_Consultar;
+  fDMCadParametros.prc_Consultar_NFE;
 
   DirectoryEdit14.Text := fDMCadParametros.cdsParametros_NFeEND_ARQUIVO_SUFRAMA.AsString;
 end;

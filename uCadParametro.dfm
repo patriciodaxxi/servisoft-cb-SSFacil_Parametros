@@ -333,6 +333,14 @@ object frmCadParametro: TfrmCadParametro
           Alignment = taRightJustify
           Caption = 'Vers'#227'o Leiaute FCI:'
         end
+        object Label103: TLabel
+          Left = 210
+          Top = 609
+          Width = 106
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Vers'#227'o Leiaute SPED:'
+        end
         object RxDBComboBox4: TRxDBComboBox
           Left = 206
           Top = 8
@@ -1191,6 +1199,15 @@ object frmCadParametro: TfrmCadParametro
           DataField = 'VERSAO_LEIAUTE'
           DataSource = DMCadParametros.dsParametros_FCI
           TabOrder = 63
+        end
+        object DBEdit13: TDBEdit
+          Left = 320
+          Top = 601
+          Width = 121
+          Height = 21
+          DataField = 'VERSAO_LEIAUTE_SPED'
+          DataSource = DMCadParametros.dsParametros
+          TabOrder = 64
         end
       end
     end
