@@ -30,6 +30,5 @@ begin
   Application.Title := 'Entrada/Saída Produtos';
   Application.CreateForm(TdmDatabase, dmDatabase);
   Application.CreateForm(TfMenu, fMenu);
-  Application.CreateForm(TfrmCadParametros_Lote, frmCadParametros_Lote);
   Application.Run;
 end.

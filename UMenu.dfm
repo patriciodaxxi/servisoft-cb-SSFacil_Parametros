@@ -292,6 +292,10 @@ object fMenu: TfMenu
         Caption = 'Lote/Tal'#227'o'
         OnClick = LoteTalo1Click
       end
+      object ContasOramento1: TMenuItem
+        Caption = 'Contas Or'#231'amento'
+        OnClick = ContasOramento1Click
+      end
     end
     object N19: TMenuItem
       Caption = '|'

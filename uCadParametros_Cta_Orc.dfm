@@ -219,7 +219,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 0
     end
     object RxDBL_ContaComissao: TRxDBLookupCombo
@@ -232,7 +231,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 1
     end
     object RxDBL_ContaJurosRec: TRxDBLookupCombo
@@ -245,7 +243,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 2
     end
     object RxDBL_ContaTaxaBancaria: TRxDBLookupCombo
@@ -258,7 +255,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 4
     end
     object RxDBL_ContaDespesaBancRec: TRxDBLookupCombo
@@ -271,7 +267,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 5
     end
     object RxDBL_ContaJurosPag: TRxDBLookupCombo
@@ -284,7 +279,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 3
     end
     object RxDBL_ContaDespesaBancPag: TRxDBLookupCombo
@@ -297,7 +291,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 6
     end
     object RxDBComboBox78: TRxDBComboBox
@@ -328,7 +321,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 8
     end
     object RxDBLookupCombo19: TRxDBLookupCombo
@@ -341,7 +333,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 9
     end
     object RxDBL_Receita: TRxDBLookupCombo
@@ -351,10 +342,8 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       Height = 21
       DropDownCount = 8
       DataField = 'ID_CONTA_ORC_RECEITA'
-      DataSource = DMCadParametros.dsParametros_Cta_Orc
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 10
     end
     object RxDBL_Despesa: TRxDBLookupCombo
@@ -364,10 +353,8 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       Height = 21
       DropDownCount = 8
       DataField = 'ID_CONTA_ORC_DESPESA'
-      DataSource = DMCadParametros.dsParametros_Cta_Orc
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 11
     end
     object RxDBLookupCombo29: TRxDBLookupCombo
@@ -377,10 +364,8 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       Height = 21
       DropDownCount = 8
       DataField = 'ID_CONTA_ORC_MULTA_REC'
-      DataSource = DMCadParametros.dsParametros_Cta_Orc
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 12
     end
     object RxDBLookupCombo30: TRxDBLookupCombo
@@ -390,10 +375,8 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       Height = 21
       DropDownCount = 8
       DataField = 'ID_CONTA_ORC_MULTA_PAG'
-      DataSource = DMCadParametros.dsParametros_Cta_Orc
       LookupField = 'ID'
       LookupDisplay = 'DESCRICAO'
-      LookupSource = DMCadParametros.dsContaOrcamento
       TabOrder = 13
     end
     object RxDBComboBox162: TRxDBComboBox
@@ -403,7 +386,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       Height = 21
       Style = csDropDownList
       DataField = 'USA_VALOR_ORC'
-      DataSource = DMCadParametros.dsParametros_Cta_Orc
       EnableValues = True
       ItemHeight = 13
       Items.Strings = (
@@ -421,7 +403,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       Height = 21
       Style = csDropDownList
       DataField = 'MOSTRAR_PESSOA'
-      DataSource = DMCadParametros.dsParametros_Cta_Orc
       EnableValues = True
       ItemHeight = 13
       Items.Strings = (
@@ -439,7 +420,6 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       Height = 17
       Caption = 'Aceita a Conta Sint'#233'tica no Cadastro da Pessoa'
       DataField = 'USA_SINTETICA'
-      DataSource = DMCadParametros.dsParametros_Cta_Orc
       TabOrder = 16
       ValueChecked = 'S'
       ValueUnchecked = 'N'

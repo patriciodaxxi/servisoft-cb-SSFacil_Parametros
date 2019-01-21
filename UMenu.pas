@@ -3,8 +3,10 @@ unit UMenu;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ComCtrls, jpeg, Menus,
-  ToolWin, Types, UCBase, UCDBXConn, ActnList, ImgList, ShellAPI, ExtCtrls, RLConsts, IniFiles, Midaslib, DBClient, SqlExpr;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, ComCtrls, jpeg, Menus, ToolWin, Types, UCBase,
+  UCDBXConn, ActnList, ImgList, ShellAPI, ExtCtrls, RLConsts, IniFiles, Midaslib,
+  DBClient, SqlExpr;
 
 type
   TfMenu = class(TForm)
@@ -50,6 +52,7 @@ type
     Produtos1: TMenuItem;
     Pedido1: TMenuItem;
     LoteTalo1: TMenuItem;
+    ContasOramento1: TMenuItem;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure EfetuarLogoff1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -68,16 +71,17 @@ type
     procedure Produtos1Click(Sender: TObject);
     procedure Pedido1Click(Sender: TObject);
     procedure LoteTalo1Click(Sender: TObject);
+    procedure ContasOramento1Click(Sender: TObject);
   private
     { Private declarations }
     procedure prc_Habilita_Menu;
-    procedure OpenForm(FClass: TFormClass; vEstado: TWindowState; TipoPessoa: String = '');
+    procedure OpenForm(FClass: TFormClass; vEstado: TWindowState; TipoPessoa: string = '');
   public
     { Public declarations }
-    vTipoPessoa: String;
-    vPath: String;
-    vVersao: String;
-    procedure GetBuildInfo(exeName: String; var V1, V2, V3, V4: word);
+    vTipoPessoa: string;
+    vPath: string;
+    vVersao: string;
+    procedure GetBuildInfo(exeName: string; var V1, V2, V3, V4: word);
     function GetBuildInfoAsString: string;
   end;
 
@@ -86,7 +90,11 @@ var
 
 implementation
 
-uses DmdDatabase, uUtilPadrao, uCadParametro, UCadParametros_NFE, uCadParametros_NTE, uCadParametros_NotaFiscal, uCadParametros_NFSe, uCadParametros_RecXML, uCadParametros_Prod, uCadParametros_Ped, uCadParametros_Lote;
+uses
+  DmdDatabase, uUtilPadrao, uCadParametro, UCadParametros_NFE,
+  uCadParametros_NTE, uCadParametros_NotaFiscal, uCadParametros_NFSe,
+  uCadParametros_RecXML, uCadParametros_Prod, uCadParametros_Ped,
+  uCadParametros_Lote, uCadParametros_Cta_Orc;
 
 {$R *.dfm}
 
@@ -95,7 +103,7 @@ begin
   Action := Cafree;
 end;
 
-procedure TfMenu.OpenForm(FClass: TFormClass; vEstado: TWindowState; TipoPessoa: String = '');
+procedure TfMenu.OpenForm(FClass: TFormClass; vEstado: TWindowState; TipoPessoa: string = '');
 var
   existe: TForm;
   j: Byte;
@@ -114,7 +122,7 @@ begin
   end
   else
   begin
-    Application.CreateForm(FClass,existe);
+    Application.CreateForm(FClass, existe);
     existe.FormStyle := fsMDIChild;
     if existe.Name = 'frmCadPessoa' then
       vTipoPessoa := TipoPessoa;
@@ -143,7 +151,7 @@ begin
   TaskBarH := FindWindow('Shell_TrayWnd', nil);
   GetWindowRect(TaskBarH, TaskBarR);
   // altura do taskbar = TaskBarR.
-  Image2.Top  := Height - (Screen.Height - TaskBarR.Top) - Image2.Height - 32;
+  Image2.Top := Height - (Screen.Height - TaskBarR.Top) - Image2.Height - 32;
   Image2.Left := Screen.Width - Image2.Width - 16;
 
   vVersao := GetBuildInfoAsString;
@@ -156,7 +164,7 @@ end;
 
 procedure TfMenu.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
 begin
-  if MessageDlg('Encerrar o programa SSFácil?',mtConfirmation,[mbYes,mbNo],0) = mrNo then
+  if MessageDlg('Encerrar o programa SSFácil?', mtConfirmation, [mbYes, mbNo], 0) = mrNo then
     CanClose := False
   else
     CanClose := True;
@@ -167,7 +175,7 @@ begin
   Close;
 end;
 
-procedure TfMenu.GetBuildInfo(exeName: String; var V1, V2, V3, V4: word);
+procedure TfMenu.GetBuildInfo(exeName: string; var V1, V2, V3, V4: word);
 var
   VerInfoSize, VerValueSize, Dummy: DWORD;
   VerInfo: Pointer;
@@ -176,7 +184,7 @@ begin
   VerInfoSize := GetFileVersionInfoSize(PChar(exeName), Dummy);
   if VerInfoSize > 0 then
   begin
-    GetMem(VerInfo,VerInfoSize);
+    GetMem(VerInfo, VerInfoSize);
     try
       if GetFileVersionInfo(PChar(ParamStr(0)), 0, VerInfoSize, VerInfo) then
       begin
@@ -190,7 +198,7 @@ begin
         end;
       end;
     finally
-      FreeMem(VerInfo,VerInfoSize);
+      FreeMem(VerInfo, VerInfoSize);
     end;
   end;
 end;
@@ -200,8 +208,7 @@ var
   V1, V2, V3, V4: word;
 begin
   GetBuildInfo(GetCurrentDir + '\SSFacil.EXE', V1, V2, V3, V4);
-  Result := IntToStr(V1) + '.' + IntToStr(V2) + '.' +
-    IntToStr(V3) + '.' + IntToStr(V4);
+  Result := IntToStr(V1) + '.' + IntToStr(V2) + '.' + IntToStr(V3) + '.' + IntToStr(V4);
 end;
 
 procedure TfMenu.UserControl1AfterLogin(Sender: TObject);
@@ -213,7 +220,7 @@ procedure TfMenu.FormShow(Sender: TObject);
 begin
   prc_Habilita_Menu;
 
-  lbDatabase.Top  := Image2.Top - 15;
+  lbDatabase.Top := Image2.Top - 15;
   lbDatabase.Left := Image2.Left - 269;
 end;
 
@@ -234,50 +241,56 @@ end;
 
 procedure TfMenu.ToolButton1Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametro,wsMaximized);
+  OpenForm(TfrmCadParametro, wsMaximized);
 end;
 
 procedure TfMenu.ToolButton2Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametros_NFE,wsMaximized);
+  OpenForm(TfrmCadParametros_NFE, wsMaximized);
 end;
 
 procedure TfMenu.Entrada1Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametros_NTE,wsMaximized);
+  OpenForm(TfrmCadParametros_NTE, wsMaximized);
 end;
 
 procedure TfMenu.NotaFiscal1Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametros_NotaFiscal,wsMaximized);
+  OpenForm(TfrmCadParametros_NotaFiscal, wsMaximized);
 end;
 
 procedure TfMenu.Servio1Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametros_NFSe,wsMaximized);
+  OpenForm(TfrmCadParametros_NFSe, wsMaximized);
 end;
 
 procedure TfMenu.RecebimentoXML1Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametros_RecXML,wsMaximized);
+  OpenForm(TfrmCadParametros_RecXML, wsMaximized);
 end;
 
 procedure TfMenu.Produtos1Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametros_Prod,wsMaximized);
+  OpenForm(TfrmCadParametros_Prod, wsMaximized);
 end;
 
 procedure TfMenu.Pedido1Click(Sender: TObject);
 begin
-  OpenForm(TfrmParametros_Ped,wsMaximized);
+  OpenForm(TfrmParametros_Ped, wsMaximized);
 end;
 
 procedure TfMenu.LoteTalo1Click(Sender: TObject);
 begin
-  OpenForm(TfrmCadParametros_Lote,wsMaximized);
+  OpenForm(TfrmCadParametros_Lote, wsMaximized);
+end;
+
+procedure TfMenu.ContasOramento1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_Cta_Orc, wsMaximized);
 end;
 
 initialization
-  RLConsts.SetVersion(3,72,'B');
+  RLConsts.SetVersion(3, 72, 'B');
 
 end.
+
