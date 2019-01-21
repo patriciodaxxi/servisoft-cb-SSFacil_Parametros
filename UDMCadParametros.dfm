@@ -6410,4 +6410,269 @@ object DMCadParametros: TDMCadParametros
     Left = 365
     Top = 316
   end
+  object sdsParametros_Usuario: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM PARAMETROS_USUARIO'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 336
+    Top = 59
+    object sdsParametros_UsuarioID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object sdsParametros_UsuarioUSUARIO: TStringField
+      FieldName = 'USUARIO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 30
+    end
+    object sdsParametros_UsuarioTIPO_REG_PRODUTO_PADRAO: TStringField
+      FieldName = 'TIPO_REG_PRODUTO_PADRAO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioTIPO_CONSULTA_PRODUTO_PADRAO: TStringField
+      FieldName = 'TIPO_CONSULTA_PRODUTO_PADRAO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioMOSTRAR_CODIGO_PROD_ANT: TStringField
+      FieldName = 'MOSTRAR_CODIGO_PROD_ANT'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioMOSTRAR_TOTAL_PEDIDO: TStringField
+      FieldName = 'MOSTRAR_TOTAL_PEDIDO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioMOSTRAR_DUP_REC_PAG: TStringField
+      FieldName = 'MOSTRAR_DUP_REC_PAG'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioALT_ESTOQUE_MOV: TStringField
+      FieldName = 'ALT_ESTOQUE_MOV'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioSENHA_PEDIDO: TStringField
+      FieldName = 'SENHA_PEDIDO'
+      Size = 10
+    end
+    object sdsParametros_UsuarioSENHA_CREDITO: TStringField
+      FieldName = 'SENHA_CREDITO'
+      Size = 15
+    end
+    object sdsParametros_UsuarioMOSTRAR_PED_USUARIO: TStringField
+      FieldName = 'MOSTRAR_PED_USUARIO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioALT_PRECO_PED: TStringField
+      FieldName = 'ALT_PRECO_PED'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioMOSTRAR_CUSTO_OS: TStringField
+      FieldName = 'MOSTRAR_CUSTO_OS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioALT_MATERIAL_NEC: TStringField
+      FieldName = 'ALT_MATERIAL_NEC'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioALT_CONSUMO_NEC: TStringField
+      FieldName = 'ALT_CONSUMO_NEC'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioALT_IT_PED_COM_OP: TStringField
+      FieldName = 'ALT_IT_PED_COM_OP'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioCONFIRMA_ENVIO_NFE: TStringField
+      FieldName = 'CONFIRMA_ENVIO_NFE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioUTILIZA_PESSOA_REDUZIDO: TStringField
+      FieldName = 'UTILIZA_PESSOA_REDUZIDO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioALT_FINANCEIRO_CONF: TStringField
+      FieldName = 'ALT_FINANCEIRO_CONF'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioCONFERE_FINANC: TStringField
+      FieldName = 'CONFERE_FINANC'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioALT_PROD_CLIENTE: TStringField
+      FieldName = 'ALT_PROD_CLIENTE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioPERMITE_APROVAR_DUP: TStringField
+      FieldName = 'PERMITE_APROVAR_DUP'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioPERMITE_CANC_PED_OP: TStringField
+      FieldName = 'PERMITE_CANC_PED_OP'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_UsuarioMOSTRAR_CONS_ETIQ: TStringField
+      FieldName = 'MOSTRAR_CONS_ETIQ'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object cdsParametros_Usuario: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspParametros_Usuario'
+    Left = 405
+    Top = 59
+    object cdsParametros_UsuarioID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsParametros_UsuarioUSUARIO: TStringField
+      FieldName = 'USUARIO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+      Size = 30
+    end
+    object cdsParametros_UsuarioTIPO_REG_PRODUTO_PADRAO: TStringField
+      FieldName = 'TIPO_REG_PRODUTO_PADRAO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioTIPO_CONSULTA_PRODUTO_PADRAO: TStringField
+      FieldName = 'TIPO_CONSULTA_PRODUTO_PADRAO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioMOSTRAR_CODIGO_PROD_ANT: TStringField
+      FieldName = 'MOSTRAR_CODIGO_PROD_ANT'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioMOSTRAR_TOTAL_PEDIDO: TStringField
+      FieldName = 'MOSTRAR_TOTAL_PEDIDO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioMOSTRAR_DUP_REC_PAG: TStringField
+      FieldName = 'MOSTRAR_DUP_REC_PAG'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioALT_ESTOQUE_MOV: TStringField
+      FieldName = 'ALT_ESTOQUE_MOV'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioSENHA_PEDIDO: TStringField
+      FieldName = 'SENHA_PEDIDO'
+      Size = 10
+    end
+    object cdsParametros_UsuarioSENHA_CREDITO: TStringField
+      FieldName = 'SENHA_CREDITO'
+      Size = 15
+    end
+    object cdsParametros_UsuarioMOSTRAR_PED_USUARIO: TStringField
+      FieldName = 'MOSTRAR_PED_USUARIO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioALT_PRECO_PED: TStringField
+      FieldName = 'ALT_PRECO_PED'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioMOSTRAR_CUSTO_OS: TStringField
+      FieldName = 'MOSTRAR_CUSTO_OS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioALT_MATERIAL_NEC: TStringField
+      FieldName = 'ALT_MATERIAL_NEC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioALT_CONSUMO_NEC: TStringField
+      FieldName = 'ALT_CONSUMO_NEC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioALT_IT_PED_COM_OP: TStringField
+      FieldName = 'ALT_IT_PED_COM_OP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioCONFIRMA_ENVIO_NFE: TStringField
+      FieldName = 'CONFIRMA_ENVIO_NFE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioUTILIZA_PESSOA_REDUZIDO: TStringField
+      FieldName = 'UTILIZA_PESSOA_REDUZIDO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioALT_FINANCEIRO_CONF: TStringField
+      FieldName = 'ALT_FINANCEIRO_CONF'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioCONFERE_FINANC: TStringField
+      FieldName = 'CONFERE_FINANC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioALT_PROD_CLIENTE: TStringField
+      FieldName = 'ALT_PROD_CLIENTE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioPERMITE_APROVAR_DUP: TStringField
+      FieldName = 'PERMITE_APROVAR_DUP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioPERMITE_CANC_PED_OP: TStringField
+      FieldName = 'PERMITE_CANC_PED_OP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioMOSTRAR_CONS_ETIQ: TStringField
+      FieldName = 'MOSTRAR_CONS_ETIQ'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsParametros_Usuario: TDataSource
+    DataSet = cdsParametros_Usuario
+    Left = 440
+    Top = 59
+  end
+  object dspParametros_Usuario: TDataSetProvider
+    DataSet = sdsParametros_Usuario
+    Left = 370
+    Top = 59
+  end
 end

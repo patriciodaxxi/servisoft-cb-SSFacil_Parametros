@@ -312,6 +312,10 @@ object fMenu: TfMenu
         Caption = 'Ordem de Compra'
         OnClick = OrdemdeCompra1Click
       end
+      object Usurio1: TMenuItem
+        Caption = 'Usu'#225'rios'
+        OnClick = Usurio1Click
+      end
     end
     object N19: TMenuItem
       Caption = '|'
@@ -3021,7 +3025,7 @@ object fMenu: TfMenu
   end
   object UserControl1: TUserControl
     AutoStart = True
-    ApplicationID = 'NewProject'
+    ApplicationID = 'Parametros'
     ControlRight.MainMenu = MainMenu1
     UsersForm.MenuItem = CadastrodeUsurios1
     UsersForm.UsePrivilegedField = False

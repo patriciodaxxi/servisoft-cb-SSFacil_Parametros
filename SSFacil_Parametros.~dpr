@@ -25,7 +25,8 @@ uses
   uCadParametros_Cta_Orc in 'uCadParametros_Cta_Orc.pas' {frmCadParametros_Cta_Orc},
   uCadParametros_Com in 'uCadParametros_Com.pas' {frmCadParametros_Com},
   uCadParametros_Fin in 'uCadParametros_Fin.pas' {frmCadParametros_Fin},
-  uCadParametros_Imp in 'uCadParametros_Imp.pas' {frmCadParametrosImp};
+  uCadParametros_Imp in 'uCadParametros_Imp.pas' {frmCadParametrosImp},
+  uCadParametros_OC in 'uCadParametros_OC.pas' {frmCadParametros_OC};
 
 {$R *.res}
 

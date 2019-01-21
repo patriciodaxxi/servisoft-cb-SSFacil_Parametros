@@ -1331,6 +1331,58 @@ type
     cdsParametros_OCUSA_NOMEPROD_FORN_OC: TStringField;
     dsParametros_OC: TDataSource;
     dspParametros_OC: TDataSetProvider;
+    sdsParametros_Usuario: TSQLDataSet;
+    sdsParametros_UsuarioID: TIntegerField;
+    sdsParametros_UsuarioUSUARIO: TStringField;
+    sdsParametros_UsuarioTIPO_REG_PRODUTO_PADRAO: TStringField;
+    sdsParametros_UsuarioTIPO_CONSULTA_PRODUTO_PADRAO: TStringField;
+    sdsParametros_UsuarioMOSTRAR_CODIGO_PROD_ANT: TStringField;
+    sdsParametros_UsuarioMOSTRAR_TOTAL_PEDIDO: TStringField;
+    sdsParametros_UsuarioMOSTRAR_DUP_REC_PAG: TStringField;
+    sdsParametros_UsuarioALT_ESTOQUE_MOV: TStringField;
+    sdsParametros_UsuarioSENHA_PEDIDO: TStringField;
+    sdsParametros_UsuarioSENHA_CREDITO: TStringField;
+    sdsParametros_UsuarioMOSTRAR_PED_USUARIO: TStringField;
+    sdsParametros_UsuarioALT_PRECO_PED: TStringField;
+    sdsParametros_UsuarioMOSTRAR_CUSTO_OS: TStringField;
+    sdsParametros_UsuarioALT_MATERIAL_NEC: TStringField;
+    sdsParametros_UsuarioALT_CONSUMO_NEC: TStringField;
+    sdsParametros_UsuarioALT_IT_PED_COM_OP: TStringField;
+    sdsParametros_UsuarioCONFIRMA_ENVIO_NFE: TStringField;
+    sdsParametros_UsuarioUTILIZA_PESSOA_REDUZIDO: TStringField;
+    sdsParametros_UsuarioALT_FINANCEIRO_CONF: TStringField;
+    sdsParametros_UsuarioCONFERE_FINANC: TStringField;
+    sdsParametros_UsuarioALT_PROD_CLIENTE: TStringField;
+    sdsParametros_UsuarioPERMITE_APROVAR_DUP: TStringField;
+    sdsParametros_UsuarioPERMITE_CANC_PED_OP: TStringField;
+    sdsParametros_UsuarioMOSTRAR_CONS_ETIQ: TStringField;
+    cdsParametros_Usuario: TClientDataSet;
+    cdsParametros_UsuarioID: TIntegerField;
+    cdsParametros_UsuarioUSUARIO: TStringField;
+    cdsParametros_UsuarioTIPO_REG_PRODUTO_PADRAO: TStringField;
+    cdsParametros_UsuarioTIPO_CONSULTA_PRODUTO_PADRAO: TStringField;
+    cdsParametros_UsuarioMOSTRAR_CODIGO_PROD_ANT: TStringField;
+    cdsParametros_UsuarioMOSTRAR_TOTAL_PEDIDO: TStringField;
+    cdsParametros_UsuarioMOSTRAR_DUP_REC_PAG: TStringField;
+    cdsParametros_UsuarioALT_ESTOQUE_MOV: TStringField;
+    cdsParametros_UsuarioSENHA_PEDIDO: TStringField;
+    cdsParametros_UsuarioSENHA_CREDITO: TStringField;
+    cdsParametros_UsuarioMOSTRAR_PED_USUARIO: TStringField;
+    cdsParametros_UsuarioALT_PRECO_PED: TStringField;
+    cdsParametros_UsuarioMOSTRAR_CUSTO_OS: TStringField;
+    cdsParametros_UsuarioALT_MATERIAL_NEC: TStringField;
+    cdsParametros_UsuarioALT_CONSUMO_NEC: TStringField;
+    cdsParametros_UsuarioALT_IT_PED_COM_OP: TStringField;
+    cdsParametros_UsuarioCONFIRMA_ENVIO_NFE: TStringField;
+    cdsParametros_UsuarioUTILIZA_PESSOA_REDUZIDO: TStringField;
+    cdsParametros_UsuarioALT_FINANCEIRO_CONF: TStringField;
+    cdsParametros_UsuarioCONFERE_FINANC: TStringField;
+    cdsParametros_UsuarioALT_PROD_CLIENTE: TStringField;
+    cdsParametros_UsuarioPERMITE_APROVAR_DUP: TStringField;
+    cdsParametros_UsuarioPERMITE_CANC_PED_OP: TStringField;
+    cdsParametros_UsuarioMOSTRAR_CONS_ETIQ: TStringField;
+    dsParametros_Usuario: TDataSource;
+    dspParametros_Usuario: TDataSetProvider;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -1352,6 +1404,7 @@ type
     ctcommand_Fin : String;
     ctcommand_Imp : String;
     ctcommand_OC : String;
+    ctcommand_Usuario : String;
     vMsgErro: string;
     procedure prc_Gravar;
     procedure prc_Gravar_Geral;
@@ -1369,6 +1422,7 @@ type
     procedure prc_Gravar_Fin;
     procedure prc_Gravar_Imp;
     procedure prc_Gravar_OC;
+    procedure prc_Gravar_Usuario;
 
     procedure prc_Consultar;
     procedure prc_Consultar_Geral;
@@ -1386,6 +1440,7 @@ type
     procedure prc_Consultar_Fin;
     procedure prc_Consultar_Imp;
     procedure prc_Consultar_OC;
+    procedure prc_Consultar_Usuario;
 
   end;
 
@@ -1417,6 +1472,7 @@ begin
   ctcommand_Fin := sdsParametros_Fin.CommandText;
   ctcommand_Imp := sdsParametros_Imp.CommandText;
   ctcommand_OC := sdsParametros_OC.CommandText;
+  ctcommand_Usuario := sdsParametros_Usuario.CommandText;
 
   cdsLocal_Estoque.Open;
   cdsCFOP.Open;
@@ -1777,7 +1833,32 @@ end;
 
 procedure TDMCadParametros.prc_Gravar_OC;
 begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_OC.Post;
+  cdsParametros_OC.ApplyUpdates(0);
+end;
 
+procedure TDMCadParametros.prc_Consultar_Usuario;
+begin
+  cdsParametros_Usuario.Close;
+  sdsParametros_Usuario.CommandText := ctcommand_Usuario + ' WHERE ID = 1 ';
+  cdsParametros_Usuario.Open;
+  if cdsParametros_Usuario.IsEmpty then
+  begin
+    cdsParametros_Usuario.Insert;
+    cdsParametros_UsuarioID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Usuario;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Usuario.Post;
+  cdsParametros_Usuario.ApplyUpdates(0);
 end;
 
 end.
