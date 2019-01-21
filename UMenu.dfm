@@ -304,6 +304,10 @@ object fMenu: TfMenu
         Caption = 'Financeiro'
         OnClick = Financeiro1Click
       end
+      object Importao1: TMenuItem
+        Caption = 'Importa'#231#227'o'
+        OnClick = Importao1Click
+      end
     end
     object N19: TMenuItem
       Caption = '|'

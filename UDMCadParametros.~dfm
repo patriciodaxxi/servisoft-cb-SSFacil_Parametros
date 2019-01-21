@@ -1,9 +1,9 @@
 object DMCadParametros: TDMCadParametros
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Left = 57
-  Top = 68
-  Height = 621
+  Left = 51
+  Top = 42
+  Height = 654
   Width = 1290
   object sdsParametros: TSQLDataSet
     NoMetadata = True
@@ -13,7 +13,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 32
-    Top = 37
+    Top = 5
     object sdsParametrosID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -1166,7 +1166,7 @@ object DMCadParametros: TDMCadParametros
     DataSet = sdsParametros
     UpdateMode = upWhereKeyOnly
     Left = 64
-    Top = 37
+    Top = 5
   end
   object cdsParametros: TClientDataSet
     Aggregates = <>
@@ -1174,7 +1174,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros'
     Left = 96
-    Top = 37
+    Top = 5
     object cdsParametrosID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -2326,7 +2326,7 @@ object DMCadParametros: TDMCadParametros
   object dsParametros: TDataSource
     DataSet = cdsParametros
     Left = 128
-    Top = 37
+    Top = 5
   end
   object sdsParametros_Geral: TSQLDataSet
     NoMetadata = True
@@ -2336,7 +2336,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 32
-    Top = 97
+    Top = 65
     object sdsParametros_GeralID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -2482,7 +2482,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Geral'
     Left = 96
-    Top = 97
+    Top = 65
     object cdsParametros_GeralID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -2626,7 +2626,7 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_Geral: TDataSource
     DataSet = cdsParametros_Geral
     Left = 128
-    Top = 97
+    Top = 65
   end
   object sdsParametros_NFe: TSQLDataSet
     NoMetadata = True
@@ -2636,7 +2636,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 196
+    Top = 164
     object sdsParametros_NFeID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -2880,7 +2880,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_NFe'
     Left = 104
-    Top = 196
+    Top = 164
     object cdsParametros_NFeID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3122,12 +3122,12 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_NFe: TDataSource
     DataSet = cdsParametros_NFe
     Left = 136
-    Top = 195
+    Top = 163
   end
   object dspParametros_NFe: TDataSetProvider
     DataSet = sdsParametros_NFe
     Left = 72
-    Top = 196
+    Top = 164
   end
   object sdsParametros_RecXML: TSQLDataSet
     NoMetadata = True
@@ -3137,7 +3137,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 32
-    Top = 143
+    Top = 111
     object sdsParametros_RecXMLID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3198,7 +3198,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_RecXML'
     Left = 104
-    Top = 143
+    Top = 111
     object cdsParametros_RecXMLID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3257,7 +3257,7 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_RecXML: TDataSource
     DataSet = cdsParametros_RecXML
     Left = 136
-    Top = 143
+    Top = 111
   end
   object sdsLocal_Estoque: TSQLDataSet
     NoMetadata = True
@@ -3318,7 +3318,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 250
+    Top = 218
     object sdsParametros_NTEID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3370,7 +3370,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_NTE'
     Left = 104
-    Top = 248
+    Top = 216
     object cdsParametros_NTEID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3420,12 +3420,12 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_NTE: TDataSource
     DataSet = cdsParametros_NTE
     Left = 136
-    Top = 249
+    Top = 217
   end
   object dspParametros_NTE: TDataSetProvider
     DataSet = sdsParametros_NTE
     Left = 72
-    Top = 248
+    Top = 216
   end
   object sdsParametros_Prod: TSQLDataSet
     NoMetadata = True
@@ -3435,7 +3435,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 303
+    Top = 271
     object sdsParametros_ProdID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3635,7 +3635,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Prod'
     Left = 104
-    Top = 303
+    Top = 271
     object cdsParametros_ProdID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3833,12 +3833,12 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_Prod: TDataSource
     DataSet = cdsParametros_Prod
     Left = 136
-    Top = 303
+    Top = 271
   end
   object dspParametros_Prod: TDataSetProvider
     DataSet = sdsParametros_Prod
     Left = 72
-    Top = 304
+    Top = 272
   end
   object sdsCFOP: TSQLDataSet
     NoMetadata = True
@@ -3894,12 +3894,12 @@ object DMCadParametros: TDMCadParametros
   object dspParametros_Geral: TDataSetProvider
     DataSet = sdsParametros_Geral
     Left = 64
-    Top = 96
+    Top = 64
   end
   object dspParametros_RecXML: TDataSetProvider
     DataSet = sdsParametros_RecXML
     Left = 64
-    Top = 144
+    Top = 112
   end
   object sdsParametros_MDFe: TSQLDataSet
     NoMetadata = True
@@ -4076,7 +4076,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 363
+    Top = 331
     object sdsParametros_SerID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -4183,7 +4183,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Ser'
     Left = 104
-    Top = 363
+    Top = 331
     object cdsParametros_SerID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -4288,12 +4288,12 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_Ser: TDataSource
     DataSet = cdsParametros_Ser
     Left = 136
-    Top = 363
+    Top = 331
   end
   object dspParametros_Ser: TDataSetProvider
     DataSet = sdsParametros_Ser
     Left = 72
-    Top = 363
+    Top = 331
   end
   object sdsCondPgto: TSQLDataSet
     NoMetadata = True
@@ -4463,7 +4463,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 419
+    Top = 387
     object sdsParametros_PedID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -4762,7 +4762,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Ped'
     Left = 104
-    Top = 419
+    Top = 387
     object cdsParametros_PedID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5059,12 +5059,12 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_Ped: TDataSource
     DataSet = cdsParametros_Ped
     Left = 144
-    Top = 419
+    Top = 387
   end
   object dspParametros_Ped: TDataSetProvider
     DataSet = sdsParametros_Ped
     Left = 73
-    Top = 420
+    Top = 388
   end
   object sdsCliente: TSQLDataSet
     NoMetadata = True
@@ -5576,7 +5576,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 467
+    Top = 435
     object sdsParametros_Cta_OrcID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5615,7 +5615,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Cta_Orc'
     Left = 112
-    Top = 467
+    Top = 435
     object cdsParametros_Cta_OrcID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5652,12 +5652,12 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_Cta_Orc: TDataSource
     DataSet = cdsParametros_Cta_Orc
     Left = 144
-    Top = 467
+    Top = 435
   end
   object dspParametros_Cta_Orc: TDataSetProvider
     DataSet = sdsParametros_Cta_Orc
     Left = 76
-    Top = 467
+    Top = 435
   end
   object sdsContaOrcamento: TSQLDataSet
     NoMetadata = True
@@ -5784,7 +5784,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 518
+    Top = 486
     object sdsParametros_FinID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5966,7 +5966,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Fin'
     Left = 112
-    Top = 518
+    Top = 486
     object cdsParametros_FinID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -6146,11 +6146,193 @@ object DMCadParametros: TDMCadParametros
   object dsParametros_Fin: TDataSource
     DataSet = cdsParametros_Fin
     Left = 144
-    Top = 518
+    Top = 486
   end
   object dspParametros_Fin: TDataSetProvider
     DataSet = sdsParametros_Fin
     Left = 77
-    Top = 519
+    Top = 487
+  end
+  object sdsTab_Preco: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM TAB_PRECO'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 728
+    Top = 462
+  end
+  object dspTab_Preco: TDataSetProvider
+    DataSet = sdsTab_Preco
+    Left = 768
+    Top = 462
+  end
+  object cdsTab_Preco: TClientDataSet
+    Aggregates = <>
+    IndexFieldNames = 'NOME'
+    Params = <>
+    ProviderName = 'dspTab_Preco'
+    Left = 808
+    Top = 462
+    object cdsTab_PrecoID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object cdsTab_PrecoNOME: TStringField
+      FieldName = 'NOME'
+      Size = 70
+    end
+    object cdsTab_PrecoDTCADASTRO: TDateField
+      FieldName = 'DTCADASTRO'
+    end
+    object cdsTab_PrecoOBS: TMemoField
+      FieldName = 'OBS'
+      BlobType = ftMemo
+      Size = 1
+    end
+    object cdsTab_PrecoDTINICIAL: TDateField
+      FieldName = 'DTINICIAL'
+    end
+    object cdsTab_PrecoDTFINAL: TDateField
+      FieldName = 'DTFINAL'
+    end
+    object cdsTab_PrecoTABPROMOCIONAL: TStringField
+      FieldName = 'TABPROMOCIONAL'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsTab_Preco: TDataSource
+    DataSet = cdsTab_Preco
+    Left = 848
+    Top = 462
+  end
+  object sdsParametros_Imp: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM PARAMETROS_IMP'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 40
+    Top = 535
+    object sdsParametros_ImpID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object sdsParametros_ImpSOMAR_VLR_II_NO_IPI: TStringField
+      FieldName = 'SOMAR_VLR_II_NO_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpSOMAR_FRETE_ICMS: TStringField
+      FieldName = 'SOMAR_FRETE_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpSOMAR_VLR_AFRMM_ICMS: TStringField
+      FieldName = 'SOMAR_VLR_AFRMM_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpSOMAR_VLR_AFRMM_ODESP: TStringField
+      FieldName = 'SOMAR_VLR_AFRMM_ODESP'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpSOMAR_FRETE_ODESP: TStringField
+      FieldName = 'SOMAR_FRETE_ODESP'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpSOMAR_NO_ICMS_OUTROS_VLR: TStringField
+      FieldName = 'SOMAR_NO_ICMS_OUTROS_VLR'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpCOFINS_SOMAR_SEG: TStringField
+      FieldName = 'COFINS_SOMAR_SEG'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpCOFINS_SOMAR_FRETE: TStringField
+      FieldName = 'COFINS_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ImpICMS_SOMAR_SEG: TStringField
+      FieldName = 'ICMS_SOMAR_SEG'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object cdsParametros_Imp: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspParametros_Imp'
+    Left = 112
+    Top = 536
+    object cdsParametros_ImpID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsParametros_ImpSOMAR_VLR_II_NO_IPI: TStringField
+      FieldName = 'SOMAR_VLR_II_NO_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpSOMAR_FRETE_ICMS: TStringField
+      FieldName = 'SOMAR_FRETE_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpSOMAR_VLR_AFRMM_ICMS: TStringField
+      FieldName = 'SOMAR_VLR_AFRMM_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpSOMAR_VLR_AFRMM_ODESP: TStringField
+      FieldName = 'SOMAR_VLR_AFRMM_ODESP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpSOMAR_FRETE_ODESP: TStringField
+      FieldName = 'SOMAR_FRETE_ODESP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpSOMAR_NO_ICMS_OUTROS_VLR: TStringField
+      FieldName = 'SOMAR_NO_ICMS_OUTROS_VLR'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpCOFINS_SOMAR_SEG: TStringField
+      FieldName = 'COFINS_SOMAR_SEG'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpCOFINS_SOMAR_FRETE: TStringField
+      FieldName = 'COFINS_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ImpICMS_SOMAR_SEG: TStringField
+      FieldName = 'ICMS_SOMAR_SEG'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsParametros_Imp: TDataSource
+    DataSet = cdsParametros_Imp
+    Left = 144
+    Top = 535
+  end
+  object dspParametros_Imp: TDataSetProvider
+    DataSet = sdsParametros_Imp
+    Left = 72
+    Top = 535
   end
 end

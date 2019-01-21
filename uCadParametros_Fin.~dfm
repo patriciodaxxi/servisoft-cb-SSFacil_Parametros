@@ -53,6 +53,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       Font.Style = []
       ParentFont = False
       TabOrder = 2
+      OnClick = btnCancelarClick
     end
     object btnAlterar: TBitBtn
       Left = 5

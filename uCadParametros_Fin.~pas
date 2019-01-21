@@ -94,6 +94,7 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
   private
     { Private declarations }
     fDMCadParametros: TDMCadParametros;
@@ -163,6 +164,20 @@ end;
 procedure TfrmCadParametros_Fin.btnConfirmarClick(Sender: TObject);
 begin
   prc_Gravar_Registro;
+end;
+
+procedure TfrmCadParametros_Fin.btnCancelarClick(Sender: TObject);
+begin
+  if (fDMCadParametros.cdsParametros_Fin.State in [dsBrowse]) or not(fDMCadParametros.cdsParametros_Fin.Active) then
+    exit;
+  if MessageDlg('Deseja cancelar alteração/inclusão do registro?',mtConfirmation,[mbYes,mbNo],0) = mrNo then
+    exit;
+  fDMCadParametros.cdsParametros_Fin.CancelUpdates;
+  if (fDMCadParametros.cdsParametros.Active) then
+    fDMCadParametros.cdsParametros.CancelUpdates;
+  pnlGeral.Enabled         := not(pnlGeral.Enabled);
+  btnConfirmar.Enabled     := not(btnConfirmar.Enabled);
+  btnAlterar.Enabled       := not(btnAlterar.Enabled);
 end;
 
 end.

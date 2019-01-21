@@ -1293,6 +1293,30 @@ type
     cdsTab_PrecoDTFINAL: TDateField;
     cdsTab_PrecoTABPROMOCIONAL: TStringField;
     dsTab_Preco: TDataSource;
+    sdsParametros_Imp: TSQLDataSet;
+    sdsParametros_ImpID: TIntegerField;
+    sdsParametros_ImpSOMAR_VLR_II_NO_IPI: TStringField;
+    sdsParametros_ImpSOMAR_FRETE_ICMS: TStringField;
+    sdsParametros_ImpSOMAR_VLR_AFRMM_ICMS: TStringField;
+    sdsParametros_ImpSOMAR_VLR_AFRMM_ODESP: TStringField;
+    sdsParametros_ImpSOMAR_FRETE_ODESP: TStringField;
+    sdsParametros_ImpSOMAR_NO_ICMS_OUTROS_VLR: TStringField;
+    sdsParametros_ImpCOFINS_SOMAR_SEG: TStringField;
+    sdsParametros_ImpCOFINS_SOMAR_FRETE: TStringField;
+    sdsParametros_ImpICMS_SOMAR_SEG: TStringField;
+    cdsParametros_Imp: TClientDataSet;
+    cdsParametros_ImpID: TIntegerField;
+    cdsParametros_ImpSOMAR_VLR_II_NO_IPI: TStringField;
+    cdsParametros_ImpSOMAR_FRETE_ICMS: TStringField;
+    cdsParametros_ImpSOMAR_VLR_AFRMM_ICMS: TStringField;
+    cdsParametros_ImpSOMAR_VLR_AFRMM_ODESP: TStringField;
+    cdsParametros_ImpSOMAR_FRETE_ODESP: TStringField;
+    cdsParametros_ImpSOMAR_NO_ICMS_OUTROS_VLR: TStringField;
+    cdsParametros_ImpCOFINS_SOMAR_SEG: TStringField;
+    cdsParametros_ImpCOFINS_SOMAR_FRETE: TStringField;
+    cdsParametros_ImpICMS_SOMAR_SEG: TStringField;
+    dsParametros_Imp: TDataSource;
+    dspParametros_Imp: TDataSetProvider;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -1312,6 +1336,7 @@ type
     ctcommand_Cta_Orc : String;
     ctcommand_Com : String;
     ctcommand_Fin : String;
+    ctcommand_Imp : String;
     vMsgErro: string;
     procedure prc_Gravar;
     procedure prc_Gravar_Geral;
@@ -1327,6 +1352,7 @@ type
     procedure prc_Gravar_Cta_Orc;
     procedure prc_Gravar_Com;
     procedure prc_Gravar_Fin;
+    procedure prc_Gravar_Imp;
 
     procedure prc_Consultar;
     procedure prc_Consultar_Geral;
@@ -1342,6 +1368,7 @@ type
     procedure prc_Consultar_Cta_Orc;
     procedure prc_Consultar_Com;
     procedure prc_Consultar_Fin;
+    procedure prc_Consultar_Imp;
 
   end;
 
@@ -1371,6 +1398,7 @@ begin
   ctcommand_Cta_Orc := sdsParametros_Cta_Orc.CommandText;
   ctcommand_Com := sdsParametros_Com.CommandText;
   ctcommand_Fin := sdsParametros_Fin.CommandText;
+  ctcommand_Imp := sdsParametros_Imp.CommandText;
 
   cdsLocal_Estoque.Open;
   cdsCFOP.Open;
@@ -1694,6 +1722,27 @@ begin
     exit;
   cdsParametros_Fin.Post;
   cdsParametros_Fin.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Imp;
+begin
+  cdsParametros_Imp.Close;
+  sdsParametros_Imp.CommandText := ctcommand_Imp + ' WHERE ID = 1 ';
+  cdsParametros_Imp.Open;
+  if cdsParametros_Imp.IsEmpty then
+  begin
+    cdsParametros_Imp.Insert;
+    cdsParametros_FinID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Imp;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Imp.Post;
+  cdsParametros_Imp.ApplyUpdates(0);
 end;
 
 end.
