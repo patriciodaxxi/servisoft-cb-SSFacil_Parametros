@@ -1162,6 +1162,137 @@ type
     cdsProcessoENCERADO: TStringField;
     cdsProcessoENTRADA_AUTO: TStringField;
     dsProcesso: TDataSource;
+    sdsParametros_Cta_Orc: TSQLDataSet;
+    sdsParametros_Cta_OrcID: TIntegerField;
+    sdsParametros_Cta_OrcID_CONTA_ORC_RECEITA: TIntegerField;
+    sdsParametros_Cta_OrcID_CONTA_ORC_DESPESA: TIntegerField;
+    sdsParametros_Cta_OrcID_CONTA_ORC_MULTA_PAG: TIntegerField;
+    sdsParametros_Cta_OrcID_CONTA_ORC_MULTA_REC: TIntegerField;
+    sdsParametros_Cta_OrcUSA_VALOR_ORC: TStringField;
+    sdsParametros_Cta_OrcMOSTRAR_PESSOA: TStringField;
+    sdsParametros_Cta_OrcUSA_SINTETICA: TStringField;
+    cdsParametros_Cta_Orc: TClientDataSet;
+    cdsParametros_Cta_OrcID: TIntegerField;
+    cdsParametros_Cta_OrcID_CONTA_ORC_RECEITA: TIntegerField;
+    cdsParametros_Cta_OrcID_CONTA_ORC_DESPESA: TIntegerField;
+    cdsParametros_Cta_OrcID_CONTA_ORC_MULTA_PAG: TIntegerField;
+    cdsParametros_Cta_OrcID_CONTA_ORC_MULTA_REC: TIntegerField;
+    cdsParametros_Cta_OrcUSA_VALOR_ORC: TStringField;
+    cdsParametros_Cta_OrcMOSTRAR_PESSOA: TStringField;
+    cdsParametros_Cta_OrcUSA_SINTETICA: TStringField;
+    dsParametros_Cta_Orc: TDataSource;
+    dspParametros_Cta_Orc: TDataSetProvider;
+    sdsContaOrcamento: TSQLDataSet;
+    dspContaOrcamento: TDataSetProvider;
+    cdsContaOrcamento: TClientDataSet;
+    cdsContaOrcamentoID: TIntegerField;
+    cdsContaOrcamentoTIPO: TStringField;
+    cdsContaOrcamentoCODIGO: TStringField;
+    cdsContaOrcamentoDESCRICAO: TStringField;
+    cdsContaOrcamentoNIVEL: TIntegerField;
+    cdsContaOrcamentoSUPERIOR: TStringField;
+    dsContaOrcamento: TDataSource;
+    sdsParametros_Com: TSQLDataSet;
+    sdsParametros_ComID: TIntegerField;
+    sdsParametros_ComCOMISSAO_DESCONTAR: TStringField;
+    sdsParametros_ComPAGAR_SOMENTE_PRIMEIRA: TStringField;
+    sdsParametros_ComMOSTRAR_PED: TStringField;
+    cdsParametros_Com: TClientDataSet;
+    cdsParametros_ComID: TIntegerField;
+    cdsParametros_ComCOMISSAO_DESCONTAR: TStringField;
+    cdsParametros_ComPAGAR_SOMENTE_PRIMEIRA: TStringField;
+    cdsParametros_ComMOSTRAR_PED: TStringField;
+    dsParametros_Com: TDataSource;
+    dspParametros_Com: TDataSetProvider;
+    sdsParametros_Fin: TSQLDataSet;
+    sdsParametros_FinID: TIntegerField;
+    sdsParametros_FinCONTROLAR_DUP_USUARIO: TStringField;
+    sdsParametros_FinUSA_METAS_VENDEDOR: TStringField;
+    sdsParametros_FinUSA_LIMITE_COMPRAS: TStringField;
+    sdsParametros_FinMOSTRAR_VLR_ROD_DUP: TStringField;
+    sdsParametros_FinMOSTRAR_ULT_REMESSA: TStringField;
+    sdsParametros_FinDTENVIO_EMAIL_TITULOS: TDateField;
+    sdsParametros_FinENVIAR_EMAIL_TITULOS_ATR: TStringField;
+    sdsParametros_FinCONTROLAR_BANCO_REM_DEP: TStringField;
+    sdsParametros_FinSEPARADOR_NUM_DA_PARC: TStringField;
+    sdsParametros_FinMOSTRAR_VLR_MULTA_DUP: TStringField;
+    sdsParametros_FinUSA_REGIME_CAIXA_DUP: TStringField;
+    sdsParametros_FinSENHA_RECIBO: TStringField;
+    sdsParametros_FinIMP_NOSSO_NUMERO: TStringField;
+    sdsParametros_FinTIPO_GERACAO_REM: TStringField;
+    sdsParametros_FinMOSTRAR_TIPO_CRED: TStringField;
+    sdsParametros_FinUSA_DESCONTO_VALE: TStringField;
+    sdsParametros_FinUSA_TABPRECO_PROM: TStringField;
+    sdsParametros_FinID_TABPRECO1: TIntegerField;
+    sdsParametros_FinID_TABPRECO2: TIntegerField;
+    sdsParametros_FinID_TABPRECO3: TIntegerField;
+    sdsParametros_FinCOPIAR_DESC_VALE: TStringField;
+    sdsParametros_FinSENHA_LIBERAR_DESC: TStringField;
+    sdsParametros_FinCONTROLE_DIG_PRECO: TStringField;
+    sdsParametros_FinREMESSA_FILIAL_DIF: TStringField;
+    sdsParametros_FinDUP_DIA_FIN_VECTO: TStringField;
+    sdsParametros_FinPROTESTAR_CLIENTE: TStringField;
+    sdsParametros_FinANEXAR_BOLETO_TITULOS_ATR: TStringField;
+    sdsParametros_FinEXIGIR_CONTA_ORC_DUP: TStringField;
+    sdsParametros_FinUSA_NGR: TStringField;
+    sdsParametros_FinUSA_APROVA_DUP: TStringField;
+    sdsParametros_FinUSA_CLIENTE_CUSTO: TStringField;
+    sdsParametros_FinINFORMA_MOBRA_MAN: TStringField;
+    sdsParametros_FinUSA_PERC_CONDPGTO: TStringField;
+    sdsParametros_FinARREDONDA_PRECO_TAB: TStringField;
+    sdsParametros_FinMANTER_DUP_CANC: TStringField;
+    sdsParametros_FinCONDPGTO_FRETE_IMP: TStringField;
+    cdsParametros_Fin: TClientDataSet;
+    cdsParametros_FinID: TIntegerField;
+    cdsParametros_FinCONTROLAR_DUP_USUARIO: TStringField;
+    cdsParametros_FinUSA_METAS_VENDEDOR: TStringField;
+    cdsParametros_FinUSA_LIMITE_COMPRAS: TStringField;
+    cdsParametros_FinMOSTRAR_VLR_ROD_DUP: TStringField;
+    cdsParametros_FinMOSTRAR_ULT_REMESSA: TStringField;
+    cdsParametros_FinDTENVIO_EMAIL_TITULOS: TDateField;
+    cdsParametros_FinENVIAR_EMAIL_TITULOS_ATR: TStringField;
+    cdsParametros_FinCONTROLAR_BANCO_REM_DEP: TStringField;
+    cdsParametros_FinSEPARADOR_NUM_DA_PARC: TStringField;
+    cdsParametros_FinMOSTRAR_VLR_MULTA_DUP: TStringField;
+    cdsParametros_FinUSA_REGIME_CAIXA_DUP: TStringField;
+    cdsParametros_FinSENHA_RECIBO: TStringField;
+    cdsParametros_FinIMP_NOSSO_NUMERO: TStringField;
+    cdsParametros_FinTIPO_GERACAO_REM: TStringField;
+    cdsParametros_FinMOSTRAR_TIPO_CRED: TStringField;
+    cdsParametros_FinUSA_DESCONTO_VALE: TStringField;
+    cdsParametros_FinUSA_TABPRECO_PROM: TStringField;
+    cdsParametros_FinID_TABPRECO1: TIntegerField;
+    cdsParametros_FinID_TABPRECO2: TIntegerField;
+    cdsParametros_FinID_TABPRECO3: TIntegerField;
+    cdsParametros_FinCOPIAR_DESC_VALE: TStringField;
+    cdsParametros_FinSENHA_LIBERAR_DESC: TStringField;
+    cdsParametros_FinCONTROLE_DIG_PRECO: TStringField;
+    cdsParametros_FinREMESSA_FILIAL_DIF: TStringField;
+    cdsParametros_FinDUP_DIA_FIN_VECTO: TStringField;
+    cdsParametros_FinPROTESTAR_CLIENTE: TStringField;
+    cdsParametros_FinANEXAR_BOLETO_TITULOS_ATR: TStringField;
+    cdsParametros_FinEXIGIR_CONTA_ORC_DUP: TStringField;
+    cdsParametros_FinUSA_NGR: TStringField;
+    cdsParametros_FinUSA_APROVA_DUP: TStringField;
+    cdsParametros_FinUSA_CLIENTE_CUSTO: TStringField;
+    cdsParametros_FinINFORMA_MOBRA_MAN: TStringField;
+    cdsParametros_FinUSA_PERC_CONDPGTO: TStringField;
+    cdsParametros_FinARREDONDA_PRECO_TAB: TStringField;
+    cdsParametros_FinMANTER_DUP_CANC: TStringField;
+    cdsParametros_FinCONDPGTO_FRETE_IMP: TStringField;
+    dsParametros_Fin: TDataSource;
+    dspParametros_Fin: TDataSetProvider;
+    sdsTab_Preco: TSQLDataSet;
+    dspTab_Preco: TDataSetProvider;
+    cdsTab_Preco: TClientDataSet;
+    cdsTab_PrecoID: TIntegerField;
+    cdsTab_PrecoNOME: TStringField;
+    cdsTab_PrecoDTCADASTRO: TDateField;
+    cdsTab_PrecoOBS: TMemoField;
+    cdsTab_PrecoDTINICIAL: TDateField;
+    cdsTab_PrecoDTFINAL: TDateField;
+    cdsTab_PrecoTABPROMOCIONAL: TStringField;
+    dsTab_Preco: TDataSource;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -1178,6 +1309,9 @@ type
     ctCommand_Prod : String;
     ctcommand_Ped : String;
     ctcommand_Lote : String;
+    ctcommand_Cta_Orc : String;
+    ctcommand_Com : String;
+    ctcommand_Fin : String;
     vMsgErro: string;
     procedure prc_Gravar;
     procedure prc_Gravar_Geral;
@@ -1190,6 +1324,9 @@ type
     procedure prc_Gravar_Prod;
     procedure prc_Gravar_Ped;
     procedure prc_Gravar_Lote;
+    procedure prc_Gravar_Cta_Orc;
+    procedure prc_Gravar_Com;
+    procedure prc_Gravar_Fin;
 
     procedure prc_Consultar;
     procedure prc_Consultar_Geral;
@@ -1202,6 +1339,10 @@ type
     procedure prc_Consultar_Prod;
     procedure prc_Consultar_Ped;
     procedure prc_Consultar_Lote;
+    procedure prc_Consultar_Cta_Orc;
+    procedure prc_Consultar_Com;
+    procedure prc_Consultar_Fin;
+
   end;
 
 var
@@ -1227,6 +1368,9 @@ begin
   ctcommand_Prod := sdsParametros_Prod.CommandText;
   ctcommand_Ped := sdsParametros_Ped.CommandText;
   ctcommand_Lote := sdsParametros_Lote.CommandText;
+  ctcommand_Cta_Orc := sdsParametros_Cta_Orc.CommandText;
+  ctcommand_Com := sdsParametros_Com.CommandText;
+  ctcommand_Fin := sdsParametros_Fin.CommandText;
 
   cdsLocal_Estoque.Open;
   cdsCFOP.Open;
@@ -1240,6 +1384,8 @@ begin
   cdsCondPgto.Open;
   cdsAtelier.Open;
   cdsProcesso.Open;
+  cdsContaOrcamento.Open;
+  cdsTab_Preco.Open;
 end;
 
 procedure TDMCadParametros.prc_Gravar_FCI;
@@ -1485,6 +1631,69 @@ begin
     exit;
   cdsParametros_Lote.Post;
   cdsParametros_Lote.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Cta_Orc;
+begin
+  cdsParametros_Cta_Orc.Close;
+  sdsParametros_Cta_Orc.CommandText := ctcommand_Cta_Orc + ' WHERE ID = 1 ';
+  cdsParametros_Cta_Orc.Open;
+  if cdsParametros_Cta_Orc.IsEmpty then
+  begin
+    cdsParametros_Cta_Orc.Insert;
+    cdsParametros_Cta_OrcID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Cta_Orc;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Cta_Orc.Post;
+  cdsParametros_Cta_Orc.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Com;
+begin
+  cdsParametros_Com.Close;
+  sdsParametros_Com.CommandText := ctcommand_Com + ' WHERE ID = 1 ';
+  cdsParametros_Com.Open;
+  if cdsParametros_Com.IsEmpty then
+  begin
+    cdsParametros_Com.Insert;
+    cdsParametros_ComID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Com;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Com.Post;
+  cdsParametros_Com.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Fin;
+begin
+  cdsParametros_Fin.Close;
+  sdsParametros_Fin.CommandText := ctcommand_Fin + ' WHERE ID = 1 ';
+  cdsParametros_Fin.Open;
+  if cdsParametros_Fin.IsEmpty then
+  begin
+    cdsParametros_Fin.Insert;
+    cdsParametros_FinID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Fin;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Fin.Post;
+  cdsParametros_Fin.ApplyUpdates(0);
 end;
 
 end.

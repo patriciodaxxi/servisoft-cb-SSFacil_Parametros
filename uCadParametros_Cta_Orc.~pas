@@ -12,7 +12,7 @@ type
     btnConfirmar: TBitBtn;
     btnCancelar: TBitBtn;
     btnAlterar: TBitBtn;
-    pnlGeral: TPanel;
+    pnlConta_Orcamento: TPanel;
     Label85: TLabel;
     Label86: TLabel;
     Label122: TLabel;

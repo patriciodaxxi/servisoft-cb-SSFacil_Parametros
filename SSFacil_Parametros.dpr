@@ -22,7 +22,9 @@ uses
   uCadParametros_RecXML in 'uCadParametros_RecXML.pas' {frmCadParametros_RecXML},
   uCadParametros_Ped in 'uCadParametros_Ped.pas' {frmParametros_Ped},
   uCadParametros_Lote in 'uCadParametros_Lote.pas' {frmCadParametros_Lote},
-  uCadParametros_Cta_Orc in 'uCadParametros_Cta_Orc.pas' {frmCadParametros_Cta_Orc};
+  uCadParametros_Cta_Orc in 'uCadParametros_Cta_Orc.pas' {frmCadParametros_Cta_Orc},
+  uCadParametros_Com in 'uCadParametros_Com.pas' {frmCadParametros_Com},
+  uCadParametros_Fin in 'uCadParametros_Fin.pas' {frmCadParametros_Fin};
 
 {$R *.res}
 

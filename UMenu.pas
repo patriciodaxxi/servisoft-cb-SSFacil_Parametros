@@ -53,6 +53,8 @@ type
     Pedido1: TMenuItem;
     LoteTalo1: TMenuItem;
     ContasOramento1: TMenuItem;
+    Comisso1: TMenuItem;
+    Financeiro1: TMenuItem;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure EfetuarLogoff1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -72,6 +74,8 @@ type
     procedure Pedido1Click(Sender: TObject);
     procedure LoteTalo1Click(Sender: TObject);
     procedure ContasOramento1Click(Sender: TObject);
+    procedure Comisso1Click(Sender: TObject);
+    procedure Financeiro1Click(Sender: TObject);
   private
     { Private declarations }
     procedure prc_Habilita_Menu;
@@ -94,7 +98,7 @@ uses
   DmdDatabase, uUtilPadrao, uCadParametro, UCadParametros_NFE,
   uCadParametros_NTE, uCadParametros_NotaFiscal, uCadParametros_NFSe,
   uCadParametros_RecXML, uCadParametros_Prod, uCadParametros_Ped,
-  uCadParametros_Lote, uCadParametros_Cta_Orc;
+  uCadParametros_Lote, uCadParametros_Cta_Orc, uCadParametros_Com, uCadParametros_Fin;
 
 {$R *.dfm}
 
@@ -287,6 +291,16 @@ end;
 procedure TfMenu.ContasOramento1Click(Sender: TObject);
 begin
   OpenForm(TfrmCadParametros_Cta_Orc, wsMaximized);
+end;
+
+procedure TfMenu.Comisso1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_Com,wsMaximized);
+end;
+
+procedure TfMenu.Financeiro1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_Fin, wsMaximized);
 end;
 
 initialization

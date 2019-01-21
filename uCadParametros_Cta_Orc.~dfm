@@ -71,7 +71,7 @@ object frmCadParametros_Cta_Orc: TfrmCadParametros_Cta_Orc
       OnClick = btnAlterarClick
     end
   end
-  object pnlGeral: TPanel
+  object pnlConta_Orcamento: TPanel
     Left = 0
     Top = 35
     Width = 1139
