@@ -112,6 +112,10 @@ type
     DBEdit25: TDBEdit;
     Label103: TLabel;
     DBEdit13: TDBEdit;
+    Label101: TLabel;
+    FilenameEdit1: TFilenameEdit;
+    Label102: TLabel;
+    DBMemo2: TDBMemo;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -187,6 +191,7 @@ begin
   fDMCadParametros.prc_Consultar_FCI;
   fDMCadParametros.prc_Consultar_MDFe;
 
+  FilenameEdit1.Text   := fDMCadParametros.cdsParametrosEND_SALVAR_EXCEL_EXP.Value;
   DirectoryEdit6.Text  := fDMCadParametros.cdsParametros_GeralENDGRIDS.AsString;
   DirectoryEdit7.Text  := fDMCadParametros.cdsParametros_GeralEND_ARQ_INT_CONTABIL.AsString;
   DirectoryEdit8.Text  := fDMCadParametros.cdsParametros_FCIENDERECO_ARQ.AsString;
@@ -247,6 +252,7 @@ begin
     if (fDMCadParametros.cdsParametros_GeralEND_ARQ_EDI.Value <> DirectoryEdit13.Text) then
       fDMCadParametros.cdsParametros_GeralEND_ARQ_EDI.Value := DirectoryEdit13.Text;
   end;
+  fDMCadParametros.cdsParametrosEND_SALVAR_EXCEL_EXP.Value := FilenameEdit1.Text;
 
   if fDMCadParametros.cdsParametrosGRAVAR_NA_REF_CODPRODFORN.AsString <> 'S' then
     fDMCadParametros.cdsParametrosPROCURAR_POR_REF_XML.AsString := 'N';
