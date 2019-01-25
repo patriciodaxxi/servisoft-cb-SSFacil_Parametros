@@ -136,6 +136,16 @@ end;
 procedure TfrmCadParametros_NFE.prc_Gravar_Registro;
 begin
   fDMCadParametros.cdsParametros_NFeEND_ARQUIVO_SUFRAMA.Value := DirectoryEdit14.Text;
+  fDMCadParametros.cdsParametrosENDXMLNFE.Value          := DirectoryEdit2.Text;
+  fDMCadParametros.cdsParametrosENDPDFNFE.Value          := DirectoryEdit3.Text;
+  fDMCadParametros.cdsParametrosENDXML_NOTAENTRADA.Value := DirectoryEdit1.Text;
+
+  fDMCadParametros.prc_Gravar;
+  if fDMCadParametros.cdsParametros.State in [dsEdit, dsInsert] then
+  begin
+    MessageDlg(fDMCadParametros.vMsgErro, mtError, [mbOk], 0);
+    exit;
+  end;
   fDMCadParametros.prc_Gravar_NFE;
   if fDMCadParametros.cdsParametros_NFe.State in [dsEdit, dsInsert] then
   begin
@@ -154,7 +164,9 @@ begin
   RzPageControl3.ActivePage := TS_NFE_Geral;
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_NFE;
-
+  DirectoryEdit2.Text := fDMCadParametros.cdsParametrosENDXMLNFE.AsString;
+  DirectoryEdit3.Text := fDMCadParametros.cdsParametrosENDPDFNFE.AsString;
+  DirectoryEdit1.Text := fDMCadParametros.cdsParametrosENDXML_NOTAENTRADA.Value;
   DirectoryEdit14.Text := fDMCadParametros.cdsParametros_NFeEND_ARQUIVO_SUFRAMA.AsString;
 end;
 
