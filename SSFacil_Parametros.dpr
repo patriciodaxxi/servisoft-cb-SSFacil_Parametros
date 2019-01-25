@@ -33,7 +33,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.Title := 'Entrada/Saída Produtos';
+  Application.Title := 'Parâmetros';
   Application.CreateForm(TdmDatabase, dmDatabase);
   Application.CreateForm(TfMenu, fMenu);
   Application.Run;
