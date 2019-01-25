@@ -11,6 +11,7 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
+  OnClose = FormClose
   OnDestroy = FormDestroy
   OnShow = FormShow
   PixelsPerInch = 96

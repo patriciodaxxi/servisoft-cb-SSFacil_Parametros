@@ -58,6 +58,11 @@ type
     Importao1: TMenuItem;
     OrdemdeCompra1: TMenuItem;
     Usurio1: TMenuItem;
+    Estoque1: TMenuItem;
+    ServicoContrato1: TMenuItem;
+    MDFe1: TMenuItem;
+    ConfImpressodeEtiqueta1: TMenuItem;
+    Custo1: TMenuItem;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure EfetuarLogoff1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -82,6 +87,11 @@ type
     procedure Importao1Click(Sender: TObject);
     procedure OrdemdeCompra1Click(Sender: TObject);
     procedure Usurio1Click(Sender: TObject);
+    procedure Estoque1Click(Sender: TObject);
+    procedure ServicoContrato1Click(Sender: TObject);
+    procedure MDFe1Click(Sender: TObject);
+    procedure ConfImpressodeEtiqueta1Click(Sender: TObject);
+    procedure Custo1Click(Sender: TObject);
   private
     { Private declarations }
     procedure prc_Habilita_Menu;
@@ -104,7 +114,7 @@ uses
   DmdDatabase, uUtilPadrao, uCadParametro, UCadParametros_NFE,
   uCadParametros_NTE, uCadParametros_NotaFiscal, uCadParametros_NFSe,
   uCadParametros_RecXML, uCadParametros_Prod, uCadParametros_Ped,
-  uCadParametros_Lote, uCadParametros_Cta_Orc, uCadParametros_Com, uCadParametros_Fin, uCadParametros_Imp, uCadParametros_OC, uCadParametros_Usuario;
+  uCadParametros_Lote, uCadParametros_Cta_Orc, uCadParametros_Com, uCadParametros_Fin, uCadParametros_Imp, uCadParametros_OC, uCadParametros_Usuario, uCadParametros_Estoque, uCadParametros_Ser, uCadParametros_MDFe, uCadParametros_Etiq, uCadParametros_Custo;
 
 {$R *.dfm}
 
@@ -322,6 +332,31 @@ end;
 procedure TfMenu.Usurio1Click(Sender: TObject);
 begin
   OpenForm(TfrmCadParametros_Usuario,wsMaximized);
+end;
+
+procedure TfMenu.Estoque1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_Estoque, wsMaximized);
+end;
+
+procedure TfMenu.ServicoContrato1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_Ser, wsMaximized);
+end;
+
+procedure TfMenu.MDFe1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_MDFe, wsMaximized);
+end;
+
+procedure TfMenu.ConfImpressodeEtiqueta1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_Etiq, wsMaximized);
+end;
+
+procedure TfMenu.Custo1Click(Sender: TObject);
+begin
+  OpenForm(TfrmCadParametros_Custo, wsMaximized);
 end;
 
 initialization

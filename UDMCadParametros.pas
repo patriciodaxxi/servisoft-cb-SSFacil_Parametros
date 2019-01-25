@@ -1383,6 +1383,124 @@ type
     cdsParametros_UsuarioMOSTRAR_CONS_ETIQ: TStringField;
     dsParametros_Usuario: TDataSource;
     dspParametros_Usuario: TDataSetProvider;
+    sdsParametros_Est: TSQLDataSet;
+    sdsParametros_EstID: TIntegerField;
+    sdsParametros_EstUSA_RESERVA: TStringField;
+    sdsParametros_EstGERAR_LOTE_AUT: TStringField;
+    sdsParametros_EstID_LOCAL_ESTOQUE_SEMI: TIntegerField;
+    sdsParametros_EstID_LOCAL_ESTOQUE_MAT: TIntegerField;
+    sdsParametros_EstID_LOCAL_ESTOQUE_MAT_CONS: TIntegerField;
+    sdsParametros_EstGERAR_LOTE_AUT_CONSUMO: TStringField;
+    sdsParametros_EstID_LOCAL_ESTOQUE_ECOM: TIntegerField;
+    sdsParametros_EstEND_SALVAR_ARQ: TStringField;
+    sdsParametros_EstNOME_ARQ: TStringField;
+    sdsParametros_EstMOSTRAR_PCUSTO_MOV: TStringField;
+    sdsParametros_EstUSA_QTD_INI: TStringField;
+    sdsParametros_EstMOSTRAR_PCUSTO_TOTAL_MOV: TStringField;
+    sdsParametros_EstMARCAR_BAIXA_PEDIDO: TStringField;
+    sdsParametros_EstUSA_RESERVA_PROD: TStringField;
+    sdsParametros_EstUSA_LOCALIZACAO_LOTE: TStringField;
+    sdsParametros_EstCONTROLA_DOC_CLIFORN: TStringField;
+    sdsParametros_EstVERIFICA_ESTOQUE_ENT_PEDIDO: TStringField;
+    sdsParametros_EstUSAR_FILIAL_GERAR_RES: TStringField;
+    sdsParametros_EstREQ_ENTREGUE_POR: TStringField;
+    sdsParametros_EstREQ_NUM_LOTE: TStringField;
+    cdsParametros_Est: TClientDataSet;
+    cdsParametros_EstID: TIntegerField;
+    cdsParametros_EstUSA_RESERVA: TStringField;
+    cdsParametros_EstGERAR_LOTE_AUT: TStringField;
+    cdsParametros_EstID_LOCAL_ESTOQUE_SEMI: TIntegerField;
+    cdsParametros_EstID_LOCAL_ESTOQUE_MAT: TIntegerField;
+    cdsParametros_EstID_LOCAL_ESTOQUE_MAT_CONS: TIntegerField;
+    cdsParametros_EstGERAR_LOTE_AUT_CONSUMO: TStringField;
+    cdsParametros_EstID_LOCAL_ESTOQUE_ECOM: TIntegerField;
+    cdsParametros_EstEND_SALVAR_ARQ: TStringField;
+    cdsParametros_EstNOME_ARQ: TStringField;
+    cdsParametros_EstMOSTRAR_PCUSTO_MOV: TStringField;
+    cdsParametros_EstUSA_QTD_INI: TStringField;
+    cdsParametros_EstMOSTRAR_PCUSTO_TOTAL_MOV: TStringField;
+    cdsParametros_EstMARCAR_BAIXA_PEDIDO: TStringField;
+    cdsParametros_EstUSA_RESERVA_PROD: TStringField;
+    cdsParametros_EstUSA_LOCALIZACAO_LOTE: TStringField;
+    cdsParametros_EstCONTROLA_DOC_CLIFORN: TStringField;
+    cdsParametros_EstVERIFICA_ESTOQUE_ENT_PEDIDO: TStringField;
+    cdsParametros_EstUSAR_FILIAL_GERAR_RES: TStringField;
+    cdsParametros_EstREQ_ENTREGUE_POR: TStringField;
+    cdsParametros_EstREQ_NUM_LOTE: TStringField;
+    dsParametros_Est: TDataSource;
+    dspParametros_Est: TDataSetProvider;
+    sdsParametros_Etiq: TSQLDataSet;
+    sdsParametros_EtiqID: TIntegerField;
+    sdsParametros_EtiqOFFSET_BORDA: TIntegerField;
+    sdsParametros_EtiqBACKFEED: TIntegerField;
+    sdsParametros_EtiqTEMPERATURA: TIntegerField;
+    sdsParametros_EtiqVELOCIDADE: TStringField;
+    sdsParametros_EtiqENDERECO: TStringField;
+    sdsParametros_EtiqTIPO_CLIENTE: TStringField;
+    sdsParametros_EtiqTIPO_IMPRESSORA: TStringField;
+    sdsParametros_EtiqTIPO_IMP_ETIQ_INDIV: TStringField;
+    sdsParametros_EtiqMARGEM: TSmallintField;
+    sdsParametros_EtiqDESLOCAMENTO_LATERAL: TStringField;
+    sdsParametros_EtiqETIQ_TAG_NOVO_LAYOUT: TStringField;
+    sdsParametros_EtiqNAO_IMP_MSG_TROCA: TStringField;
+    cdsParametros_Etiq: TClientDataSet;
+    cdsParametros_EtiqID: TIntegerField;
+    cdsParametros_EtiqOFFSET_BORDA: TIntegerField;
+    cdsParametros_EtiqBACKFEED: TIntegerField;
+    cdsParametros_EtiqTEMPERATURA: TIntegerField;
+    cdsParametros_EtiqVELOCIDADE: TStringField;
+    cdsParametros_EtiqENDERECO: TStringField;
+    cdsParametros_EtiqTIPO_CLIENTE: TStringField;
+    cdsParametros_EtiqTIPO_IMPRESSORA: TStringField;
+    cdsParametros_EtiqTIPO_IMP_ETIQ_INDIV: TStringField;
+    cdsParametros_EtiqMARGEM: TSmallintField;
+    cdsParametros_EtiqDESLOCAMENTO_LATERAL: TStringField;
+    cdsParametros_EtiqETIQ_TAG_NOVO_LAYOUT: TStringField;
+    cdsParametros_EtiqNAO_IMP_MSG_TROCA: TStringField;
+    dsParametros_Etiq: TDataSource;
+    dspParametros_Etiq: TDataSetProvider;
+    sdsParametros_Custo: TSQLDataSet;
+    sdsParametros_CustoID: TIntegerField;
+    sdsParametros_CustoREV_SOMAR_IPI: TStringField;
+    sdsParametros_CustoREV_SOMAR_FRETE: TStringField;
+    sdsParametros_CustoREV_SOMAR_ST: TStringField;
+    sdsParametros_CustoREV_SUB_ICMS: TStringField;
+    sdsParametros_CustoREV_SUB_PISCOFINS: TStringField;
+    sdsParametros_CustoIND_SOMAR_IPI: TStringField;
+    sdsParametros_CustoIND_SOMAR_FRETE: TStringField;
+    sdsParametros_CustoIND_SOMAR_ST: TStringField;
+    sdsParametros_CustoIND_SUB_ICMS: TStringField;
+    sdsParametros_CustoIND_SUB_PISCOFINS: TStringField;
+    sdsParametros_CustoCON_SOMAR_IPI: TStringField;
+    sdsParametros_CustoCON_SOMAR_ST: TStringField;
+    sdsParametros_CustoCON_SOMAR_FRETE: TStringField;
+    sdsParametros_CustoCON_SUB_ICMS: TStringField;
+    sdsParametros_CustoCON_SUB_PISCOFINS: TStringField;
+    sdsParametros_CustoCON_SUB_IPI: TStringField;
+    sdsParametros_CustoIND_SUB_IPI: TStringField;
+    sdsParametros_CustoREV_SUB_IPI: TStringField;
+    cdsParametros_Custo: TClientDataSet;
+    cdsParametros_CustoID: TIntegerField;
+    cdsParametros_CustoREV_SOMAR_IPI: TStringField;
+    cdsParametros_CustoREV_SOMAR_FRETE: TStringField;
+    cdsParametros_CustoREV_SOMAR_ST: TStringField;
+    cdsParametros_CustoREV_SUB_ICMS: TStringField;
+    cdsParametros_CustoREV_SUB_PISCOFINS: TStringField;
+    cdsParametros_CustoIND_SOMAR_IPI: TStringField;
+    cdsParametros_CustoIND_SOMAR_FRETE: TStringField;
+    cdsParametros_CustoIND_SOMAR_ST: TStringField;
+    cdsParametros_CustoIND_SUB_ICMS: TStringField;
+    cdsParametros_CustoIND_SUB_PISCOFINS: TStringField;
+    cdsParametros_CustoCON_SOMAR_IPI: TStringField;
+    cdsParametros_CustoCON_SOMAR_ST: TStringField;
+    cdsParametros_CustoCON_SOMAR_FRETE: TStringField;
+    cdsParametros_CustoCON_SUB_ICMS: TStringField;
+    cdsParametros_CustoCON_SUB_PISCOFINS: TStringField;
+    cdsParametros_CustoCON_SUB_IPI: TStringField;
+    cdsParametros_CustoIND_SUB_IPI: TStringField;
+    cdsParametros_CustoREV_SUB_IPI: TStringField;
+    dsParametros_Custo: TDataSource;
+    dspParametros_Custo: TDataSetProvider;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -1404,7 +1522,10 @@ type
     ctcommand_Fin : String;
     ctcommand_Imp : String;
     ctcommand_OC : String;
+    ctcommand_Est : String;
     ctcommand_Usuario : String;
+    ctcommand_Etiqueta : String;
+    ctcommand_Custo : String;
     vMsgErro: string;
     procedure prc_Gravar;
     procedure prc_Gravar_Geral;
@@ -1423,6 +1544,10 @@ type
     procedure prc_Gravar_Imp;
     procedure prc_Gravar_OC;
     procedure prc_Gravar_Usuario;
+    procedure prc_Gravar_Estoque;
+    procedure prc_Gravar_Servico;
+    procedure prc_Gravar_Etiq;
+    procedure prc_Gravar_Custo;
 
     procedure prc_Consultar;
     procedure prc_Consultar_Geral;
@@ -1441,6 +1566,10 @@ type
     procedure prc_Consultar_Imp;
     procedure prc_Consultar_OC;
     procedure prc_Consultar_Usuario;
+    procedure prc_Consultar_Estoque;
+    procedure prc_Consultar_Servico;
+    procedure prc_Consultar_Etiq;
+    procedure prc_Consultar_Custo;
 
   end;
 
@@ -1473,6 +1602,9 @@ begin
   ctcommand_Imp := sdsParametros_Imp.CommandText;
   ctcommand_OC := sdsParametros_OC.CommandText;
   ctcommand_Usuario := sdsParametros_Usuario.CommandText;
+  ctcommand_Est := sdsParametros_Est.CommandText;
+  ctcommand_Etiqueta := sdsParametros_Etiq.CommandText;
+  ctcommand_Custo := sdsParametros_Custo.CommandText;
 
   cdsLocal_Estoque.Open;
   cdsCFOP.Open;
@@ -1860,6 +1992,90 @@ begin
     exit;
   cdsParametros_Usuario.Post;
   cdsParametros_Usuario.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Estoque;
+begin
+  cdsParametros_Est.Close;
+  sdsParametros_Est.CommandText := ctcommand_Est + ' WHERE ID = 1 ';
+  cdsParametros_Est.Open;
+  if cdsParametros_Est.IsEmpty then
+  begin
+    cdsParametros_Est.Insert;
+    cdsParametros_EstID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Estoque;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Est.Post;
+  cdsParametros_Est.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Servico;
+begin
+  cdsParametros_Ser.Close;
+  sdsParametros_Ser.CommandText := ctCommand_Ser + ' WHERE ID = 1 ';
+  cdsParametros_Ser.Open;
+  if cdsParametros_Ser.IsEmpty then
+  begin
+    cdsParametros_Ser.Insert;
+    cdsParametros_SerID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Servico;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Ser.Post;
+  cdsParametros_Ser.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Etiq;
+begin
+  cdsParametros_Etiq.Close;
+  sdsParametros_Etiq.CommandText := ctcommand_Etiqueta + ' WHERE ID = 1 ';
+  cdsParametros_Etiq.Open;
+  if cdsParametros_Etiq.IsEmpty then
+  begin
+    cdsParametros_Etiq.Insert;
+    cdsParametros_EtiqID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Etiq;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Etiq.Post;
+  cdsParametros_Etiq.ApplyUpdates(0);
+end;
+
+procedure TDMCadParametros.prc_Consultar_Custo;
+begin
+  cdsParametros_Custo.Close;
+  sdsParametros_Custo.CommandText := ctcommand_Custo + ' WHERE ID = 1 ';
+  cdsParametros_Custo.Open;
+  if cdsParametros_Custo.IsEmpty then
+  begin
+    cdsParametros_Custo.Insert;
+    cdsParametros_CustoID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Custo;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Custo.Post;
+  cdsParametros_Custo.ApplyUpdates(0);
 end;
 
 end.

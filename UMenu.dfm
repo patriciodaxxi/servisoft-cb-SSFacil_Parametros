@@ -316,6 +316,26 @@ object fMenu: TfMenu
         Caption = 'Usu'#225'rios'
         OnClick = Usurio1Click
       end
+      object Estoque1: TMenuItem
+        Caption = 'Estoque'
+        OnClick = Estoque1Click
+      end
+      object ServicoContrato1: TMenuItem
+        Caption = 'Servico/Contrato'
+        OnClick = ServicoContrato1Click
+      end
+      object MDFe1: TMenuItem
+        Caption = 'MDFe'
+        OnClick = MDFe1Click
+      end
+      object ConfImpressodeEtiqueta1: TMenuItem
+        Caption = 'Configura Imp Etiqueta'
+        OnClick = ConfImpressodeEtiqueta1Click
+      end
+      object Custo1: TMenuItem
+        Caption = 'Custo'
+        OnClick = Custo1Click
+      end
     end
     object N19: TMenuItem
       Caption = '|'

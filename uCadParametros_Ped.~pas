@@ -113,7 +113,7 @@ type
     Label303: TLabel;
     DBMemo7: TDBMemo;
     TabSheet10: TRzTabSheet;
-    Panel8: TPanel;
+    pnlImpressao: TPanel;
     Label177: TLabel;
     Label206: TLabel;
     Label55: TLabel;
@@ -130,6 +130,13 @@ type
     RxDBComboBox170: TRxDBComboBox;
     RxDBComboBox44: TRxDBComboBox;
     DBCheckBox259: TDBCheckBox;
+    TabSheet1: TRzTabSheet;
+    pnlPedido_Proc: TPanel;
+    DBCheckBox142: TDBCheckBox;
+    DBCheckBox143: TDBCheckBox;
+    DBCheckBox144: TDBCheckBox;
+    DBCheckBox145: TDBCheckBox;
+    DBCheckBox147: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
@@ -168,6 +175,8 @@ begin
     exit;
   end;
   pnlGeral.Enabled := not (pnlGeral.Enabled);
+  pnlImpressao.Enabled := not (pnlImpressao.Enabled);
+  pnlPedido_Proc.Enabled := not (pnlPedido_Proc.Enabled);
   btnConfirmar.Enabled := not (btnConfirmar.Enabled);
   btnAlterar.Enabled := not (btnAlterar.Enabled);
 end;
@@ -181,6 +190,9 @@ begin
   btnAlterar.Enabled := False;
   btnConfirmar.Enabled := True;
   pnlGeral.Enabled := True;
+  pnlImpressao.Enabled := True;
+  pnlPedido_Proc.Enabled := True;
+
 end;
 
 procedure TfrmParametros_Ped.btnCancelarClick(Sender: TObject);
@@ -192,9 +204,11 @@ begin
   fDMCadParametros.cdsParametros.CancelUpdates;
   if (fDMCadParametros.cdsParametros_Ped.Active) then
     fDMCadParametros.cdsParametros_Ped.CancelUpdates;
-  pnlGeral.Enabled         := not(pnlGeral.Enabled);
-  btnConfirmar.Enabled     := not(btnConfirmar.Enabled);
-  btnAlterar.Enabled       := not(btnAlterar.Enabled);
+  pnlGeral.Enabled       := not(pnlGeral.Enabled);
+  pnlImpressao.Enabled   := not (pnlImpressao.Enabled);
+  pnlPedido_Proc.Enabled := not (pnlPedido_Proc.Enabled);
+  btnConfirmar.Enabled   := not(btnConfirmar.Enabled);
+  btnAlterar.Enabled     := not(btnAlterar.Enabled);
 end;
 
 procedure TfrmParametros_Ped.btnConfirmarClick(Sender: TObject);

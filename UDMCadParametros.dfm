@@ -3268,21 +3268,21 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 500
-    Top = 369
+    Left = 754
+    Top = 462
   end
   object dspLocal_Estoque: TDataSetProvider
     DataSet = sdsLocal_Estoque
-    Left = 535
-    Top = 369
+    Left = 789
+    Top = 462
   end
   object cdsLocal_Estoque: TClientDataSet
     Aggregates = <>
     IndexFieldNames = 'NOME'
     Params = <>
     ProviderName = 'dspLocal_Estoque'
-    Left = 575
-    Top = 369
+    Left = 829
+    Top = 462
     object cdsLocal_EstoqueID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -3307,8 +3307,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsLocal_Estoque: TDataSource
     DataSet = cdsLocal_Estoque
-    Left = 615
-    Top = 369
+    Left = 869
+    Top = 462
   end
   object sdsParametros_NTE: TSQLDataSet
     NoMetadata = True
@@ -4035,12 +4035,12 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 744
-    Top = 205
+    Top = 157
   end
   object dspOperacao_Nota: TDataSetProvider
     DataSet = sdsOperacao_Nota
     Left = 776
-    Top = 205
+    Top = 157
   end
   object cdsOperacao_Nota: TClientDataSet
     Aggregates = <>
@@ -4048,7 +4048,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspOperacao_Nota'
     Left = 816
-    Top = 205
+    Top = 157
     object cdsOperacao_NotaID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -4066,7 +4066,7 @@ object DMCadParametros: TDMCadParametros
   object dsOperacao_Nota: TDataSource
     DataSet = cdsOperacao_Nota
     Left = 856
-    Top = 205
+    Top = 157
   end
   object sdsParametros_Ser: TSQLDataSet
     NoMetadata = True
@@ -4378,21 +4378,21 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 736
-    Top = 398
+    Left = 744
+    Top = 262
   end
   object dspNCM: TDataSetProvider
     DataSet = sdsNCM
-    Left = 776
-    Top = 398
+    Left = 784
+    Top = 262
   end
   object cdsNCM: TClientDataSet
     Aggregates = <>
     IndexFieldNames = 'NOME'
     Params = <>
     ProviderName = 'dspNCM'
-    Left = 816
-    Top = 398
+    Left = 824
+    Top = 262
     object cdsNCMID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -4416,8 +4416,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsNCM: TDataSource
     DataSet = cdsNCM
-    Left = 856
-    Top = 398
+    Left = 864
+    Top = 262
   end
   object sdsPosicao: TSQLDataSet
     NoMetadata = True
@@ -4426,21 +4426,21 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 512
-    Top = 454
+    Left = 760
+    Top = 510
   end
   object dspPosicao: TDataSetProvider
     DataSet = sdsPosicao
-    Left = 552
-    Top = 454
+    Left = 800
+    Top = 510
   end
   object cdsPosicao: TClientDataSet
     Aggregates = <>
     IndexFieldNames = 'NOME'
     Params = <>
     ProviderName = 'dspPosicao'
-    Left = 592
-    Top = 454
+    Left = 840
+    Top = 510
     object cdsPosicaoID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -4452,8 +4452,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsPosicao: TDataSource
     DataSet = cdsPosicao
-    Left = 632
-    Top = 454
+    Left = 880
+    Top = 510
   end
   object sdsParametros_Ped: TSQLDataSet
     NoMetadata = True
@@ -5075,21 +5075,21 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 704
-    Top = 328
+    Left = 744
+    Top = 208
   end
   object dspCliente: TDataSetProvider
     DataSet = sdsCliente
-    Left = 736
-    Top = 328
+    Left = 776
+    Top = 208
   end
   object cdsCliente: TClientDataSet
     Aggregates = <>
     IndexFieldNames = 'NOME'
     Params = <>
     ProviderName = 'dspCliente'
-    Left = 776
-    Top = 328
+    Left = 816
+    Top = 208
     object cdsClienteCODIGO: TIntegerField
       FieldName = 'CODIGO'
       Required = True
@@ -5105,8 +5105,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsCliente: TDataSource
     DataSet = cdsCliente
-    Left = 816
-    Top = 328
+    Left = 856
+    Top = 208
   end
   object sdsContas: TSQLDataSet
     NoMetadata = True
@@ -5116,12 +5116,12 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 968
-    Top = 206
+    Top = 166
   end
   object dspContas: TDataSetProvider
     DataSet = sdsContas
     Left = 1008
-    Top = 206
+    Top = 166
   end
   object cdsContas: TClientDataSet
     Aggregates = <>
@@ -5129,7 +5129,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspContas'
     Left = 1048
-    Top = 206
+    Top = 166
     object cdsContasID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -5141,8 +5141,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsContas: TDataSource
     DataSet = cdsContas
-    Left = 1096
-    Top = 206
+    Left = 1088
+    Top = 166
   end
   object sdsTipoCobranca: TSQLDataSet
     NoMetadata = True
@@ -5152,12 +5152,12 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 968
-    Top = 143
+    Top = 103
   end
   object dspTipoCobranca: TDataSetProvider
     DataSet = sdsTipoCobranca
     Left = 1008
-    Top = 143
+    Top = 103
   end
   object cdsTipoCobranca: TClientDataSet
     Aggregates = <>
@@ -5165,7 +5165,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspTipoCobranca'
     Left = 1048
-    Top = 143
+    Top = 103
     object cdsTipoCobrancaID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -5177,8 +5177,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsTipoCobranca: TDataSource
     DataSet = cdsTipoCobranca
-    Left = 1096
-    Top = 143
+    Left = 1088
+    Top = 103
   end
   object sdsParametros_Lote: TSQLDataSet
     NoMetadata = True
@@ -5425,12 +5425,12 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 752
-    Top = 582
+    Top = 414
   end
   object dspUsuarios: TDataSetProvider
     DataSet = sdsUsuarios
     Left = 792
-    Top = 582
+    Top = 414
   end
   object cdsUsuarios: TClientDataSet
     Aggregates = <>
@@ -5438,7 +5438,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspUsuarios'
     Left = 832
-    Top = 582
+    Top = 414
     object cdsUsuariosUCLOGIN: TStringField
       FieldName = 'UCLOGIN'
       Size = 30
@@ -5447,7 +5447,7 @@ object DMCadParametros: TDMCadParametros
   object dsUsuarios: TDataSource
     DataSet = cdsUsuarios
     Left = 872
-    Top = 582
+    Top = 414
   end
   object sdsAtelier: TSQLDataSet
     NoMetadata = True
@@ -5458,21 +5458,21 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 760
-    Top = 533
+    Left = 752
+    Top = 365
   end
   object dspAtelier: TDataSetProvider
     DataSet = sdsAtelier
-    Left = 792
-    Top = 533
+    Left = 784
+    Top = 365
   end
   object cdsAtelier: TClientDataSet
     Aggregates = <>
     IndexFieldNames = 'NOME'
     Params = <>
     ProviderName = 'dspAtelier'
-    Left = 832
-    Top = 533
+    Left = 824
+    Top = 365
     object cdsAtelierCODIGO: TIntegerField
       FieldName = 'CODIGO'
       Required = True
@@ -5488,8 +5488,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsAtelier: TDataSource
     DataSet = cdsAtelier
-    Left = 872
-    Top = 533
+    Left = 864
+    Top = 365
   end
   object sdsProcesso: TSQLDataSet
     NoMetadata = True
@@ -5498,21 +5498,21 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 960
-    Top = 441
+    Left = 976
+    Top = 289
   end
   object dspProcesso: TDataSetProvider
     DataSet = sdsProcesso
-    Left = 995
-    Top = 441
+    Left = 1011
+    Top = 289
   end
   object cdsProcesso: TClientDataSet
     Aggregates = <>
     IndexFieldNames = 'NOME'
     Params = <>
     ProviderName = 'dspProcesso'
-    Left = 1035
-    Top = 441
+    Left = 1051
+    Top = 289
     object cdsProcessoID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -5565,8 +5565,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsProcesso: TDataSource
     DataSet = cdsProcesso
-    Left = 1075
-    Top = 441
+    Left = 1091
+    Top = 289
   end
   object sdsParametros_Cta_Orc: TSQLDataSet
     NoMetadata = True
@@ -5667,12 +5667,12 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 977
-    Top = 272
+    Top = 232
   end
   object dspContaOrcamento: TDataSetProvider
     DataSet = sdsContaOrcamento
     Left = 1009
-    Top = 272
+    Top = 232
   end
   object cdsContaOrcamento: TClientDataSet
     Aggregates = <>
@@ -5680,7 +5680,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspContaOrcamento'
     Left = 1041
-    Top = 272
+    Top = 232
     object cdsContaOrcamentoID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -5707,7 +5707,7 @@ object DMCadParametros: TDMCadParametros
   object dsContaOrcamento: TDataSource
     DataSet = cdsContaOrcamento
     Left = 1081
-    Top = 272
+    Top = 232
   end
   object sdsParametros_Com: TSQLDataSet
     NoMetadata = True
@@ -6160,21 +6160,21 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 728
-    Top = 462
+    Left = 744
+    Top = 310
   end
   object dspTab_Preco: TDataSetProvider
     DataSet = sdsTab_Preco
-    Left = 768
-    Top = 462
+    Left = 784
+    Top = 310
   end
   object cdsTab_Preco: TClientDataSet
     Aggregates = <>
     IndexFieldNames = 'NOME'
     Params = <>
     ProviderName = 'dspTab_Preco'
-    Left = 808
-    Top = 462
+    Left = 824
+    Top = 310
     object cdsTab_PrecoID: TIntegerField
       FieldName = 'ID'
       Required = True
@@ -6205,8 +6205,8 @@ object DMCadParametros: TDMCadParametros
   end
   object dsTab_Preco: TDataSource
     DataSet = cdsTab_Preco
-    Left = 848
-    Top = 462
+    Left = 864
+    Top = 310
   end
   object sdsParametros_Imp: TSQLDataSet
     NoMetadata = True
@@ -6674,5 +6674,570 @@ object DMCadParametros: TDMCadParametros
     DataSet = sdsParametros_Usuario
     Left = 370
     Top = 59
+  end
+  object sdsParametros_Est: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM PARAMETROS_EST'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 328
+    Top = 368
+    object sdsParametros_EstID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object sdsParametros_EstUSA_RESERVA: TStringField
+      FieldName = 'USA_RESERVA'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstGERAR_LOTE_AUT: TStringField
+      FieldName = 'GERAR_LOTE_AUT'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstID_LOCAL_ESTOQUE_SEMI: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_SEMI'
+    end
+    object sdsParametros_EstID_LOCAL_ESTOQUE_MAT: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_MAT'
+    end
+    object sdsParametros_EstID_LOCAL_ESTOQUE_MAT_CONS: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_MAT_CONS'
+    end
+    object sdsParametros_EstGERAR_LOTE_AUT_CONSUMO: TStringField
+      FieldName = 'GERAR_LOTE_AUT_CONSUMO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstID_LOCAL_ESTOQUE_ECOM: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_ECOM'
+    end
+    object sdsParametros_EstEND_SALVAR_ARQ: TStringField
+      FieldName = 'END_SALVAR_ARQ'
+      Size = 200
+    end
+    object sdsParametros_EstNOME_ARQ: TStringField
+      FieldName = 'NOME_ARQ'
+      Size = 150
+    end
+    object sdsParametros_EstMOSTRAR_PCUSTO_MOV: TStringField
+      FieldName = 'MOSTRAR_PCUSTO_MOV'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstUSA_QTD_INI: TStringField
+      FieldName = 'USA_QTD_INI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstMOSTRAR_PCUSTO_TOTAL_MOV: TStringField
+      FieldName = 'MOSTRAR_PCUSTO_TOTAL_MOV'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstMARCAR_BAIXA_PEDIDO: TStringField
+      FieldName = 'MARCAR_BAIXA_PEDIDO'
+      Size = 1
+    end
+    object sdsParametros_EstUSA_RESERVA_PROD: TStringField
+      FieldName = 'USA_RESERVA_PROD'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstUSA_LOCALIZACAO_LOTE: TStringField
+      FieldName = 'USA_LOCALIZACAO_LOTE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstCONTROLA_DOC_CLIFORN: TStringField
+      FieldName = 'CONTROLA_DOC_CLIFORN'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstVERIFICA_ESTOQUE_ENT_PEDIDO: TStringField
+      FieldName = 'VERIFICA_ESTOQUE_ENT_PEDIDO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstUSAR_FILIAL_GERAR_RES: TStringField
+      FieldName = 'USAR_FILIAL_GERAR_RES'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstREQ_ENTREGUE_POR: TStringField
+      FieldName = 'REQ_ENTREGUE_POR'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EstREQ_NUM_LOTE: TStringField
+      FieldName = 'REQ_NUM_LOTE'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object cdsParametros_Est: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspParametros_Est'
+    Left = 400
+    Top = 367
+    object cdsParametros_EstID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsParametros_EstUSA_RESERVA: TStringField
+      FieldName = 'USA_RESERVA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstGERAR_LOTE_AUT: TStringField
+      FieldName = 'GERAR_LOTE_AUT'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstID_LOCAL_ESTOQUE_SEMI: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_SEMI'
+    end
+    object cdsParametros_EstID_LOCAL_ESTOQUE_MAT: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_MAT'
+    end
+    object cdsParametros_EstID_LOCAL_ESTOQUE_MAT_CONS: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_MAT_CONS'
+    end
+    object cdsParametros_EstGERAR_LOTE_AUT_CONSUMO: TStringField
+      FieldName = 'GERAR_LOTE_AUT_CONSUMO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstID_LOCAL_ESTOQUE_ECOM: TIntegerField
+      FieldName = 'ID_LOCAL_ESTOQUE_ECOM'
+    end
+    object cdsParametros_EstEND_SALVAR_ARQ: TStringField
+      FieldName = 'END_SALVAR_ARQ'
+      Size = 200
+    end
+    object cdsParametros_EstNOME_ARQ: TStringField
+      FieldName = 'NOME_ARQ'
+      Size = 150
+    end
+    object cdsParametros_EstMOSTRAR_PCUSTO_MOV: TStringField
+      FieldName = 'MOSTRAR_PCUSTO_MOV'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstUSA_QTD_INI: TStringField
+      FieldName = 'USA_QTD_INI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstMOSTRAR_PCUSTO_TOTAL_MOV: TStringField
+      FieldName = 'MOSTRAR_PCUSTO_TOTAL_MOV'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstMARCAR_BAIXA_PEDIDO: TStringField
+      FieldName = 'MARCAR_BAIXA_PEDIDO'
+      Size = 1
+    end
+    object cdsParametros_EstUSA_RESERVA_PROD: TStringField
+      FieldName = 'USA_RESERVA_PROD'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstUSA_LOCALIZACAO_LOTE: TStringField
+      FieldName = 'USA_LOCALIZACAO_LOTE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstCONTROLA_DOC_CLIFORN: TStringField
+      FieldName = 'CONTROLA_DOC_CLIFORN'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstVERIFICA_ESTOQUE_ENT_PEDIDO: TStringField
+      FieldName = 'VERIFICA_ESTOQUE_ENT_PEDIDO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstUSAR_FILIAL_GERAR_RES: TStringField
+      FieldName = 'USAR_FILIAL_GERAR_RES'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstREQ_ENTREGUE_POR: TStringField
+      FieldName = 'REQ_ENTREGUE_POR'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstREQ_NUM_LOTE: TStringField
+      FieldName = 'REQ_NUM_LOTE'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsParametros_Est: TDataSource
+    DataSet = cdsParametros_Est
+    Left = 432
+    Top = 367
+  end
+  object dspParametros_Est: TDataSetProvider
+    DataSet = sdsParametros_Est
+    Left = 365
+    Top = 368
+  end
+  object sdsParametros_Etiq: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM PARAMETROS_ETIQ'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 328
+    Top = 424
+    object sdsParametros_EtiqID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object sdsParametros_EtiqOFFSET_BORDA: TIntegerField
+      FieldName = 'OFFSET_BORDA'
+    end
+    object sdsParametros_EtiqBACKFEED: TIntegerField
+      FieldName = 'BACKFEED'
+    end
+    object sdsParametros_EtiqTEMPERATURA: TIntegerField
+      FieldName = 'TEMPERATURA'
+    end
+    object sdsParametros_EtiqVELOCIDADE: TStringField
+      FieldName = 'VELOCIDADE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EtiqENDERECO: TStringField
+      FieldName = 'ENDERECO'
+      Size = 200
+    end
+    object sdsParametros_EtiqTIPO_CLIENTE: TStringField
+      FieldName = 'TIPO_CLIENTE'
+      Size = 10
+    end
+    object sdsParametros_EtiqTIPO_IMPRESSORA: TStringField
+      FieldName = 'TIPO_IMPRESSORA'
+      Size = 10
+    end
+    object sdsParametros_EtiqTIPO_IMP_ETIQ_INDIV: TStringField
+      FieldName = 'TIPO_IMP_ETIQ_INDIV'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EtiqMARGEM: TSmallintField
+      FieldName = 'MARGEM'
+    end
+    object sdsParametros_EtiqDESLOCAMENTO_LATERAL: TStringField
+      FieldName = 'DESLOCAMENTO_LATERAL'
+      Size = 2
+    end
+    object sdsParametros_EtiqETIQ_TAG_NOVO_LAYOUT: TStringField
+      FieldName = 'ETIQ_TAG_NOVO_LAYOUT'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_EtiqNAO_IMP_MSG_TROCA: TStringField
+      FieldName = 'NAO_IMP_MSG_TROCA'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object cdsParametros_Etiq: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspParametros_Etiq'
+    Left = 408
+    Top = 424
+    object cdsParametros_EtiqID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsParametros_EtiqOFFSET_BORDA: TIntegerField
+      FieldName = 'OFFSET_BORDA'
+    end
+    object cdsParametros_EtiqBACKFEED: TIntegerField
+      FieldName = 'BACKFEED'
+    end
+    object cdsParametros_EtiqTEMPERATURA: TIntegerField
+      FieldName = 'TEMPERATURA'
+    end
+    object cdsParametros_EtiqVELOCIDADE: TStringField
+      FieldName = 'VELOCIDADE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EtiqENDERECO: TStringField
+      FieldName = 'ENDERECO'
+      Size = 200
+    end
+    object cdsParametros_EtiqTIPO_CLIENTE: TStringField
+      FieldName = 'TIPO_CLIENTE'
+      Size = 10
+    end
+    object cdsParametros_EtiqTIPO_IMPRESSORA: TStringField
+      FieldName = 'TIPO_IMPRESSORA'
+      Size = 10
+    end
+    object cdsParametros_EtiqTIPO_IMP_ETIQ_INDIV: TStringField
+      FieldName = 'TIPO_IMP_ETIQ_INDIV'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EtiqMARGEM: TSmallintField
+      FieldName = 'MARGEM'
+    end
+    object cdsParametros_EtiqDESLOCAMENTO_LATERAL: TStringField
+      FieldName = 'DESLOCAMENTO_LATERAL'
+      Size = 2
+    end
+    object cdsParametros_EtiqETIQ_TAG_NOVO_LAYOUT: TStringField
+      FieldName = 'ETIQ_TAG_NOVO_LAYOUT'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EtiqNAO_IMP_MSG_TROCA: TStringField
+      FieldName = 'NAO_IMP_MSG_TROCA'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsParametros_Etiq: TDataSource
+    DataSet = cdsParametros_Etiq
+    Left = 440
+    Top = 424
+  end
+  object dspParametros_Etiq: TDataSetProvider
+    DataSet = sdsParametros_Etiq
+    Left = 368
+    Top = 424
+  end
+  object sdsParametros_Custo: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM PARAMETROS_CUSTO'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 328
+    Top = 480
+    object sdsParametros_CustoID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object sdsParametros_CustoREV_SOMAR_IPI: TStringField
+      FieldName = 'REV_SOMAR_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoREV_SOMAR_FRETE: TStringField
+      FieldName = 'REV_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoREV_SOMAR_ST: TStringField
+      FieldName = 'REV_SOMAR_ST'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoREV_SUB_ICMS: TStringField
+      FieldName = 'REV_SUB_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoREV_SUB_PISCOFINS: TStringField
+      FieldName = 'REV_SUB_PISCOFINS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoIND_SOMAR_IPI: TStringField
+      FieldName = 'IND_SOMAR_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoIND_SOMAR_FRETE: TStringField
+      FieldName = 'IND_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoIND_SOMAR_ST: TStringField
+      FieldName = 'IND_SOMAR_ST'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoIND_SUB_ICMS: TStringField
+      FieldName = 'IND_SUB_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoIND_SUB_PISCOFINS: TStringField
+      FieldName = 'IND_SUB_PISCOFINS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoCON_SOMAR_IPI: TStringField
+      FieldName = 'CON_SOMAR_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoCON_SOMAR_ST: TStringField
+      FieldName = 'CON_SOMAR_ST'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoCON_SOMAR_FRETE: TStringField
+      FieldName = 'CON_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoCON_SUB_ICMS: TStringField
+      FieldName = 'CON_SUB_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoCON_SUB_PISCOFINS: TStringField
+      FieldName = 'CON_SUB_PISCOFINS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoCON_SUB_IPI: TStringField
+      FieldName = 'CON_SUB_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoIND_SUB_IPI: TStringField
+      FieldName = 'IND_SUB_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_CustoREV_SUB_IPI: TStringField
+      FieldName = 'REV_SUB_IPI'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object cdsParametros_Custo: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspParametros_Custo'
+    Left = 408
+    Top = 480
+    object cdsParametros_CustoID: TIntegerField
+      FieldName = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsParametros_CustoREV_SOMAR_IPI: TStringField
+      FieldName = 'REV_SOMAR_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoREV_SOMAR_FRETE: TStringField
+      FieldName = 'REV_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoREV_SOMAR_ST: TStringField
+      FieldName = 'REV_SOMAR_ST'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoREV_SUB_ICMS: TStringField
+      FieldName = 'REV_SUB_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoREV_SUB_PISCOFINS: TStringField
+      FieldName = 'REV_SUB_PISCOFINS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoIND_SOMAR_IPI: TStringField
+      FieldName = 'IND_SOMAR_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoIND_SOMAR_FRETE: TStringField
+      FieldName = 'IND_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoIND_SOMAR_ST: TStringField
+      FieldName = 'IND_SOMAR_ST'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoIND_SUB_ICMS: TStringField
+      FieldName = 'IND_SUB_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoIND_SUB_PISCOFINS: TStringField
+      FieldName = 'IND_SUB_PISCOFINS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoCON_SOMAR_IPI: TStringField
+      FieldName = 'CON_SOMAR_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoCON_SOMAR_ST: TStringField
+      FieldName = 'CON_SOMAR_ST'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoCON_SOMAR_FRETE: TStringField
+      FieldName = 'CON_SOMAR_FRETE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoCON_SUB_ICMS: TStringField
+      FieldName = 'CON_SUB_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoCON_SUB_PISCOFINS: TStringField
+      FieldName = 'CON_SUB_PISCOFINS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoCON_SUB_IPI: TStringField
+      FieldName = 'CON_SUB_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoIND_SUB_IPI: TStringField
+      FieldName = 'IND_SUB_IPI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_CustoREV_SUB_IPI: TStringField
+      FieldName = 'REV_SUB_IPI'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsParametros_Custo: TDataSource
+    DataSet = cdsParametros_Custo
+    Left = 440
+    Top = 480
+  end
+  object dspParametros_Custo: TDataSetProvider
+    DataSet = sdsParametros_Custo
+    Left = 368
+    Top = 480
   end
 end

@@ -27,13 +27,15 @@ uses
   uCadParametros_Fin in 'uCadParametros_Fin.pas' {frmCadParametros_Fin},
   uCadParametros_Imp in 'uCadParametros_Imp.pas' {frmCadParametrosImp},
   uCadParametros_OC in 'uCadParametros_OC.pas' {frmCadParametros_OC},
-  uCadParametros_Usuario in 'uCadParametros_Usuario.pas' {frmCadParametros_Usuario};
+  uCadParametros_Usuario in 'uCadParametros_Usuario.pas' {frmCadParametros_Usuario},
+  uCadParametros_Estoque in 'uCadParametros_Estoque.pas' {frmCadParametros_Estoque},
+  uCadParametros_Ser in 'uCadParametros_Ser.pas' {frmCadParametros_Ser};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.Title := 'Entrada/Saída Produtos';
+  Application.Title := 'Parâmetros';
   Application.CreateForm(TdmDatabase, dmDatabase);
   Application.CreateForm(TfMenu, fMenu);
   Application.Run;

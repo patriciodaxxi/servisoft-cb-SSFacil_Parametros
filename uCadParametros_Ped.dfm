@@ -1,6 +1,6 @@
 object frmParametros_Ped: TfrmParametros_Ped
-  Left = 126
-  Top = 59
+  Left = 329
+  Top = 34
   Width = 1264
   Height = 659
   Caption = 'frmParametros_Ped'
@@ -294,7 +294,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#195'O')
-          TabOrder = 0
+          TabOrder = 1
           Values.Strings = (
             'S'
             'N')
@@ -312,7 +312,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#195'O')
-          TabOrder = 1
+          TabOrder = 0
           Values.Strings = (
             'S'
             'N')
@@ -435,7 +435,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#195'O')
-          TabOrder = 8
+          TabOrder = 69
           Values.Strings = (
             'S'
             'N')
@@ -453,7 +453,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#194'O')
-          TabOrder = 9
+          TabOrder = 8
           Values.Strings = (
             'S'
             'N')
@@ -471,7 +471,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#194'O')
-          TabOrder = 10
+          TabOrder = 9
           Values.Strings = (
             'S'
             'N')
@@ -489,7 +489,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'Pendente'
             'Ambos')
-          TabOrder = 11
+          TabOrder = 17
           Values.Strings = (
             'P'
             'A')
@@ -507,7 +507,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#194'O')
-          TabOrder = 12
+          TabOrder = 10
           Values.Strings = (
             'S'
             'N')
@@ -520,7 +520,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           DataField = 'SENHA_PEDIDO'
           DataSource = DMCadParametros.dsParametros
           PasswordChar = '*'
-          TabOrder = 13
+          TabOrder = 55
         end
         object RxDBComboBox92: TRxDBComboBox
           Left = 310
@@ -535,7 +535,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#194'O')
-          TabOrder = 14
+          TabOrder = 11
           Values.Strings = (
             'S'
             'N')
@@ -551,7 +551,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           LookupField = 'ID'
           LookupDisplay = 'NOME'
           LookupSource = DMCadParametros.dsOperacao_Nota
-          TabOrder = 15
+          TabOrder = 12
         end
         object RxDBComboBox127: TRxDBComboBox
           Left = 310
@@ -567,7 +567,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             'No Pedido'
             'No Item'
             'N'#227'o Mostrar')
-          TabOrder = 16
+          TabOrder = 13
           Values.Strings = (
             'P'
             'I'
@@ -581,7 +581,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Aprova'#231#227'o de Pedido'
           DataField = 'USA_APROVACAO_PED'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 17
+          TabOrder = 22
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -593,7 +593,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa vlr. adiantamento no pedido'
           DataField = 'USA_ADIANTAMENTO_PEDIDO'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 18
+          TabOrder = 23
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -608,7 +608,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           LookupField = 'ID'
           LookupDisplay = 'NOME'
           LookupSource = DMCadParametros.dsTipoCobranca
-          TabOrder = 19
+          TabOrder = 15
         end
         object RxDBLookupCombo23: TRxDBLookupCombo
           Left = 310
@@ -621,7 +621,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           LookupField = 'ID'
           LookupDisplay = 'NOME'
           LookupSource = DMCadParametros.dsContas
-          TabOrder = 20
+          TabOrder = 14
         end
         object DBCheckBox46: TDBCheckBox
           Left = 640
@@ -631,7 +631,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Obs. para copiar na NFe'
           DataField = 'USA_OBS_PEDIDO_NOTA'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 21
+          TabOrder = 24
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -643,7 +643,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Faturar Somente Pedido Integral'
           DataField = 'FATURAR_PED_INTEGRAL'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 22
+          TabOrder = 25
           ValueChecked = 'S'
           ValueUnchecked = 'N'
           Visible = False
@@ -656,7 +656,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa data de expedi'#231#227'o'
           DataField = 'USA_DTEXPEDICAO'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 23
+          TabOrder = 26
           ValueChecked = 'S'
           ValueUnchecked = 'N'
           Visible = False
@@ -669,7 +669,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'N'#250'mero do Pedido por Filial'
           DataField = 'USA_NUM_PEDIDO_POR_FILIAL'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 24
+          TabOrder = 27
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -681,7 +681,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'S'#243' mostrar na c'#243'pia para a Nota a filial correspondente'
           DataField = 'CONTROLAR_FILIAL_NA_COPIA_NOTA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 25
+          TabOrder = 28
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -693,7 +693,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa a Op'#231#227'o de copiar pedido'
           DataField = 'USA_COPIA_PEDIDO'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 26
+          TabOrder = 20
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -705,7 +705,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa a Op'#231#227'o de copiar o item do pedido'
           DataField = 'USA_COPIA_PEDIDO_ITEM'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 27
+          TabOrder = 21
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -720,7 +720,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           LookupField = 'ID'
           LookupDisplay = 'NOME'
           LookupSource = DMCadParametros.dsCondPgto
-          TabOrder = 28
+          TabOrder = 16
         end
         object DBCheckBox55: TDBCheckBox
           Left = 640
@@ -932,7 +932,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             'N'#227'o'
             'Por Pedido'
             'Por Item')
-          TabOrder = 45
+          TabOrder = 18
           Values.Strings = (
             'N'
             'P'
@@ -945,7 +945,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Height = 21
           DataField = 'DESCRICAO_PHP'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 46
+          TabOrder = 19
         end
         object DBCheckBox149: TDBCheckBox
           Left = 640
@@ -955,7 +955,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Mostrar a data de recebimento'
           DataField = 'MOSTRAR_DT_REC'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 47
+          TabOrder = 45
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -967,7 +967,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa a op'#231#227'o de copiar OS'
           DataField = 'USAR_COPIA_OS'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 48
+          TabOrder = 46
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -979,7 +979,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Envia SMS'
           DataField = 'ENVIA_SMS'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 49
+          TabOrder = 47
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -991,7 +991,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa a Unidade de Venda (converte a unidade do produto)'
           DataField = 'USA_UNIDADE_VENDA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 50
+          TabOrder = 48
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1003,7 +1003,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Mostrar o fone'
           DataField = 'MOSTRAR_FONE'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 51
+          TabOrder = 56
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1015,7 +1015,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Mostrar Grupo Pessoa'
           DataField = 'MOSTRAR_GRUPO_PESSOA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 52
+          TabOrder = 57
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1027,7 +1027,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa o campo OBS da Etiqueta'
           DataField = 'USA_OBS_ETIQUETA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 53
+          TabOrder = 49
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1039,7 +1039,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Pedido Loja'
           DataField = 'PEDIDO_LOJA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 54
+          TabOrder = 58
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1051,7 +1051,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa NFeConfig para enviar o email dos pedidos conferidos'
           DataField = 'USA_EMAIL_NFECONFIG_CONF'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 55
+          TabOrder = 59
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1063,7 +1063,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Confer'#234'ncia Financeiro'
           DataField = 'USA_FINANCEIRO_CONF'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 56
+          TabOrder = 62
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1075,7 +1075,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Retirada no Pedido'
           DataField = 'USA_RETIRADA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 57
+          TabOrder = 63
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1087,7 +1087,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Concatena Produto/Cor/Tam'
           DataField = 'CONCATENA_PROD_COR_TAM'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 58
+          TabOrder = 64
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1099,7 +1099,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Copiar o valor do frete do pedido para a nota'
           DataField = 'COPIAR_VLR_FRETE_PED'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 59
+          TabOrder = 65
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1111,7 +1111,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Mostrar a opera'#231#227'o autom'#225'tica no pedido'
           DataField = 'USA_OPERACAO_AUT'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 60
+          TabOrder = 66
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1135,7 +1135,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Permite alterar o Nome do Produto na dig. do Pedido'
           DataField = 'PERMITE_ALT_NOMEPROD'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 62
+          TabOrder = 50
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1147,7 +1147,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Aceita Item sem Pre'#231'o'
           DataField = 'ACEITA_SEM_PRECO'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 63
+          TabOrder = 60
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1159,7 +1159,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Uso da data de entrega obrigat'#243'rio'
           DataField = 'OBRIGA_USO_DTENTREGA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 64
+          TabOrder = 68
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1171,7 +1171,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Data de Validade Calend'#225'rio (Or'#231')'
           DataField = 'USA_DTVALIDADE'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 65
+          TabOrder = 67
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1183,7 +1183,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Informar a Tabela de Pre'#231'o no Pedido'
           DataField = 'USA_TAB_PRECO'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 66
+          TabOrder = 51
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1195,7 +1195,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa N'#250'mero do Pedido por Representante'
           DataField = 'USA_NUM_PEDIDO_POR_VEND'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 67
+          TabOrder = 52
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1207,7 +1207,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Amostra'
           DataField = 'USA_AMOSTRA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 68
+          TabOrder = 53
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1219,7 +1219,7 @@ object frmParametros_Ped: TfrmParametros_Ped
           Caption = 'Usa Caixinha (Informar a Caixinha nos itens do Pedido)'
           DataField = 'USA_CAIXINHA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 69
+          TabOrder = 54
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1245,7 +1245,7 @@ object frmParametros_Ped: TfrmParametros_Ped
       end
       object TabSheet10: TRzTabSheet
         Caption = 'Pedido Impress'#227'o'
-        object Panel8: TPanel
+        object pnlImpressao: TPanel
           Left = 0
           Top = 0
           Width = 1242
@@ -1346,7 +1346,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             Items.Strings = (
               'Por Item Original'
               'Por Produto/OS/Combina'#231#227'o/Carimbo/Dt.Entrega')
-            TabOrder = 4
+            TabOrder = 9
             Values.Strings = (
               'I'
               'P')
@@ -1364,7 +1364,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             Items.Strings = (
               'Refer'#234'ncia'
               'ID')
-            TabOrder = 5
+            TabOrder = 10
             Values.Strings = (
               'R'
               'C')
@@ -1377,7 +1377,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             Caption = 'Controlar se o R'#243'tulo j'#225' foi impresso'
             DataField = 'CONTROLAR_ROT_IMPRESSO'
             DataSource = DMCadParametros.dsParametros_Ped
-            TabOrder = 6
+            TabOrder = 4
             ValueChecked = 'S'
             ValueUnchecked = 'N'
           end
@@ -1389,7 +1389,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             Caption = 'Or'#231'amento: Imprimir o Vlr. IPI depois do Vlr. Unit'#225'rio'
             DataField = 'IMP_IPI_DEPOIS_VLR'
             DataSource = DMCadParametros.dsParametros_Ped
-            TabOrder = 7
+            TabOrder = 5
             ValueChecked = 'S'
             ValueUnchecked = 'N'
           end
@@ -1401,7 +1401,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             Caption = 'Imprime um resumo por unidade, nas consultas de Pedidos'
             DataField = 'IMP_RESUMO_UNID'
             DataSource = DMCadParametros.dsParametros_Ped
-            TabOrder = 8
+            TabOrder = 6
             ValueChecked = 'S'
             ValueUnchecked = 'N'
           end
@@ -1418,7 +1418,7 @@ object frmParametros_Ped: TfrmParametros_Ped
             Items.Strings = (
               'Item'
               'Refer'#234'ncia')
-            TabOrder = 9
+            TabOrder = 11
             Values.Strings = (
               'I'
               'R')
@@ -1438,7 +1438,7 @@ object frmParametros_Ped: TfrmParametros_Ped
               'Personalizado'
               'Personalizado 2'
               'Venda Sucata 2')
-            TabOrder = 10
+            TabOrder = 8
             Values.Strings = (
               'PD'
               'PE'
@@ -1453,7 +1453,81 @@ object frmParametros_Ped: TfrmParametros_Ped
             Caption = 'Imprimir os Materiais (conforme consumo)'
             DataField = 'IMP_MATERIAL'
             DataSource = DMCadParametros.dsParametros_Ped
-            TabOrder = 11
+            TabOrder = 7
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
+          end
+        end
+      end
+      object TabSheet1: TRzTabSheet
+        Caption = 'Pedido Processo Email'
+        object pnlPedido_Proc: TPanel
+          Left = 0
+          Top = 0
+          Width = 1242
+          Height = 560
+          Align = alClient
+          Enabled = False
+          TabOrder = 0
+          object DBCheckBox142: TDBCheckBox
+            Left = 16
+            Top = 33
+            Width = 367
+            Height = 17
+            Caption = 'Enviar email ao cliente na inclus'#227'o do Pedido'
+            DataField = 'ENVIAR_EMAIL_PROC_PED'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 1
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
+          end
+          object DBCheckBox143: TDBCheckBox
+            Left = 16
+            Top = 49
+            Width = 369
+            Height = 17
+            Caption = 'Enviar email ao cliente quando conclui o pedido (expedi'#231#227'o)'
+            DataField = 'ENVIAR_EMAIL_PROC_EXP'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 2
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
+          end
+          object DBCheckBox144: TDBCheckBox
+            Left = 16
+            Top = 65
+            Width = 369
+            Height = 17
+            Caption = 'Enviar email ao cliente avisando que o pedido foi faturado'
+            DataField = 'ENVIAR_EMAIL_PROC_FAT'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 3
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
+          end
+          object DBCheckBox145: TDBCheckBox
+            Left = 16
+            Top = 81
+            Width = 368
+            Height = 17
+            Caption = 
+              'Enviar email ao cliente avisando que o pedido esta na transporta' +
+              'dora'
+            DataField = 'ENVIAR_EMAIL_PROC_TRANSP'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 4
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
+          end
+          object DBCheckBox147: TDBCheckBox
+            Left = 16
+            Top = 9
+            Width = 367
+            Height = 17
+            Caption = 'Usa o email do cadastro do pedido para enviar os processos'
+            DataField = 'USA_EMAIL_NO_PED'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 0
             ValueChecked = 'S'
             ValueUnchecked = 'N'
           end

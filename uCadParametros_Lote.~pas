@@ -71,6 +71,7 @@ type
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
     fDMCadparametros : TDMCadParametros;
@@ -147,6 +148,12 @@ end;
 procedure TfrmCadParametros_Lote.FormDestroy(Sender: TObject);
 begin
   FreeAndNil(fDMCadParametros);
+end;
+
+procedure TfrmCadParametros_Lote.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  Action := caFree;
 end;
 
 end.
