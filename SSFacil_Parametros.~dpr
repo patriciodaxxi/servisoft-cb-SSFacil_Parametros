@@ -29,7 +29,9 @@ uses
   uCadParametros_OC in 'uCadParametros_OC.pas' {frmCadParametros_OC},
   uCadParametros_Usuario in 'uCadParametros_Usuario.pas' {frmCadParametros_Usuario},
   uCadParametros_Estoque in 'uCadParametros_Estoque.pas' {frmCadParametros_Estoque},
-  uCadParametros_Ser in 'uCadParametros_Ser.pas' {frmCadParametros_Ser};
+  uCadParametros_Ser in 'uCadParametros_Ser.pas' {frmCadParametros_Ser},
+  uCadParametros_MDFe in 'uCadParametros_MDFe.pas' {frmCadParametros_MDFe},
+  uCadParametros_Etiq in 'uCadParametros_Etiq.pas' {frmCadParametros_Etiq};
 
 {$R *.res}
 

@@ -31,7 +31,8 @@ uses
   uCadParametros_Estoque in 'uCadParametros_Estoque.pas' {frmCadParametros_Estoque},
   uCadParametros_Ser in 'uCadParametros_Ser.pas' {frmCadParametros_Ser},
   uCadParametros_MDFe in 'uCadParametros_MDFe.pas' {frmCadParametros_MDFe},
-  uCadParametros_Etiq in 'uCadParametros_Etiq.pas' {frmCadParametros_Etiq};
+  uCadParametros_Etiq in 'uCadParametros_Etiq.pas' {frmCadParametros_Etiq},
+  uCadParametros_Custo in 'uCadParametros_Custo.pas' {frmCadParametros_Custo};
 
 {$R *.res}
 

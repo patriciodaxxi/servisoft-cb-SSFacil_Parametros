@@ -2057,5 +2057,26 @@ begin
   cdsParametros_Etiq.ApplyUpdates(0);
 end;
 
+procedure TDMCadParametros.prc_Consultar_Custo;
+begin
+  cdsParametros_Custo.Close;
+  sdsParametros_Custo.CommandText := ctcommand_Custo + ' WHERE ID = 1 ';
+  cdsParametros_Custo.Open;
+  if cdsParametros_Custo.IsEmpty then
+  begin
+    cdsParametros_Custo.Insert;
+    cdsParametros_CustoID.AsInteger := 1;
+  end;
+end;
+
+procedure TDMCadParametros.prc_Gravar_Custo;
+begin
+  vMsgErro := '';
+  if vMsgErro <> '' then
+    exit;
+  cdsParametros_Custo.Post;
+  cdsParametros_Custo.ApplyUpdates(0);
+end;
+
 end.
 

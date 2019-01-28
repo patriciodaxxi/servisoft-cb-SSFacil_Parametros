@@ -106,6 +106,7 @@ type
     DBEdit51: TDBEdit;
     DBCheckBox272: TDBCheckBox;
     DBCheckBox282: TDBCheckBox;
+    DBCheckBox1: TDBCheckBox;
     procedure btnConfirmarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
@@ -164,7 +165,9 @@ begin
   RzPageControl3.ActivePage := TS_NFE_Geral;
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_NFE;
-
+  DirectoryEdit2.Text := fDMCadParametros.cdsParametrosENDXMLNFE.AsString;
+  DirectoryEdit3.Text := fDMCadParametros.cdsParametrosENDPDFNFE.AsString;
+  DirectoryEdit1.Text := fDMCadParametros.cdsParametrosENDXML_NOTAENTRADA.Value;
   DirectoryEdit14.Text := fDMCadParametros.cdsParametros_NFeEND_ARQUIVO_SUFRAMA.AsString;
 end;
 

@@ -1501,6 +1501,8 @@ type
     cdsParametros_CustoREV_SUB_IPI: TStringField;
     dsParametros_Custo: TDataSource;
     dspParametros_Custo: TDataSetProvider;
+    sdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField;
+    cdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

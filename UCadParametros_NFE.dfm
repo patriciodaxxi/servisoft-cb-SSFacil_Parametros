@@ -84,10 +84,10 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
       Top = 1
       Width = 1309
       Height = 578
-      ActivePage = TS_NFE_Geral
+      ActivePage = TS_NFE_Imp
       ActivePageDefault = TS_NFE_Geral
       Align = alClient
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       FixedDimension = 19
       object TS_NFE_Geral: TRzTabSheet
@@ -573,32 +573,32 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
       object TS_NFE_Imp: TRzTabSheet
         Caption = 'Impress'#227'o'
         object Label227: TLabel
-          Left = 420
-          Top = 112
+          Left = 692
+          Top = 16
           Width = 121
           Height = 13
           Alignment = taRightJustify
           Caption = 'Imp. no rodap'#233' da Danfe:'
         end
         object Label39: TLabel
-          Left = 432
-          Top = 133
+          Left = 704
+          Top = 37
           Width = 109
           Height = 13
           Alignment = taRightJustify
           Caption = 'Tipo do logo na Danfe:'
         end
         object Label6: TLabel
-          Left = 423
-          Top = 155
+          Left = 695
+          Top = 59
           Width = 118
           Height = 13
           Alignment = taRightJustify
           Caption = 'Ajustar Logo Autom'#225'tico:'
         end
         object Label105: TLabel
-          Left = 191
-          Top = 178
+          Left = 463
+          Top = 82
           Width = 350
           Height = 13
           Alignment = taRightJustify
@@ -614,7 +614,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imprimir o n'#250'mero do Pedido nos dados adicionais'
           DataField = 'IMP_OC'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 0
+          TabOrder = 2
           ValueChecked = 'D'
           ValueUnchecked = 'I'
         end
@@ -626,7 +626,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imprimir somente o nome da Combina'#231#227'o quando for Produto'
           DataField = 'IMP_COMBINACAO_NFE'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 1
+          TabOrder = 3
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -638,13 +638,13 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imp. End. Cobran'#231'a nos dados adicionais'
           DataField = 'IMP_END_COBRANCA'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 2
+          TabOrder = 4
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object RxDBComboBox145: TRxDBComboBox
-          Left = 542
-          Top = 104
+          Left = 814
+          Top = 8
           Width = 145
           Height = 21
           Style = csDropDownList
@@ -655,7 +655,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Items.Strings = (
             'Raz'#227'o Social'
             'Fantasia')
-          TabOrder = 3
+          TabOrder = 10
           Values.Strings = (
             'R'
             'F')
@@ -668,7 +668,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imprime total dos itens nos dados aicionais na NF-e'
           DataField = 'IMP_QTDE_PRODUTO'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 4
+          TabOrder = 5
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -680,7 +680,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imprimir o usu'#225'rio nos dados adicionais'
           DataField = 'IMP_USUARIO'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 5
+          TabOrder = 6
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -692,7 +692,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imp. Refer'#234'ncia na Nota'
           DataField = 'IMP_REFERENCIANANOTA'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 6
+          TabOrder = 0
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -704,7 +704,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imp. C'#243'd. Prod. Cliente na descri'#231#227'o do produto na Danfe'
           DataField = 'IMP_CODPRODCLI_DANFE'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 7
+          TabOrder = 1
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -716,7 +716,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Imprimir os tamanhos agrupados'
           DataField = 'USA_TAMANHO_AGRUPADO_NFE'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 8
+          TabOrder = 7
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -728,13 +728,13 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Caption = 'Usa a op'#231#227'o de informar se imp. o c'#243'd. prod.cliente na danfe'
           DataField = 'USA_OPCAO_IMP_COD_CLI'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 9
+          TabOrder = 8
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object RxDBComboBox3: TRxDBComboBox
-          Left = 542
-          Top = 125
+          Left = 814
+          Top = 29
           Width = 145
           Height = 21
           Style = csDropDownList
@@ -745,14 +745,14 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Items.Strings = (
             'Quandrado'
             'Retangulo')
-          TabOrder = 10
+          TabOrder = 11
           Values.Strings = (
             'Q'
             'R')
         end
         object RxDBComboBox6: TRxDBComboBox
-          Left = 542
-          Top = 147
+          Left = 814
+          Top = 51
           Width = 145
           Height = 21
           Style = csDropDownList
@@ -763,14 +763,14 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Items.Strings = (
             'SIM'
             'N'#195'O')
-          TabOrder = 11
+          TabOrder = 12
           Values.Strings = (
             'S'
             'N')
         end
         object RxDBComboBox64: TRxDBComboBox
-          Left = 542
-          Top = 170
+          Left = 814
+          Top = 74
           Width = 144
           Height = 21
           Style = csDropDownList
@@ -781,10 +781,22 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Items.Strings = (
             'C'#243'digo'
             'Refer'#234'ncia')
-          TabOrder = 12
+          TabOrder = 13
           Values.Strings = (
             'P'
             'R')
+        end
+        object DBCheckBox1: TDBCheckBox
+          Left = 14
+          Top = 159
+          Width = 330
+          Height = 17
+          Caption = 'Imprimir o nome do produto do cliente na nota fiscal'
+          DataField = 'IMP_NOMEPROD_CLIENTE'
+          DataSource = DMCadParametros.dsParametros_NFe
+          TabOrder = 9
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
         end
       end
       object TS_NFE_Obs: TRzTabSheet
