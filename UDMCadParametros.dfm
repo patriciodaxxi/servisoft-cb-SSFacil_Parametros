@@ -5970,6 +5970,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinUSA_CCUSTO_DUP: TStringField
+      FieldName = 'USA_CCUSTO_DUP'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6149,6 +6154,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinCONDPGTO_FRETE_IMP: TStringField
       FieldName = 'CONDPGTO_FRETE_IMP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinUSA_CCUSTO_DUP: TStringField
+      FieldName = 'USA_CCUSTO_DUP'
       FixedChar = True
       Size = 1
     end
