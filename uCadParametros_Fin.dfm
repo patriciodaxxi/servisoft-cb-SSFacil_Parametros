@@ -19,7 +19,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1248
+    Width = 1256
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1248
-    Height = 555
+    Width = 1256
+    Height = 563
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -965,6 +965,18 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       DataField = 'CONDPGTO_FRETE_IMP'
       DataSource = DMCadParametros.dsParametros_Fin
       TabOrder = 47
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox1: TDBCheckBox
+      Left = 856
+      Top = 276
+      Width = 377
+      Height = 17
+      Caption = 'Usa Centro de Custo nas Duplicatas'
+      DataField = 'USA_CCUSTO_DUP'
+      DataSource = DMCadParametros.dsParametros_Fin
+      TabOrder = 48
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

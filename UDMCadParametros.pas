@@ -1503,6 +1503,8 @@ type
     dspParametros_Custo: TDataSetProvider;
     sdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField;
     cdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField;
+    sdsParametros_FinUSA_CCUSTO_DUP: TStringField;
+    cdsParametros_FinUSA_CCUSTO_DUP: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

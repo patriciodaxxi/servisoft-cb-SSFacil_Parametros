@@ -792,7 +792,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Width = 330
           Height = 17
           Caption = 'Imprimir o nome do produto do cliente na nota fiscal'
-          DataField = 'USA_OPCAO_IMP_COD_CLI'
+          DataField = 'IMP_NOMEPROD_CLIENTE'
           DataSource = DMCadParametros.dsParametros_NFe
           TabOrder = 9
           ValueChecked = 'S'

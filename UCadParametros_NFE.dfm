@@ -19,7 +19,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1311
+    Width = 1319
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,16 +74,16 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1311
-    Height = 580
+    Width = 1319
+    Height = 588
     Align = alClient
     Enabled = False
     TabOrder = 1
     object RzPageControl3: TRzPageControl
       Left = 1
       Top = 1
-      Width = 1309
-      Height = 578
+      Width = 1317
+      Height = 586
       ActivePage = TS_NFE_Imp
       ActivePageDefault = TS_NFE_Geral
       Align = alClient
