@@ -1583,7 +1583,7 @@ var
 implementation
 
 uses
-  DmdDatabase;
+  DmdDatabase, uUtilPadrao;
 
 {$R *.dfm}
 
@@ -1986,6 +1986,9 @@ begin
   begin
     cdsParametros_Usuario.Insert;
     cdsParametros_UsuarioID.AsInteger := 1;
+    cdsParametros_UsuarioUSUARIO.AsString := vUsuario;
+    prc_Gravar_Usuario;
+    prc_Consultar_Usuario;
   end;
 end;
 

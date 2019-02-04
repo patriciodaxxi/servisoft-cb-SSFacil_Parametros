@@ -233,6 +233,7 @@ end;
 
 procedure TfMenu.UserControl1AfterLogin(Sender: TObject);
 begin
+  vUsuario := UserControl1.CurrentUser.LoginName;
   prc_Habilita_Menu;
 end;
 

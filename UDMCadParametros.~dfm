@@ -2874,6 +2874,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField
+      FieldName = 'IMP_NOMEPROD_CLIENTE'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3115,6 +3120,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeCALCULAR_DIFAL: TStringField
       FieldName = 'CALCULAR_DIFAL'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField
+      FieldName = 'IMP_NOMEPROD_CLIENTE'
       FixedChar = True
       Size = 1
     end
@@ -5960,6 +5970,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinUSA_CCUSTO_DUP: TStringField
+      FieldName = 'USA_CCUSTO_DUP'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6139,6 +6154,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinCONDPGTO_FRETE_IMP: TStringField
       FieldName = 'CONDPGTO_FRETE_IMP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinUSA_CCUSTO_DUP: TStringField
+      FieldName = 'USA_CCUSTO_DUP'
       FixedChar = True
       Size = 1
     end

@@ -3192,6 +3192,7 @@ object fMenu: TfMenu
     ChangePasswordForm.ForcePassword = False
     ChangePasswordForm.MinPasswordLength = 0
     DataConnector = UCDBXConn1
+    OnAfterLogin = UserControl1AfterLogin
     CheckValidationKey = False
     Left = 744
     Top = 64

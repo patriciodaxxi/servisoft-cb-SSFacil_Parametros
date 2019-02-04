@@ -332,6 +332,10 @@ object fMenu: TfMenu
         Caption = 'Configura Imp Etiqueta'
         OnClick = ConfImpressodeEtiqueta1Click
       end
+      object Custo1: TMenuItem
+        Caption = 'Custo'
+        OnClick = Custo1Click
+      end
     end
     object N19: TMenuItem
       Caption = '|'

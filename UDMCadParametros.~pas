@@ -1501,6 +1501,10 @@ type
     cdsParametros_CustoREV_SUB_IPI: TStringField;
     dsParametros_Custo: TDataSource;
     dspParametros_Custo: TDataSetProvider;
+    sdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField;
+    cdsParametros_NFeIMP_NOMEPROD_CLIENTE: TStringField;
+    sdsParametros_FinUSA_CCUSTO_DUP: TStringField;
+    cdsParametros_FinUSA_CCUSTO_DUP: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -1579,7 +1583,7 @@ var
 implementation
 
 uses
-  DmdDatabase;
+  DmdDatabase, uUtilPadrao;
 
 {$R *.dfm}
 
@@ -1982,6 +1986,7 @@ begin
   begin
     cdsParametros_Usuario.Insert;
     cdsParametros_UsuarioID.AsInteger := 1;
+    cdsParametros_UsuarioUSUARIO.AsString := vUsuario;
   end;
 end;
 
