@@ -5778,7 +5778,7 @@ object DMCadParametros: TDMCadParametros
   end
   object dsParametros_Com: TDataSource
     DataSet = cdsParametros_Com
-    Left = 432
+    Left = 440
     Top = 259
   end
   object dspParametros_Com: TDataSetProvider
@@ -6798,6 +6798,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_EstINVENTARIO_ESTMOV: TStringField
+      FieldName = 'INVENTARIO_ESTMOV'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -6896,6 +6901,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_EstREQ_NUM_LOTE: TStringField
       FieldName = 'REQ_NUM_LOTE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstINVENTARIO_ESTMOV: TStringField
+      FieldName = 'INVENTARIO_ESTMOV'
       FixedChar = True
       Size = 1
     end

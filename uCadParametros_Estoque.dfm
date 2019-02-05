@@ -19,7 +19,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1282
+    Width = 1290
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1282
-    Height = 529
+    Width = 1290
+    Height = 537
     Align = alClient
     TabOrder = 1
     object Label10: TLabel
@@ -527,6 +527,18 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       DataField = 'REQ_NUM_LOTE'
       DataSource = DMCadParametros.dsParametros_Est
       TabOrder = 22
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox1: TDBCheckBox
+      Left = 949
+      Top = 100
+      Width = 333
+      Height = 17
+      Caption = 'Usar a qtde do Invent'#225'rio pelo Estoque Mov (Cfe a Data)'
+      DataField = 'INVENTARIO_ESTMOV'
+      DataSource = DMCadParametros.dsParametros_Est
+      TabOrder = 23
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
