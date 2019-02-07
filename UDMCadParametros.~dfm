@@ -5778,7 +5778,7 @@ object DMCadParametros: TDMCadParametros
   end
   object dsParametros_Com: TDataSource
     DataSet = cdsParametros_Com
-    Left = 432
+    Left = 440
     Top = 259
   end
   object dspParametros_Com: TDataSetProvider
