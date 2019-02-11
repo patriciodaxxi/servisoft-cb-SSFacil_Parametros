@@ -19,7 +19,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1290
+    Width = 1282
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1290
-    Height = 537
+    Width = 1282
+    Height = 529
     Align = alClient
     TabOrder = 1
     object Label10: TLabel
@@ -423,7 +423,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       TabOrder = 13
     end
     object DBCheckBox193: TDBCheckBox
-      Left = 608
+      Left = 642
       Top = 22
       Width = 337
       Height = 17
@@ -435,7 +435,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox198: TDBCheckBox
-      Left = 608
+      Left = 642
       Top = 52
       Width = 337
       Height = 17
@@ -447,7 +447,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox217: TDBCheckBox
-      Left = 608
+      Left = 642
       Top = 36
       Width = 337
       Height = 17
@@ -459,7 +459,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox274: TDBCheckBox
-      Left = 608
+      Left = 642
       Top = 68
       Width = 334
       Height = 17
@@ -471,8 +471,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox287: TDBCheckBox
-      Left = 949
-      Top = 22
+      Left = 642
+      Top = 118
       Width = 333
       Height = 17
       Caption = 'Usa Reserva Estoque Para Produto Final (Tipo_Reg = '#39'P'#39' or '#39'S'#39')'
@@ -483,8 +483,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox289: TDBCheckBox
-      Left = 949
-      Top = 36
+      Left = 642
+      Top = 132
       Width = 333
       Height = 17
       Caption = 'Usa Localiza'#231#227'o do Estoque por Lote (Textil)'
@@ -495,8 +495,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object dbchkVerificaEntPedido: TDBCheckBox
-      Left = 949
-      Top = 52
+      Left = 642
+      Top = 148
       Width = 333
       Height = 17
       Caption = 'Verifica Estoque na Entrada do Pedido'
@@ -507,8 +507,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox302: TDBCheckBox
-      Left = 949
-      Top = 68
+      Left = 642
+      Top = 164
       Width = 333
       Height = 17
       Caption = 'Mostrar o campo Entregue Por Quem na Requisi'#231#227'o'
@@ -519,8 +519,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox303: TDBCheckBox
-      Left = 949
-      Top = 84
+      Left = 642
+      Top = 180
       Width = 333
       Height = 17
       Caption = 'Mostrar o campo N'#186' Lote na Requisi'#231#227'o e obrigar a informar'
@@ -531,14 +531,26 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox1: TDBCheckBox
-      Left = 949
-      Top = 100
+      Left = 642
+      Top = 196
       Width = 333
       Height = 17
       Caption = 'Usar a qtde do Invent'#225'rio pelo Estoque Mov (Cfe a Data)'
       DataField = 'INVENTARIO_ESTMOV'
       DataSource = DMCadParametros.dsParametros_Est
       TabOrder = 23
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox2: TDBCheckBox
+      Left = 642
+      Top = 212
+      Width = 333
+      Height = 17
+      Caption = 'Gravar pelo balan'#231'o direto no movimento do estoque'
+      DataField = 'GRAVAR_ESTMOV_BAL'
+      DataSource = DMCadParametros.dsParametros_Est
+      TabOrder = 24
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

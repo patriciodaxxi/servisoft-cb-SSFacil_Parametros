@@ -1509,6 +1509,8 @@ type
     cdsParametros_EstINVENTARIO_ESTMOV: TStringField;
     sdsParametros_ProdINDICAR_PCUSTO: TStringField;
     cdsParametros_ProdINDICAR_PCUSTO: TStringField;
+    sdsParametros_EstGRAVAR_ESTMOV_BAL: TStringField;
+    cdsParametros_EstGRAVAR_ESTMOV_BAL: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

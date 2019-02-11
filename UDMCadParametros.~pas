@@ -1507,6 +1507,8 @@ type
     cdsParametros_FinUSA_CCUSTO_DUP: TStringField;
     sdsParametros_EstINVENTARIO_ESTMOV: TStringField;
     cdsParametros_EstINVENTARIO_ESTMOV: TStringField;
+    sdsParametros_ProdINDICAR_PCUSTO: TStringField;
+    cdsParametros_ProdINDICAR_PCUSTO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
