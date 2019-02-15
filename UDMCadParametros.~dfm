@@ -6813,6 +6813,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_EstGRAVAR_ESTMOV_BAL: TStringField
+      FieldName = 'GRAVAR_ESTMOV_BAL'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -6916,6 +6921,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_EstINVENTARIO_ESTMOV: TStringField
       FieldName = 'INVENTARIO_ESTMOV'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstGRAVAR_ESTMOV_BAL: TStringField
+      FieldName = 'GRAVAR_ESTMOV_BAL'
       FixedChar = True
       Size = 1
     end

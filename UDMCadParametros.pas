@@ -1511,6 +1511,8 @@ type
     cdsParametros_ProdINDICAR_PCUSTO: TStringField;
     sdsParametros_EstGRAVAR_ESTMOV_BAL: TStringField;
     cdsParametros_EstGRAVAR_ESTMOV_BAL: TStringField;
+    sdsParametros_NFeVALIDAR_PESO_NFE: TStringField;
+    cdsParametros_NFeVALIDAR_PESO_NFE: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
