@@ -4786,6 +4786,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedDTENTREGA_ZERADA_ORC: TStringField
+      FieldName = 'DTENTREGA_ZERADA_ORC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5082,6 +5087,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedUSA_CAIXINHA: TStringField
       FieldName = 'USA_CAIXINHA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedDTENTREGA_ZERADA_ORC: TStringField
+      FieldName = 'DTENTREGA_ZERADA_ORC'
       FixedChar = True
       Size = 1
     end

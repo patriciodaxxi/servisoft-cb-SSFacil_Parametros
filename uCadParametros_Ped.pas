@@ -137,6 +137,7 @@ type
     DBCheckBox144: TDBCheckBox;
     DBCheckBox145: TDBCheckBox;
     DBCheckBox147: TDBCheckBox;
+    DBCheckBox1: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);

@@ -7,8 +7,6 @@ uses
   rsDBUtils in '..\rslib\nova\rsDBUtils.pas',
   LogProvider in '..\logs\src\LogProvider.pas',
   LogTypes in '..\logs\src\LogTypes.pas',
-  uNFeComandos in '..\ssfacil\uNFeComandos.pas',
-  uNFeConsts in '..\NFe 3.10\NFESrv\uNFeConsts.pas',
   uUtilPadrao in '..\ssfacil\uUtilPadrao.pas',
   UEscolhe_Filial in '..\ssfacil\UEscolhe_Filial.pas' {frmEscolhe_Filial},
   uCadPadrao in 'uCadPadrao.pas' {frmCadPadrao},
@@ -31,7 +29,9 @@ uses
   uCadParametros_Estoque in 'uCadParametros_Estoque.pas' {frmCadParametros_Estoque},
   uCadParametros_Ser in 'uCadParametros_Ser.pas' {frmCadParametros_Ser},
   uCadParametros_MDFe in 'uCadParametros_MDFe.pas' {frmCadParametros_MDFe},
-  uCadParametros_Etiq in 'uCadParametros_Etiq.pas' {frmCadParametros_Etiq};
+  uCadParametros_Etiq in 'uCadParametros_Etiq.pas' {frmCadParametros_Etiq},
+  uCadParametros_Custo in 'uCadParametros_Custo.pas' {frmCadParametros_Custo},
+  uNFeConsts in '..\ssfacil\uNFeConsts.pas';
 
 {$R *.res}
 
