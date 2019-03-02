@@ -96,6 +96,7 @@ begin
   oDBUtils.SetDataSourceProperties(Self,fDMCadparametros);
   fDMCadparametros.prc_Consultar;
   fDMCadparametros.prc_Consultar_Lote;
+  fDMCadparametros.cdsSetor.Open;
 end;
 
 procedure TfrmCadParametros_Lote.btnAlterarClick(Sender: TObject);

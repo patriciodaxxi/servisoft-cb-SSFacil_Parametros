@@ -713,7 +713,7 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
       DataSource = DMCadParametros.dsParametros_Lote
       LookupField = 'ID'
       LookupDisplay = 'NOME'
-      LookupSource = DMCadParametros.dsProcesso
+      LookupSource = DMCadParametros.dsSetor
       TabOrder = 33
     end
   end

@@ -19,7 +19,7 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1246
+    Width = 1254
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1246
-    Height = 523
+    Width = 1254
+    Height = 531
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -238,6 +238,14 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
       Height = 13
       Alignment = taRightJustify
       Caption = 'Processo Entrada do Estoque (Semi Acabado):'
+    end
+    object Label1: TLabel
+      Left = 66
+      Top = 496
+      Width = 204
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Setor respos'#225'vel pela Entrada em Estoque:'
     end
     object RxDBComboBox46: TRxDBComboBox
       Left = 270
@@ -694,6 +702,19 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
       LookupDisplay = 'NOME'
       LookupSource = DMCadParametros.dsProcesso
       TabOrder = 32
+    end
+    object RxDBLookupCombo1: TRxDBLookupCombo
+      Left = 271
+      Top = 488
+      Width = 329
+      Height = 21
+      DropDownCount = 8
+      DataField = 'ID_SETOR_EST'
+      DataSource = DMCadParametros.dsParametros_Lote
+      LookupField = 'ID'
+      LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsSetor
+      TabOrder = 33
     end
   end
 end
