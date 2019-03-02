@@ -5334,6 +5334,9 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_LoteID_PROCESSO_SEMI_EST: TIntegerField
       FieldName = 'ID_PROCESSO_SEMI_EST'
     end
+    object sdsParametros_LoteID_SETOR_EST: TIntegerField
+      FieldName = 'ID_SETOR_EST'
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
@@ -5445,6 +5448,9 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_LoteID_PROCESSO_SEMI_EST: TIntegerField
       FieldName = 'ID_PROCESSO_SEMI_EST'
+    end
+    object cdsParametros_LoteID_SETOR_EST: TIntegerField
+      FieldName = 'ID_SETOR_EST'
     end
   end
   object dsParametros_Lote: TDataSource
@@ -7309,5 +7315,40 @@ object DMCadParametros: TDMCadParametros
     DataSet = sdsParametros_Custo
     Left = 368
     Top = 480
+  end
+  object sdsSetor: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT ID, NOME'#13#10'FROM SETOR'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 976
+    Top = 345
+  end
+  object dspSetor: TDataSetProvider
+    DataSet = sdsSetor
+    Left = 1011
+    Top = 345
+  end
+  object cdsSetor: TClientDataSet
+    Aggregates = <>
+    IndexFieldNames = 'NOME'
+    Params = <>
+    ProviderName = 'dspSetor'
+    Left = 1051
+    Top = 345
+    object cdsSetorID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object cdsSetorNOME: TStringField
+      FieldName = 'NOME'
+    end
+  end
+  object dsSetor: TDataSource
+    DataSet = cdsSetor
+    Left = 1091
+    Top = 345
   end
 end

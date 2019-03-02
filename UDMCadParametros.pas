@@ -1515,6 +1515,14 @@ type
     cdsParametros_NFeVALIDAR_PESO_NFE: TStringField;
     sdsParametros_PedDTENTREGA_ZERADA_ORC: TStringField;
     cdsParametros_PedDTENTREGA_ZERADA_ORC: TStringField;
+    sdsParametros_LoteID_SETOR_EST: TIntegerField;
+    cdsParametros_LoteID_SETOR_EST: TIntegerField;
+    sdsSetor: TSQLDataSet;
+    dspSetor: TDataSetProvider;
+    cdsSetor: TClientDataSet;
+    dsSetor: TDataSource;
+    cdsSetorID: TIntegerField;
+    cdsSetorNOME: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

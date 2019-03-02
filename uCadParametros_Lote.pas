@@ -66,6 +66,8 @@ type
     RxDBComboBox48: TRxDBComboBox;
     DBCheckBox298: TDBCheckBox;
     RxDBLookupCombo37: TRxDBLookupCombo;
+    Label1: TLabel;
+    RxDBLookupCombo1: TRxDBLookupCombo;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
