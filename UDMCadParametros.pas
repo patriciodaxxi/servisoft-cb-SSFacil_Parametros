@@ -1523,6 +1523,16 @@ type
     dsSetor: TDataSource;
     cdsSetorID: TIntegerField;
     cdsSetorNOME: TStringField;
+    sdsParametros_FinQTD_DIAS_MPAG: TIntegerField;
+    sdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField;
+    cdsParametros_FinQTD_DIAS_MPAG: TIntegerField;
+    cdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField;
+    sdsContabil_Ope: TSQLDataSet;
+    dspContabil_Ope: TDataSetProvider;
+    cdsContabil_Ope: TClientDataSet;
+    dsContabil_Ope: TDataSource;
+    cdsContabil_OpeID: TIntegerField;
+    cdsContabil_OpeNOME: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

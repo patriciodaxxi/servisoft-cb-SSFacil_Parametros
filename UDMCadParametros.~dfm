@@ -7316,4 +7316,39 @@ object DMCadParametros: TDMCadParametros
     Left = 368
     Top = 480
   end
+  object sdsSetor: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT ID, NOME'#13#10'FROM SETOR'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 976
+    Top = 345
+  end
+  object dspSetor: TDataSetProvider
+    DataSet = sdsSetor
+    Left = 1011
+    Top = 345
+  end
+  object cdsSetor: TClientDataSet
+    Aggregates = <>
+    IndexFieldNames = 'NOME'
+    Params = <>
+    ProviderName = 'dspSetor'
+    Left = 1051
+    Top = 345
+    object cdsSetorID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object cdsSetorNOME: TStringField
+      FieldName = 'NOME'
+    end
+  end
+  object dsSetor: TDataSource
+    DataSet = cdsSetor
+    Left = 1091
+    Top = 345
+  end
 end

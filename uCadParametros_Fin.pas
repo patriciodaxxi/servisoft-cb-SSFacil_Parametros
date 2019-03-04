@@ -90,6 +90,8 @@ type
     DBCheckBox258: TDBCheckBox;
     DBCheckBox285: TDBCheckBox;
     DBCheckBox1: TDBCheckBox;
+    Label1: TLabel;
+    RxDBLookupCombo1: TRxDBLookupCombo;
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
@@ -136,6 +138,7 @@ procedure TfrmCadParametros_Fin.FormShow(Sender: TObject);
 begin
   fDMCadParametros := TDMCadParametros.Create(Self);
   oDBUtils.SetDataSourceProperties(Self,fDMCadParametros);
+  fDMCadParametros.cdsContabil_Ope.Open;
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_Fin;
 end;

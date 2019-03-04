@@ -6011,6 +6011,12 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinQTD_DIAS_MPAG: TIntegerField
+      FieldName = 'QTD_DIAS_MPAG'
+    end
+    object sdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField
+      FieldName = 'ID_CONTABIL_OPE_BAIXA'
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6197,6 +6203,12 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'USA_CCUSTO_DUP'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_FinQTD_DIAS_MPAG: TIntegerField
+      FieldName = 'QTD_DIAS_MPAG'
+    end
+    object cdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField
+      FieldName = 'ID_CONTABIL_OPE_BAIXA'
     end
   end
   object dsParametros_Fin: TDataSource
@@ -7350,5 +7362,41 @@ object DMCadParametros: TDMCadParametros
     DataSet = cdsSetor
     Left = 1091
     Top = 345
+  end
+  object sdsContabil_Ope: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT ID, NOME'#13#10'FROM CONTABIL_OPE'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 976
+    Top = 393
+  end
+  object dspContabil_Ope: TDataSetProvider
+    DataSet = sdsContabil_Ope
+    Left = 1011
+    Top = 393
+  end
+  object cdsContabil_Ope: TClientDataSet
+    Aggregates = <>
+    IndexFieldNames = 'NOME'
+    Params = <>
+    ProviderName = 'dspContabil_Ope'
+    Left = 1051
+    Top = 393
+    object cdsContabil_OpeID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object cdsContabil_OpeNOME: TStringField
+      FieldName = 'NOME'
+      Size = 40
+    end
+  end
+  object dsContabil_Ope: TDataSource
+    DataSet = cdsContabil_Ope
+    Left = 1091
+    Top = 393
   end
 end
