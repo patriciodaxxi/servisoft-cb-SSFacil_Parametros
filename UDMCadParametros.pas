@@ -1533,6 +1533,8 @@ type
     dsContabil_Ope: TDataSource;
     cdsContabil_OpeID: TIntegerField;
     cdsContabil_OpeNOME: TStringField;
+    sdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
+    cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

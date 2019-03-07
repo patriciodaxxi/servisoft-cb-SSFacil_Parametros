@@ -54,6 +54,7 @@ type
     DBCheckBox303: TDBCheckBox;
     DBCheckBox1: TDBCheckBox;
     DBCheckBox2: TDBCheckBox;
+    DBCheckBox3: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);

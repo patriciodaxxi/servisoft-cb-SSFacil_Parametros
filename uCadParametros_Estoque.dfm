@@ -19,7 +19,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1282
+    Width = 1290
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1282
-    Height = 529
+    Width = 1290
+    Height = 537
     Align = alClient
     TabOrder = 1
     object Label10: TLabel
@@ -551,6 +551,20 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       DataField = 'GRAVAR_ESTMOV_BAL'
       DataSource = DMCadParametros.dsParametros_Est
       TabOrder = 24
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 642
+      Top = 228
+      Width = 463
+      Height = 17
+      Caption = 
+        'Usa Controle de Estoque de Notas Beneficiamento pelo Tipo do Mat' +
+        'erial'
+      DataField = 'USA_ESTOQUE_TIPO_MAT'
+      DataSource = DMCadParametros.dsParametros_Est
+      TabOrder = 25
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
