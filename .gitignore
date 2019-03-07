@@ -5,3 +5,7 @@
 *.~pas
 *.~dfm
 *.~pas
+UDMCadParametros.~pas
+uCadParametros_Lote.~pas
+uCadParametros_Lote.~dfm
+UDMCadParametros.~dfm

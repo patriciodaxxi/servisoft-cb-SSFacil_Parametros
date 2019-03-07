@@ -5337,6 +5337,10 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_LoteID_SETOR_EST: TIntegerField
       FieldName = 'ID_SETOR_EST'
     end
+    object sdsParametros_LoteCONT_LOTE_ANT: TStringField
+      FieldName = 'CONT_LOTE_ANT'
+      Size = 1
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
@@ -5451,6 +5455,10 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_LoteID_SETOR_EST: TIntegerField
       FieldName = 'ID_SETOR_EST'
+    end
+    object cdsParametros_LoteCONT_LOTE_ANT: TStringField
+      FieldName = 'CONT_LOTE_ANT'
+      Size = 1
     end
   end
   object dsParametros_Lote: TDataSource

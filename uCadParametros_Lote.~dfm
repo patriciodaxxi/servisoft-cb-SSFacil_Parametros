@@ -716,5 +716,17 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
       LookupSource = DMCadParametros.dsSetor
       TabOrder = 33
     end
+    object DBCheckBox1: TDBCheckBox
+      Left = 678
+      Top = 188
+      Width = 355
+      Height = 17
+      Caption = 'Permitir a baixa dos tal'#245'es se o anterior estiver encerrado '
+      DataField = 'CONT_LOTE_ANT'
+      DataSource = DMCadParametros.dsParametros_Lote
+      TabOrder = 34
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

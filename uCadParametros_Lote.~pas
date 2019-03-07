@@ -68,6 +68,7 @@ type
     RxDBLookupCombo37: TRxDBLookupCombo;
     Label1: TLabel;
     RxDBLookupCombo1: TRxDBLookupCombo;
+    DBCheckBox1: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
@@ -96,6 +97,7 @@ begin
   oDBUtils.SetDataSourceProperties(Self,fDMCadparametros);
   fDMCadparametros.prc_Consultar;
   fDMCadparametros.prc_Consultar_Lote;
+  fDMCadparametros.cdsSetor.Open;
 end;
 
 procedure TfrmCadParametros_Lote.btnAlterarClick(Sender: TObject);

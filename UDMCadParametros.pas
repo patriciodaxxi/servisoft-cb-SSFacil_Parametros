@@ -1535,6 +1535,8 @@ type
     cdsContabil_OpeNOME: TStringField;
     sdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
     cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
+    sdsParametros_LoteCONT_LOTE_ANT: TStringField;
+    cdsParametros_LoteCONT_LOTE_ANT: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

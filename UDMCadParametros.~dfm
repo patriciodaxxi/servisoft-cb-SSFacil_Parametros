@@ -6856,6 +6856,10 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField
+      FieldName = 'USA_ESTOQUE_TIPO_MAT'
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -6965,6 +6969,10 @@ object DMCadParametros: TDMCadParametros
     object cdsParametros_EstGRAVAR_ESTMOV_BAL: TStringField
       FieldName = 'GRAVAR_ESTMOV_BAL'
       FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField
+      FieldName = 'USA_ESTOQUE_TIPO_MAT'
       Size = 1
     end
   end
