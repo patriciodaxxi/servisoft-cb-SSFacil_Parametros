@@ -1537,6 +1537,8 @@ type
     cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
     sdsParametros_LoteCONT_LOTE_ANT: TStringField;
     cdsParametros_LoteCONT_LOTE_ANT: TStringField;
+    sdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
+    cdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

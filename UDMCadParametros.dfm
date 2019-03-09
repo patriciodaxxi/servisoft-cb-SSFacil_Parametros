@@ -6614,6 +6614,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField
+      FieldName = 'LIBERA_TALAO_ANT'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Usuario: TClientDataSet
     Aggregates = <>
@@ -6737,6 +6742,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_UsuarioMOSTRAR_CONS_ETIQ: TStringField
       FieldName = 'MOSTRAR_CONS_ETIQ'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField
+      FieldName = 'LIBERA_TALAO_ANT'
       FixedChar = True
       Size = 1
     end
