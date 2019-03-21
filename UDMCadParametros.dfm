@@ -3654,6 +3654,16 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdGERADORES_ELETRICOS: TStringField
+      FieldName = 'GERADORES_ELETRICOS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField
+      FieldName = 'MATERIAL_FORNECEDOR_OC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
@@ -3856,6 +3866,16 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdINDICAR_PCUSTO: TStringField
       FieldName = 'INDICAR_PCUSTO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdGERADORES_ELETRICOS: TStringField
+      FieldName = 'GERADORES_ELETRICOS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField
+      FieldName = 'MATERIAL_FORNECEDOR_OC'
       FixedChar = True
       Size = 1
     end
