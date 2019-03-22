@@ -6474,6 +6474,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_OCUSA_NUM_DOC: TStringField
+      FieldName = 'USA_NUM_DOC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_OC: TClientDataSet
     Aggregates = <>
@@ -6502,6 +6507,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_OCUSA_NOMEPROD_FORN_OC: TStringField
       FieldName = 'USA_NOMEPROD_FORN_OC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_OCUSA_NUM_DOC: TStringField
+      FieldName = 'USA_NUM_DOC'
       FixedChar = True
       Size = 1
     end

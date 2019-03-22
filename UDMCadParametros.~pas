@@ -1543,6 +1543,8 @@ type
     sdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
     cdsParametros_ProdGERADORES_ELETRICOS: TStringField;
     cdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
+    sdsParametros_FinUSA_END_CCUSTO: TStringField;
+    cdsParametros_FinUSA_END_CCUSTO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
