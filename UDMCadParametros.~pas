@@ -1539,6 +1539,10 @@ type
     cdsParametros_LoteCONT_LOTE_ANT: TStringField;
     sdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
     cdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
+    sdsParametros_ProdGERADORES_ELETRICOS: TStringField;
+    sdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
+    cdsParametros_ProdGERADORES_ELETRICOS: TStringField;
+    cdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

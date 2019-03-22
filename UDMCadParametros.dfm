@@ -6045,6 +6045,11 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField
       FieldName = 'ID_CONTABIL_OPE_BAIXA'
     end
+    object sdsParametros_FinUSA_END_CCUSTO: TStringField
+      FieldName = 'USA_END_CCUSTO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6237,6 +6242,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField
       FieldName = 'ID_CONTABIL_OPE_BAIXA'
+    end
+    object cdsParametros_FinUSA_END_CCUSTO: TStringField
+      FieldName = 'USA_END_CCUSTO'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Fin: TDataSource

@@ -999,7 +999,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       DataSource = DMCadParametros.dsParametros_Fin
       LookupField = 'ID'
       LookupDisplay = 'NOME'
-      LookupSource = DMCadParametros.dsContas
+      LookupSource = DMCadParametros.dsContabil_Ope
       TabOrder = 8
     end
   end
