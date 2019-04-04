@@ -555,7 +555,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox3: TDBCheckBox
-      Left = 642
+      Left = 643
       Top = 228
       Width = 463
       Height = 17
@@ -565,6 +565,18 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       DataField = 'USA_ESTOQUE_TIPO_MAT'
       DataSource = DMCadParametros.dsParametros_Est
       TabOrder = 25
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox4: TDBCheckBox
+      Left = 643
+      Top = 247
+      Width = 463
+      Height = 17
+      Caption = 'Mostrar o campo N'#186' Pedido na Requisi'#231#227'o e obrigar a informar'
+      DataField = 'REQ_NUM_PED'
+      DataSource = DMCadParametros.dsParametros_Est
+      TabOrder = 26
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

@@ -1547,6 +1547,8 @@ type
     cdsParametros_FinUSA_END_CCUSTO: TStringField;
     sdsParametros_OCUSA_NUM_DOC: TStringField;
     cdsParametros_OCUSA_NUM_DOC: TStringField;
+    sdsParametros_EstREQ_NUM_PED: TStringField;
+    cdsParametros_EstREQ_NUM_PED: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
