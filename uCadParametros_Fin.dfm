@@ -1014,5 +1014,17 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
+    object DBCheckBox3: TDBCheckBox
+      Left = 856
+      Top = 372
+      Width = 377
+      Height = 17
+      Caption = 'Aceita Inf. Zero no % do Centro de Custo nas Contas de Or'#231'amento'
+      DataField = 'INF_ZERO_PERC_CC'
+      DataSource = DMCadParametros.dsParametros_Fin
+      TabOrder = 51
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

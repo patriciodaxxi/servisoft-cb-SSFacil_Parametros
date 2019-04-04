@@ -6918,6 +6918,11 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'USA_ESTOQUE_TIPO_MAT'
       Size = 1
     end
+    object sdsParametros_EstREQ_NUM_PED: TStringField
+      FieldName = 'REQ_NUM_PED'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -7031,6 +7036,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField
       FieldName = 'USA_ESTOQUE_TIPO_MAT'
+      Size = 1
+    end
+    object cdsParametros_EstREQ_NUM_PED: TStringField
+      FieldName = 'REQ_NUM_PED'
+      FixedChar = True
       Size = 1
     end
   end

@@ -19,7 +19,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1248
+    Width = 1256
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1248
-    Height = 555
+    Width = 1256
+    Height = 563
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -1001,6 +1001,18 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       LookupDisplay = 'NOME'
       LookupSource = DMCadParametros.dsContabil_Ope
       TabOrder = 8
+    end
+    object DBCheckBox2: TDBCheckBox
+      Left = 856
+      Top = 356
+      Width = 281
+      Height = 17
+      Caption = 'Mostrar Endere'#231'o no cadastro de Centro de Custo'
+      DataField = 'USA_END_CCUSTO'
+      DataSource = DMCadParametros.dsParametros_Fin
+      TabOrder = 50
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
     end
   end
 end

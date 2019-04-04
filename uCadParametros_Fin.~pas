@@ -92,6 +92,7 @@ type
     DBCheckBox1: TDBCheckBox;
     Label1: TLabel;
     RxDBLookupCombo1: TRxDBLookupCombo;
+    DBCheckBox2: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);

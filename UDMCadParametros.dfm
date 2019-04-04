@@ -6050,6 +6050,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinINF_ZERO_PERC_CC: TStringField
+      FieldName = 'INF_ZERO_PERC_CC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6245,6 +6250,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinUSA_END_CCUSTO: TStringField
       FieldName = 'USA_END_CCUSTO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinINF_ZERO_PERC_CC: TStringField
+      FieldName = 'INF_ZERO_PERC_CC'
       FixedChar = True
       Size = 1
     end
