@@ -1551,6 +1551,8 @@ type
     cdsParametros_EstREQ_NUM_PED: TStringField;
     sdsParametros_FinINF_ZERO_PERC_CC: TStringField;
     cdsParametros_FinINF_ZERO_PERC_CC: TStringField;
+    sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
+    cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

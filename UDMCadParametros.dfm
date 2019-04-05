@@ -5361,12 +5361,15 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'CONT_LOTE_ANT'
       Size = 1
     end
+    object sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
+      FieldName = 'TOTAL_HORAS_PROD'
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Lote'
-    Left = 400
+    Left = 399
     Top = 200
     object cdsParametros_LoteID: TIntegerField
       FieldName = 'ID'
@@ -5479,6 +5482,9 @@ object DMCadParametros: TDMCadParametros
     object cdsParametros_LoteCONT_LOTE_ANT: TStringField
       FieldName = 'CONT_LOTE_ANT'
       Size = 1
+    end
+    object cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
+      FieldName = 'TOTAL_HORAS_PROD'
     end
   end
   object dsParametros_Lote: TDataSource

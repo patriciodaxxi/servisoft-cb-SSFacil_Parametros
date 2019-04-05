@@ -5361,6 +5361,9 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'CONT_LOTE_ANT'
       Size = 1
     end
+    object sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
+      FieldName = 'TOTAL_HORAS_PROD'
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
@@ -5479,6 +5482,9 @@ object DMCadParametros: TDMCadParametros
     object cdsParametros_LoteCONT_LOTE_ANT: TStringField
       FieldName = 'CONT_LOTE_ANT'
       Size = 1
+    end
+    object cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
+      FieldName = 'TOTAL_HORAS_PROD'
     end
   end
   object dsParametros_Lote: TDataSource
@@ -6050,6 +6056,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinINF_ZERO_PERC_CC: TStringField
+      FieldName = 'INF_ZERO_PERC_CC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6245,6 +6256,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinUSA_END_CCUSTO: TStringField
       FieldName = 'USA_END_CCUSTO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinINF_ZERO_PERC_CC: TStringField
+      FieldName = 'INF_ZERO_PERC_CC'
       FixedChar = True
       Size = 1
     end
