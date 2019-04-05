@@ -2884,6 +2884,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField
+      FieldName = 'USA_CLIENTE_FAT_FIL'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3135,6 +3140,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeVALIDAR_PESO_NFE: TStringField
       FieldName = 'VALIDAR_PESO_NFE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField
+      FieldName = 'USA_CLIENTE_FAT_FIL'
       FixedChar = True
       Size = 1
     end

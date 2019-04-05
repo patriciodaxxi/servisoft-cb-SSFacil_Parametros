@@ -1553,6 +1553,8 @@ type
     cdsParametros_FinINF_ZERO_PERC_CC: TStringField;
     sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
     cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
+    sdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
+    cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
