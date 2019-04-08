@@ -1535,6 +1535,24 @@ type
     cdsContabil_OpeNOME: TStringField;
     sdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
     cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
+    sdsParametros_LoteCONT_LOTE_ANT: TStringField;
+    cdsParametros_LoteCONT_LOTE_ANT: TStringField;
+    sdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
+    cdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
+    sdsParametros_ProdGERADORES_ELETRICOS: TStringField;
+    sdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
+    cdsParametros_ProdGERADORES_ELETRICOS: TStringField;
+    cdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
+    sdsParametros_FinUSA_END_CCUSTO: TStringField;
+    cdsParametros_FinUSA_END_CCUSTO: TStringField;
+    sdsParametros_OCUSA_NUM_DOC: TStringField;
+    cdsParametros_OCUSA_NUM_DOC: TStringField;
+    sdsParametros_EstREQ_NUM_PED: TStringField;
+    cdsParametros_EstREQ_NUM_PED: TStringField;
+    sdsParametros_FinINF_ZERO_PERC_CC: TStringField;
+    cdsParametros_FinINF_ZERO_PERC_CC: TStringField;
+    sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
+    cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

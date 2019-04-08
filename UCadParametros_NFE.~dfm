@@ -572,9 +572,9 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         object DBCheckBox2: TDBCheckBox
           Left = 694
           Top = 118
-          Width = 270
+          Width = 309
           Height = 17
-          Caption = 'N'#227'o permite Nota Fiscal sem Peso Bruto/L'#237'quido'
+          Caption = 'Verifica na Nota Fiscal se foi informado Peso Bruto/L'#237'quido'
           DataField = 'VALIDAR_PESO_NFE'
           DataSource = DMCadParametros.dsParametros_NFe
           TabOrder = 26
