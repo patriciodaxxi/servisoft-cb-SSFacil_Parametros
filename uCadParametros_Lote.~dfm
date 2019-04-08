@@ -1,6 +1,6 @@
 object frmCadParametros_Lote: TfrmCadParametros_Lote
-  Left = 108
-  Top = 42
+  Left = 84
+  Top = 54
   Width = 1262
   Height = 597
   Caption = 'frmCadParametros_Lote'
@@ -246,6 +246,14 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
       Height = 13
       Alignment = taRightJustify
       Caption = 'Setor respos'#225'vel pela Entrada em Estoque:'
+    end
+    object Label2: TLabel
+      Left = 652
+      Top = 226
+      Width = 177
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Qtde. de Horas Por Dia de Produ'#231#227'o:'
     end
     object RxDBComboBox46: TRxDBComboBox
       Left = 270
@@ -727,6 +735,15 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
       TabOrder = 34
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object DBEdit1: TDBEdit
+      Left = 831
+      Top = 218
+      Width = 121
+      Height = 21
+      DataField = 'TOTAL_HORAS_PROD'
+      DataSource = DMCadParametros.dsParametros_Lote
+      TabOrder = 35
     end
   end
 end

@@ -1537,6 +1537,34 @@ type
     cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField;
     sdsParametros_LoteCONT_LOTE_ANT: TStringField;
     cdsParametros_LoteCONT_LOTE_ANT: TStringField;
+    sdsParametros_GeralFILIAL_PADRAO_PEDWEB: TIntegerField;
+    cdsParametros_GeralFILIAL_PADRAO_PEDWEB: TIntegerField;
+    sdsFilial: TSQLDataSet;
+    dspFilial: TDataSetProvider;
+    cdsFilial: TClientDataSet;
+    IntegerField1: TIntegerField;
+    StringField1: TStringField;
+    dsFilial: TDataSource;
+    sdsFilialID: TIntegerField;
+    sdsFilialNOME: TStringField;
+    sdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
+    cdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField;
+    sdsParametros_ProdGERADORES_ELETRICOS: TStringField;
+    sdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
+    cdsParametros_ProdGERADORES_ELETRICOS: TStringField;
+    cdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField;
+    sdsParametros_FinUSA_END_CCUSTO: TStringField;
+    cdsParametros_FinUSA_END_CCUSTO: TStringField;
+    sdsParametros_OCUSA_NUM_DOC: TStringField;
+    cdsParametros_OCUSA_NUM_DOC: TStringField;
+    sdsParametros_EstREQ_NUM_PED: TStringField;
+    cdsParametros_EstREQ_NUM_PED: TStringField;
+    sdsParametros_FinINF_ZERO_PERC_CC: TStringField;
+    cdsParametros_FinINF_ZERO_PERC_CC: TStringField;
+    sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
+    cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
+    sdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
+    cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
@@ -1657,6 +1685,7 @@ begin
   cdsContaOrcamento.Open;
   cdsTab_Preco.Open;
   cdsUsuarios.Open;
+  cdsFilial.Open;
 end;
 
 procedure TDMCadParametros.prc_Gravar_FCI;

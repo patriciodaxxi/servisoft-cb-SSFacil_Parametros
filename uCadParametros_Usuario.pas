@@ -48,6 +48,7 @@ type
     DBCheckBox243: TDBCheckBox;
     DBCheckBox279: TDBCheckBox;
     DBCheckBox286: TDBCheckBox;
+    DBCheckBox1: TDBCheckBox;
     procedure btnNFeClick(Sender: TObject);
     procedure pnlUsuarioEnter(Sender: TObject);
     procedure FormShow(Sender: TObject);

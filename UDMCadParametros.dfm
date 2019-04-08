@@ -2476,6 +2476,9 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_GeralFILIAL_PADRAO_PEDWEB: TIntegerField
+      FieldName = 'FILIAL_PADRAO_PEDWEB'
+    end
   end
   object cdsParametros_Geral: TClientDataSet
     Aggregates = <>
@@ -2621,6 +2624,9 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'PERMITE_CNPJ_DUPLICADO_TRANSP'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_GeralFILIAL_PADRAO_PEDWEB: TIntegerField
+      FieldName = 'FILIAL_PADRAO_PEDWEB'
     end
   end
   object dsParametros_Geral: TDataSource
@@ -2884,6 +2890,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField
+      FieldName = 'USA_CLIENTE_FAT_FIL'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3135,6 +3146,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeVALIDAR_PESO_NFE: TStringField
       FieldName = 'VALIDAR_PESO_NFE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField
+      FieldName = 'USA_CLIENTE_FAT_FIL'
       FixedChar = True
       Size = 1
     end
@@ -3654,6 +3670,16 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdGERADORES_ELETRICOS: TStringField
+      FieldName = 'GERADORES_ELETRICOS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField
+      FieldName = 'MATERIAL_FORNECEDOR_OC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
@@ -3856,6 +3882,16 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdINDICAR_PCUSTO: TStringField
       FieldName = 'INDICAR_PCUSTO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdGERADORES_ELETRICOS: TStringField
+      FieldName = 'GERADORES_ELETRICOS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField
+      FieldName = 'MATERIAL_FORNECEDOR_OC'
       FixedChar = True
       Size = 1
     end
@@ -5341,12 +5377,15 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'CONT_LOTE_ANT'
       Size = 1
     end
+    object sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
+      FieldName = 'TOTAL_HORAS_PROD'
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Lote'
-    Left = 400
+    Left = 399
     Top = 200
     object cdsParametros_LoteID: TIntegerField
       FieldName = 'ID'
@@ -5459,6 +5498,9 @@ object DMCadParametros: TDMCadParametros
     object cdsParametros_LoteCONT_LOTE_ANT: TStringField
       FieldName = 'CONT_LOTE_ANT'
       Size = 1
+    end
+    object cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
+      FieldName = 'TOTAL_HORAS_PROD'
     end
   end
   object dsParametros_Lote: TDataSource
@@ -6025,6 +6067,16 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField
       FieldName = 'ID_CONTABIL_OPE_BAIXA'
     end
+    object sdsParametros_FinUSA_END_CCUSTO: TStringField
+      FieldName = 'USA_END_CCUSTO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_FinINF_ZERO_PERC_CC: TStringField
+      FieldName = 'INF_ZERO_PERC_CC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6217,6 +6269,16 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinID_CONTABIL_OPE_BAIXA: TIntegerField
       FieldName = 'ID_CONTABIL_OPE_BAIXA'
+    end
+    object cdsParametros_FinUSA_END_CCUSTO: TStringField
+      FieldName = 'USA_END_CCUSTO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinINF_ZERO_PERC_CC: TStringField
+      FieldName = 'INF_ZERO_PERC_CC'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Fin: TDataSource
@@ -6444,6 +6506,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_OCUSA_NUM_DOC: TStringField
+      FieldName = 'USA_NUM_DOC'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_OC: TClientDataSet
     Aggregates = <>
@@ -6472,6 +6539,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_OCUSA_NOMEPROD_FORN_OC: TStringField
       FieldName = 'USA_NOMEPROD_FORN_OC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_OCUSA_NUM_DOC: TStringField
+      FieldName = 'USA_NUM_DOC'
       FixedChar = True
       Size = 1
     end
@@ -6614,6 +6686,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField
+      FieldName = 'LIBERA_TALAO_ANT'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Usuario: TClientDataSet
     Aggregates = <>
@@ -6737,6 +6814,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_UsuarioMOSTRAR_CONS_ETIQ: TStringField
       FieldName = 'MOSTRAR_CONS_ETIQ'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField
+      FieldName = 'LIBERA_TALAO_ANT'
       FixedChar = True
       Size = 1
     end
@@ -6868,6 +6950,11 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'USA_ESTOQUE_TIPO_MAT'
       Size = 1
     end
+    object sdsParametros_EstREQ_NUM_PED: TStringField
+      FieldName = 'REQ_NUM_PED'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -6981,6 +7068,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_EstUSA_ESTOQUE_TIPO_MAT: TStringField
       FieldName = 'USA_ESTOQUE_TIPO_MAT'
+      Size = 1
+    end
+    object cdsParametros_EstREQ_NUM_PED: TStringField
+      FieldName = 'REQ_NUM_PED'
+      FixedChar = True
       Size = 1
     end
   end
@@ -7414,5 +7506,48 @@ object DMCadParametros: TDMCadParametros
     DataSet = cdsContabil_Ope
     Left = 1091
     Top = 393
+  end
+  object sdsFilial: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT *'#13#10'FROM FILIAL'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 976
+    Top = 454
+    object sdsFilialID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object sdsFilialNOME: TStringField
+      FieldName = 'NOME'
+      Size = 60
+    end
+  end
+  object dspFilial: TDataSetProvider
+    DataSet = sdsFilial
+    Left = 1016
+    Top = 454
+  end
+  object cdsFilial: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspFilial'
+    Left = 1056
+    Top = 454
+    object IntegerField1: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object StringField1: TStringField
+      FieldName = 'NOME'
+      Size = 30
+    end
+  end
+  object dsFilial: TDataSource
+    DataSet = cdsFilial
+    Left = 1096
+    Top = 454
   end
 end

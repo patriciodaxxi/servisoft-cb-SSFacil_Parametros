@@ -9,3 +9,5 @@ UDMCadParametros.~pas
 uCadParametros_Lote.~pas
 uCadParametros_Lote.~dfm
 UDMCadParametros.~dfm
+*.~dfm
+uCadParametro.~pas

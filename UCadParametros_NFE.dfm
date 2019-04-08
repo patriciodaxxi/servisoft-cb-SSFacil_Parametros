@@ -1,6 +1,6 @@
 object frmCadParametros_NFE: TfrmCadParametros_NFE
-  Left = 65
-  Top = 46
+  Left = 41
+  Top = 30
   Width = 1327
   Height = 654
   Caption = 'frmCadParametros_NFE - Par'#226'metros NFE'
@@ -19,7 +19,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1311
+    Width = 1319
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,20 +74,20 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1311
-    Height = 580
+    Width = 1319
+    Height = 588
     Align = alClient
     Enabled = False
     TabOrder = 1
     object RzPageControl3: TRzPageControl
       Left = 1
       Top = 1
-      Width = 1309
-      Height = 578
-      ActivePage = TS_NFE_Geral
+      Width = 1317
+      Height = 586
+      ActivePage = TS_NFE_Obs
       ActivePageDefault = TS_NFE_Geral
       Align = alClient
-      TabIndex = 0
+      TabIndex = 2
       TabOrder = 0
       FixedDimension = 19
       object TS_NFE_Geral: TRzTabSheet
@@ -1113,6 +1113,18 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           DataField = 'COPIAR_RECNF'
           DataSource = DMCadParametros.dsParametros_NFe
           TabOrder = 17
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
+        object DBCheckBox3: TDBCheckBox
+          Left = 822
+          Top = 199
+          Width = 291
+          Height = 17
+          Caption = 'Controlar o Cliente que vai faturar conforme a Filial'
+          DataField = 'USA_CLIENTE_FAT_FIL'
+          DataSource = DMCadParametros.dsParametros_NFe
+          TabOrder = 18
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
