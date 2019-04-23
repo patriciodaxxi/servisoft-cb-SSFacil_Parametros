@@ -32,7 +32,8 @@ uses
   uCadParametros_Etiq in 'uCadParametros_Etiq.pas' {frmCadParametros_Etiq},
   uCadParametros_Custo in 'uCadParametros_Custo.pas' {frmCadParametros_Custo},
   uNFeConsts in '..\ssfacil\uNFeConsts.pas',
-  uNFeComandos in '..\ssfacil\uNFeComandos.pas';
+  uNFeComandos in '..\ssfacil\uNFeComandos.pas',
+  DmdDatabase_NFeBD in '..\ssfacil\DmdDatabase_NFeBD.pas' {dmDatabase_NFeBD: TDataModule};
 
 {$R *.res}
 

@@ -248,12 +248,12 @@ object frmCadParametros_Lote: TfrmCadParametros_Lote
       Caption = 'Setor respos'#225'vel pela Entrada em Estoque:'
     end
     object Label2: TLabel
-      Left = 652
+      Left = 658
       Top = 226
-      Width = 177
+      Width = 171
       Height = 13
       Alignment = taRightJustify
-      Caption = 'Qtde. de Horas Por Dia de Produ'#231#227'o:'
+      Caption = 'Total de Horas por dia de produ'#231#227'o:'
     end
     object RxDBComboBox46: TRxDBComboBox
       Left = 270

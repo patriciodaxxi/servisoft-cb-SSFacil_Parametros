@@ -31,7 +31,8 @@ uses
   uCadParametros_MDFe in 'uCadParametros_MDFe.pas' {frmCadParametros_MDFe},
   uCadParametros_Etiq in 'uCadParametros_Etiq.pas' {frmCadParametros_Etiq},
   uCadParametros_Custo in 'uCadParametros_Custo.pas' {frmCadParametros_Custo},
-  uNFeConsts in '..\ssfacil\uNFeConsts.pas';
+  uNFeConsts in '..\ssfacil\uNFeConsts.pas',
+  uNFeComandos in '..\ssfacil\uNFeComandos.pas';
 
 {$R *.res}
 
