@@ -1,6 +1,6 @@
 object frmCadParametros_Com: TfrmCadParametros_Com
-  Left = 292
-  Top = 51
+  Left = 254
+  Top = 40
   Width = 1263
   Height = 649
   Caption = 'frmCadParametros_Com'
@@ -19,7 +19,7 @@ object frmCadParametros_Com: TfrmCadParametros_Com
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1247
+    Width = 1255
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Com: TfrmCadParametros_Com
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1247
-    Height = 575
+    Width = 1255
+    Height = 583
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -113,11 +113,19 @@ object frmCadParametros_Com: TfrmCadParametros_Com
     end
     object Label219: TLabel
       Left = 16
-      Top = 120
+      Top = 142
       Width = 176
       Height = 13
       Alignment = taRightJustify
       Caption = 'Pagar a comiss'#227'o integral 1'#186' Parcela:'
+    end
+    object Label1: TLabel
+      Left = 20
+      Top = 120
+      Width = 172
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Descontar da Comiss'#227'o (Pis/Cofins):'
     end
     object RxDBComboBox61: TRxDBComboBox
       Left = 194
@@ -184,7 +192,7 @@ object frmCadParametros_Com: TfrmCadParametros_Com
     end
     object RxDBComboBox142: TRxDBComboBox
       Left = 194
-      Top = 112
+      Top = 134
       Width = 145
       Height = 21
       Style = csDropDownList
@@ -195,22 +203,40 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 4
+      TabOrder = 5
       Values.Strings = (
         'S'
         'N')
     end
     object DBCheckBox237: TDBCheckBox
       Left = 192
-      Top = 142
+      Top = 164
       Width = 233
       Height = 17
       Caption = 'Mostrar o Pedido na Comiss'#227'o'
       DataField = 'MOSTRAR_PED'
       DataSource = DMCadParametros.dsParametros_Com
-      TabOrder = 5
+      TabOrder = 6
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object RxDBComboBox1: TRxDBComboBox
+      Left = 194
+      Top = 112
+      Width = 145
+      Height = 21
+      Style = csDropDownList
+      DataField = 'COMISSAO_DESCONTAR_PIS'
+      DataSource = DMCadParametros.dsParametros_Com
+      EnableValues = True
+      ItemHeight = 13
+      Items.Strings = (
+        'Sim'
+        'N'#227'o')
+      TabOrder = 4
+      Values.Strings = (
+        'S'
+        'N')
     end
   end
 end

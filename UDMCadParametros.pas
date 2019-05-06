@@ -1565,6 +1565,8 @@ type
     cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
     sdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
     cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
+    sdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField;
+    cdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

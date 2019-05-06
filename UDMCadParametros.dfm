@@ -5813,7 +5813,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 336
-    Top = 259
+    Top = 258
     object sdsParametros_ComID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5831,6 +5831,11 @@ object DMCadParametros: TDMCadParametros
     end
     object sdsParametros_ComMOSTRAR_PED: TStringField
       FieldName = 'MOSTRAR_PED'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField
+      FieldName = 'COMISSAO_DESCONTAR_PIS'
       FixedChar = True
       Size = 1
     end
@@ -5858,6 +5863,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ComMOSTRAR_PED: TStringField
       FieldName = 'MOSTRAR_PED'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField
+      FieldName = 'COMISSAO_DESCONTAR_PIS'
       FixedChar = True
       Size = 1
     end

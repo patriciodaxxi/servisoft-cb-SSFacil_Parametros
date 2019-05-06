@@ -24,10 +24,14 @@ type
     RxDBComboBox137: TRxDBComboBox;
     RxDBComboBox142: TRxDBComboBox;
     DBCheckBox237: TDBCheckBox;
+    Label1: TLabel;
+    RxDBComboBox1: TRxDBComboBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
+    procedure btnConfirmarClick(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
   private
     { Private declarations }
     fDMCadParametros: TDMCadParametros;
@@ -90,6 +94,25 @@ end;
 procedure TfrmCadParametros_Com.FormDestroy(Sender: TObject);
 begin
   FreeAndNil(fDMCadParametros);
+end;
+
+procedure TfrmCadParametros_Com.btnConfirmarClick(Sender: TObject);
+begin
+  prc_Gravar_Registro;
+end;
+
+procedure TfrmCadParametros_Com.btnCancelarClick(Sender: TObject);
+begin
+  if (fDMCadParametros.cdsParametros_Com.State in [dsBrowse]) or not(fDMCadParametros.cdsParametros_Com.Active) then
+    exit;
+  if MessageDlg('Deseja cancelar alteração/inclusão do registro?',mtConfirmation,[mbYes,mbNo],0) = mrNo then
+    exit;
+  fDMCadParametros.cdsParametros_Com.CancelUpdates;
+  if (fDMCadParametros.cdsParametros.Active) then
+    fDMCadParametros.cdsParametros.CancelUpdates;
+  pnlGeral.Enabled         := not(pnlGeral.Enabled);
+  btnConfirmar.Enabled     := not(btnConfirmar.Enabled);
+  btnAlterar.Enabled       := not(btnAlterar.Enabled);
 end;
 
 end.
