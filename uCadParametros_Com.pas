@@ -62,6 +62,11 @@ end;
 
 procedure TfrmCadParametros_Com.prc_Gravar_Registro;
 begin
+  if fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S' then
+  begin
+    fDMCadParametros.cdsParametros_ComCOMISSAO_DESCONTAR.AsString     := 'N';
+    fDMCadParametros.cdsParametros_ComCOMISSAO_DESCONTAR_PIS.AsString := 'N';
+  end;
   fDMCadParametros.prc_Gravar;
   if fDMCadParametros.cdsParametros.State in [dsEdit, dsInsert] then
   begin
