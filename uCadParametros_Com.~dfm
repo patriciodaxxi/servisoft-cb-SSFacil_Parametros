@@ -1,6 +1,6 @@
 object frmCadParametros_Com: TfrmCadParametros_Com
-  Left = 254
-  Top = 40
+  Left = 29
+  Top = 31
   Width = 1263
   Height = 649
   Caption = 'frmCadParametros_Com'

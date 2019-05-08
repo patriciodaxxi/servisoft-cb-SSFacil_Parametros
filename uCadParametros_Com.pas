@@ -89,7 +89,7 @@ begin
   Label212.Visible        := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
   RxDBComboBox137.Visible := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
   Label1.Visible          := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
-  Label1.Visible          := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
+  RxDBComboBox1.Visible   := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
 end;
 
 procedure TfrmCadParametros_Com.FormClose(Sender: TObject;
@@ -124,10 +124,10 @@ end;
 
 procedure TfrmCadParametros_Com.DBCheckBox1Click(Sender: TObject);
 begin
-  Label212.Visible := not(DBCheckBox1.Checked);
+  Label212.Visible        := not(DBCheckBox1.Checked);
   RxDBComboBox137.Visible := not(DBCheckBox1.Checked);
-  Label1.Visible := not(DBCheckBox1.Checked);
-  Label1.Visible := not(DBCheckBox1.Checked);
+  Label1.Visible          := not(DBCheckBox1.Checked);
+  RxDBComboBox1.Visible   := not(DBCheckBox1.Checked);
 end;
 
 end.
