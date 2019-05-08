@@ -49,6 +49,7 @@ type
     DBCheckBox279: TDBCheckBox;
     DBCheckBox286: TDBCheckBox;
     DBCheckBox1: TDBCheckBox;
+    DBCheckBox2: TDBCheckBox;
     procedure btnNFeClick(Sender: TObject);
     procedure pnlUsuarioEnter(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -126,6 +127,9 @@ begin
   oDBUtils.SetDataSourceProperties(Self, fDMCadParametros);
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_Usuario;
+  fDMCadParametros.cdsParametros_Com.Close;
+  fDMCadParametros.cdsParametros_Com.Open;
+  DBCheckBox2.Visible := (fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
 end;
 
 procedure TfrmCadParametros_Usuario.FormClose(Sender: TObject;

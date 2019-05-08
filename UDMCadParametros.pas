@@ -1567,6 +1567,10 @@ type
     cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
     sdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField;
     cdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField;
+    sdsParametros_ComUSA_CONFIG_IND: TStringField;
+    cdsParametros_ComUSA_CONFIG_IND: TStringField;
+    sdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField;
+    cdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

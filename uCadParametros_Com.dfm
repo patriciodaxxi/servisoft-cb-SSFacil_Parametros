@@ -1,6 +1,6 @@
 object frmCadParametros_Com: TfrmCadParametros_Com
-  Left = 254
-  Top = 40
+  Left = 29
+  Top = 31
   Width = 1263
   Height = 649
   Caption = 'frmCadParametros_Com'
@@ -104,8 +104,8 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       Caption = '% Comiss'#227'o (Parte na Nota):'
     end
     object Label212: TLabel
-      Left = 7
-      Top = 98
+      Left = 430
+      Top = 41
       Width = 185
       Height = 13
       Alignment = taRightJustify
@@ -113,15 +113,15 @@ object frmCadParametros_Com: TfrmCadParametros_Com
     end
     object Label219: TLabel
       Left = 16
-      Top = 142
+      Top = 101
       Width = 176
       Height = 13
       Alignment = taRightJustify
       Caption = 'Pagar a comiss'#227'o integral 1'#186' Parcela:'
     end
     object Label1: TLabel
-      Left = 20
-      Top = 120
+      Left = 443
+      Top = 63
       Width = 172
       Height = 13
       Alignment = taRightJustify
@@ -173,8 +173,8 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       TabOrder = 2
     end
     object RxDBComboBox137: TRxDBComboBox
-      Left = 194
-      Top = 90
+      Left = 617
+      Top = 33
       Width = 145
       Height = 21
       Style = csDropDownList
@@ -192,7 +192,7 @@ object frmCadParametros_Com: TfrmCadParametros_Com
     end
     object RxDBComboBox142: TRxDBComboBox
       Left = 194
-      Top = 134
+      Top = 91
       Width = 145
       Height = 21
       Style = csDropDownList
@@ -210,7 +210,7 @@ object frmCadParametros_Com: TfrmCadParametros_Com
     end
     object DBCheckBox237: TDBCheckBox
       Left = 192
-      Top = 164
+      Top = 123
       Width = 233
       Height = 17
       Caption = 'Mostrar o Pedido na Comiss'#227'o'
@@ -221,8 +221,8 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       ValueUnchecked = 'N'
     end
     object RxDBComboBox1: TRxDBComboBox
-      Left = 194
-      Top = 112
+      Left = 617
+      Top = 55
       Width = 145
       Height = 21
       Style = csDropDownList
@@ -237,6 +237,19 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       Values.Strings = (
         'S'
         'N')
+    end
+    object DBCheckBox1: TDBCheckBox
+      Left = 430
+      Top = 15
+      Width = 314
+      Height = 17
+      Caption = 'Usar Configura'#231#227'o Desconto Individual por Representante'
+      DataField = 'USA_CONFIG_IND'
+      DataSource = DMCadParametros.dsParametros_Com
+      TabOrder = 7
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+      OnClick = DBCheckBox1Click
     end
   end
 end

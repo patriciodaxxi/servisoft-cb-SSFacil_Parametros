@@ -5386,7 +5386,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Lote'
     Left = 399
-    Top = 200
+    Top = 201
     object cdsParametros_LoteID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5813,7 +5813,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 336
-    Top = 259
+    Top = 258
     object sdsParametros_ComID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5836,6 +5836,11 @@ object DMCadParametros: TDMCadParametros
     end
     object sdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField
       FieldName = 'COMISSAO_DESCONTAR_PIS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ComUSA_CONFIG_IND: TStringField
+      FieldName = 'USA_CONFIG_IND'
       FixedChar = True
       Size = 1
     end
@@ -5868,6 +5873,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField
       FieldName = 'COMISSAO_DESCONTAR_PIS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ComUSA_CONFIG_IND: TStringField
+      FieldName = 'USA_CONFIG_IND'
       FixedChar = True
       Size = 1
     end
