@@ -1571,6 +1571,8 @@ type
     cdsParametros_ComUSA_CONFIG_IND: TStringField;
     sdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField;
     cdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField;
+    sdsParametros_PedUSA_FABRICA: TStringField;
+    cdsParametros_PedUSA_FABRICA: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
