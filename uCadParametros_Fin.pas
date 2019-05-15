@@ -94,6 +94,7 @@ type
     RxDBLookupCombo1: TRxDBLookupCombo;
     DBCheckBox2: TDBCheckBox;
     DBCheckBox3: TDBCheckBox;
+    DBCheckBox4: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);

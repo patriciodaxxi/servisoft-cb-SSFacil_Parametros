@@ -4827,6 +4827,16 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedUSA_FABRICA: TStringField
+      FieldName = 'USA_FABRICA'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField
+      FieldName = 'GRAVA_PROD_CLI_EDI'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5131,6 +5141,16 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object cdsParametros_PedUSA_FABRICA: TStringField
+      FieldName = 'USA_FABRICA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField
+      FieldName = 'GRAVA_PROD_CLI_EDI'
+      FixedChar = True
+      Size = 1
+    end
   end
   object dsParametros_Ped: TDataSource
     DataSet = cdsParametros_Ped
@@ -5386,7 +5406,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros_Lote'
     Left = 399
-    Top = 200
+    Top = 201
     object cdsParametros_LoteID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5813,7 +5833,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 336
-    Top = 259
+    Top = 258
     object sdsParametros_ComID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5831,6 +5851,16 @@ object DMCadParametros: TDMCadParametros
     end
     object sdsParametros_ComMOSTRAR_PED: TStringField
       FieldName = 'MOSTRAR_PED'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField
+      FieldName = 'COMISSAO_DESCONTAR_PIS'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ComUSA_CONFIG_IND: TStringField
+      FieldName = 'USA_CONFIG_IND'
       FixedChar = True
       Size = 1
     end
@@ -5858,6 +5888,16 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ComMOSTRAR_PED: TStringField
       FieldName = 'MOSTRAR_PED'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField
+      FieldName = 'COMISSAO_DESCONTAR_PIS'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ComUSA_CONFIG_IND: TStringField
+      FieldName = 'USA_CONFIG_IND'
       FixedChar = True
       Size = 1
     end
@@ -6077,6 +6117,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinCONTROLA_CONTRATO_CCUSTO: TStringField
+      FieldName = 'CONTROLA_CONTRATO_CCUSTO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6277,6 +6322,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinINF_ZERO_PERC_CC: TStringField
       FieldName = 'INF_ZERO_PERC_CC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinCONTROLA_CONTRATO_CCUSTO: TStringField
+      FieldName = 'CONTROLA_CONTRATO_CCUSTO'
       FixedChar = True
       Size = 1
     end
@@ -6691,6 +6741,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField
+      FieldName = 'LIBERA_CONFIG_VENDEDOR'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Usuario: TClientDataSet
     Aggregates = <>
@@ -6819,6 +6874,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_UsuarioLIBERA_TALAO_ANT: TStringField
       FieldName = 'LIBERA_TALAO_ANT'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField
+      FieldName = 'LIBERA_CONFIG_VENDEDOR'
       FixedChar = True
       Size = 1
     end

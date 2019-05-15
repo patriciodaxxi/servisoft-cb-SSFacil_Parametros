@@ -572,6 +572,18 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
         ValueChecked = 'S'
         ValueUnchecked = 'N'
       end
+      object DBCheckBox2: TDBCheckBox
+        Left = 190
+        Top = 483
+        Width = 427
+        Height = 17
+        Caption = 'Liberar Configura'#231#227'o do Representante (Descontos) individual'
+        DataField = 'LIBERA_CONFIG_VENDEDOR'
+        DataSource = DMCadParametros.dsParametros_Usuario
+        TabOrder = 23
+        ValueChecked = 'S'
+        ValueUnchecked = 'N'
+      end
     end
   end
 end

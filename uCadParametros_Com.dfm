@@ -1,6 +1,6 @@
 object frmCadParametros_Com: TfrmCadParametros_Com
-  Left = 292
-  Top = 51
+  Left = 29
+  Top = 31
   Width = 1263
   Height = 649
   Caption = 'frmCadParametros_Com'
@@ -19,7 +19,7 @@ object frmCadParametros_Com: TfrmCadParametros_Com
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1247
+    Width = 1255
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Com: TfrmCadParametros_Com
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1247
-    Height = 575
+    Width = 1255
+    Height = 583
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -104,8 +104,8 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       Caption = '% Comiss'#227'o (Parte na Nota):'
     end
     object Label212: TLabel
-      Left = 7
-      Top = 98
+      Left = 430
+      Top = 41
       Width = 185
       Height = 13
       Alignment = taRightJustify
@@ -113,11 +113,19 @@ object frmCadParametros_Com: TfrmCadParametros_Com
     end
     object Label219: TLabel
       Left = 16
-      Top = 120
+      Top = 101
       Width = 176
       Height = 13
       Alignment = taRightJustify
       Caption = 'Pagar a comiss'#227'o integral 1'#186' Parcela:'
+    end
+    object Label1: TLabel
+      Left = 443
+      Top = 63
+      Width = 172
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Descontar da Comiss'#227'o (Pis/Cofins):'
     end
     object RxDBComboBox61: TRxDBComboBox
       Left = 194
@@ -165,8 +173,8 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       TabOrder = 2
     end
     object RxDBComboBox137: TRxDBComboBox
-      Left = 194
-      Top = 90
+      Left = 617
+      Top = 33
       Width = 145
       Height = 21
       Style = csDropDownList
@@ -184,11 +192,41 @@ object frmCadParametros_Com: TfrmCadParametros_Com
     end
     object RxDBComboBox142: TRxDBComboBox
       Left = 194
-      Top = 112
+      Top = 91
       Width = 145
       Height = 21
       Style = csDropDownList
       DataField = 'PAGAR_SOMENTE_PRIMEIRA'
+      DataSource = DMCadParametros.dsParametros_Com
+      EnableValues = True
+      ItemHeight = 13
+      Items.Strings = (
+        'Sim'
+        'N'#227'o')
+      TabOrder = 5
+      Values.Strings = (
+        'S'
+        'N')
+    end
+    object DBCheckBox237: TDBCheckBox
+      Left = 192
+      Top = 123
+      Width = 233
+      Height = 17
+      Caption = 'Mostrar o Pedido na Comiss'#227'o'
+      DataField = 'MOSTRAR_PED'
+      DataSource = DMCadParametros.dsParametros_Com
+      TabOrder = 6
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object RxDBComboBox1: TRxDBComboBox
+      Left = 617
+      Top = 55
+      Width = 145
+      Height = 21
+      Style = csDropDownList
+      DataField = 'COMISSAO_DESCONTAR_PIS'
       DataSource = DMCadParametros.dsParametros_Com
       EnableValues = True
       ItemHeight = 13
@@ -200,17 +238,18 @@ object frmCadParametros_Com: TfrmCadParametros_Com
         'S'
         'N')
     end
-    object DBCheckBox237: TDBCheckBox
-      Left = 192
-      Top = 142
-      Width = 233
+    object DBCheckBox1: TDBCheckBox
+      Left = 430
+      Top = 15
+      Width = 314
       Height = 17
-      Caption = 'Mostrar o Pedido na Comiss'#227'o'
-      DataField = 'MOSTRAR_PED'
+      Caption = 'Usar Configura'#231#227'o Desconto Individual por Representante'
+      DataField = 'USA_CONFIG_IND'
       DataSource = DMCadParametros.dsParametros_Com
-      TabOrder = 5
+      TabOrder = 7
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+      OnClick = DBCheckBox1Click
     end
   end
 end

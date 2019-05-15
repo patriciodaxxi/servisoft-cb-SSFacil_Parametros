@@ -24,12 +24,16 @@ type
     RxDBComboBox137: TRxDBComboBox;
     RxDBComboBox142: TRxDBComboBox;
     DBCheckBox237: TDBCheckBox;
+    Label1: TLabel;
+    RxDBComboBox1: TRxDBComboBox;
+    DBCheckBox1: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
+    procedure DBCheckBox1Click(Sender: TObject);
   private
     { Private declarations }
     fDMCadParametros: TDMCadParametros;
@@ -58,6 +62,11 @@ end;
 
 procedure TfrmCadParametros_Com.prc_Gravar_Registro;
 begin
+  if fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S' then
+  begin
+    fDMCadParametros.cdsParametros_ComCOMISSAO_DESCONTAR.AsString     := 'N';
+    fDMCadParametros.cdsParametros_ComCOMISSAO_DESCONTAR_PIS.AsString := 'N';
+  end;
   fDMCadParametros.prc_Gravar;
   if fDMCadParametros.cdsParametros.State in [dsEdit, dsInsert] then
   begin
@@ -81,6 +90,11 @@ begin
   oDBUtils.SetDataSourceProperties(Self,fDMCadParametros);
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_Com;
+
+  Label212.Visible        := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
+  RxDBComboBox137.Visible := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
+  Label1.Visible          := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
+  RxDBComboBox1.Visible   := not(fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
 end;
 
 procedure TfrmCadParametros_Com.FormClose(Sender: TObject;
@@ -111,6 +125,14 @@ begin
   pnlGeral.Enabled         := not(pnlGeral.Enabled);
   btnConfirmar.Enabled     := not(btnConfirmar.Enabled);
   btnAlterar.Enabled       := not(btnAlterar.Enabled);
+end;
+
+procedure TfrmCadParametros_Com.DBCheckBox1Click(Sender: TObject);
+begin
+  Label212.Visible        := not(DBCheckBox1.Checked);
+  RxDBComboBox137.Visible := not(DBCheckBox1.Checked);
+  Label1.Visible          := not(DBCheckBox1.Checked);
+  RxDBComboBox1.Visible   := not(DBCheckBox1.Checked);
 end;
 
 end.

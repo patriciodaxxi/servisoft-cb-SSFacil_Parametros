@@ -1565,6 +1565,18 @@ type
     cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField;
     sdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
     cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField;
+    sdsParametros_FinCONTROLA_CONTRATO_CCUSTO: TStringField;
+    cdsParametros_FinCONTROLA_CONTRATO_CCUSTO: TStringField;
+    sdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField;
+    cdsParametros_ComCOMISSAO_DESCONTAR_PIS: TStringField;
+    sdsParametros_ComUSA_CONFIG_IND: TStringField;
+    cdsParametros_ComUSA_CONFIG_IND: TStringField;
+    sdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField;
+    cdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField;
+    sdsParametros_PedUSA_FABRICA: TStringField;
+    cdsParametros_PedUSA_FABRICA: TStringField;
+    sdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
+    cdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
