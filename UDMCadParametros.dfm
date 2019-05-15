@@ -4832,6 +4832,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField
+      FieldName = 'GRAVA_PROD_CLI_EDI'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5138,6 +5143,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedUSA_FABRICA: TStringField
       FieldName = 'USA_FABRICA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField
+      FieldName = 'GRAVA_PROD_CLI_EDI'
       FixedChar = True
       Size = 1
     end

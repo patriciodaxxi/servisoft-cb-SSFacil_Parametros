@@ -1247,6 +1247,18 @@ object frmParametros_Ped: TfrmParametros_Ped
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
+        object DBCheckBox3: TDBCheckBox
+          Left = 987
+          Top = 308
+          Width = 261
+          Height = 17
+          Caption = 'Gravar o Produto do Cliente no EDI (Produto_Forn)'
+          DataField = 'GRAVA_PROD_CLI_EDI'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 72
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'

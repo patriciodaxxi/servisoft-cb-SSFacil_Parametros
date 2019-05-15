@@ -1573,6 +1573,8 @@ type
     cdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField;
     sdsParametros_PedUSA_FABRICA: TStringField;
     cdsParametros_PedUSA_FABRICA: TStringField;
+    sdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
+    cdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
