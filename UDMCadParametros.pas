@@ -1577,6 +1577,8 @@ type
     cdsParametros_PedUSA_FABRICA: TStringField;
     sdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
     cdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
+    sdsParametros_NFeUSA_CST_ICMS_NTE: TStringField;
+    cdsParametros_NFeUSA_CST_ICMS_NTE: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
