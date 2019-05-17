@@ -3,9 +3,8 @@ unit uCadParametros_Prod;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Buttons, ExtCtrls, UDMCadParametros, DB, rsDBUtils,
-  NxCollection, DBCtrls, RxLookup, Mask, RxDBComb;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls,
+  UDMCadParametros, DB, rsDBUtils, NxCollection, DBCtrls, RxLookup, Mask, RxDBComb;
 
 type
   TfrmCadParametros_Prod = class(TForm)
@@ -128,6 +127,8 @@ type
     DBCheckBox294: TDBCheckBox;
     Label1: TLabel;
     RxDBComboBox1: TRxDBComboBox;
+    Label2: TLabel;
+    RxDBComboBox2: TRxDBComboBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
