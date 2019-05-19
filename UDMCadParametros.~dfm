@@ -2895,6 +2895,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeUSA_CST_ICMS_NTE: TStringField
+      FieldName = 'USA_CST_ICMS_NTE'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3151,6 +3156,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField
       FieldName = 'USA_CLIENTE_FAT_FIL'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeUSA_CST_ICMS_NTE: TStringField
+      FieldName = 'USA_CST_ICMS_NTE'
       FixedChar = True
       Size = 1
     end

@@ -2895,6 +2895,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeUSA_CST_ICMS_NTE: TStringField
+      FieldName = 'USA_CST_ICMS_NTE'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3151,6 +3156,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeUSA_CLIENTE_FAT_FIL: TStringField
       FieldName = 'USA_CLIENTE_FAT_FIL'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeUSA_CST_ICMS_NTE: TStringField
+      FieldName = 'USA_CST_ICMS_NTE'
       FixedChar = True
       Size = 1
     end
@@ -3680,13 +3690,18 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdUSA_CA_HIST: TStringField
+      FieldName = 'USA_CA_HIST'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Prod'
     Left = 104
-    Top = 271
+    Top = 270
     object cdsParametros_ProdID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3892,6 +3907,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdMATERIAL_FORNECEDOR_OC: TStringField
       FieldName = 'MATERIAL_FORNECEDOR_OC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdUSA_CA_HIST: TStringField
+      FieldName = 'USA_CA_HIST'
       FixedChar = True
       Size = 1
     end

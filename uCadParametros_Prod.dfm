@@ -1582,5 +1582,17 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'N'
         'G')
     end
+    object DBCheckBox1: TDBCheckBox
+      Left = 913
+      Top = 334
+      Width = 360
+      Height = 17
+      Caption = 'Usa o CA Por Hist'#243'rico (Deixa gravado o CA Anterior)'
+      DataField = 'USA_CA_HIST'
+      DataSource = DMCadParametros.dsParametros_Prod
+      TabOrder = 73
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

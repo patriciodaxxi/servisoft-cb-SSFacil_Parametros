@@ -129,6 +129,7 @@ type
     RxDBComboBox1: TRxDBComboBox;
     Label2: TLabel;
     RxDBComboBox2: TRxDBComboBox;
+    DBCheckBox1: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);

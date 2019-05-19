@@ -1581,6 +1581,10 @@ type
     cdsParametros_PedCALCULA_EDIT: TStringField;
     sdsParametros_PedEND_PDF_PEDIDO: TStringField;
     cdsParametros_PedEND_PDF_PEDIDO: TStringField;
+    sdsParametros_NFeUSA_CST_ICMS_NTE: TStringField;
+    cdsParametros_NFeUSA_CST_ICMS_NTE: TStringField;
+    sdsParametros_ProdUSA_CA_HIST: TStringField;
+    cdsParametros_ProdUSA_CA_HIST: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
