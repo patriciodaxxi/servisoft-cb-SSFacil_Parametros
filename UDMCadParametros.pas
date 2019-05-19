@@ -1577,6 +1577,10 @@ type
     cdsParametros_PedUSA_FABRICA: TStringField;
     sdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
     cdsParametros_PedGRAVA_PROD_CLI_EDI: TStringField;
+    sdsParametros_PedCALCULA_EDIT: TStringField;
+    cdsParametros_PedCALCULA_EDIT: TStringField;
+    sdsParametros_PedEND_PDF_PEDIDO: TStringField;
+    cdsParametros_PedEND_PDF_PEDIDO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

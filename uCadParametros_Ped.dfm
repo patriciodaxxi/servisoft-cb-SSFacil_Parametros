@@ -19,7 +19,7 @@ object frmParametros_Ped: TfrmParametros_Ped
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1256
+    Width = 1248
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,16 +74,16 @@ object frmParametros_Ped: TfrmParametros_Ped
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1256
-    Height = 593
+    Width = 1248
+    Height = 585
     Align = alClient
     Enabled = False
     TabOrder = 1
     object RzPageControl4: TRzPageControl
       Left = 1
       Top = 1
-      Width = 1254
-      Height = 591
+      Width = 1246
+      Height = 583
       ActivePage = TabSheet8
       Align = alClient
       TabIndex = 0
@@ -1259,6 +1259,18 @@ object frmParametros_Ped: TfrmParametros_Ped
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
+        object DBCheckBox4: TDBCheckBox
+          Left = 987
+          Top = 324
+          Width = 261
+          Height = 17
+          Caption = 'Calcular Edit quando incluir o caracter +'
+          DataField = 'CALCULA_EDIT'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 73
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'
@@ -1284,8 +1296,8 @@ object frmParametros_Ped: TfrmParametros_Ped
         object pnlImpressao: TPanel
           Left = 0
           Top = 0
-          Width = 1250
-          Height = 568
+          Width = 1242
+          Height = 560
           Align = alClient
           Enabled = False
           TabOrder = 0
@@ -1320,6 +1332,14 @@ object frmParametros_Ped: TfrmParametros_Ped
             Height = 13
             Alignment = taRightJustify
             Caption = 'Tipo Relat'#243'rio:'
+          end
+          object Label280: TLabel
+            Left = 391
+            Top = 110
+            Width = 142
+            Height = 13
+            Alignment = taRightJustify
+            Caption = 'Endere'#231'o para Salvar Pedido:'
           end
           object DBCheckBox101: TDBCheckBox
             Left = 16
@@ -1492,6 +1512,17 @@ object frmParametros_Ped: TfrmParametros_Ped
             TabOrder = 7
             ValueChecked = 'S'
             ValueUnchecked = 'N'
+          end
+          object dirEndPedido: TDirectoryEdit
+            Left = 534
+            Top = 102
+            Width = 536
+            Height = 21
+            InitialDir = 'C:\'
+            MultipleDirs = True
+            NumGlyphs = 1
+            TabOrder = 12
+            Text = 'C:\'
           end
         end
       end

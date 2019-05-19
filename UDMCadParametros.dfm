@@ -4837,6 +4837,15 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedCALCULA_EDIT: TStringField
+      FieldName = 'CALCULA_EDIT'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_PedEND_PDF_PEDIDO: TStringField
+      FieldName = 'END_PDF_PEDIDO'
+      Size = 250
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5150,6 +5159,15 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'GRAVA_PROD_CLI_EDI'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_PedCALCULA_EDIT: TStringField
+      FieldName = 'CALCULA_EDIT'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedEND_PDF_PEDIDO: TStringField
+      FieldName = 'END_PDF_PEDIDO'
+      Size = 250
     end
   end
   object dsParametros_Ped: TDataSource

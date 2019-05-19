@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, DBCtrls, Mask, RxLookup, RxDBComb, RzTabs, Buttons,
-  ExtCtrls, UDMCadParametros, DB, rsDBUtils;
+  ExtCtrls, UDMCadParametros, DB, rsDBUtils, ToolEdit;
 
 type
   TfrmParametros_Ped = class(TForm)
@@ -140,6 +140,9 @@ type
     DBCheckBox1: TDBCheckBox;
     DBCheckBox2: TDBCheckBox;
     DBCheckBox3: TDBCheckBox;
+    DBCheckBox4: TDBCheckBox;
+    Label280: TLabel;
+    dirEndPedido: TDirectoryEdit;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
@@ -165,6 +168,12 @@ implementation
 
 procedure TfrmParametros_Ped.prc_Gravar_Registro;
 begin
+  if fDMCadParametros.cdsParametros_PedEND_PDF_PEDIDO.Value <> dirEndPedido.Text then
+  begin
+    if not(fDMCadParametros.cdsParametros_Ped.State in [dsEdit,dsInsert]) then
+      fDMCadParametros.cdsParametros_Ped.Edit;
+    fDMCadParametros.cdsParametros_PedEND_PDF_PEDIDO.Value := dirEndPedido.Text;
+  end;
   fDMCadParametros.prc_Gravar;
   if fDMCadParametros.cdsParametros.State in [dsEdit, dsInsert] then
   begin
@@ -225,6 +234,7 @@ begin
   oDBUtils.SetDataSourceProperties(Self,fDMCadParametros);
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_Ped;
+  dirEndPedido.Text  := fDMCadParametros.cdsParametros_PedEND_PDF_PEDIDO.AsString;
 end;
 
 procedure TfrmParametros_Ped.FormClose(Sender: TObject;
