@@ -1123,5 +1123,19 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
+    object DBCheckBox1: TDBCheckBox
+      Left = 32
+      Top = 415
+      Width = 627
+      Height = 17
+      Caption = 
+        'Mant'#233'm o CST ICMS na devolu'#231#227'o/;retorno da nte quando Emitente f' +
+        'or mesmo regime'
+      DataField = 'USA_CST_ICMS_NTE'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 44
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end
