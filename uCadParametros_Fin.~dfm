@@ -19,7 +19,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1248
+    Width = 1256
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1248
-    Height = 555
+    Width = 1256
+    Height = 563
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -1035,6 +1035,18 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       DataField = 'CONTROLA_CONTRATO_CCUSTO'
       DataSource = DMCadParametros.dsParametros_Fin
       TabOrder = 52
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox5: TDBCheckBox
+      Left = 856
+      Top = 404
+      Width = 377
+      Height = 17
+      Caption = 'Caixa Vira a Noite (bares e eventos)'
+      DataField = 'CAIXA_VIRA_NOITE'
+      DataSource = DMCadParametros.dsParametros_Fin
+      TabOrder = 53
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
