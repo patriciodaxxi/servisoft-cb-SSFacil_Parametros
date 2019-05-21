@@ -317,6 +317,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsContas
       TabOrder = 2
     end
     object RxDBLookupCombo5: TRxDBLookupCombo
@@ -329,6 +330,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsTipoCobranca
       TabOrder = 3
     end
     object RxDBComboBox21: TRxDBComboBox
@@ -359,6 +361,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsContas
       TabOrder = 5
     end
     object RxDBComboBox26: TRxDBComboBox
