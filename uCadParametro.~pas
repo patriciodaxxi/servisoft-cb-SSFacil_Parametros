@@ -116,6 +116,8 @@ type
     FilenameEdit1: TFilenameEdit;
     Label102: TLabel;
     DBMemo2: TDBMemo;
+    Label1: TLabel;
+    RxDBLookupCombo1: TRxDBLookupCombo;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);

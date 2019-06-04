@@ -1,6 +1,6 @@
 object frmCadParametro: TfrmCadParametro
-  Left = -1
-  Top = 0
+  Left = -4
+  Top = 16
   Width = 1382
   Height = 744
   Caption = 'frmCadParametros - Par'#226'metros'
@@ -20,7 +20,7 @@ object frmCadParametro: TfrmCadParametro
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1366
+    Width = 1374
     Height = 35
     Align = alTop
     Color = 8404992
@@ -75,8 +75,8 @@ object frmCadParametro: TfrmCadParametro
   object pc_Principal: TRzPageControl
     Left = 0
     Top = 35
-    Width = 1366
-    Height = 670
+    Width = 1374
+    Height = 678
     ActivePage = ts_Geral
     Align = alClient
     TabIndex = 0
@@ -87,8 +87,8 @@ object frmCadParametro: TfrmCadParametro
       object pnlGeral: TPanel
         Left = 0
         Top = 0
-        Width = 1362
-        Height = 647
+        Width = 1370
+        Height = 655
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -528,7 +528,7 @@ object frmCadParametro: TfrmCadParametro
           Items.Strings = (
             'SIM'
             'N'#195'O')
-          TabOrder = 63
+          TabOrder = 64
           Values.Strings = (
             'S'
             'N')
@@ -661,25 +661,25 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox12: TDBCheckBox
           Left = 500
-          Top = 233
+          Top = 250
           Width = 105
           Height = 17
           Caption = 'Usa SPED'
           DataField = 'USA_SPED'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 44
+          TabOrder = 45
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox13: TDBCheckBox
           Left = 500
-          Top = 249
+          Top = 266
           Width = 105
           Height = 17
           Caption = 'Usa FCI'
           DataField = 'USA_FCI'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 45
+          TabOrder = 46
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -696,7 +696,7 @@ object frmCadParametro: TfrmCadParametro
           Items.Strings = (
             'Pra Cima'
             'Pra Baixo')
-          TabOrder = 41
+          TabOrder = 42
           Values.Strings = (
             'C'
             'B')
@@ -709,7 +709,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa Vale'
           DataField = 'USA_VALE'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 46
+          TabOrder = 47
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -721,7 +721,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa Cupom Fiscal'
           DataField = 'USA_CUPOM_FISCAL'
           DataSource = DMCadParametros.dsParametros
-          TabOrder = 47
+          TabOrder = 48
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -774,7 +774,7 @@ object frmCadParametro: TfrmCadParametro
           Items.Strings = (
             'SIM'
             'N'#195'O')
-          TabOrder = 43
+          TabOrder = 44
           Values.Strings = (
             'S'
             'N')
@@ -848,7 +848,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa Pontos de Loca'#231#227'o'
           DataField = 'USA_PONTOS_LOCACAO'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 48
+          TabOrder = 49
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -860,7 +860,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Mostrar dados Pessoa F'#237'sica'
           DataField = 'MOSTRAR_DADOS_PESSOA_FISICA'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 49
+          TabOrder = 50
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -872,7 +872,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Liberar digita'#231#227'o dt. cadastro Pessoa'
           DataField = 'LIBERAR_DIG_DTCADASTRO'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 50
+          TabOrder = 51
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -884,7 +884,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa cadastro de Pessoas por Filial'
           DataField = 'USAR_PESSOA_FILIAL'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 51
+          TabOrder = 52
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -896,7 +896,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Mostrar C'#243'digo Cont'#225'bil'
           DataField = 'MOSTRAR_COD_CONTABIL'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 52
+          TabOrder = 53
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -919,7 +919,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa o tipo de contribuinte na varia'#231#227'o  CFOP'
           DataField = 'USA_TIPO_CONTR_VARIACAO'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 53
+          TabOrder = 54
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -931,7 +931,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Grava Hist'#243'rico de senha'
           DataField = 'GRAVAR_HIST_SENHA'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 54
+          TabOrder = 55
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -966,7 +966,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Informar o Usu'#225'rio no cadastro do vendedor (Logar no sistema)'
           DataField = 'INF_USUARIO_VEND'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 55
+          TabOrder = 56
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -976,7 +976,7 @@ object frmCadParametro: TfrmCadParametro
           Width = 25
           Height = 22
           Hint = 'Abre o caminho p/ localizar a foto'
-          TabOrder = 64
+          TabOrder = 65
           Glyph.Data = {
             76010000424D7601000000000000760000002800000020000000100000000100
             04000000000000010000120B0000120B00001000000000000000000000000000
@@ -1070,7 +1070,7 @@ object frmCadParametro: TfrmCadParametro
             't)'
           DataField = 'USA_ISENTO_PESSOA'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 56
+          TabOrder = 57
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1082,7 +1082,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa Custo'
           DataField = 'USA_CUSTO'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 57
+          TabOrder = 58
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1112,7 +1112,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa Cliente Triangular'
           DataField = 'USA_TRIANGULAR'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 58
+          TabOrder = 59
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1124,7 +1124,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa Ajuste do Custo Total do Produto'
           DataField = 'USA_AJUSTE_CUSTO'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 59
+          TabOrder = 60
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1136,19 +1136,19 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa C'#243'digo do Vendedor Separado do ID da Pessoa'
           DataField = 'USA_COD_VENDEDOR'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 60
+          TabOrder = 61
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox231: TDBCheckBox
           Left = 500
-          Top = 216
+          Top = 233
           Width = 171
           Height = 17
           Caption = 'Usa senha / contra-senha'
           DataField = 'USA_SENHA_CONTRASENHA'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 40
+          TabOrder = 41
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1160,7 +1160,7 @@ object frmCadParametro: TfrmCadParametro
           Caption = 'Usa Tipo do Material na Pessoa'
           DataField = 'USA_TIPO_MATERIAL'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 61
+          TabOrder = 62
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1186,7 +1186,7 @@ object frmCadParametro: TfrmCadParametro
           Items.Strings = (
             'Processo'
             'Atelier / Terceiro')
-          TabOrder = 42
+          TabOrder = 43
           Values.Strings = (
             'P'
             'A')
@@ -1198,7 +1198,7 @@ object frmCadParametro: TfrmCadParametro
           Height = 17
           Caption = 'Permite CNPJ Duplicado na Tranportadora'
           DataSource = DMCadParametros.dsParametros_Geral
-          TabOrder = 62
+          TabOrder = 63
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1237,7 +1237,7 @@ object frmCadParametro: TfrmCadParametro
           Width = 536
           Height = 21
           NumGlyphs = 1
-          TabOrder = 65
+          TabOrder = 66
         end
         object DBMemo2: TDBMemo
           Left = 319
@@ -1247,7 +1247,7 @@ object frmCadParametro: TfrmCadParametro
           DataField = 'OBS_EXPORTACAO_EXCEL'
           DataSource = DMCadParametros.dsParametros
           ScrollBars = ssVertical
-          TabOrder = 66
+          TabOrder = 67
         end
         object RxDBLookupCombo1: TRxDBLookupCombo
           Left = 670
@@ -1261,7 +1261,19 @@ object frmCadParametro: TfrmCadParametro
           LookupField = 'ID'
           LookupDisplay = 'NOME'
           LookupSource = DMCadParametros.dsFilial
-          TabOrder = 67
+          TabOrder = 68
+        end
+        object DBCheckBox3: TDBCheckBox
+          Left = 500
+          Top = 216
+          Width = 188
+          Height = 17
+          Caption = 'Empresa de Pet'
+          DataField = 'EMPRESA_PET'
+          DataSource = DMCadParametros.dsParametros_Geral
+          TabOrder = 40
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
         end
       end
     end

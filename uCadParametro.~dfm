@@ -1,6 +1,6 @@
 object frmCadParametro: TfrmCadParametro
-  Left = -8
-  Top = -8
+  Left = -1
+  Top = 0
   Width = 1382
   Height = 744
   Caption = 'frmCadParametros - Par'#226'metros'
@@ -185,7 +185,7 @@ object frmCadParametro: TfrmCadParametro
           Left = 6
           Top = 379
           Width = 311
-          Height = 12
+          Height = 13
           Alignment = taRightJustify
           Caption = 'Usar Pre'#231'o do Fornecedor na OC (Tabela de Produtos Forncedor)'
         end
@@ -354,6 +354,14 @@ object frmCadParametro: TfrmCadParametro
           Width = 137
           Height = 13
           Caption = 'Obs. da Condi'#231#227'o de Venda:'
+        end
+        object Label1: TLabel
+          Left = 545
+          Top = 293
+          Width = 122
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Filial Padr'#227'o Pedido Web:'
         end
         object RxDBComboBox4: TRxDBComboBox
           Left = 206
@@ -1240,6 +1248,20 @@ object frmCadParametro: TfrmCadParametro
           DataSource = DMCadParametros.dsParametros
           ScrollBars = ssVertical
           TabOrder = 66
+        end
+        object RxDBLookupCombo1: TRxDBLookupCombo
+          Left = 670
+          Top = 284
+          Width = 184
+          Height = 21
+          DropDownCount = 8
+          DropDownWidth = 300
+          DataField = 'FILIAL_PADRAO_PEDWEB'
+          DataSource = DMCadParametros.dsParametros_Geral
+          LookupField = 'ID'
+          LookupDisplay = 'NOME'
+          LookupSource = DMCadParametros.dsFilial
+          TabOrder = 67
         end
       end
     end
