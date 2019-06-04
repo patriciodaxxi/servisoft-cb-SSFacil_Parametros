@@ -3,10 +3,8 @@ unit UMenu;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Buttons, ComCtrls, jpeg, Menus, ToolWin, Types, UCBase,
-  UCDBXConn, ActnList, ImgList, ShellAPI, ExtCtrls, RLConsts, IniFiles, Midaslib,
-  DBClient, SqlExpr;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ComCtrls, jpeg, Menus,
+  ToolWin, Types, UCBase, UCDBXConn, ActnList, ImgList, ShellAPI, ExtCtrls, RLConsts, IniFiles, Midaslib, DBClient, SqlExpr;
 
 type
   TfMenu = class(TForm)
@@ -233,6 +231,7 @@ end;
 
 procedure TfMenu.UserControl1AfterLogin(Sender: TObject);
 begin
+  vUsuario := UserControl1.CurrentUser.LoginName;
   prc_Habilita_Menu;
 end;
 

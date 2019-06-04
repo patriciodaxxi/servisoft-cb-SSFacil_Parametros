@@ -3,10 +3,8 @@ unit UMenu;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Buttons, ComCtrls, jpeg, Menus, ToolWin, Types, UCBase,
-  UCDBXConn, ActnList, ImgList, ShellAPI, ExtCtrls, RLConsts, IniFiles, Midaslib,
-  DBClient, SqlExpr;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ComCtrls, jpeg, Menus,
+  ToolWin, Types, UCBase, UCDBXConn, ActnList, ImgList, ShellAPI, ExtCtrls, RLConsts, IniFiles, Midaslib, DBClient, SqlExpr;
 
 type
   TfMenu = class(TForm)
@@ -111,10 +109,10 @@ var
 implementation
 
 uses
-  DmdDatabase, uUtilPadrao, uCadParametro, UCadParametros_NFE,
-  uCadParametros_NTE, uCadParametros_NotaFiscal, uCadParametros_NFSe,
-  uCadParametros_RecXML, uCadParametros_Prod, uCadParametros_Ped,
-  uCadParametros_Lote, uCadParametros_Cta_Orc, uCadParametros_Com, uCadParametros_Fin, uCadParametros_Imp, uCadParametros_OC, uCadParametros_Usuario, uCadParametros_Estoque, uCadParametros_Ser, uCadParametros_MDFe, uCadParametros_Etiq, uCadParametros_Custo;
+  DmdDatabase, uUtilPadrao, uCadParametro, UCadParametros_NFE, uCadParametros_NTE, uCadParametros_NotaFiscal, uCadParametros_NFSe,
+  uCadParametros_RecXML, uCadParametros_Prod, uCadParametros_Ped, uCadParametros_Lote, uCadParametros_Cta_Orc, uCadParametros_Com,
+  uCadParametros_Fin, uCadParametros_Imp, uCadParametros_OC, uCadParametros_Usuario, uCadParametros_Estoque, uCadParametros_Ser,
+  uCadParametros_MDFe, uCadParametros_Etiq, uCadParametros_Custo;
 
 {$R *.dfm}
 
