@@ -1587,6 +1587,8 @@ type
     cdsParametros_ProdUSA_CA_HIST: TStringField;
     sdsParametros_FinCAIXA_VIRA_NOITE: TStringField;
     cdsParametros_FinCAIXA_VIRA_NOITE: TStringField;
+    sdsParametros_GeralEMPRESA_PET: TStringField;
+    cdsParametros_GeralEMPRESA_PET: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

@@ -6160,6 +6160,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinCAIXA_VIRA_NOITE: TStringField
+      FieldName = 'CAIXA_VIRA_NOITE'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6365,6 +6370,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinCONTROLA_CONTRATO_CCUSTO: TStringField
       FieldName = 'CONTROLA_CONTRATO_CCUSTO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinCAIXA_VIRA_NOITE: TStringField
+      FieldName = 'CAIXA_VIRA_NOITE'
       FixedChar = True
       Size = 1
     end

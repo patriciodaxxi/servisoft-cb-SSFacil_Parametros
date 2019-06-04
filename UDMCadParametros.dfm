@@ -2479,13 +2479,18 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_GeralFILIAL_PADRAO_PEDWEB: TIntegerField
       FieldName = 'FILIAL_PADRAO_PEDWEB'
     end
+    object sdsParametros_GeralEMPRESA_PET: TStringField
+      FieldName = 'EMPRESA_PET'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Geral: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Geral'
     Left = 96
-    Top = 65
+    Top = 66
     object cdsParametros_GeralID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -2627,6 +2632,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_GeralFILIAL_PADRAO_PEDWEB: TIntegerField
       FieldName = 'FILIAL_PADRAO_PEDWEB'
+    end
+    object cdsParametros_GeralEMPRESA_PET: TStringField
+      FieldName = 'EMPRESA_PET'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Geral: TDataSource

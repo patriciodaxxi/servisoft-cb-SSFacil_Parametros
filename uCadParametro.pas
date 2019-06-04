@@ -118,6 +118,7 @@ type
     DBMemo2: TDBMemo;
     Label1: TLabel;
     RxDBLookupCombo1: TRxDBLookupCombo;
+    DBCheckBox3: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
