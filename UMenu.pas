@@ -295,7 +295,7 @@ end;
 
 procedure TfMenu.Pedido1Click(Sender: TObject);
 begin
-  OpenForm(TfrmParametros_Ped, wsMaximized);
+  OpenForm(TfrmCadParametros_Ped, wsMaximized);
 end;
 
 procedure TfMenu.LoteTalo1Click(Sender: TObject);

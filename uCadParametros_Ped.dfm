@@ -1,9 +1,9 @@
-object frmParametros_Ped: TfrmParametros_Ped
+object frmCadParametros_Ped: TfrmCadParametros_Ped
   Left = 38
   Top = 3
   Width = 1264
   Height = 659
-  Caption = 'frmParametros_Ped'
+  Caption = 'frmCadParametros_Ped'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,7 +19,7 @@ object frmParametros_Ped: TfrmParametros_Ped
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1248
+    Width = 1256
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,16 +74,16 @@ object frmParametros_Ped: TfrmParametros_Ped
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1248
-    Height = 585
+    Width = 1256
+    Height = 593
     Align = alClient
     Enabled = False
     TabOrder = 1
     object RzPageControl4: TRzPageControl
       Left = 1
       Top = 1
-      Width = 1246
-      Height = 583
+      Width = 1254
+      Height = 591
       ActivePage = TabSheet8
       Align = alClient
       TabIndex = 0
@@ -1271,6 +1271,18 @@ object frmParametros_Ped: TfrmParametros_Ped
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
+        object DBCheckBox5: TDBCheckBox
+          Left = 987
+          Top = 338
+          Width = 261
+          Height = 17
+          Caption = 'Usa o Vlr.Unit'#225'rio da Tabela de Pre'#231'o (EDI)'
+          DataField = 'EDI_USAR_PRECO_TAB'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 74
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'
@@ -1296,8 +1308,8 @@ object frmParametros_Ped: TfrmParametros_Ped
         object pnlImpressao: TPanel
           Left = 0
           Top = 0
-          Width = 1242
-          Height = 560
+          Width = 1250
+          Height = 568
           Align = alClient
           Enabled = False
           TabOrder = 0

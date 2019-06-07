@@ -12,3 +12,9 @@ UDMCadParametros.~dfm
 uCadParametro.~pas
 *.~pas
 *.~ddp
+*.~pas
+*.~dfm
+*.~dpr
+UDMCadParametros.~pas
+*.~dfm
+*.~pas

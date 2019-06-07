@@ -4876,6 +4876,11 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'END_PDF_PEDIDO'
       Size = 250
     end
+    object sdsParametros_PedEDI_USAR_PRECO_TAB: TStringField
+      FieldName = 'EDI_USAR_PRECO_TAB'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5198,6 +5203,11 @@ object DMCadParametros: TDMCadParametros
     object cdsParametros_PedEND_PDF_PEDIDO: TStringField
       FieldName = 'END_PDF_PEDIDO'
       Size = 250
+    end
+    object cdsParametros_PedEDI_USAR_PRECO_TAB: TStringField
+      FieldName = 'EDI_USAR_PRECO_TAB'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Ped: TDataSource

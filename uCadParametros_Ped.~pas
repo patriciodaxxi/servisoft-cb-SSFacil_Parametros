@@ -8,7 +8,7 @@ uses
   ExtCtrls, UDMCadParametros, DB, rsDBUtils, ToolEdit;
 
 type
-  TfrmParametros_Ped = class(TForm)
+  TfrmCadParametros_Ped = class(TForm)
     Panel1: TPanel;
     btnConfirmar: TBitBtn;
     btnCancelar: TBitBtn;
@@ -158,7 +158,7 @@ type
   end;
 
 var
-  frmParametros_Ped: TfrmParametros_Ped;
+  frmCadParametros_Ped: TfrmCadParametros_Ped;
 
 implementation
 
@@ -166,7 +166,7 @@ implementation
 
 { TfrmParametros_Ped }
 
-procedure TfrmParametros_Ped.prc_Gravar_Registro;
+procedure TfrmCadParametros_Ped.prc_Gravar_Registro;
 begin
   if fDMCadParametros.cdsParametros_PedEND_PDF_PEDIDO.Value <> dirEndPedido.Text then
   begin
@@ -193,7 +193,7 @@ begin
   btnAlterar.Enabled := not (btnAlterar.Enabled);
 end;
 
-procedure TfrmParametros_Ped.btnAlterarClick(Sender: TObject);
+procedure TfrmCadParametros_Ped.btnAlterarClick(Sender: TObject);
 begin
   if (fDMCadParametros.cdsParametros.IsEmpty) or not (fDMCadParametros.cdsParametros.Active) or (fDMCadParametros.cdsParametrosID.AsInteger < 1) then
     exit;
@@ -207,7 +207,7 @@ begin
 
 end;
 
-procedure TfrmParametros_Ped.btnCancelarClick(Sender: TObject);
+procedure TfrmCadParametros_Ped.btnCancelarClick(Sender: TObject);
 begin
   if (fDMCadParametros.cdsParametros.State in [dsBrowse]) or not(fDMCadParametros.cdsParametros.Active) then
     exit;
@@ -223,12 +223,12 @@ begin
   btnAlterar.Enabled     := not(btnAlterar.Enabled);
 end;
 
-procedure TfrmParametros_Ped.btnConfirmarClick(Sender: TObject);
+procedure TfrmCadParametros_Ped.btnConfirmarClick(Sender: TObject);
 begin
   prc_Gravar_Registro;
 end;
 
-procedure TfrmParametros_Ped.FormShow(Sender: TObject);
+procedure TfrmCadParametros_Ped.FormShow(Sender: TObject);
 begin
   fDMCadParametros := TDMCadParametros.Create(Self);
   oDBUtils.SetDataSourceProperties(Self,fDMCadParametros);
@@ -237,13 +237,13 @@ begin
   dirEndPedido.Text  := fDMCadParametros.cdsParametros_PedEND_PDF_PEDIDO.AsString;
 end;
 
-procedure TfrmParametros_Ped.FormClose(Sender: TObject;
+procedure TfrmCadParametros_Ped.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
-procedure TfrmParametros_Ped.FormDestroy(Sender: TObject);
+procedure TfrmCadParametros_Ped.FormDestroy(Sender: TObject);
 begin
   FreeAndNil(fDMCadParametros);
 end;

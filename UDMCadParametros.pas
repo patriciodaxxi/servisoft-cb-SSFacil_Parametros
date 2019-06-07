@@ -1589,6 +1589,8 @@ type
     cdsParametros_FinCAIXA_VIRA_NOITE: TStringField;
     sdsParametros_GeralEMPRESA_PET: TStringField;
     cdsParametros_GeralEMPRESA_PET: TStringField;
+    sdsParametros_PedEDI_USAR_PRECO_TAB: TStringField;
+    cdsParametros_PedEDI_USAR_PRECO_TAB: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
