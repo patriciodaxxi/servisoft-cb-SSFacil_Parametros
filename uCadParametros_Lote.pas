@@ -71,16 +71,22 @@ type
     DBCheckBox1: TDBCheckBox;
     Label2: TLabel;
     DBEdit1: TDBEdit;
+    Label3: TLabel;
+    RxDBComboBox1: TRxDBComboBox;
+    DBCheckBox2: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure DBCheckBox27Click(Sender: TObject);
   private
     { Private declarations }
     fDMCadparametros : TDMCadParametros;
     procedure prc_Gravar_Registro;
+    procedure prc_Opcao_Textil;
+    
   public
     { Public declarations }
 
@@ -100,6 +106,7 @@ begin
   fDMCadparametros.prc_Consultar;
   fDMCadparametros.prc_Consultar_Lote;
   fDMCadparametros.cdsSetor.Open;
+  prc_Opcao_Textil;
 end;
 
 procedure TfrmCadParametros_Lote.btnAlterarClick(Sender: TObject);
@@ -160,6 +167,18 @@ procedure TfrmCadParametros_Lote.FormClose(Sender: TObject;
   var Action: TCloseAction);
 begin
   Action := caFree;
+end;
+
+procedure TfrmCadParametros_Lote.DBCheckBox27Click(Sender: TObject);
+begin
+  prc_Opcao_Textil;
+end;
+
+procedure TfrmCadParametros_Lote.prc_Opcao_Textil;
+begin
+  DBCheckBox2.Visible   := DBCheckBox27.Checked;
+  Label3.Visible        := DBCheckBox27.Checked;
+  RxDBComboBox1.Visible := DBCheckBox27.Checked;
 end;
 
 end.

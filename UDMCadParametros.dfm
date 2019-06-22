@@ -5458,6 +5458,16 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
       FieldName = 'TOTAL_HORAS_PROD'
     end
+    object sdsParametros_LoteOPCAO_ESTOQUE_SEMI: TStringField
+      FieldName = 'OPCAO_ESTOQUE_SEMI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_LoteRESERVA_EST_LOTE: TStringField
+      FieldName = 'RESERVA_EST_LOTE'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
@@ -5579,6 +5589,16 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_LoteTOTAL_HORAS_PROD: TFloatField
       FieldName = 'TOTAL_HORAS_PROD'
+    end
+    object cdsParametros_LoteOPCAO_ESTOQUE_SEMI: TStringField
+      FieldName = 'OPCAO_ESTOQUE_SEMI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_LoteRESERVA_EST_LOTE: TStringField
+      FieldName = 'RESERVA_EST_LOTE'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Lote: TDataSource
