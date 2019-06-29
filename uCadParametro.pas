@@ -20,8 +20,6 @@ type
     Label5: TLabel;
     Label11: TLabel;
     Label15: TLabel;
-    Label34: TLabel;
-    Label41: TLabel;
     Label50: TLabel;
     Label51: TLabel;
     Label53: TLabel;
@@ -49,9 +47,7 @@ type
     DBEdit4: TDBEdit;
     RxDBComboBox12: TRxDBComboBox;
     DBCheckBox1: TDBCheckBox;
-    RxDBComboBox20: TRxDBComboBox;
     DBCheckBox2: TDBCheckBox;
-    RxDBComboBox22: TRxDBComboBox;
     RxDBLookupCombo7: TRxDBLookupCombo;
     RxDBLookupCombo8: TRxDBLookupCombo;
     RxDBComboBox25: TRxDBComboBox;
@@ -119,6 +115,10 @@ type
     Label1: TLabel;
     RxDBLookupCombo1: TRxDBLookupCombo;
     DBCheckBox3: TDBCheckBox;
+    DBCheckBox4: TDBCheckBox;
+    DBCheckBox5: TDBCheckBox;
+    Label3: TLabel;
+    RxDBComboBox1: TRxDBComboBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);

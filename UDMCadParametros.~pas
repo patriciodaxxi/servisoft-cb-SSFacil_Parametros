@@ -1591,6 +1591,10 @@ type
     cdsParametros_GeralEMPRESA_PET: TStringField;
     sdsParametros_PedEDI_USAR_PRECO_TAB: TStringField;
     cdsParametros_PedEDI_USAR_PRECO_TAB: TStringField;
+    sdsParametros_LoteOPCAO_ESTOQUE_SEMI: TStringField;
+    sdsParametros_LoteRESERVA_EST_LOTE: TStringField;
+    cdsParametros_LoteOPCAO_ESTOQUE_SEMI: TStringField;
+    cdsParametros_LoteRESERVA_EST_LOTE: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

@@ -2484,6 +2484,9 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_GeralUSA_VENDEDOR_INT: TIntegerField
+      FieldName = 'USA_VENDEDOR_INT'
+    end
   end
   object cdsParametros_Geral: TClientDataSet
     Aggregates = <>
@@ -2637,6 +2640,9 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'EMPRESA_PET'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_GeralUSA_VENDEDOR_INT: TIntegerField
+      FieldName = 'USA_VENDEDOR_INT'
     end
   end
   object dsParametros_Geral: TDataSource
