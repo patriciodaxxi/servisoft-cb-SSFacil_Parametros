@@ -2484,8 +2484,10 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
-    object sdsParametros_GeralUSA_VENDEDOR_INT: TIntegerField
+    object sdsParametros_GeralUSA_VENDEDOR_INT: TStringField
       FieldName = 'USA_VENDEDOR_INT'
+      FixedChar = True
+      Size = 1
     end
   end
   object cdsParametros_Geral: TClientDataSet
@@ -2641,8 +2643,10 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
-    object cdsParametros_GeralUSA_VENDEDOR_INT: TIntegerField
+    object cdsParametros_GeralUSA_VENDEDOR_INT: TStringField
       FieldName = 'USA_VENDEDOR_INT'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Geral: TDataSource

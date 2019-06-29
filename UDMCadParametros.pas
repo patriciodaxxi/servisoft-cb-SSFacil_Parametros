@@ -1595,8 +1595,8 @@ type
     sdsParametros_LoteRESERVA_EST_LOTE: TStringField;
     cdsParametros_LoteOPCAO_ESTOQUE_SEMI: TStringField;
     cdsParametros_LoteRESERVA_EST_LOTE: TStringField;
-    sdsParametros_GeralUSA_VENDEDOR_INT: TIntegerField;
-    cdsParametros_GeralUSA_VENDEDOR_INT: TIntegerField;
+    sdsParametros_GeralUSA_VENDEDOR_INT: TStringField;
+    cdsParametros_GeralUSA_VENDEDOR_INT: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
