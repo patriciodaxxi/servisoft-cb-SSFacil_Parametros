@@ -366,7 +366,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'ID Produto Gen'#233'rico:'
     end
     object Label260: TLabel
-      Left = 569
+      Left = 521
       Top = 431
       Width = 113
       Height = 13
@@ -382,7 +382,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa ID Material Consumo:'
     end
     object Label291: TLabel
-      Left = 917
+      Left = 885
       Top = 268
       Width = 60
       Height = 13
@@ -956,7 +956,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       TabOrder = 30
     end
     object DBCheckBox53: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 303
       Width = 216
       Height = 17
@@ -968,7 +968,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox68: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 317
       Width = 199
       Height = 17
@@ -990,7 +990,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       TabOrder = 20
     end
     object DBCheckBox71: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 330
       Width = 199
       Height = 17
@@ -1002,10 +1002,10 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox77: TDBCheckBox
-      Left = 641
-      Top = 343
-      Width = 199
-      Height = 17
+      Left = 593
+      Top = 342
+      Width = 330
+      Height = 18
       Caption = 'Marcar autom'#225'tico a op'#231#227'o para baixar estoque do consumo'
       DataField = 'MARCAR_BAIXAR_ESTOQUE_MAT'
       DataSource = DMCadParametros.dsParametros_Prod
@@ -1014,7 +1014,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox85: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 356
       Width = 199
       Height = 17
@@ -1026,7 +1026,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox86: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 369
       Width = 247
       Height = 17
@@ -1085,7 +1085,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'C')
     end
     object DBCheckBox98: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 382
       Width = 375
       Height = 17
@@ -1117,7 +1117,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         '3')
     end
     object DBCheckBox105: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 395
       Width = 350
       Height = 17
@@ -1129,7 +1129,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox113: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 408
       Width = 350
       Height = 17
@@ -1150,7 +1150,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       TabOrder = 44
     end
     object RxDBComboBox155: TRxDBComboBox
-      Left = 684
+      Left = 636
       Top = 423
       Width = 184
       Height = 21
@@ -1170,7 +1170,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'N')
     end
     object DBCheckBox132: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 448
       Width = 351
       Height = 16
@@ -1182,7 +1182,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox137: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 460
       Width = 351
       Height = 16
@@ -1194,7 +1194,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox154: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 289
       Width = 216
       Height = 17
@@ -1224,7 +1224,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'N')
     end
     object DBCheckBox158: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 473
       Width = 351
       Height = 16
@@ -1236,7 +1236,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox167: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 486
       Width = 351
       Height = 16
@@ -1248,7 +1248,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox171: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 499
       Width = 351
       Height = 16
@@ -1260,7 +1260,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox204: TDBCheckBox
-      Left = 641
+      Left = 594
       Top = 262
       Width = 256
       Height = 17
@@ -1270,9 +1270,10 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       TabOrder = 54
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+      OnClick = DBCheckBox204Click
     end
     object DBEdit43: TDBEdit
-      Left = 980
+      Left = 948
       Top = 260
       Width = 45
       Height = 21
@@ -1282,7 +1283,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Visible = False
     end
     object DBCheckBox205: TDBCheckBox
-      Left = 641
+      Left = 593
       Top = 275
       Width = 256
       Height = 17
@@ -1306,7 +1307,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox221: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 512
       Width = 351
       Height = 16
@@ -1318,7 +1319,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox223: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 525
       Width = 383
       Height = 16
@@ -1330,7 +1331,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox225: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 538
       Width = 383
       Height = 16
@@ -1351,7 +1352,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       TabOrder = 61
     end
     object DBCheckBox239: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 551
       Width = 383
       Height = 16
@@ -1465,7 +1466,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       TabOrder = 66
     end
     object DBCheckBox252: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 564
       Width = 383
       Height = 16
@@ -1477,9 +1478,9 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox260: TDBCheckBox
-      Left = 913
-      Top = 303
-      Width = 216
+      Left = 937
+      Top = 298
+      Width = 180
       Height = 17
       Caption = 'Usa Tam. C'#225'lculo de Fios'
       DataField = 'MOSTRAR_TAM_CALC'
@@ -1489,9 +1490,9 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox273: TDBCheckBox
-      Left = 913
-      Top = 318
-      Width = 360
+      Left = 937
+      Top = 313
+      Width = 324
       Height = 17
       Caption = 'Referencia Tamanho para mais de uma grade de produto'
       DataField = 'USA_TAM_REFER_GRADE'
@@ -1501,7 +1502,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox278: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 577
       Width = 447
       Height = 16
@@ -1515,7 +1516,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox291: TDBCheckBox
-      Left = 642
+      Left = 594
       Top = 593
       Width = 447
       Height = 16
@@ -1581,6 +1582,18 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'S'
         'N'
         'G')
+    end
+    object DBCheckBox1: TDBCheckBox
+      Left = 937
+      Top = 329
+      Width = 324
+      Height = 17
+      Caption = 'Usa o CA Por Hist'#243'rico (Deixa gravado o CA Anterior)'
+      DataField = 'USA_CA_HIST'
+      DataSource = DMCadParametros.dsParametros_Prod
+      TabOrder = 73
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
     end
   end
 end

@@ -130,6 +130,7 @@ type
     Label2: TLabel;
     RxDBComboBox2: TRxDBComboBox;
     DBCheckBox1: TDBCheckBox;
+    DBCheckBox2: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
@@ -137,6 +138,7 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure NxButton1Click(Sender: TObject);
+    procedure DBCheckBox204Click(Sender: TObject);
   private
     { Private declarations }
     fDMCadParametros: TDMCadParametros;
@@ -223,6 +225,12 @@ end;
 procedure TfrmCadParametros_Prod.NxButton1Click(Sender: TObject);
 begin
   MessageDlg('Senha que controla a alteração do Produto depois de calculado o Custo!', mtConfirmation, [mbOk], 0);
+end;
+
+procedure TfrmCadParametros_Prod.DBCheckBox204Click(Sender: TObject);
+begin
+  Label291.Visible := DBCheckBox204.Checked;
+  DBEdit43.Visible := DBCheckBox204.Checked;
 end;
 
 end.
