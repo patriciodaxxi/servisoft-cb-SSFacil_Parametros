@@ -1599,6 +1599,8 @@ type
     cdsParametros_GeralUSA_VENDEDOR_INT: TStringField;
     sdsParametros_ProdALT_REF_ESTRUTURADA: TStringField;
     cdsParametros_ProdALT_REF_ESTRUTURADA: TStringField;
+    sdsParametros_ProdUSA_CORRUGADO: TStringField;
+    cdsParametros_ProdUSA_CORRUGADO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

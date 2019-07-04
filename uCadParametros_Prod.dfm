@@ -1516,9 +1516,9 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox291: TDBCheckBox
-      Left = 594
-      Top = 593
-      Width = 447
+      Left = 938
+      Top = 360
+      Width = 341
       Height = 16
       Caption = 'Mostrar para informar a Forma separada'
       DataField = 'MOSTRAR_FORMA'
@@ -1604,6 +1604,18 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       DataField = 'ALT_REF_ESTRUTURADA'
       DataSource = DMCadParametros.dsParametros_Prod
       TabOrder = 74
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 594
+      Top = 591
+      Width = 447
+      Height = 16
+      Caption = 'Usa C'#225'lculo Corrugado (Produto_Corrugado)'
+      DataField = 'USA_CORRUGADO'
+      DataSource = DMCadParametros.dsParametros_Prod
+      TabOrder = 75
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

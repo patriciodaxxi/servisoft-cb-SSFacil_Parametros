@@ -3720,6 +3720,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdUSA_CORRUGADO: TStringField
+      FieldName = 'USA_CORRUGADO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
@@ -3942,6 +3947,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdALT_REF_ESTRUTURADA: TStringField
       FieldName = 'ALT_REF_ESTRUTURADA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdUSA_CORRUGADO: TStringField
+      FieldName = 'USA_CORRUGADO'
       FixedChar = True
       Size = 1
     end
