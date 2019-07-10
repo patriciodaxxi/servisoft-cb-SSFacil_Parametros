@@ -7133,6 +7133,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_EstUSA_ESTOQUE_GERAL_CAD: TStringField
+      FieldName = 'USA_ESTOQUE_GERAL_CAD'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -7250,6 +7255,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_EstREQ_NUM_PED: TStringField
       FieldName = 'REQ_NUM_PED'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstUSA_ESTOQUE_GERAL_CAD: TStringField
+      FieldName = 'USA_ESTOQUE_GERAL_CAD'
       FixedChar = True
       Size = 1
     end

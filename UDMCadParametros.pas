@@ -1601,6 +1601,8 @@ type
     cdsParametros_ProdALT_REF_ESTRUTURADA: TStringField;
     sdsParametros_ProdUSA_CORRUGADO: TStringField;
     cdsParametros_ProdUSA_CORRUGADO: TStringField;
+    sdsParametros_EstUSA_ESTOQUE_GERAL_CAD: TStringField;
+    cdsParametros_EstUSA_ESTOQUE_GERAL_CAD: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

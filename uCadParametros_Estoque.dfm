@@ -580,5 +580,17 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
+    object DBCheckBox5: TDBCheckBox
+      Left = 643
+      Top = 263
+      Width = 463
+      Height = 17
+      Caption = 'Mostrar o Estoque Gerar (independente da Filial) nos cadastros'
+      DataField = 'USA_ESTOQUE_GERAL_CAD'
+      DataSource = DMCadParametros.dsParametros_Est
+      TabOrder = 27
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end
