@@ -186,9 +186,9 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     object DBCheckBox2: TDBCheckBox
       Left = 427
       Top = 41
-      Width = 265
+      Width = 166
       Height = 18
-      Caption = 'Usa Aprova'#231#227'o da Ordem de Compra'
+      Caption = 'Usa Aprova'#231#227'o Por Item'
       DataField = 'USA_APROVACAO_ITEM'
       DataSource = DMCadParametros.dsParametros_OC
       TabOrder = 2
