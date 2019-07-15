@@ -6245,13 +6245,16 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField
+      FieldName = 'ID_TABPRECO_SEMCAD'
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Fin'
     Left = 112
-    Top = 486
+    Top = 485
     object cdsParametros_FinID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -6457,6 +6460,9 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'CAIXA_VIRA_NOITE'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField
+      FieldName = 'ID_TABPRECO_SEMCAD'
     end
   end
   object dsParametros_Fin: TDataSource

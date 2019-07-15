@@ -1,8 +1,8 @@
 object frmCadParametros_Fin: TfrmCadParametros_Fin
-  Left = 68
-  Top = 40
+  Left = 64
+  Top = 35
   Width = 1264
-  Height = 629
+  Height = 649
   Caption = 'frmCadParametros_Fin'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -75,13 +75,13 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     Left = 0
     Top = 35
     Width = 1256
-    Height = 563
+    Height = 583
     Align = alClient
     Enabled = False
     TabOrder = 1
     object Label107: TLabel
       Left = 183
-      Top = 76
+      Top = 63
       Width = 39
       Height = 13
       Alignment = taRightJustify
@@ -89,7 +89,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label77: TLabel
       Left = 101
-      Top = 34
+      Top = 21
       Width = 121
       Height = 13
       Alignment = taRightJustify
@@ -97,7 +97,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label84: TLabel
       Left = 48
-      Top = 54
+      Top = 41
       Width = 174
       Height = 13
       Alignment = taRightJustify
@@ -105,7 +105,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label129: TLabel
       Left = 84
-      Top = 98
+      Top = 85
       Width = 138
       Height = 13
       Alignment = taRightJustify
@@ -113,7 +113,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label163: TLabel
       Left = 460
-      Top = 16
+      Top = 3
       Width = 122
       Height = 39
       Alignment = taRightJustify
@@ -123,7 +123,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label164: TLabel
       Left = 445
-      Top = 62
+      Top = 49
       Width = 137
       Height = 13
       Alignment = taRightJustify
@@ -131,7 +131,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label97: TLabel
       Left = 198
-      Top = 306
+      Top = 290
       Width = 103
       Height = 13
       Alignment = taRightJustify
@@ -139,7 +139,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label98: TLabel
       Left = 501
-      Top = 306
+      Top = 290
       Width = 120
       Height = 13
       Alignment = taRightJustify
@@ -147,7 +147,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label113: TLabel
       Left = 529
-      Top = 328
+      Top = 312
       Width = 92
       Height = 13
       Alignment = taRightJustify
@@ -155,7 +155,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label117: TLabel
       Left = 192
-      Top = 328
+      Top = 312
       Width = 109
       Height = 13
       Alignment = taRightJustify
@@ -163,7 +163,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label121: TLabel
       Left = 11
-      Top = 350
+      Top = 334
       Width = 290
       Height = 13
       Alignment = taRightJustify
@@ -171,7 +171,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label190: TLabel
       Left = 82
-      Top = 372
+      Top = 356
       Width = 219
       Height = 13
       Alignment = taRightJustify
@@ -179,7 +179,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label204: TLabel
       Left = 76
-      Top = 395
+      Top = 379
       Width = 225
       Height = 13
       Alignment = taRightJustify
@@ -187,7 +187,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label207: TLabel
       Left = 198
-      Top = 419
+      Top = 403
       Width = 103
       Height = 13
       Alignment = taRightJustify
@@ -195,7 +195,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label209: TLabel
       Left = 190
-      Top = 442
+      Top = 426
       Width = 111
       Height = 13
       Alignment = taRightJustify
@@ -203,7 +203,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label210: TLabel
       Left = 60
-      Top = 465
+      Top = 449
       Width = 241
       Height = 13
       Alignment = taRightJustify
@@ -211,7 +211,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label220: TLabel
       Left = 61
-      Top = 142
+      Top = 129
       Width = 161
       Height = 13
       Alignment = taRightJustify
@@ -219,7 +219,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label221: TLabel
       Left = 2
-      Top = 120
+      Top = 107
       Width = 220
       Height = 13
       Alignment = taRightJustify
@@ -227,7 +227,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label224: TLabel
       Left = 75
-      Top = 186
+      Top = 173
       Width = 147
       Height = 13
       Alignment = taRightJustify
@@ -235,7 +235,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label243: TLabel
       Left = 516
-      Top = 350
+      Top = 334
       Width = 105
       Height = 13
       Alignment = taRightJustify
@@ -243,7 +243,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label244: TLabel
       Left = 128
-      Top = 487
+      Top = 471
       Width = 173
       Height = 13
       Alignment = taRightJustify
@@ -251,7 +251,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label114: TLabel
       Left = 223
-      Top = 510
+      Top = 494
       Width = 76
       Height = 13
       Alignment = taRightJustify
@@ -259,7 +259,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label251: TLabel
       Left = 223
-      Top = 532
+      Top = 516
       Width = 76
       Height = 13
       Alignment = taRightJustify
@@ -267,7 +267,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label252: TLabel
       Left = 223
-      Top = 553
+      Top = 537
       Width = 76
       Height = 13
       Alignment = taRightJustify
@@ -275,7 +275,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label253: TLabel
       Left = 503
-      Top = 373
+      Top = 357
       Width = 118
       Height = 13
       Alignment = taRightJustify
@@ -283,7 +283,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label256: TLabel
       Left = 28
-      Top = 282
+      Top = 266
       Width = 273
       Height = 13
       Alignment = taRightJustify
@@ -291,7 +291,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label278: TLabel
       Left = 14
-      Top = 164
+      Top = 151
       Width = 208
       Height = 13
       Alignment = taRightJustify
@@ -299,15 +299,23 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label1: TLabel
       Left = 93
-      Top = 210
+      Top = 197
       Width = 129
       Height = 13
       Alignment = taRightJustify
       Caption = 'Conta Padr'#227'o na Op. Baixa'
     end
+    object Label2: TLabel
+      Left = 128
+      Top = 559
+      Width = 171
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Tabela Pre'#231'o Cliente Sem Cadastro:'
+    end
     object DBEdit14: TDBEdit
       Left = 226
-      Top = 68
+      Top = 55
       Width = 121
       Height = 21
       DataField = 'PERC_JUROS_PADRAO'
@@ -316,7 +324,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBLookupCombo10: TRxDBLookupCombo
       Left = 226
-      Top = 25
+      Top = 12
       Width = 184
       Height = 21
       DropDownCount = 8
@@ -330,7 +338,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox52: TRxDBComboBox
       Left = 226
-      Top = 46
+      Top = 33
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -348,7 +356,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox77: TRxDBComboBox
       Left = 226
-      Top = 90
+      Top = 77
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -366,7 +374,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox108: TRxDBComboBox
       Left = 584
-      Top = 32
+      Top = 19
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -384,7 +392,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox109: TRxDBComboBox
       Left = 584
-      Top = 54
+      Top = 41
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -402,7 +410,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object rxdbUsaLimiteCredito: TRxDBComboBox
       Left = 303
-      Top = 298
+      Top = 282
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -440,7 +448,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object rxdbAlerta_Vale: TRxDBComboBox
       Left = 303
-      Top = 320
+      Top = 304
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -458,7 +466,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object rxdbAlerta_Vlr_Atraso: TRxDBComboBox
       Left = 303
-      Top = 342
+      Top = 326
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -476,7 +484,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox126: TRxDBComboBox
       Left = 303
-      Top = 364
+      Top = 348
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -494,7 +502,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox130: TRxDBComboBox
       Left = 303
-      Top = 387
+      Top = 371
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -512,7 +520,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox133: TRxDBComboBox
       Left = 303
-      Top = 411
+      Top = 395
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -530,7 +538,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox134: TRxDBComboBox
       Left = 303
-      Top = 434
+      Top = 418
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -548,7 +556,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox135: TRxDBComboBox
       Left = 303
-      Top = 457
+      Top = 441
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -566,7 +574,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox22: TDBCheckBox
       Left = 584
-      Top = 76
+      Top = 63
       Width = 281
       Height = 17
       Caption = 'Mostrar no menu a '#250'ltima remessa gerada para banco'
@@ -578,7 +586,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBDateEdit1: TDBDateEdit
       Left = 226
-      Top = 134
+      Top = 121
       Width = 121
       Height = 21
       DataField = 'DTENVIO_EMAIL_TITULOS'
@@ -588,7 +596,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox143: TRxDBComboBox
       Left = 226
-      Top = 112
+      Top = 99
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -606,7 +614,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox24: TDBCheckBox
       Left = 584
-      Top = 90
+      Top = 77
       Width = 281
       Height = 17
       Caption = 'Controlar se o banco pode fazer remessa/dep'#243'sito'
@@ -618,7 +626,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBEdit22: TDBEdit
       Left = 226
-      Top = 178
+      Top = 165
       Width = 71
       Height = 21
       DataField = 'SEPARADOR_NUM_DA_PARC'
@@ -627,7 +635,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox80: TDBCheckBox
       Left = 584
-      Top = 105
+      Top = 92
       Width = 280
       Height = 17
       Caption = 'Mostrar o valor da multa nas duplicatas'
@@ -639,7 +647,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox82: TDBCheckBox
       Left = 584
-      Top = 119
+      Top = 106
       Width = 353
       Height = 17
       Caption = 'Usa regime de caixa no lan'#231'amento dos t'#237'tulos manualmente'
@@ -661,7 +669,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox89: TDBCheckBox
       Left = 584
-      Top = 132
+      Top = 119
       Width = 353
       Height = 17
       Caption = 'Imprimir o nosso n'#250'mero no relat'#243'rio de contas a receber/pagar'
@@ -673,7 +681,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox147: TRxDBComboBox
       Left = 303
-      Top = 479
+      Top = 463
       Width = 602
       Height = 21
       Style = csDropDownList
@@ -695,7 +703,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox99: TDBCheckBox
       Left = 584
-      Top = 147
+      Top = 134
       Width = 353
       Height = 17
       Caption = 'Mostrar o tipo de cr'#233'dito no cadastro de clientes'
@@ -707,7 +715,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox108: TDBCheckBox
       Left = 584
-      Top = 161
+      Top = 148
       Width = 353
       Height = 17
       Caption = 'Usa desconto no vale'
@@ -719,7 +727,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox110: TDBCheckBox
       Left = 584
-      Top = 175
+      Top = 162
       Width = 353
       Height = 17
       Caption = 'Usa Tabela de Pre'#231'o Promocional'
@@ -731,7 +739,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBLookupCombo31: TRxDBLookupCombo
       Left = 303
-      Top = 501
+      Top = 485
       Width = 286
       Height = 21
       DropDownCount = 8
@@ -745,7 +753,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBLookupCombo32: TRxDBLookupCombo
       Left = 303
-      Top = 523
+      Top = 507
       Width = 286
       Height = 21
       DropDownCount = 8
@@ -759,7 +767,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBLookupCombo33: TRxDBLookupCombo
       Left = 303
-      Top = 544
+      Top = 528
       Width = 286
       Height = 21
       DropDownCount = 8
@@ -773,7 +781,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox112: TDBCheckBox
       Left = 584
-      Top = 189
+      Top = 176
       Width = 353
       Height = 17
       Caption = 'Copiar o desconto do Vale para a Nota'
@@ -796,7 +804,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox119: TDBCheckBox
       Left = 584
-      Top = 203
+      Top = 190
       Width = 353
       Height = 17
       Caption = 'Controle de pre'#231'o por usu'#225'rio'
@@ -808,7 +816,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox120: TDBCheckBox
       Left = 584
-      Top = 216
+      Top = 203
       Width = 441
       Height = 17
       Caption = 
@@ -822,7 +830,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox153: TRxDBComboBox
       Left = 303
-      Top = 274
+      Top = 258
       Width = 183
       Height = 21
       Style = csDropDownList
@@ -840,7 +848,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object chkProtestarCliente: TDBCheckBox
       Left = 584
-      Top = 230
+      Top = 217
       Width = 97
       Height = 17
       Caption = 'Protestar Cliente'
@@ -852,7 +860,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox158: TRxDBComboBox
       Left = 226
-      Top = 156
+      Top = 143
       Width = 184
       Height = 21
       Style = csDropDownList
@@ -870,7 +878,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox200: TDBCheckBox
       Left = 584
-      Top = 244
+      Top = 231
       Width = 377
       Height = 17
       Caption = 'Exigir Conta de Or'#231'amento nas Duplicatas'
@@ -930,7 +938,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox256: TDBCheckBox
       Left = 584
-      Top = 260
+      Top = 247
       Width = 377
       Height = 17
       Caption = 'Usa % na Condi'#231#227'o de Pagamento'
@@ -942,7 +950,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object DBCheckBox257: TDBCheckBox
       Left = 584
-      Top = 276
+      Top = 263
       Width = 233
       Height = 17
       Caption = 'Arredondar o valor da Tabela de Pre'#231'o'
@@ -990,7 +998,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBLookupCombo1: TRxDBLookupCombo
       Left = 226
-      Top = 201
+      Top = 188
       Width = 184
       Height = 21
       DropDownCount = 8
@@ -1049,6 +1057,20 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       TabOrder = 53
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object RxDBLookupCombo2: TRxDBLookupCombo
+      Left = 303
+      Top = 550
+      Width = 286
+      Height = 21
+      DropDownCount = 8
+      DropDownWidth = 300
+      DataField = 'ID_TABPRECO3'
+      DataSource = DMCadParametros.dsParametros_Fin
+      LookupField = 'ID'
+      LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsTab_Preco
+      TabOrder = 54
     end
   end
 end

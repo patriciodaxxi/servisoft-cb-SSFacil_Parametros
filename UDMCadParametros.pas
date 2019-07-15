@@ -1607,6 +1607,8 @@ type
     cdsParametros_PedUSA_APROVACAO_ITEM: TStringField;
     sdsParametros_OCUSA_APROVACAO_ITEM: TStringField;
     cdsParametros_OCUSA_APROVACAO_ITEM: TStringField;
+    sdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField;
+    cdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
