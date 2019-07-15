@@ -144,12 +144,14 @@ type
     Label280: TLabel;
     dirEndPedido: TDirectoryEdit;
     DBCheckBox5: TDBCheckBox;
+    DBCheckBox6: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
+    procedure DBCheckBox30Click(Sender: TObject);
   private
     { Private declarations }
     fDMCadParametros : TDMCadParametros;
@@ -236,6 +238,8 @@ begin
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_Ped;
   dirEndPedido.Text  := fDMCadParametros.cdsParametros_PedEND_PDF_PEDIDO.AsString;
+
+  DBCheckBox6.Visible := (fDMCadParametros.cdsParametrosUSA_APROVACAO_PED.AsString = 'S');
 end;
 
 procedure TfrmCadParametros_Ped.FormClose(Sender: TObject;
@@ -247,6 +251,11 @@ end;
 procedure TfrmCadParametros_Ped.FormDestroy(Sender: TObject);
 begin
   FreeAndNil(fDMCadParametros);
+end;
+
+procedure TfrmCadParametros_Ped.DBCheckBox30Click(Sender: TObject);
+begin
+  DBCheckBox6.Visible := DBCheckBox30.Checked;
 end;
 
 end.

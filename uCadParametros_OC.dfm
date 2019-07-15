@@ -115,7 +115,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     object DBCheckBox33: TDBCheckBox
       Left = 159
       Top = 42
-      Width = 265
+      Width = 245
       Height = 17
       Caption = 'Usa Aprova'#231#227'o da Ordem de Compra'
       DataField = 'USA_APROVACAO_OC_FORN'
@@ -123,6 +123,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
       TabOrder = 1
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+      OnClick = DBCheckBox33Click
     end
     object DBMemo5: TDBMemo
       Left = 158
@@ -132,7 +133,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
       DataField = 'OBS_OC'
       DataSource = DMCadParametros.dsParametros_OC
       ScrollBars = ssVertical
-      TabOrder = 6
+      TabOrder = 7
     end
     object DBCheckBox70: TDBCheckBox
       Left = 159
@@ -142,7 +143,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
       Caption = 'Usa op'#231#227'o de gerar cobran'#231'a'
       DataField = 'USAR_GERAR_COBRANCA'
       DataSource = DMCadParametros.dsParametros_OC
-      TabOrder = 2
+      TabOrder = 3
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -154,7 +155,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
       Caption = 'Permitir na entrada da nota, a quantidade maior que a OC'
       DataField = 'PERMITIR_ENT_MAIOR'
       DataSource = DMCadParametros.dsParametros_OC
-      TabOrder = 3
+      TabOrder = 4
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -166,7 +167,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
       Caption = 'Usa o nome do produto do cliente/fornecedor'
       DataField = 'USA_NOMEPROD_FORN_OC'
       DataSource = DMCadParametros.dsParametros_OC
-      TabOrder = 4
+      TabOrder = 5
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -178,9 +179,22 @@ object frmCadParametros_OC: TfrmCadParametros_OC
       Caption = 'Usa N'#250'mero do Documento (Contrato)'
       DataField = 'USA_NUM_DOC'
       DataSource = DMCadParametros.dsParametros_OC
-      TabOrder = 5
+      TabOrder = 6
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object DBCheckBox2: TDBCheckBox
+      Left = 427
+      Top = 41
+      Width = 265
+      Height = 18
+      Caption = 'Usa Aprova'#231#227'o da Ordem de Compra'
+      DataField = 'USA_APROVACAO_ITEM'
+      DataSource = DMCadParametros.dsParametros_OC
+      TabOrder = 2
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+      Visible = False
     end
   end
 end

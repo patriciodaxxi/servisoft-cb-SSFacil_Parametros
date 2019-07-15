@@ -4911,6 +4911,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedUSA_APROVACAO_ITEM: TStringField
+      FieldName = 'USA_APROVACAO_ITEM'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5236,6 +5241,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedEDI_USAR_PRECO_TAB: TStringField
       FieldName = 'EDI_USAR_PRECO_TAB'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedUSA_APROVACAO_ITEM: TStringField
+      FieldName = 'USA_APROVACAO_ITEM'
       FixedChar = True
       Size = 1
     end
@@ -6679,6 +6689,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_OCUSA_APROVACAO_ITEM: TStringField
+      FieldName = 'USA_APROVACAO_ITEM'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_OC: TClientDataSet
     Aggregates = <>
@@ -6712,6 +6727,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_OCUSA_NUM_DOC: TStringField
       FieldName = 'USA_NUM_DOC'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_OCUSA_APROVACAO_ITEM: TStringField
+      FieldName = 'USA_APROVACAO_ITEM'
       FixedChar = True
       Size = 1
     end

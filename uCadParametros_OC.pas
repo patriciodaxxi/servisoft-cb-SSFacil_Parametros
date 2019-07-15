@@ -22,12 +22,14 @@ type
     DBCheckBox90: TDBCheckBox;
     DBCheckBox160: TDBCheckBox;
     DBCheckBox1: TDBCheckBox;
+    DBCheckBox2: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
+    procedure DBCheckBox33Click(Sender: TObject);
   private
     { Private declarations }
     fDMCadParametros: TDMCadParametros;
@@ -100,6 +102,7 @@ begin
   oDBUtils.SetDataSourceProperties(Self, fDMCadParametros);
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_OC;
+  DBCheckBox2.Visible := (fDMCadParametros.cdsParametrosUSA_APROVACAO_OC_FORN.AsString = 'S');
 end;
 
 procedure TfrmCadParametros_OC.FormClose(Sender: TObject;
@@ -111,6 +114,11 @@ end;
 procedure TfrmCadParametros_OC.FormDestroy(Sender: TObject);
 begin
   FreeAndNil(fDMCadParametros);
+end;
+
+procedure TfrmCadParametros_OC.DBCheckBox33Click(Sender: TObject);
+begin
+  DBCheckBox2.Visible := DBCheckBox33.Checked;
 end;
 
 end.

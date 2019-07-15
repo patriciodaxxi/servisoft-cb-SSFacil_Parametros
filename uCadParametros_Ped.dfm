@@ -204,8 +204,8 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Senha Pedido:'
         end
         object Label120: TLabel
-          Left = 889
-          Top = 28
+          Left = 1015
+          Top = 2
           Width = 139
           Height = 26
           Alignment = taRightJustify
@@ -584,6 +584,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           TabOrder = 22
           ValueChecked = 'S'
           ValueUnchecked = 'N'
+          OnClick = DBCheckBox30Click
         end
         object DBCheckBox34: TDBCheckBox
           Left = 640
@@ -996,8 +997,8 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox162: TDBCheckBox
-          Left = 984
-          Top = 62
+          Left = 986
+          Top = 354
           Width = 113
           Height = 17
           Caption = 'Mostrar o fone'
@@ -1282,6 +1283,19 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           TabOrder = 74
           ValueChecked = 'S'
           ValueUnchecked = 'N'
+        end
+        object DBCheckBox6: TDBCheckBox
+          Left = 808
+          Top = 49
+          Width = 161
+          Height = 17
+          Caption = 'Usa Aprova'#231#227'o Por Item'
+          DataField = 'USA_APROVACAO_ITEM'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 75
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+          Visible = False
         end
       end
       object TabSheet9: TRzTabSheet
