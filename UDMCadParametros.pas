@@ -1609,6 +1609,8 @@ type
     cdsParametros_OCUSA_APROVACAO_ITEM: TStringField;
     sdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField;
     cdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField;
+    sdsParametros_SerMOSTRAR_QTD_NOTA: TStringField;
+    cdsParametros_SerMOSTRAR_QTD_NOTA: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

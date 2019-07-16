@@ -19,7 +19,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1112
+    Width = 1120
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1112
-    Height = 514
+    Width = 1120
+    Height = 522
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -427,6 +427,20 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       DataField = 'LIB_QTD_PEDIDO'
       DataSource = DMCadParametros.dsParametros_Ser
       TabOrder = 20
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox1: TDBCheckBox
+      Left = 578
+      Top = 344
+      Width = 380
+      Height = 17
+      Caption = 
+        'Mostrar a quantidade Nota na digita'#231#227'o da OS (qtde que vai ser f' +
+        'aturada)'
+      DataField = 'MOSTRAR_QTD_NOTA'
+      DataSource = DMCadParametros.dsParametros_Ser
+      TabOrder = 21
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

@@ -4303,12 +4303,17 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_SerMOSTRAR_QTD_NOTA: TStringField
+      FieldName = 'MOSTRAR_QTD_NOTA'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ser: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Ser'
-    Left = 104
+    Left = 103
     Top = 331
     object cdsParametros_SerID: TIntegerField
       FieldName = 'ID'
@@ -4407,6 +4412,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_SerLIB_QTD_PEDIDO: TStringField
       FieldName = 'LIB_QTD_PEDIDO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_SerMOSTRAR_QTD_NOTA: TStringField
+      FieldName = 'MOSTRAR_QTD_NOTA'
       FixedChar = True
       Size = 1
     end
