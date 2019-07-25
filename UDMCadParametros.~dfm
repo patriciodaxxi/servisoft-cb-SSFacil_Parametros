@@ -4313,7 +4313,7 @@ object DMCadParametros: TDMCadParametros
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Ser'
-    Left = 104
+    Left = 103
     Top = 331
     object cdsParametros_SerID: TIntegerField
       FieldName = 'ID'

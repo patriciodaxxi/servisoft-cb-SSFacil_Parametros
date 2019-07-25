@@ -1,6 +1,6 @@
 object frmCadParametros_Prod: TfrmCadParametros_Prod
-  Left = 50
-  Top = 13
+  Left = 22
+  Top = 7
   Width = 1301
   Height = 688
   Caption = 'frmCadParametros_Prod - Par'#226'metros Produto'
@@ -358,8 +358,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Qtd.D'#237'gitos N'#237'vel do Grupo:'
     end
     object Label257: TLabel
-      Left = 542
-      Top = 245
+      Left = 879
+      Top = 118
       Width = 100
       Height = 13
       Alignment = taRightJustify
@@ -399,8 +399,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = '% de Margem Padr'#227'o para C'#225'lculo Pre'#231'o Venda:'
     end
     object Label301: TLabel
-      Left = 764
-      Top = 244
+      Left = 886
+      Top = 140
       Width = 92
       Height = 13
       Alignment = taRightJustify
@@ -429,6 +429,14 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Height = 13
       Alignment = taRightJustify
       Caption = 'Filtra Material por Cliente na OC:'
+    end
+    object Label3: TLabel
+      Left = 483
+      Top = 243
+      Width = 159
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Posi'#231#227'o Marca na Cons. Produto:'
     end
     object RxDBComboBox13: TRxDBComboBox
       Left = 316
@@ -1141,8 +1149,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBEdit30: TDBEdit
-      Left = 644
-      Top = 238
+      Left = 981
+      Top = 111
       Width = 91
       Height = 21
       DataField = 'ID_PRODUTO_GENERICO'
@@ -1231,7 +1239,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa Tamanho Individual no cadastro do Produto'
       DataField = 'USA_TAM_INDIVIDUAL'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 51
+      TabOrder = 52
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1243,7 +1251,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Controlar a troca do tipo depois de confirmado'
       DataField = 'CONT_TIPO_PROD'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 52
+      TabOrder = 53
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1255,7 +1263,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa Lote Controle no Produto (Estoque por Lote)'
       DataField = 'USA_LOTE_PROD'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 53
+      TabOrder = 54
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1267,7 +1275,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Gerar Refer'#234'ncia Pelo Grupo (C'#243'd. Estruturado)'
       DataField = 'GERAR_REF_GRUPO'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 54
+      TabOrder = 55
       ValueChecked = 'S'
       ValueUnchecked = 'N'
       OnClick = DBCheckBox204Click
@@ -1279,7 +1287,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Height = 21
       DataField = 'QTD_DIGITOS_REF'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 55
+      TabOrder = 56
       Visible = False
     end
     object DBCheckBox205: TDBCheckBox
@@ -1290,7 +1298,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa Largura x Altura x Espessura'
       DataField = 'USA_LARG'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 56
+      TabOrder = 57
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1302,7 +1310,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Inf. C.Barra Manualmente'
       DataField = 'INF_CBARRA_MANUAL'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 57
+      TabOrder = 58
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1314,7 +1322,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa a op'#231#227'o para excluir o produto selecionados'
       DataField = 'EXCLUI_PROD_SEL'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 58
+      TabOrder = 59
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1326,7 +1334,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Mostra somente o Prod. da Tabela de Pre'#231'o do Cliente nos pedidos'
       DataField = 'MOSTRA_PROD_TPRECO'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 59
+      TabOrder = 60
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1338,7 +1346,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa a refer'#234'ncia 2 (sem a pontu'#231#227'o)'
       DataField = 'USA_REF2'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 60
+      TabOrder = 61
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1349,7 +1357,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Height = 21
       DataField = 'PERC_MARGEM_PRECO'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 61
+      TabOrder = 62
     end
     object DBCheckBox239: TDBCheckBox
       Left = 594
@@ -1361,7 +1369,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'al'
       DataField = 'GRAVAR_PRECO_COMB'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 62
+      TabOrder = 63
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1375,23 +1383,23 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'o'
       DataField = 'GRAVAR_PRIMEIRO_MAT'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 63
+      TabOrder = 64
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
     object DBEdit47: TDBEdit
-      Left = 859
-      Top = 236
+      Left = 981
+      Top = 132
       Width = 109
       Height = 21
       DataField = 'SENHA_PROD_CUSTO'
       DataSource = DMCadParametros.dsParametros_Prod
       PasswordChar = '*'
-      TabOrder = 64
+      TabOrder = 65
     end
     object NxButton1: TNxButton
-      Left = 969
-      Top = 229
+      Left = 1090
+      Top = 122
       Width = 30
       Height = 28
       Glyph.Data = {
@@ -1449,7 +1457,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         FEFEFBFEFCFFFD000000FCFEF8FEFEFDFBFDFFFAFEFBFFFFFCFFFFFFE6E9EDC0
         C3C7726F6C4C473F291D0D271D0325200D4F473B766E6BBEC1C8E8E9EDFFFFFF
         FFFEFFFAFEF9FEFCFBFFFDFEFDFEFE000000}
-      TabOrder = 65
+      TabOrder = 66
       OnClick = NxButton1Click
     end
     object RxDBLookupCombo34: TRxDBLookupCombo
@@ -1463,7 +1471,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       LookupField = 'ID'
       LookupDisplay = 'NOME'
       LookupSource = DMCadParametros.dsPosicao
-      TabOrder = 66
+      TabOrder = 67
     end
     object DBCheckBox252: TDBCheckBox
       Left = 594
@@ -1473,7 +1481,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Atualizar Combina'#231#227'o quando alterar o Consumo Principal'
       DataField = 'ATUALIZAR_COMB'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 67
+      TabOrder = 68
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1485,7 +1493,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa Tam. C'#225'lculo de Fios'
       DataField = 'MOSTRAR_TAM_CALC'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 68
+      TabOrder = 69
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1497,7 +1505,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Referencia Tamanho para mais de uma grade de produto'
       DataField = 'USA_TAM_REFER_GRADE'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 69
+      TabOrder = 70
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1511,7 +1519,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'produzido'
       DataField = 'USA_MAQUINA'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 70
+      TabOrder = 71
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1523,7 +1531,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Mostrar para informar a Forma separada'
       DataField = 'MOSTRAR_FORMA'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 71
+      TabOrder = 72
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1535,7 +1543,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa Constru'#231#227'o'
       DataField = 'USA_CONSTRUCAO'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 72
+      TabOrder = 73
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1591,7 +1599,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa o CA Por Hist'#243'rico (Deixa gravado o CA Anterior)'
       DataField = 'USA_CA_HIST'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 73
+      TabOrder = 74
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1603,7 +1611,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Permite alt. a refer'#234'ncia estruturada'
       DataField = 'ALT_REF_ESTRUTURADA'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 74
+      TabOrder = 75
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -1615,9 +1623,27 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Usa C'#225'lculo Corrugado (Produto_Corrugado)'
       DataField = 'USA_CORRUGADO'
       DataSource = DMCadParametros.dsParametros_Prod
-      TabOrder = 75
+      TabOrder = 76
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object RxDBComboBox3: TRxDBComboBox
+      Left = 644
+      Top = 235
+      Width = 219
+      Height = 21
+      Style = csDropDownList
+      DataField = 'POSICAO_CONS_MARCA'
+      DataSource = DMCadParametros.dsParametros_Prod
+      EnableValues = True
+      ItemHeight = 13
+      Items.Strings = (
+        'Primeira'
+        'Segunda')
+      TabOrder = 51
+      Values.Strings = (
+        '1'
+        '2')
     end
   end
 end

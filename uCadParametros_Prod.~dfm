@@ -1,6 +1,6 @@
 object frmCadParametros_Prod: TfrmCadParametros_Prod
-  Left = 50
-  Top = 13
+  Left = 22
+  Top = 7
   Width = 1301
   Height = 688
   Caption = 'frmCadParametros_Prod - Par'#226'metros Produto'
@@ -358,8 +358,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = 'Qtd.D'#237'gitos N'#237'vel do Grupo:'
     end
     object Label257: TLabel
-      Left = 542
-      Top = 245
+      Left = 879
+      Top = 118
       Width = 100
       Height = 13
       Alignment = taRightJustify
@@ -399,8 +399,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Caption = '% de Margem Padr'#227'o para C'#225'lculo Pre'#231'o Venda:'
     end
     object Label301: TLabel
-      Left = 764
-      Top = 244
+      Left = 886
+      Top = 140
       Width = 92
       Height = 13
       Alignment = taRightJustify
@@ -1141,8 +1141,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBEdit30: TDBEdit
-      Left = 644
-      Top = 238
+      Left = 981
+      Top = 111
       Width = 91
       Height = 21
       DataField = 'ID_PRODUTO_GENERICO'
@@ -1380,8 +1380,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBEdit47: TDBEdit
-      Left = 859
-      Top = 236
+      Left = 981
+      Top = 132
       Width = 109
       Height = 21
       DataField = 'SENHA_PROD_CUSTO'
@@ -1390,8 +1390,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       TabOrder = 64
     end
     object NxButton1: TNxButton
-      Left = 969
-      Top = 229
+      Left = 1090
+      Top = 122
       Width = 30
       Height = 28
       Glyph.Data = {
@@ -1604,6 +1604,18 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       DataField = 'ALT_REF_ESTRUTURADA'
       DataSource = DMCadParametros.dsParametros_Prod
       TabOrder = 74
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 594
+      Top = 591
+      Width = 447
+      Height = 16
+      Caption = 'Usa C'#225'lculo Corrugado (Produto_Corrugado)'
+      DataField = 'USA_CORRUGADO'
+      DataSource = DMCadParametros.dsParametros_Prod
+      TabOrder = 75
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
