@@ -1613,6 +1613,8 @@ type
     cdsParametros_SerMOSTRAR_QTD_NOTA: TStringField;
     sdsParametros_ProdPOSICAO_CONS_MARCA: TStringField;
     cdsParametros_ProdPOSICAO_CONS_MARCA: TStringField;
+    sdsParametros_PedEXIGE_PEDIDO_CLI: TStringField;
+    cdsParametros_PedEXIGE_PEDIDO_CLI: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

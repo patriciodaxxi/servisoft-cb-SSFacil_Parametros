@@ -1174,7 +1174,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros'
     Left = 96
-    Top = 5
+    Top = 4
     object cdsParametrosID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -4936,6 +4936,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedEXIGE_PEDIDO_CLI: TStringField
+      FieldName = 'EXIGE_PEDIDO_CLI'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5266,6 +5271,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedUSA_APROVACAO_ITEM: TStringField
       FieldName = 'USA_APROVACAO_ITEM'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedEXIGE_PEDIDO_CLI: TStringField
+      FieldName = 'EXIGE_PEDIDO_CLI'
       FixedChar = True
       Size = 1
     end

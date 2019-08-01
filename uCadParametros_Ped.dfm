@@ -1297,6 +1297,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
           Visible = False
         end
+        object DBCheckBox7: TDBCheckBox
+          Left = 986
+          Top = 370
+          Width = 235
+          Height = 17
+          Caption = 'Exige N'#186' Pedido Cliente (OC)'
+          DataField = 'EXIGE_PEDIDO_CLI'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 76
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'

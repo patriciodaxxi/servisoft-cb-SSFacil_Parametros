@@ -145,6 +145,7 @@ type
     dirEndPedido: TDirectoryEdit;
     DBCheckBox5: TDBCheckBox;
     DBCheckBox6: TDBCheckBox;
+    DBCheckBox7: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);

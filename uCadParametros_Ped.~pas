@@ -238,6 +238,8 @@ begin
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_Ped;
   dirEndPedido.Text  := fDMCadParametros.cdsParametros_PedEND_PDF_PEDIDO.AsString;
+
+  DBCheckBox6.Visible := (fDMCadParametros.cdsParametrosUSA_APROVACAO_PED.AsString = 'S');
 end;
 
 procedure TfrmCadParametros_Ped.FormClose(Sender: TObject;
@@ -254,7 +256,6 @@ end;
 procedure TfrmCadParametros_Ped.DBCheckBox30Click(Sender: TObject);
 begin
   DBCheckBox6.Visible := DBCheckBox30.Checked;
-
 end;
 
 end.
