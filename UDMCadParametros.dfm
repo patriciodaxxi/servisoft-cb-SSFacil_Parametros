@@ -6730,6 +6730,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_OCPERMITE_ALT_NOMEPROD: TStringField
+      FieldName = 'PERMITE_ALT_NOMEPROD'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_OC: TClientDataSet
     Aggregates = <>
@@ -6768,6 +6773,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_OCUSA_APROVACAO_ITEM: TStringField
       FieldName = 'USA_APROVACAO_ITEM'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_OCPERMITE_ALT_NOMEPROD: TStringField
+      FieldName = 'PERMITE_ALT_NOMEPROD'
       FixedChar = True
       Size = 1
     end

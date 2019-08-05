@@ -19,7 +19,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1235
+    Width = 1227
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_OC: TfrmCadParametros_OC
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1235
-    Height = 543
+    Width = 1227
+    Height = 535
     Align = alClient
     TabOrder = 1
     object Label127: TLabel
@@ -88,7 +88,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     end
     object Label226: TLabel
       Left = 50
-      Top = 150
+      Top = 156
       Width = 106
       Height = 13
       Alignment = taRightJustify
@@ -127,7 +127,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     end
     object DBMemo5: TDBMemo
       Left = 158
-      Top = 147
+      Top = 153
       Width = 749
       Height = 142
       DataField = 'OBS_OC'
@@ -137,7 +137,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     end
     object DBCheckBox70: TDBCheckBox
       Left = 159
-      Top = 58
+      Top = 60
       Width = 263
       Height = 17
       Caption = 'Usa op'#231#227'o de gerar cobran'#231'a'
@@ -149,7 +149,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     end
     object DBCheckBox90: TDBCheckBox
       Left = 159
-      Top = 76
+      Top = 78
       Width = 522
       Height = 17
       Caption = 'Permitir na entrada da nota, a quantidade maior que a OC'
@@ -173,7 +173,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     end
     object DBCheckBox1: TDBCheckBox
       Left = 159
-      Top = 114
+      Top = 113
       Width = 314
       Height = 17
       Caption = 'Usa N'#250'mero do Documento (Contrato)'
@@ -185,7 +185,7 @@ object frmCadParametros_OC: TfrmCadParametros_OC
     end
     object DBCheckBox2: TDBCheckBox
       Left = 427
-      Top = 41
+      Top = 42
       Width = 166
       Height = 18
       Caption = 'Usa Aprova'#231#227'o Por Item'
@@ -195,6 +195,18 @@ object frmCadParametros_OC: TfrmCadParametros_OC
       ValueChecked = 'S'
       ValueUnchecked = 'N'
       Visible = False
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 159
+      Top = 131
+      Width = 314
+      Height = 17
+      Caption = 'Permite alterar o nome do produto'
+      DataField = 'PERMITE_ALT_NOMEPROD'
+      DataSource = DMCadParametros.dsParametros_OC
+      TabOrder = 8
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
     end
   end
 end
