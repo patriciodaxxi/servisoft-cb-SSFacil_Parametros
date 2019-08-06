@@ -1091,10 +1091,12 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       EnableValues = True
       ItemHeight = 13
       Items.Strings = (
-        'Nosso N'#250'mero')
+        'Nosso N'#250'mero'
+        'Notas / ID')
       TabOrder = 55
       Values.Strings = (
-        'N')
+        'N'
+        'I')
     end
   end
 end

@@ -1615,6 +1615,8 @@ type
     cdsParametros_ProdPOSICAO_CONS_MARCA: TStringField;
     sdsParametros_PedEXIGE_PEDIDO_CLI: TStringField;
     cdsParametros_PedEXIGE_PEDIDO_CLI: TStringField;
+    sdsParametros_FinLER_RETORNO: TStringField;
+    cdsParametros_FinLER_RETORNO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
