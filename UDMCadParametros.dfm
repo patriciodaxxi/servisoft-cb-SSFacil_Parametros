@@ -6278,6 +6278,11 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField
       FieldName = 'ID_TABPRECO_SEMCAD'
     end
+    object sdsParametros_FinLER_RETORNO: TStringField
+      FieldName = 'LER_RETORNO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6493,6 +6498,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinID_TABPRECO_SEMCAD: TIntegerField
       FieldName = 'ID_TABPRECO_SEMCAD'
+    end
+    object cdsParametros_FinLER_RETORNO: TStringField
+      FieldName = 'LER_RETORNO'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Fin: TDataSource

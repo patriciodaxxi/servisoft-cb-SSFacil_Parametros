@@ -313,6 +313,14 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       Alignment = taRightJustify
       Caption = 'Tabela Pre'#231'o Cliente Sem Cadastro:'
     end
+    object Label3: TLabel
+      Left = 139
+      Top = 219
+      Width = 83
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Ler Retorno Pelo:'
+    end
     object DBEdit14: TDBEdit
       Left = 226
       Top = 55
@@ -1071,6 +1079,24 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
       LookupDisplay = 'NOME'
       LookupSource = DMCadParametros.dsTab_Preco
       TabOrder = 54
+    end
+    object RxDBComboBox1: TRxDBComboBox
+      Left = 226
+      Top = 211
+      Width = 184
+      Height = 21
+      Style = csDropDownList
+      DataField = 'LER_RETORNO'
+      DataSource = DMCadParametros.dsParametros_Fin
+      EnableValues = True
+      ItemHeight = 13
+      Items.Strings = (
+        'Nosso N'#250'mero'
+        'Notas / ID')
+      TabOrder = 55
+      Values.Strings = (
+        'N'
+        'I')
     end
   end
 end

@@ -1174,7 +1174,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros'
     Left = 96
-    Top = 5
+    Top = 4
     object cdsParametrosID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
