@@ -6068,7 +6068,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 486
+    Top = 490
     object sdsParametros_FinID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]

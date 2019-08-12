@@ -6940,6 +6940,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_UsuarioCUPOM_TOTAIS: TStringField
+      FieldName = 'CUPOM_TOTAIS'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Usuario: TClientDataSet
     Aggregates = <>
@@ -7073,6 +7078,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_UsuarioLIBERA_CONFIG_VENDEDOR: TStringField
       FieldName = 'LIBERA_CONFIG_VENDEDOR'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioCUPOM_TOTAIS: TStringField
+      FieldName = 'CUPOM_TOTAIS'
       FixedChar = True
       Size = 1
     end

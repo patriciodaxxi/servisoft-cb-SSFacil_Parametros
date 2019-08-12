@@ -574,13 +574,25 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox2: TDBCheckBox
         Left = 190
-        Top = 483
+        Top = 481
         Width = 427
         Height = 17
         Caption = 'Liberar Configura'#231#227'o do Representante (Descontos) individual'
         DataField = 'LIBERA_CONFIG_VENDEDOR'
         DataSource = DMCadParametros.dsParametros_Usuario
         TabOrder = 23
+        ValueChecked = 'S'
+        ValueUnchecked = 'N'
+      end
+      object DBCheckBox3: TDBCheckBox
+        Left = 190
+        Top = 497
+        Width = 427
+        Height = 17
+        Caption = 'Cupom - Mostrar barra de totais na consulta'
+        DataField = 'CUPOM_TOTAIS'
+        DataSource = DMCadParametros.dsParametros_Usuario
+        TabOrder = 24
         ValueChecked = 'S'
         ValueUnchecked = 'N'
       end
