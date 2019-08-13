@@ -1617,6 +1617,8 @@ type
     cdsParametros_PedEXIGE_PEDIDO_CLI: TStringField;
     sdsParametros_FinLER_RETORNO: TStringField;
     cdsParametros_FinLER_RETORNO: TStringField;
+    sdsParametros_UsuarioCUPOM_TOTAIS: TStringField;
+    cdsParametros_UsuarioCUPOM_TOTAIS: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

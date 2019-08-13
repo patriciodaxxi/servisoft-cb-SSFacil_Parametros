@@ -1140,5 +1140,29 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
+    object DBCheckBox2: TDBCheckBox
+      Left = 840
+      Top = 302
+      Width = 233
+      Height = 17
+      Caption = 'Usa Lei (dados adicionais) por NCM'
+      DataField = 'USA_LEI_NCM'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 45
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 840
+      Top = 318
+      Width = 283
+      Height = 17
+      Caption = 'Usa a Regra de Produto Por Cliente (CST ICMS)'
+      DataField = 'USA_REGRA_CLI_PROD'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 46
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

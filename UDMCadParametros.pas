@@ -1619,6 +1619,12 @@ type
     cdsParametros_FinLER_RETORNO: TStringField;
     sdsParametros_UsuarioCUPOM_TOTAIS: TStringField;
     cdsParametros_UsuarioCUPOM_TOTAIS: TStringField;
+    sdsParametros_ProdCONTROLAR_PROD_ST: TStringField;
+    cdsParametros_ProdCONTROLAR_PROD_ST: TStringField;
+    sdsParametros_NFeUSA_LEI_NCM: TStringField;
+    sdsParametros_NFeUSA_REGRA_CLI_PROD: TStringField;
+    cdsParametros_NFeUSA_LEI_NCM: TStringField;
+    cdsParametros_NFeUSA_REGRA_CLI_PROD: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

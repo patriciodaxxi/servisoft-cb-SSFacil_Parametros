@@ -1486,7 +1486,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox260: TDBCheckBox
-      Left = 937
+      Left = 953
       Top = 298
       Width = 180
       Height = 17
@@ -1498,7 +1498,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox273: TDBCheckBox
-      Left = 937
+      Left = 953
       Top = 313
       Width = 324
       Height = 17
@@ -1524,7 +1524,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox291: TDBCheckBox
-      Left = 938
+      Left = 954
       Top = 360
       Width = 341
       Height = 16
@@ -1592,7 +1592,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
         'G')
     end
     object DBCheckBox1: TDBCheckBox
-      Left = 937
+      Left = 953
       Top = 329
       Width = 324
       Height = 17
@@ -1604,7 +1604,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       ValueUnchecked = 'N'
     end
     object DBCheckBox2: TDBCheckBox
-      Left = 937
+      Left = 953
       Top = 345
       Width = 324
       Height = 17
@@ -1644,6 +1644,18 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Values.Strings = (
         '1'
         '2')
+    end
+    object DBCheckBox4: TDBCheckBox
+      Left = 954
+      Top = 376
+      Width = 294
+      Height = 17
+      Caption = 'Usa a Op'#231#227'o de Controlar ST Por Produto'
+      DataField = 'CONTROLAR_PROD_ST'
+      DataSource = DMCadParametros.dsParametros_Prod
+      TabOrder = 77
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
     end
   end
 end

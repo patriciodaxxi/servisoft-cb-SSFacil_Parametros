@@ -317,6 +317,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsContas
       TabOrder = 2
     end
     object RxDBLookupCombo5: TRxDBLookupCombo
@@ -329,6 +330,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsTipoCobranca
       TabOrder = 3
     end
     object RxDBComboBox21: TRxDBComboBox
@@ -359,6 +361,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataSource = DMCadParametros.dsParametros
       LookupField = 'ID'
       LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsContas
       TabOrder = 5
     end
     object RxDBComboBox26: TRxDBComboBox
@@ -1134,6 +1137,30 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataField = 'USA_CST_ICMS_NTE'
       DataSource = DMCadParametros.dsParametros_NFe
       TabOrder = 44
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox2: TDBCheckBox
+      Left = 840
+      Top = 302
+      Width = 233
+      Height = 17
+      Caption = 'Usa Lei (dados adicionais) por NCM'
+      DataField = 'USA_LEI_NCM'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 45
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox3: TDBCheckBox
+      Left = 840
+      Top = 318
+      Width = 283
+      Height = 17
+      Caption = 'Usa a Regra de Produto Por Cliente (CST ICMS)'
+      DataField = 'USA_REGRA_CLI_PROD'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 46
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

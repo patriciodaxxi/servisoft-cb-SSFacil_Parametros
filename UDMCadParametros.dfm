@@ -2920,13 +2920,23 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeUSA_LEI_NCM: TStringField
+      FieldName = 'USA_LEI_NCM'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_NFeUSA_REGRA_CLI_PROD: TStringField
+      FieldName = 'USA_REGRA_CLI_PROD'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_NFe'
     Left = 104
-    Top = 164
+    Top = 165
     object cdsParametros_NFeID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -3181,6 +3191,16 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeUSA_CST_ICMS_NTE: TStringField
       FieldName = 'USA_CST_ICMS_NTE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeUSA_LEI_NCM: TStringField
+      FieldName = 'USA_LEI_NCM'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeUSA_REGRA_CLI_PROD: TStringField
+      FieldName = 'USA_REGRA_CLI_PROD'
       FixedChar = True
       Size = 1
     end
@@ -3730,12 +3750,17 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdCONTROLAR_PROD_ST: TStringField
+      FieldName = 'CONTROLAR_PROD_ST'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Prod'
-    Left = 104
+    Left = 105
     Top = 270
     object cdsParametros_ProdID: TIntegerField
       FieldName = 'ID'
@@ -3962,6 +3987,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdPOSICAO_CONS_MARCA: TStringField
       FieldName = 'POSICAO_CONS_MARCA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdCONTROLAR_PROD_ST: TStringField
+      FieldName = 'CONTROLAR_PROD_ST'
       FixedChar = True
       Size = 1
     end
