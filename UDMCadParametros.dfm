@@ -2930,12 +2930,17 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeCOPIA_PEDIDO_REP: TStringField
+      FieldName = 'COPIA_PEDIDO_REP'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_NFe'
-    Left = 104
+    Left = 106
     Top = 165
     object cdsParametros_NFeID: TIntegerField
       FieldName = 'ID'
@@ -3201,6 +3206,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeUSA_REGRA_CLI_PROD: TStringField
       FieldName = 'USA_REGRA_CLI_PROD'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeCOPIA_PEDIDO_REP: TStringField
+      FieldName = 'COPIA_PEDIDO_REP'
       FixedChar = True
       Size = 1
     end
