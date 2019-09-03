@@ -17,7 +17,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1211
+    Width = 1219
     Height = 35
     Align = alTop
     Color = 8404992
@@ -72,8 +72,8 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1211
-    Height = 532
+    Width = 1219
+    Height = 540
     Align = alClient
     TabOrder = 1
     object Label57: TLabel
@@ -258,11 +258,13 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       ItemHeight = 13
       Items.Strings = (
         'Sim'
-        'N'#227'o')
+        'N'#227'o'
+        'N'#227'o atualiza pre'#231'o de venda')
       TabOrder = 6
       Values.Strings = (
         'S'
-        'N')
+        'N'
+        'X')
     end
     object DBCheckBox78: TDBCheckBox
       Left = 272
