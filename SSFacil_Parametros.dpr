@@ -35,7 +35,8 @@ uses
   DmdDatabase_NFeBD in '..\ssfacil\DmdDatabase_NFeBD.pas' {dmDatabase_NFeBD: TDataModule},
   uCadParametros_Ped in 'uCadParametros_Ped.pas' {frmCadParametros_Ped},
   UConsProdutoNCM in '..\ssfacil\UConsProdutoNCM.pas' {frmConsProdutoNCM},
-  UDMConsProduto in '..\ssfacil\UDMConsProduto.pas' {DMConsProduto: TDataModule};
+  UDMConsProduto in '..\ssfacil\UDMConsProduto.pas' {DMConsProduto: TDataModule},
+  UAltCFOPProd in '..\ssfacil\UAltCFOPProd.pas' {frmAltCFOPProd};
 
 {$R *.res}
 
