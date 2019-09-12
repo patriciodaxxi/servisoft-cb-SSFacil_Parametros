@@ -19,7 +19,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1293
+    Width = 1285
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1293
-    Height = 622
+    Width = 1285
+    Height = 614
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -1058,12 +1058,12 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       Items.Strings = (
         'Pre'#231'o de Custo (vlr.compra)'
         'Pre'#231'o do Custo Total (com Impostos)'
-        '')
+        'N'#227'o alterar pre'#231'o de venda')
       TabOrder = 37
       Values.Strings = (
         'E'
         'C'
-        '')
+        'X')
     end
     object DBEdit28: TDBEdit
       Left = 316
