@@ -42,3 +42,6 @@ UDMCadParametros.~pas
 *.~dfm
 *.~dfm
 *.~pas
+*.~pas
+*.~dfm
+*.ddp
