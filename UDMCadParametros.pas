@@ -1627,6 +1627,8 @@ type
     cdsParametros_NFeUSA_REGRA_CLI_PROD: TStringField;
     sdsParametros_NFeCOPIA_PEDIDO_REP: TStringField;
     cdsParametros_NFeCOPIA_PEDIDO_REP: TStringField;
+    sdsParametros_ProdCOPIAR_COMB: TStringField;
+    cdsParametros_ProdCOPIAR_COMB: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
