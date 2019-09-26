@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Buttons, ExtCtrls, UDMCadParametros, DB, rsDBUtils,
-  RxLookup, DBCtrls, RxDBComb;;
+  RxLookup, DBCtrls, RxDBComb;
 
 type
   TfrmCadParametros_RecXML = class(TForm)
@@ -39,6 +39,7 @@ type
     RxDBComboBox169: TRxDBComboBox;
     DBCheckBox271: TDBCheckBox;
     DBCheckBox288: TDBCheckBox;
+    Label1: TLabel;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);

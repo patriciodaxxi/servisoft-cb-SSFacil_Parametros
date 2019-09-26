@@ -3765,6 +3765,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdCOPIAR_COMB: TStringField
+      FieldName = 'COPIAR_COMB'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
@@ -4002,6 +4007,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdCONTROLAR_PROD_ST: TStringField
       FieldName = 'CONTROLAR_PROD_ST'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdCOPIAR_COMB: TStringField
+      FieldName = 'COPIAR_COMB'
       FixedChar = True
       Size = 1
     end

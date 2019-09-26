@@ -19,7 +19,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1293
+    Width = 1285
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object RzPageControl1: TRzPageControl
     Left = 0
     Top = 35
-    Width = 1293
-    Height = 622
+    Width = 1285
+    Height = 614
     ActivePage = TS_Usa
     Align = alClient
     TabIndex = 0
@@ -86,8 +86,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object pnlGeral: TPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -514,8 +514,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel1: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -846,8 +846,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel2: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -1026,8 +1026,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel3: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -1305,6 +1305,18 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
             'A'
             'N')
         end
+        object DBCheckBox13: TDBCheckBox
+          Left = 313
+          Top = 308
+          Width = 294
+          Height = 17
+          Caption = 'Atualiza Custo Material pelo Maior Custo por Cor'
+          DataField = 'ATUALIZAR_CUSTO_POR_COR'
+          DataSource = DMCadParametros.dsParametros_Prod
+          TabOrder = 14
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
     end
     object TS_Senha: TRzTabSheet
@@ -1312,8 +1324,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel4: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0

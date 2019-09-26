@@ -140,6 +140,7 @@ type
     Label4: TLabel;
     RxDBComboBox4: TRxDBComboBox;
     DBCheckBox12: TDBCheckBox;
+    DBCheckBox13: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);

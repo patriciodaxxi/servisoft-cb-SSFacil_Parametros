@@ -1629,6 +1629,8 @@ type
     cdsParametros_NFeCOPIA_PEDIDO_REP: TStringField;
     sdsParametros_ProdCOPIAR_COMB: TStringField;
     cdsParametros_ProdCOPIAR_COMB: TStringField;
+    sdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField;
+    cdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

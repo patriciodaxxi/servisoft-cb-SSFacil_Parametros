@@ -17,7 +17,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1211
+    Width = 1219
     Height = 35
     Align = alTop
     Color = 8404992
@@ -72,8 +72,8 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1211
-    Height = 532
+    Width = 1219
+    Height = 540
     Align = alClient
     TabOrder = 1
     object Label57: TLabel
@@ -146,6 +146,21 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Height = 13
       Alignment = taRightJustify
       Caption = 'Procurar o produto pelo c'#243'digo de barras:'
+    end
+    object Label1: TLabel
+      Left = 292
+      Top = 353
+      Width = 538
+      Height = 13
+      Caption = 
+        '*** Marcando este campo, o sistema n'#227'o vai usar a op'#231#227'o de aplic' +
+        'ar a margem para calcular o pre'#231'o de venda ***'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
     end
     object RxDBComboBox27: TRxDBComboBox
       Left = 272
@@ -258,11 +273,13 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       ItemHeight = 13
       Items.Strings = (
         'Sim'
-        'N'#227'o')
+        'N'#227'o'
+        'N'#227'o atualiza pre'#231'o de venda')
       TabOrder = 6
       Values.Strings = (
         'S'
-        'N')
+        'N'
+        'X')
     end
     object DBCheckBox78: TDBCheckBox
       Left = 272
