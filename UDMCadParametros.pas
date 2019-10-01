@@ -1631,6 +1631,8 @@ type
     cdsParametros_ProdCOPIAR_COMB: TStringField;
     sdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField;
     cdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField;
+    sdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
+    cdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

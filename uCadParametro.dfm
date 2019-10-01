@@ -433,7 +433,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox2: TDBCheckBox
           Left = 500
-          Top = 21
+          Top = 18
           Width = 188
           Height = 17
           Caption = 'Empresa Venda de Ve'#237'culos'
@@ -528,7 +528,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox7: TDBCheckBox
           Left = 500
-          Top = 38
+          Top = 32
           Width = 188
           Height = 17
           Caption = 'Empresa de Injetados'
@@ -540,7 +540,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox8: TDBCheckBox
           Left = 500
-          Top = 54
+          Top = 45
           Width = 188
           Height = 17
           Caption = 'Empresa Cartonagem'
@@ -552,7 +552,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox9: TDBCheckBox
           Left = 500
-          Top = 70
+          Top = 59
           Width = 188
           Height = 17
           Caption = 'Empresa Navalha'
@@ -591,7 +591,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox10: TDBCheckBox
           Left = 500
-          Top = 135
+          Top = 113
           Width = 188
           Height = 17
           Caption = 'Escola'
@@ -604,7 +604,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox11: TDBCheckBox
           Left = 500
-          Top = 151
+          Top = 126
           Width = 188
           Height = 17
           Caption = 'Empresa de Sucata (JW)'
@@ -617,7 +617,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox12: TDBCheckBox
           Left = 500
-          Top = 250
+          Top = 207
           Width = 105
           Height = 17
           Caption = 'Usa SPED'
@@ -629,7 +629,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox13: TDBCheckBox
           Left = 500
-          Top = 266
+          Top = 221
           Width = 105
           Height = 17
           Caption = 'Usa FCI'
@@ -658,7 +658,7 @@ object frmCadParametro: TfrmCadParametro
             'B')
         end
         object DBCheckBox14: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 3
           Width = 105
           Height = 17
@@ -670,7 +670,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox15: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 19
           Width = 105
           Height = 17
@@ -737,7 +737,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox17: TDBCheckBox
           Left = 500
-          Top = 168
+          Top = 140
           Width = 188
           Height = 17
           Caption = 'Empresa de Contabilidade'
@@ -750,7 +750,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox18: TDBCheckBox
           Left = 500
-          Top = 86
+          Top = 72
           Width = 188
           Height = 17
           Caption = 'Empresa Ambientes (Portas/Vidros)'
@@ -762,7 +762,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox28: TDBCheckBox
           Left = 500
-          Top = 103
+          Top = 86
           Width = 188
           Height = 17
           Caption = 'Empresa Decis'#227'o (RH)'
@@ -774,7 +774,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox29: TDBCheckBox
           Left = 500
-          Top = 184
+          Top = 153
           Width = 188
           Height = 17
           Caption = 'Empresa Livraria'
@@ -797,7 +797,7 @@ object frmCadParametro: TfrmCadParametro
           Text = 'C:\'
         end
         object DBCheckBox20: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 36
           Width = 153
           Height = 17
@@ -809,7 +809,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox23: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 52
           Width = 160
           Height = 17
@@ -821,7 +821,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox54: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 68
           Width = 199
           Height = 17
@@ -833,7 +833,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox67: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 85
           Width = 199
           Height = 17
@@ -845,7 +845,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox75: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 101
           Width = 199
           Height = 17
@@ -868,7 +868,7 @@ object frmCadParametro: TfrmCadParametro
           Text = 'C:\'
         end
         object DBCheckBox76: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 118
           Width = 239
           Height = 17
@@ -880,7 +880,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox83: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 134
           Width = 239
           Height = 17
@@ -904,7 +904,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox109: TDBCheckBox
           Left = 500
-          Top = 119
+          Top = 99
           Width = 188
           Height = 17
           Caption = 'Empresa Varejo'
@@ -915,7 +915,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox118: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 150
           Width = 324
           Height = 17
@@ -1006,7 +1006,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox155: TDBCheckBox
           Left = 500
-          Top = 200
+          Top = 167
           Width = 188
           Height = 17
           Caption = 'Empresa de Cal'#231'ados'
@@ -1017,7 +1017,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox161: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 167
           Width = 341
           Height = 17
@@ -1031,7 +1031,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox164: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 183
           Width = 341
           Height = 17
@@ -1061,7 +1061,7 @@ object frmCadParametro: TfrmCadParametro
             'N')
         end
         object DBCheckBox194: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 200
           Width = 341
           Height = 17
@@ -1073,7 +1073,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox216: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 216
           Width = 341
           Height = 17
@@ -1085,7 +1085,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox226: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 232
           Width = 341
           Height = 17
@@ -1098,7 +1098,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox231: TDBCheckBox
           Left = 500
-          Top = 233
+          Top = 194
           Width = 171
           Height = 17
           Caption = 'Usa senha / contra-senha'
@@ -1109,7 +1109,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox238: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 249
           Width = 341
           Height = 17
@@ -1148,7 +1148,7 @@ object frmCadParametro: TfrmCadParametro
             'A')
         end
         object DBCheckBox300: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 265
           Width = 341
           Height = 17
@@ -1222,7 +1222,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox3: TDBCheckBox
           Left = 500
-          Top = 216
+          Top = 180
           Width = 188
           Height = 17
           Caption = 'Empresa de Pet'
@@ -1234,7 +1234,7 @@ object frmCadParametro: TfrmCadParametro
         end
         object DBCheckBox4: TDBCheckBox
           Left = 500
-          Top = 283
+          Top = 235
           Width = 189
           Height = 17
           Caption = 'Controlar Agenda Por Funcion'#225'rio'
@@ -1245,7 +1245,7 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox5: TDBCheckBox
-          Left = 694
+          Left = 702
           Top = 282
           Width = 294
           Height = 17
@@ -1273,6 +1273,18 @@ object frmCadParametro: TfrmCadParametro
           Values.Strings = (
             'S'
             'N')
+        end
+        object DBCheckBox6: TDBCheckBox
+          Left = 500
+          Top = 250
+          Width = 189
+          Height = 17
+          Caption = 'Mostrar Doc.Estoque no Hist.Cliente'
+          DataField = 'MOSTRAR_DOC_HIST'
+          DataSource = DMCadParametros.dsParametros_Geral
+          TabOrder = 70
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
         end
       end
     end

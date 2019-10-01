@@ -119,6 +119,7 @@ type
     DBCheckBox5: TDBCheckBox;
     Label3: TLabel;
     RxDBComboBox1: TRxDBComboBox;
+    DBCheckBox6: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
