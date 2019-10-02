@@ -1633,6 +1633,8 @@ type
     cdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField;
     sdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField;
     cdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField;
+    sdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
+    cdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

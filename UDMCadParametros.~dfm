@@ -3770,6 +3770,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField
+      FieldName = 'ATUALIZAR_CUSTO_POR_COR'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
@@ -4012,6 +4017,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdCOPIAR_COMB: TStringField
       FieldName = 'COPIAR_COMB'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField
+      FieldName = 'ATUALIZAR_CUSTO_POR_COR'
       FixedChar = True
       Size = 1
     end

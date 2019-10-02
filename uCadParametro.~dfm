@@ -1239,7 +1239,7 @@ object frmCadParametro: TfrmCadParametro
           Height = 17
           Caption = 'Controlar Agenda Por Funcion'#225'rio'
           DataField = 'USA_AGENDA_POR_FUNC'
-          DataSource = DMCadParametros.dsParametros_Geral
+          DataSource = DMCadParametros.dsParametros
           TabOrder = 50
           ValueChecked = 'S'
           ValueUnchecked = 'N'
