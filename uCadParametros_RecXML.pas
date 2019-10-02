@@ -3,9 +3,8 @@ unit uCadParametros_RecXML;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Buttons, ExtCtrls, UDMCadParametros, DB, rsDBUtils,
-  RxLookup, DBCtrls, RxDBComb;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, Dialogs, StdCtrls, Buttons, ExtCtrls, rsDBUtils, 
+  RxLookup, DBCtrls, RxDBComb, DB, UDMCadParametros;
 
 type
   TfrmCadParametros_RecXML = class(TForm)
@@ -39,6 +38,7 @@ type
     RxDBComboBox169: TRxDBComboBox;
     DBCheckBox271: TDBCheckBox;
     DBCheckBox288: TDBCheckBox;
+    DBCheckBox1: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
@@ -74,9 +74,9 @@ begin
     MessageDlg(fDMCadParametros.vMsgErro, mtError, [mbOk], 0);
     exit;
   end;
-  pnlGeral.Enabled := not (pnlGeral.Enabled);
+  pnlGeral.Enabled     := not (pnlGeral.Enabled);
   btnConfirmar.Enabled := not (btnConfirmar.Enabled);
-  btnAlterar.Enabled := not (btnAlterar.Enabled);
+  btnAlterar.Enabled   := not (btnAlterar.Enabled);
 end;
 
 procedure TfrmCadParametros_RecXML.FormShow(Sender: TObject);

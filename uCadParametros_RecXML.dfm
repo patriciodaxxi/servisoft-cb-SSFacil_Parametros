@@ -17,7 +17,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1219
+    Width = 1211
     Height = 35
     Align = alTop
     Color = 8404992
@@ -72,8 +72,8 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1219
-    Height = 540
+    Width = 1211
+    Height = 532
     Align = alClient
     TabOrder = 1
     object Label57: TLabel
@@ -140,8 +140,8 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       ParentFont = False
     end
     object Label297: TLabel
-      Left = 449
-      Top = 45
+      Left = 73
+      Top = 365
       Width = 196
       Height = 13
       Alignment = taRightJustify
@@ -178,7 +178,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Items.Strings = (
         'Produto'
         'Material')
-      TabOrder = 1
+      TabOrder = 2
       Values.Strings = (
         'P'
         'M')
@@ -193,7 +193,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
         's copiar para a NFe de sa'#237'da'
       DataField = 'GRAVAR_INF_ADICIONAIS_NTE'
       DataSource = DMCadParametros.dsParametros
-      TabOrder = 2
+      TabOrder = 3
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -210,7 +210,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 3
+      TabOrder = 1
       Values.Strings = (
         'S'
         'N')
@@ -226,7 +226,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       LookupField = 'ID'
       LookupDisplay = 'NOME'
       LookupSource = DMCadParametros.dsLocal_Estoque
-      TabOrder = 4
+      TabOrder = 12
     end
     object RxDBComboBox15: TRxDBComboBox
       Left = 272
@@ -241,7 +241,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 5
+      TabOrder = 13
       Values.Strings = (
         'S'
         'N')
@@ -260,7 +260,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
         'Sim'
         'N'#227'o'
         'N'#227'o atualiza pre'#231'o de venda')
-      TabOrder = 6
+      TabOrder = 14
       Values.Strings = (
         'S'
         'N'
@@ -276,7 +276,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
         'ementares da Nota'
       DataField = 'PROCURAR_REM_NOME_PROD'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 7
+      TabOrder = 4
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -288,7 +288,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Caption = 'Usa a op'#231#227'o de marcar notas j'#225' lan'#231'adas no manifesto'
       DataField = 'USA_OPCAO_NOTA_LANC'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 8
+      TabOrder = 5
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -300,12 +300,12 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Caption = 'Atualizar o NCM no recebimento do XML'
       DataField = 'ATUALIZAR_NCM'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 9
+      TabOrder = 6
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
     object DBCheckBox117: TDBCheckBox
-      Left = 274
+      Left = 272
       Top = 323
       Width = 553
       Height = 17
@@ -314,7 +314,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
         'bimento do XML e gravar no produto'
       DataField = 'MOSTRAR_VLR_VENDA'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 10
+      TabOrder = 15
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -326,7 +326,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Caption = 'Atualizar o CEST no recebimento do XML'
       DataField = 'ATUALIZAR_CEST'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 11
+      TabOrder = 7
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -338,7 +338,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Caption = 'Mover xml para o diret'#243'rio Copiado'
       DataField = 'USA_DIRETORIO_COPIADO'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 12
+      TabOrder = 8
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -350,13 +350,13 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Caption = 'Usar a OC/Item que vem no XML do fornecedor'
       DataField = 'USA_OC_XML'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 13
+      TabOrder = 9
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
     object RxDBComboBox169: TRxDBComboBox
-      Left = 648
-      Top = 37
+      Left = 272
+      Top = 357
       Width = 113
       Height = 21
       Style = csDropDownList
@@ -367,7 +367,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 14
+      TabOrder = 16
       Values.Strings = (
         'S'
         'N')
@@ -382,7 +382,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
         'roduto do fornecedor com o interno'
       DataField = 'CONTROLAR_GRAVA_PROD'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 15
+      TabOrder = 10
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -396,7 +396,19 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
         'm o P. ou M. na frente'
       DataField = 'USA_REF_SEQUENCIAL'
       DataSource = DMCadParametros.dsParametros_RecXML
-      TabOrder = 16
+      TabOrder = 11
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox1: TDBCheckBox
+      Left = 416
+      Top = 359
+      Width = 217
+      Height = 17
+      Caption = 'Ignorar fornecedor pelo c'#243'd. de barra'
+      DataField = 'PROCURAR_CBARRA_SEM_FORN'
+      DataSource = DMCadParametros.dsParametros_RecXML
+      TabOrder = 17
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

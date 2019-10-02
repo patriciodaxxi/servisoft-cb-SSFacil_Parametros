@@ -3288,6 +3288,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField
+      FieldName = 'PROCURAR_CBARRA_SEM_FORN'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_RecXML: TClientDataSet
     Aggregates = <>
@@ -3346,6 +3351,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_RecXMLUSA_REF_SEQUENCIAL: TStringField
       FieldName = 'USA_REF_SEQUENCIAL'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField
+      FieldName = 'PROCURAR_CBARRA_SEM_FORN'
       FixedChar = True
       Size = 1
     end

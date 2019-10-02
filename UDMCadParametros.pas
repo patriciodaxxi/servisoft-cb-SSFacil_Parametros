@@ -1631,6 +1631,8 @@ type
     cdsParametros_ProdCOPIAR_COMB: TStringField;
     sdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField;
     cdsParametros_ProdATUALIZAR_CUSTO_POR_COR: TStringField;
+    sdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField;
+    cdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
