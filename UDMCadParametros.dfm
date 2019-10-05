@@ -4699,7 +4699,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 387
+    Top = 386
     object sdsParametros_PedID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5041,7 +5041,7 @@ object DMCadParametros: TDMCadParametros
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Ped'
-    Left = 104
+    Left = 105
     Top = 387
     object cdsParametros_PedID: TIntegerField
       FieldName = 'ID'

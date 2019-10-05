@@ -5031,12 +5031,20 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedPEDIDO_COMERCIO: TStringField
+      FieldName = 'PEDIDO_COMERCIO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_PedID_OPERACAO_PADRAO: TIntegerField
+      FieldName = 'ID_OPERACAO_PADRAO'
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Ped'
-    Left = 104
+    Left = 105
     Top = 387
     object cdsParametros_PedID: TIntegerField
       FieldName = 'ID'
@@ -5368,6 +5376,14 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'EXIGE_PEDIDO_CLI'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_PedPEDIDO_COMERCIO: TStringField
+      FieldName = 'PEDIDO_COMERCIO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedID_OPERACAO_PADRAO: TIntegerField
+      FieldName = 'ID_OPERACAO_PADRAO'
     end
   end
   object dsParametros_Ped: TDataSource

@@ -1164,5 +1164,17 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
+    object DBCheckBox4: TDBCheckBox
+      Left = 840
+      Top = 334
+      Width = 283
+      Height = 17
+      Caption = 'Permite Repetir o Pedido/Item na mesma Nota'
+      DataField = 'COPIA_PEDIDO_REP'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 47
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

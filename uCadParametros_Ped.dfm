@@ -1,7 +1,7 @@
 object frmCadParametros_Ped: TfrmCadParametros_Ped
   Left = 38
   Top = 3
-  Width = 1264
+  Width = 1276
   Height = 659
   Caption = 'frmCadParametros_Ped'
   Color = clBtnFace
@@ -19,7 +19,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1256
+    Width = 1268
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,7 +74,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1256
+    Width = 1268
     Height = 593
     Align = alClient
     Enabled = False
@@ -82,7 +82,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
     object RzPageControl4: TRzPageControl
       Left = 1
       Top = 1
-      Width = 1254
+      Width = 1266
       Height = 591
       ActivePage = TabSheet8
       Align = alClient
@@ -181,7 +181,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label80: TLabel
           Left = 9
-          Top = 386
+          Top = 385
           Width = 299
           Height = 13
           Alignment = taRightJustify
@@ -235,7 +235,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label192: TLabel
           Left = 177
-          Top = 298
+          Top = 297
           Width = 131
           Height = 13
           Alignment = taRightJustify
@@ -243,7 +243,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label199: TLabel
           Left = 188
-          Top = 320
+          Top = 319
           Width = 120
           Height = 13
           Alignment = taRightJustify
@@ -251,7 +251,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label200: TLabel
           Left = 143
-          Top = 342
+          Top = 341
           Width = 165
           Height = 13
           Alignment = taRightJustify
@@ -259,7 +259,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label180: TLabel
           Left = 80
-          Top = 365
+          Top = 364
           Width = 228
           Height = 13
           Alignment = taRightJustify
@@ -267,7 +267,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label276: TLabel
           Left = 163
-          Top = 408
+          Top = 407
           Width = 145
           Height = 13
           Alignment = taRightJustify
@@ -275,7 +275,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label283: TLabel
           Left = 65
-          Top = 429
+          Top = 428
           Width = 243
           Height = 13
           Alignment = taRightJustify
@@ -478,7 +478,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBComboBox50: TRxDBComboBox
           Left = 310
-          Top = 378
+          Top = 377
           Width = 184
           Height = 21
           Style = csDropDownList
@@ -541,7 +541,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             'N')
         end
         object RxDBLookupCombo13: TRxDBLookupCombo
-          Left = 310
+          Left = 311
           Top = 268
           Width = 323
           Height = 21
@@ -555,7 +555,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBComboBox127: TRxDBComboBox
           Left = 310
-          Top = 291
+          Top = 290
           Width = 229
           Height = 21
           Style = csDropDownList
@@ -600,7 +600,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBLookupCombo22: TRxDBLookupCombo
           Left = 310
-          Top = 335
+          Top = 334
           Width = 323
           Height = 21
           DropDownCount = 8
@@ -613,7 +613,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBLookupCombo23: TRxDBLookupCombo
           Left = 310
-          Top = 313
+          Top = 312
           Width = 323
           Height = 21
           DropDownCount = 8
@@ -712,7 +712,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBLookupCombo25: TRxDBLookupCombo
           Left = 310
-          Top = 357
+          Top = 356
           Width = 323
           Height = 21
           DropDownCount = 8
@@ -921,7 +921,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBComboBox157: TRxDBComboBox
           Left = 310
-          Top = 400
+          Top = 399
           Width = 184
           Height = 21
           Style = csDropDownList
@@ -941,7 +941,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBEdit42: TDBEdit
           Left = 310
-          Top = 421
+          Top = 420
           Width = 265
           Height = 21
           DataField = 'DESCRICAO_PHP'
@@ -1346,7 +1346,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         object pnlImpressao: TPanel
           Left = 0
           Top = 0
-          Width = 1250
+          Width = 1262
           Height = 568
           Align = alClient
           Enabled = False
@@ -1581,8 +1581,8 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         object pnlPedido_Proc: TPanel
           Left = 0
           Top = 0
-          Width = 1242
-          Height = 560
+          Width = 1262
+          Height = 568
           Align = alClient
           Enabled = False
           TabOrder = 0
