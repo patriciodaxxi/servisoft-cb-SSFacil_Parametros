@@ -1635,6 +1635,8 @@ type
     cdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField;
     sdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
     cdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
+    sdsParametros_ProdUSA_BITOLA: TStringField;
+    cdsParametros_ProdUSA_BITOLA: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
