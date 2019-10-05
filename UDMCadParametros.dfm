@@ -5031,6 +5031,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedPEDIDO_COMERCIO: TStringField
+      FieldName = 'PEDIDO_COMERCIO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5366,6 +5371,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedEXIGE_PEDIDO_CLI: TStringField
       FieldName = 'EXIGE_PEDIDO_CLI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedPEDIDO_COMERCIO: TStringField
+      FieldName = 'PEDIDO_COMERCIO'
       FixedChar = True
       Size = 1
     end

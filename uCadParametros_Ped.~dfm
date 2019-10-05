@@ -1010,7 +1010,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox163: TDBCheckBox
           Left = 984
-          Top = 78
+          Top = 54
           Width = 169
           Height = 17
           Caption = 'Mostrar Grupo Pessoa'
@@ -1034,7 +1034,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox170: TDBCheckBox
           Left = 984
-          Top = 93
+          Top = 69
           Width = 184
           Height = 17
           Caption = 'Usa Pedido Loja'
@@ -1296,6 +1296,30 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueChecked = 'S'
           ValueUnchecked = 'N'
           Visible = False
+        end
+        object DBCheckBox7: TDBCheckBox
+          Left = 986
+          Top = 370
+          Width = 235
+          Height = 17
+          Caption = 'Exige N'#186' Pedido Cliente (OC)'
+          DataField = 'EXIGE_PEDIDO_CLI'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 76
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
+        object DBCheckBox8: TDBCheckBox
+          Left = 984
+          Top = 85
+          Width = 184
+          Height = 17
+          Caption = 'Usa Pedido Com'#233'rcio'
+          DataField = 'PEDIDO_COMERCIO'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 77
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
         end
       end
       object TabSheet9: TRzTabSheet

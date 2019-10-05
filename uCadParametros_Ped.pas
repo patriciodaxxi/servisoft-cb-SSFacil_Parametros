@@ -146,6 +146,7 @@ type
     DBCheckBox5: TDBCheckBox;
     DBCheckBox6: TDBCheckBox;
     DBCheckBox7: TDBCheckBox;
+    DBCheckBox8: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);

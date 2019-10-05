@@ -1637,6 +1637,8 @@ type
     cdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
     sdsParametros_ProdUSA_BITOLA: TStringField;
     cdsParametros_ProdUSA_BITOLA: TStringField;
+    sdsParametros_PedPEDIDO_COMERCIO: TStringField;
+    cdsParametros_PedPEDIDO_COMERCIO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
