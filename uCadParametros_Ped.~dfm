@@ -156,7 +156,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Cliente Estoque:'
         end
         object Label71: TLabel
-          Left = 985
+          Left = 986
           Top = 262
           Width = 156
           Height = 13
@@ -181,7 +181,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label80: TLabel
           Left = 9
-          Top = 407
+          Top = 385
           Width = 299
           Height = 13
           Alignment = taRightJustify
@@ -235,7 +235,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label192: TLabel
           Left = 177
-          Top = 319
+          Top = 297
           Width = 131
           Height = 13
           Alignment = taRightJustify
@@ -243,7 +243,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label199: TLabel
           Left = 188
-          Top = 341
+          Top = 319
           Width = 120
           Height = 13
           Alignment = taRightJustify
@@ -251,7 +251,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label200: TLabel
           Left = 143
-          Top = 363
+          Top = 341
           Width = 165
           Height = 13
           Alignment = taRightJustify
@@ -259,7 +259,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label180: TLabel
           Left = 80
-          Top = 386
+          Top = 364
           Width = 228
           Height = 13
           Alignment = taRightJustify
@@ -267,7 +267,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label276: TLabel
           Left = 163
-          Top = 429
+          Top = 407
           Width = 145
           Height = 13
           Alignment = taRightJustify
@@ -275,19 +275,11 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label283: TLabel
           Left = 65
-          Top = 450
+          Top = 428
           Width = 243
           Height = 13
           Alignment = taRightJustify
           Caption = 'Descri'#231#227'o PHP para envio de Email dos processos:'
-        end
-        object Label1: TLabel
-          Left = 171
-          Top = 297
-          Width = 137
-          Height = 13
-          Alignment = taRightJustify
-          Caption = 'Opera'#231#227'o de pedido Padr'#227'o:'
         end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
@@ -486,7 +478,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBComboBox50: TRxDBComboBox
           Left = 310
-          Top = 399
+          Top = 377
           Width = 184
           Height = 21
           Style = csDropDownList
@@ -563,7 +555,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBComboBox127: TRxDBComboBox
           Left = 310
-          Top = 312
+          Top = 290
           Width = 229
           Height = 21
           Style = csDropDownList
@@ -608,7 +600,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBLookupCombo22: TRxDBLookupCombo
           Left = 310
-          Top = 356
+          Top = 334
           Width = 323
           Height = 21
           DropDownCount = 8
@@ -621,7 +613,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBLookupCombo23: TRxDBLookupCombo
           Left = 310
-          Top = 334
+          Top = 312
           Width = 323
           Height = 21
           DropDownCount = 8
@@ -720,7 +712,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBLookupCombo25: TRxDBLookupCombo
           Left = 310
-          Top = 378
+          Top = 356
           Width = 323
           Height = 21
           DropDownCount = 8
@@ -914,9 +906,9 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox136: TDBCheckBox
-          Left = 640
-          Top = 368
-          Width = 369
+          Left = 641
+          Top = 369
+          Width = 335
           Height = 17
           Caption = 
             'Usa o c'#243'd.do produto do cliente para identificar o item na digit' +
@@ -929,7 +921,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object RxDBComboBox157: TRxDBComboBox
           Left = 310
-          Top = 421
+          Top = 399
           Width = 184
           Height = 21
           Style = csDropDownList
@@ -949,7 +941,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBEdit42: TDBEdit
           Left = 310
-          Top = 442
+          Top = 420
           Width = 265
           Height = 21
           DataField = 'DESCRICAO_PHP'
@@ -957,9 +949,9 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           TabOrder = 19
         end
         object DBCheckBox149: TDBCheckBox
-          Left = 640
+          Left = 641
           Top = 381
-          Width = 369
+          Width = 332
           Height = 17
           Caption = 'Mostrar a data de recebimento'
           DataField = 'MOSTRAR_DT_REC'
@@ -971,7 +963,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         object DBCheckBox150: TDBCheckBox
           Left = 640
           Top = 395
-          Width = 368
+          Width = 334
           Height = 17
           Caption = 'Usa a op'#231#227'o de copiar OS'
           DataField = 'USAR_COPIA_OS'
@@ -1005,7 +997,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox162: TDBCheckBox
-          Left = 986
+          Left = 987
           Top = 354
           Width = 113
           Height = 17
@@ -1053,7 +1045,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox191: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 107
           Width = 320
           Height = 17
@@ -1065,7 +1057,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox195: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 154
           Width = 157
           Height = 14
@@ -1077,7 +1069,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox203: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 168
           Width = 155
           Height = 14
@@ -1089,7 +1081,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox212: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 182
           Width = 164
           Height = 14
@@ -1101,7 +1093,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox116: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 196
           Width = 234
           Height = 14
@@ -1113,7 +1105,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox224: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 209
           Width = 234
           Height = 14
@@ -1125,7 +1117,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox233: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 140
           Width = 176
           Height = 14
@@ -1149,7 +1141,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox235: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 126
           Width = 176
           Height = 14
@@ -1161,7 +1153,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox240: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 238
           Width = 369
           Height = 17
@@ -1173,7 +1165,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox246: TDBCheckBox
-          Left = 984
+          Left = 985
           Top = 224
           Width = 234
           Height = 14
@@ -1245,7 +1237,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox2: TDBCheckBox
-          Left = 987
+          Left = 988
           Top = 292
           Width = 201
           Height = 17
@@ -1257,7 +1249,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox3: TDBCheckBox
-          Left = 987
+          Left = 988
           Top = 308
           Width = 261
           Height = 17
@@ -1269,7 +1261,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox4: TDBCheckBox
-          Left = 987
+          Left = 988
           Top = 324
           Width = 261
           Height = 17
@@ -1281,7 +1273,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueUnchecked = 'N'
         end
         object DBCheckBox5: TDBCheckBox
-          Left = 987
+          Left = 988
           Top = 338
           Width = 261
           Height = 17
@@ -1306,7 +1298,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Visible = False
         end
         object DBCheckBox7: TDBCheckBox
-          Left = 986
+          Left = 987
           Top = 370
           Width = 235
           Height = 17
@@ -1328,19 +1320,6 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           TabOrder = 59
           ValueChecked = 'S'
           ValueUnchecked = 'N'
-        end
-        object RxDBLookupCombo1: TRxDBLookupCombo
-          Left = 310
-          Top = 290
-          Width = 323
-          Height = 21
-          DropDownCount = 8
-          DataField = 'ID_OPERACAO_PADRAO'
-          DataSource = DMCadParametros.dsParametros_Ped
-          LookupField = 'ID'
-          LookupDisplay = 'NOME'
-          LookupSource = DMCadParametros.dsOperacao_Nota
-          TabOrder = 78
         end
       end
       object TabSheet9: TRzTabSheet

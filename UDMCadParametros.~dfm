@@ -4699,7 +4699,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 387
+    Top = 386
     object sdsParametros_PedID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5035,9 +5035,6 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'PEDIDO_COMERCIO'
       FixedChar = True
       Size = 1
-    end
-    object sdsParametros_PedID_OPERACAO_PADRAO: TIntegerField
-      FieldName = 'ID_OPERACAO_PADRAO'
     end
   end
   object cdsParametros_Ped: TClientDataSet
@@ -5381,9 +5378,6 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'PEDIDO_COMERCIO'
       FixedChar = True
       Size = 1
-    end
-    object cdsParametros_PedID_OPERACAO_PADRAO: TIntegerField
-      FieldName = 'ID_OPERACAO_PADRAO'
     end
   end
   object dsParametros_Ped: TDataSource
