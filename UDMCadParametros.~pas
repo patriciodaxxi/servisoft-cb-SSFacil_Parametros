@@ -1639,6 +1639,8 @@ type
     cdsParametros_ProdUSA_BITOLA: TStringField;
     sdsParametros_PedPEDIDO_COMERCIO: TStringField;
     cdsParametros_PedPEDIDO_COMERCIO: TStringField;
+    sdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField;
+    cdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

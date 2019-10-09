@@ -4159,6 +4159,11 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'ENDPDFMDFE'
       Size = 250
     end
+    object sdsParametros_MDFeTIPO_IMPRESSAO: TStringField
+      FieldName = 'TIPO_IMPRESSAO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_MDFe: TClientDataSet
     Aggregates = <>
@@ -4188,6 +4193,11 @@ object DMCadParametros: TDMCadParametros
     object cdsParametros_MDFeENDPDFMDFE: TStringField
       FieldName = 'ENDPDFMDFE'
       Size = 250
+    end
+    object cdsParametros_MDFeTIPO_IMPRESSAO: TStringField
+      FieldName = 'TIPO_IMPRESSAO'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_MDFe: TDataSource

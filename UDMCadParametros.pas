@@ -1641,6 +1641,8 @@ type
     cdsParametros_PedPEDIDO_COMERCIO: TStringField;
     sdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField;
     cdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField;
+    sdsParametros_MDFeTIPO_IMPRESSAO: TStringField;
+    cdsParametros_MDFeTIPO_IMPRESSAO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
