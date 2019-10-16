@@ -84,9 +84,9 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
       Top = 1
       Width = 1266
       Height = 591
-      ActivePage = TabSheet1
+      ActivePage = TabSheet8
       Align = alClient
-      TabIndex = 3
+      TabIndex = 0
       TabOrder = 0
       FixedDimension = 19
       object TabSheet8: TRzTabSheet
@@ -280,6 +280,14 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Height = 13
           Alignment = taRightJustify
           Caption = 'Descri'#231#227'o PHP para envio de Email dos processos:'
+        end
+        object Label1: TLabel
+          Left = 211
+          Top = 450
+          Width = 97
+          Height = 13
+          Alignment = taRightJustify
+          Caption = '% Desconto Padr'#227'o:'
         end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
@@ -1332,6 +1340,15 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           TabOrder = 78
           ValueChecked = 'S'
           ValueUnchecked = 'N'
+        end
+        object DBEdit1: TDBEdit
+          Left = 310
+          Top = 442
+          Width = 101
+          Height = 21
+          DataField = 'PERC_DESCONTO_PADRAO'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 79
         end
       end
       object TabSheet9: TRzTabSheet

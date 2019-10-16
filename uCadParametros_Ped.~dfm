@@ -84,9 +84,9 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
       Top = 1
       Width = 1266
       Height = 591
-      ActivePage = TabSheet8
+      ActivePage = TabSheet1
       Align = alClient
-      TabIndex = 0
+      TabIndex = 3
       TabOrder = 0
       FixedDimension = 19
       object TabSheet8: TRzTabSheet
@@ -1635,8 +1635,8 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             ValueUnchecked = 'N'
           end
           object DBCheckBox145: TDBCheckBox
-            Left = 16
-            Top = 81
+            Left = 18
+            Top = 83
             Width = 368
             Height = 17
             Caption = 
@@ -1657,6 +1657,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             DataField = 'USA_EMAIL_NO_PED'
             DataSource = DMCadParametros.dsParametros_Ped
             TabOrder = 0
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
+          end
+          object DBCheckBox10: TDBCheckBox
+            Left = 14
+            Top = 107
+            Width = 363
+            Height = 17
+            Caption = 'Usa Processo Simples (Baixa Por C'#243'd Barras)'
+            DataField = 'USA_PROCESSO_SIMPLES'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 5
             ValueChecked = 'S'
             ValueUnchecked = 'N'
           end

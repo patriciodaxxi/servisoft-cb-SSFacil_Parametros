@@ -5056,6 +5056,9 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField
+      FieldName = 'PERC_DESCONTO_PADRAO'
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5408,6 +5411,9 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'USA_PROCESSO_SIMPLES'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField
+      FieldName = 'PERC_DESCONTO_PADRAO'
     end
   end
   object dsParametros_Ped: TDataSource

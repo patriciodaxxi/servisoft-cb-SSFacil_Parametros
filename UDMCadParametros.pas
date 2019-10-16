@@ -1645,6 +1645,8 @@ type
     cdsParametros_MDFeTIPO_IMPRESSAO: TStringField;
     sdsParametros_PedUSA_PROCESSO_SIMPLES: TStringField;
     cdsParametros_PedUSA_PROCESSO_SIMPLES: TStringField;
+    sdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField;
+    cdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
