@@ -3795,6 +3795,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdUSA_BITOLA: TStringField
+      FieldName = 'USA_BITOLA'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
@@ -4045,6 +4050,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object cdsParametros_ProdUSA_BITOLA: TStringField
+      FieldName = 'USA_BITOLA'
+      FixedChar = True
+      Size = 1
+    end
   end
   object dsParametros_Prod: TDataSource
     DataSet = cdsParametros_Prod
@@ -4149,6 +4159,11 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'ENDPDFMDFE'
       Size = 250
     end
+    object sdsParametros_MDFeTIPO_IMPRESSAO: TStringField
+      FieldName = 'TIPO_IMPRESSAO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_MDFe: TClientDataSet
     Aggregates = <>
@@ -4178,6 +4193,11 @@ object DMCadParametros: TDMCadParametros
     object cdsParametros_MDFeENDPDFMDFE: TStringField
       FieldName = 'ENDPDFMDFE'
       Size = 250
+    end
+    object cdsParametros_MDFeTIPO_IMPRESSAO: TStringField
+      FieldName = 'TIPO_IMPRESSAO'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_MDFe: TDataSource
@@ -4689,7 +4709,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     SQLConnection = dmDatabase.scoDados
     Left = 40
-    Top = 387
+    Top = 386
     object sdsParametros_PedID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5021,12 +5041,30 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedPEDIDO_COMERCIO: TStringField
+      FieldName = 'PEDIDO_COMERCIO'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField
+      FieldName = 'USA_REF_DIG_PEDLOJA'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_PedUSA_PROCESSO_SIMPLES: TStringField
+      FieldName = 'USA_PROCESSO_SIMPLES'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField
+      FieldName = 'PERC_DESCONTO_PADRAO'
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Ped'
-    Left = 104
+    Left = 105
     Top = 387
     object cdsParametros_PedID: TIntegerField
       FieldName = 'ID'
@@ -5358,6 +5396,24 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'EXIGE_PEDIDO_CLI'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_PedPEDIDO_COMERCIO: TStringField
+      FieldName = 'PEDIDO_COMERCIO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField
+      FieldName = 'USA_REF_DIG_PEDLOJA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedUSA_PROCESSO_SIMPLES: TStringField
+      FieldName = 'USA_PROCESSO_SIMPLES'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField
+      FieldName = 'PERC_DESCONTO_PADRAO'
     end
   end
   object dsParametros_Ped: TDataSource

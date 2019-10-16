@@ -58,6 +58,12 @@ uses
 
 procedure TfrmCadPadrao.btnInserirClick(Sender: TObject);
 begin
+  if RzPageControl1.ActivePage <> TS_Cadastro then
+  begin
+    RzPageControl1.ActivePage := TS_Cadastro;
+    RzPageControl1.OnChange(self);
+  end;
+
   dsPadrao.DataSet.Insert;
 end;
 

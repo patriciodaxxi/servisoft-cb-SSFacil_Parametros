@@ -19,7 +19,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1285
+    Width = 1293
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object RzPageControl1: TRzPageControl
     Left = 0
     Top = 35
-    Width = 1285
-    Height = 614
+    Width = 1293
+    Height = 622
     ActivePage = TS_Usa
     Align = alClient
     TabIndex = 0
@@ -86,8 +86,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object pnlGeral: TPanel
         Left = 0
         Top = 0
-        Width = 1281
-        Height = 591
+        Width = 1289
+        Height = 599
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -507,6 +507,18 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
+        object DBCheckBox14: TDBCheckBox
+          Left = 28
+          Top = 394
+          Width = 267
+          Height = 16
+          Caption = 'Usa Bitola'
+          DataField = 'USA_BITOLA'
+          DataSource = DMCadParametros.dsParametros_Prod
+          TabOrder = 28
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
     end
     object TS_Mostra: TRzTabSheet
@@ -514,8 +526,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel1: TRzPanel
         Left = 0
         Top = 0
-        Width = 1281
-        Height = 591
+        Width = 1289
+        Height = 599
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -846,8 +858,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel2: TRzPanel
         Left = 0
         Top = 0
-        Width = 1281
-        Height = 591
+        Width = 1289
+        Height = 599
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -1026,8 +1038,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel3: TRzPanel
         Left = 0
         Top = 0
-        Width = 1281
-        Height = 591
+        Width = 1289
+        Height = 599
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -1324,8 +1336,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel4: TRzPanel
         Left = 0
         Top = 0
-        Width = 1281
-        Height = 591
+        Width = 1289
+        Height = 599
         Align = alClient
         Enabled = False
         TabOrder = 0

@@ -76,9 +76,9 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
     Top = 35
     Width = 1285
     Height = 614
-    ActivePage = TS_Preco
+    ActivePage = TS_Usa
     Align = alClient
-    TabIndex = 3
+    TabIndex = 0
     TabOrder = 1
     FixedDimension = 19
     object TS_Usa: TRzTabSheet

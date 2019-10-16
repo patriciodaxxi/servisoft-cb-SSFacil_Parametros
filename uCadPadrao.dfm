@@ -20,9 +20,9 @@ object frmCadPadrao: TfrmCadPadrao
   object RzPageControl1: TRzPageControl
     Left = 0
     Top = 0
-    Width = 747
-    Height = 423
-    ActivePage = TS_Cadastro
+    Width = 755
+    Height = 431
+    ActivePage = TS_Consulta
     ActivePageDefault = TS_Consulta
     Align = alClient
     BackgroundColor = 16752448
@@ -30,7 +30,7 @@ object frmCadPadrao: TfrmCadPadrao
     FlatColor = clGray
     ParentBackgroundColor = False
     TabColors.Shadow = clSilver
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     FixedDimension = 19
     object TS_Consulta: TRzTabSheet
@@ -38,8 +38,8 @@ object frmCadPadrao: TfrmCadPadrao
       object SMDBGrid1: TSMDBGrid
         Left = 0
         Top = 73
-        Width = 743
-        Height = 310
+        Width = 751
+        Height = 318
         Align = alClient
         Ctl3D = False
         DataSource = dsConsulta
@@ -76,7 +76,7 @@ object frmCadPadrao: TfrmCadPadrao
       object Panel2: TPanel
         Left = 0
         Top = 0
-        Width = 743
+        Width = 751
         Height = 32
         Align = alTop
         Color = clSilver
@@ -303,8 +303,8 @@ object frmCadPadrao: TfrmCadPadrao
       end
       object StaticText1: TStaticText
         Left = 0
-        Top = 383
-        Width = 743
+        Top = 391
+        Width = 751
         Height = 17
         Align = alBottom
         BorderStyle = sbsSunken
@@ -320,7 +320,7 @@ object frmCadPadrao: TfrmCadPadrao
       object pnlPesquisa: TPanel
         Left = 0
         Top = 32
-        Width = 743
+        Width = 751
         Height = 41
         Align = alTop
         Color = clSilver
@@ -419,7 +419,7 @@ object frmCadPadrao: TfrmCadPadrao
       object Panel1: TPanel
         Left = 0
         Top = 0
-        Width = 743
+        Width = 751
         Height = 35
         Align = alTop
         Color = 8404992
@@ -645,8 +645,8 @@ object frmCadPadrao: TfrmCadPadrao
       object pnlCadastro: TPanel
         Left = 0
         Top = 35
-        Width = 743
-        Height = 365
+        Width = 751
+        Height = 373
         Align = alClient
         Enabled = False
         TabOrder = 0

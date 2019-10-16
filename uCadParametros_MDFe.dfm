@@ -19,7 +19,7 @@ object frmCadParametros_MDFe: TfrmCadParametros_MDFe
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1266
+    Width = 1274
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_MDFe: TfrmCadParametros_MDFe
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1266
-    Height = 549
+    Width = 1274
+    Height = 557
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -119,6 +119,14 @@ object frmCadParametros_MDFe: TfrmCadParametros_MDFe
       Alignment = taRightJustify
       Caption = 'Endere'#231'o Para Salvar o PDF:'
     end
+    object Label1: TLabel
+      Left = 191
+      Top = 174
+      Width = 75
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Tipo Impress'#227'o:'
+    end
     object DBEdit32: TDBEdit
       Left = 152
       Top = 12
@@ -138,7 +146,7 @@ object frmCadParametros_MDFe: TfrmCadParametros_MDFe
       TabOrder = 1
     end
     object DBEdit34: TDBEdit
-      Left = 152
+      Left = 153
       Top = 55
       Width = 121
       Height = 21
@@ -167,6 +175,24 @@ object frmCadParametros_MDFe: TfrmCadParametros_MDFe
       NumGlyphs = 1
       TabOrder = 4
       Text = 'C:\'
+    end
+    object RxDBComboBox1: TRxDBComboBox
+      Left = 270
+      Top = 166
+      Width = 163
+      Height = 21
+      Style = csDropDownList
+      DataField = 'TIPO_IMPRESSAO'
+      DataSource = DMCadParametros.dsParametros_MDFe
+      EnableValues = True
+      ItemHeight = 13
+      Items.Strings = (
+        'A= ACBR'
+        'F= Flexdocs')
+      TabOrder = 5
+      Values.Strings = (
+        'A'
+        'F')
     end
   end
 end

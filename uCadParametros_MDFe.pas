@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, UDMCadParametros, DB, rsDBUtils, ToolEdit, StdCtrls, Mask,
-  DBCtrls, Buttons, ExtCtrls;
+  DBCtrls, Buttons, ExtCtrls, RxDBComb;
 
 type
   TfrmCadParametros_MDFe = class(TForm)
@@ -24,6 +24,8 @@ type
     DBEdit34: TDBEdit;
     DirectoryEdit10: TDirectoryEdit;
     DirectoryEdit11: TDirectoryEdit;
+    Label1: TLabel;
+    RxDBComboBox1: TRxDBComboBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);

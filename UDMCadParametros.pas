@@ -1635,6 +1635,18 @@ type
     cdsParametros_RecXMLPROCURAR_CBARRA_SEM_FORN: TStringField;
     sdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
     cdsParametros_GeralMOSTRAR_DOC_HIST: TStringField;
+    sdsParametros_ProdUSA_BITOLA: TStringField;
+    cdsParametros_ProdUSA_BITOLA: TStringField;
+    sdsParametros_PedPEDIDO_COMERCIO: TStringField;
+    cdsParametros_PedPEDIDO_COMERCIO: TStringField;
+    sdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField;
+    cdsParametros_PedUSA_REF_DIG_PEDLOJA: TStringField;
+    sdsParametros_MDFeTIPO_IMPRESSAO: TStringField;
+    cdsParametros_MDFeTIPO_IMPRESSAO: TStringField;
+    sdsParametros_PedUSA_PROCESSO_SIMPLES: TStringField;
+    cdsParametros_PedUSA_PROCESSO_SIMPLES: TStringField;
+    sdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField;
+    cdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
