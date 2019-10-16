@@ -316,13 +316,15 @@ object frmCadParametros_Etiq: TfrmCadParametros_Etiq
           'Picotec'
           'Ramys'
           'Ella Store'
-          'RC Store')
+          'RC Store'
+          'BellaVista1')
         TabOrder = 0
         Values.Strings = (
           'PICOTEC'
           'RAMYS'
           'ELLASTORE'
-          'RCSTORE')
+          'RCSTORE'
+          'BELLAVIST1')
       end
       object RxDBComboBox161: TRxDBComboBox
         Left = 152
