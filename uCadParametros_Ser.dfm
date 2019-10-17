@@ -1,6 +1,6 @@
 object frmCadParametros_Ser: TfrmCadParametros_Ser
-  Left = 147
-  Top = 107
+  Left = 145
+  Top = 75
   Width = 1128
   Height = 588
   Caption = 'frmCadParametros_Ser'
@@ -134,6 +134,22 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Height = 13
       Alignment = taRightJustify
       Caption = 'Gerar parcelas na NFSe/Recibo quando possuir contratos:'
+    end
+    object Label1: TLabel
+      Left = 178
+      Top = 171
+      Width = 125
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Nome Servi'#231'o Interno 13'#186':'
+    end
+    object Label2: TLabel
+      Left = 234
+      Top = 195
+      Width = 69
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Dia Vecto 13'#186':'
     end
     object RxDBComboBox72: TRxDBComboBox
       Left = 305
@@ -443,6 +459,28 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       TabOrder = 21
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object RxDBLookupCombo1: TRxDBLookupCombo
+      Left = 305
+      Top = 162
+      Width = 246
+      Height = 21
+      DropDownCount = 8
+      DataField = 'ID_SERVICO_13'
+      DataSource = DMCadParametros.dsParametros_Ser
+      LookupField = 'ID'
+      LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsServico_Int
+      TabOrder = 22
+    end
+    object DBEdit1: TDBEdit
+      Left = 305
+      Top = 185
+      Width = 121
+      Height = 23
+      DataField = 'VECTO_13'
+      DataSource = DMCadParametros.dsParametros_Ser
+      TabOrder = 23
     end
   end
 end

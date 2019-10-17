@@ -4418,12 +4418,18 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_SerID_SERVICO_13: TIntegerField
+      FieldName = 'ID_SERVICO_13'
+    end
+    object sdsParametros_SerVECTO_13: TIntegerField
+      FieldName = 'VECTO_13'
+    end
   end
   object cdsParametros_Ser: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Ser'
-    Left = 103
+    Left = 102
     Top = 331
     object cdsParametros_SerID: TIntegerField
       FieldName = 'ID'
@@ -4529,6 +4535,12 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'MOSTRAR_QTD_NOTA'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_SerID_SERVICO_13: TIntegerField
+      FieldName = 'ID_SERVICO_13'
+    end
+    object cdsParametros_SerVECTO_13: TIntegerField
+      FieldName = 'VECTO_13'
     end
   end
   object dsParametros_Ser: TDataSource
@@ -7959,5 +7971,41 @@ object DMCadParametros: TDMCadParametros
     DataSet = cdsFilial
     Left = 1096
     Top = 454
+  end
+  object sdsServico_Int: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 'SELECT S.id, S.nome'#13#10'FROM servico_int S'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 729
+    Top = 558
+  end
+  object dspServico_Int: TDataSetProvider
+    DataSet = sdsServico_Int
+    Left = 769
+    Top = 557
+  end
+  object cdsServico_Int: TClientDataSet
+    Aggregates = <>
+    IndexFieldNames = 'NOME'
+    Params = <>
+    ProviderName = 'dspServico_Int'
+    Left = 809
+    Top = 558
+    object cdsServico_IntID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object cdsServico_IntNOME: TStringField
+      FieldName = 'NOME'
+      Size = 70
+    end
+  end
+  object dsServico_Int: TDataSource
+    DataSet = cdsServico_Int
+    Left = 849
+    Top = 558
   end
 end

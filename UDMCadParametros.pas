@@ -1647,6 +1647,16 @@ type
     cdsParametros_PedUSA_PROCESSO_SIMPLES: TStringField;
     sdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField;
     cdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField;
+    sdsParametros_SerID_SERVICO_13: TIntegerField;
+    sdsParametros_SerVECTO_13: TIntegerField;
+    cdsParametros_SerID_SERVICO_13: TIntegerField;
+    cdsParametros_SerVECTO_13: TIntegerField;
+    sdsServico_Int: TSQLDataSet;
+    dspServico_Int: TDataSetProvider;
+    cdsServico_Int: TClientDataSet;
+    dsServico_Int: TDataSource;
+    cdsServico_IntID: TIntegerField;
+    cdsServico_IntNOME: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, DBCtrls, RxDBComb, Buttons, ExtCtrls, UDMCadParametros, DB, rsDBUtils;
+  Dialogs, StdCtrls, DBCtrls, RxDBComb, Buttons, ExtCtrls, UDMCadParametros, DB, rsDBUtils,
+  RxLookup, Mask;
 
 type
   TfrmCadParametros_Ser = class(TForm)
@@ -42,6 +43,10 @@ type
     DBCheckBox277: TDBCheckBox;
     DBCheckBox281: TDBCheckBox;
     DBCheckBox1: TDBCheckBox;
+    Label1: TLabel;
+    RxDBLookupCombo1: TRxDBLookupCombo;
+    Label2: TLabel;
+    DBEdit1: TDBEdit;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
@@ -127,6 +132,8 @@ procedure TfrmCadParametros_Ser.FormShow(Sender: TObject);
 begin
   fDMCadparametros := TDMCadParametros.Create(Self);
   oDBUtils.SetDataSourceProperties(Self, fDMCadparametros);
+  fDMCadparametros.cdsServico_Int.Close;
+  fDMCadparametros.cdsServico_Int.Open;
   fDMCadparametros.prc_Consultar;
   fDMCadparametros.prc_Consultar_Ser;
 end;
