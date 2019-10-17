@@ -173,7 +173,7 @@ object frmCadParametros_Com: TfrmCadParametros_Com
       TabOrder = 2
     end
     object RxDBComboBox137: TRxDBComboBox
-      Left = 617
+      Left = 618
       Top = 33
       Width = 145
       Height = 21
