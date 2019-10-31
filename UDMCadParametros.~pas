@@ -1654,9 +1654,9 @@ type
     sdsServico_Int: TSQLDataSet;
     dspServico_Int: TDataSetProvider;
     cdsServico_Int: TClientDataSet;
-    IntegerField2: TIntegerField;
-    StringField2: TStringField;
     dsServico_Int: TDataSource;
+    cdsServico_IntID: TIntegerField;
+    cdsServico_IntNOME: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

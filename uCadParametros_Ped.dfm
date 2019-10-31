@@ -289,6 +289,14 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Alignment = taRightJustify
           Caption = '% Desconto Padr'#227'o:'
         end
+        object Label2: TLabel
+          Left = 124
+          Top = 471
+          Width = 184
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Processo que indica o final do Servi'#231'o:'
+        end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
           Top = 26
@@ -1349,6 +1357,19 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           DataField = 'PERC_DESCONTO_PADRAO'
           DataSource = DMCadParametros.dsParametros_Ped
           TabOrder = 79
+        end
+        object RxDBLookupCombo1: TRxDBLookupCombo
+          Left = 310
+          Top = 463
+          Width = 323
+          Height = 21
+          DropDownCount = 8
+          DataField = 'ID_PROCESSO_FINAL'
+          DataSource = DMCadParametros.dsParametros_Ped
+          LookupField = 'ID'
+          LookupDisplay = 'NOME'
+          LookupSource = DMCadParametros.dsProcesso
+          TabOrder = 80
         end
       end
       object TabSheet9: TRzTabSheet

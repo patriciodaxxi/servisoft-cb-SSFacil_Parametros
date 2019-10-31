@@ -1657,6 +1657,8 @@ type
     dsServico_Int: TDataSource;
     cdsServico_IntID: TIntegerField;
     cdsServico_IntNOME: TStringField;
+    sdsParametros_PedID_PROCESSO_FINAL: TIntegerField;
+    cdsParametros_PedID_PROCESSO_FINAL: TIntegerField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

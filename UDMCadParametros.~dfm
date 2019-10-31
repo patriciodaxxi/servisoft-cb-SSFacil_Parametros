@@ -7994,13 +7994,13 @@ object DMCadParametros: TDMCadParametros
     ProviderName = 'dspServico_Int'
     Left = 809
     Top = 558
-    object IntegerField2: TIntegerField
+    object cdsServico_IntID: TIntegerField
       FieldName = 'ID'
       Required = True
     end
-    object StringField2: TStringField
+    object cdsServico_IntNOME: TStringField
       FieldName = 'NOME'
-      Size = 30
+      Size = 70
     end
   end
   object dsServico_Int: TDataSource

@@ -5071,6 +5071,9 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField
       FieldName = 'PERC_DESCONTO_PADRAO'
     end
+    object sdsParametros_PedID_PROCESSO_FINAL: TIntegerField
+      FieldName = 'ID_PROCESSO_FINAL'
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5426,6 +5429,9 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedPERC_DESCONTO_PADRAO: TFloatField
       FieldName = 'PERC_DESCONTO_PADRAO'
+    end
+    object cdsParametros_PedID_PROCESSO_FINAL: TIntegerField
+      FieldName = 'ID_PROCESSO_FINAL'
     end
   end
   object dsParametros_Ped: TDataSource
