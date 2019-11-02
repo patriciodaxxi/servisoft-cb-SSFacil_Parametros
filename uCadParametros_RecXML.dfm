@@ -17,7 +17,7 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1211
+    Width = 1219
     Height = 35
     Align = alTop
     Color = 8404992
@@ -72,8 +72,8 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1211
-    Height = 532
+    Width = 1219
+    Height = 540
     Align = alClient
     TabOrder = 1
     object Label57: TLabel
@@ -409,6 +409,20 @@ object frmCadParametros_RecXML: TfrmCadParametros_RecXML
       DataField = 'PROCURAR_CBARRA_SEM_FORN'
       DataSource = DMCadParametros.dsParametros_RecXML
       TabOrder = 17
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox2: TDBCheckBox
+      Left = 273
+      Top = 394
+      Width = 582
+      Height = 17
+      Caption = 
+        'Controlar a grava'#231#227'o do Produto pelo XML (marcado n'#227'o vai deixar' +
+        ' criar produto novo)'
+      DataField = 'USA_CONTROLE_PRODUTO'
+      DataSource = DMCadParametros.dsParametros_RecXML
+      TabOrder = 18
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
