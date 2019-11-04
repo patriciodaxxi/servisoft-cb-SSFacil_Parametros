@@ -1661,6 +1661,8 @@ type
     cdsParametros_PedID_PROCESSO_FINAL: TIntegerField;
     sdsParametros_RecXMLUSA_CONTROLE_PRODUTO: TStringField;
     cdsParametros_RecXMLUSA_CONTROLE_PRODUTO: TStringField;
+    sdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField;
+    cdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

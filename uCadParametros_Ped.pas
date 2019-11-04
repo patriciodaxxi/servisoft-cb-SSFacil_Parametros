@@ -153,6 +153,7 @@ type
     DBEdit1: TDBEdit;
     Label2: TLabel;
     RxDBLookupCombo1: TRxDBLookupCombo;
+    DBCheckBox11: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
