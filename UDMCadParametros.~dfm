@@ -5084,6 +5084,11 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_PedID_PROCESSO_FINAL: TIntegerField
       FieldName = 'ID_PROCESSO_FINAL'
     end
+    object sdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField
+      FieldName = 'USA_CONSULTA_SIMPLES'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5442,6 +5447,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedID_PROCESSO_FINAL: TIntegerField
       FieldName = 'ID_PROCESSO_FINAL'
+    end
+    object cdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField
+      FieldName = 'USA_CONSULTA_SIMPLES'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Ped: TDataSource

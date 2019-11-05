@@ -519,6 +519,18 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
+        object DBCheckBox15: TDBCheckBox
+          Left = 28
+          Top = 410
+          Width = 267
+          Height = 16
+          Caption = 'Usa Sele'#231#227'o de Combina'#231#227'o para Etiquetas'
+          DataField = 'USA_SEL_COMB_ETIQUETA'
+          DataSource = DMCadParametros.dsParametros_Prod
+          TabOrder = 29
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
     end
     object TS_Mostra: TRzTabSheet

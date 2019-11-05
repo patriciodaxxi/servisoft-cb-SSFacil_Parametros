@@ -3560,7 +3560,7 @@ object DMCadParametros: TDMCadParametros
     MaxBlobSize = -1
     Params = <>
     SQLConnection = dmDatabase.scoDados
-    Left = 40
+    Left = 41
     Top = 271
     object sdsParametros_ProdID: TIntegerField
       FieldName = 'ID'
@@ -3807,6 +3807,11 @@ object DMCadParametros: TDMCadParametros
     end
     object sdsParametros_ProdUSA_BITOLA: TStringField
       FieldName = 'USA_BITOLA'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField
+      FieldName = 'USA_SEL_COMB_ETIQUETA'
       FixedChar = True
       Size = 1
     end
@@ -4062,6 +4067,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdUSA_BITOLA: TStringField
       FieldName = 'USA_BITOLA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField
+      FieldName = 'USA_SEL_COMB_ETIQUETA'
       FixedChar = True
       Size = 1
     end

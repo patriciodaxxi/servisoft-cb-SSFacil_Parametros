@@ -1663,6 +1663,8 @@ type
     cdsParametros_RecXMLUSA_CONTROLE_PRODUTO: TStringField;
     sdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField;
     cdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField;
+    sdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField;
+    cdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
