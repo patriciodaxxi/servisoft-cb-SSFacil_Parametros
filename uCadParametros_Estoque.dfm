@@ -581,7 +581,7 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       ValueUnchecked = 'N'
     end
     object DBCheckBox5: TDBCheckBox
-      Left = 643
+      Left = 644
       Top = 263
       Width = 463
       Height = 17
@@ -589,6 +589,18 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       DataField = 'USA_ESTOQUE_GERAL_CAD'
       DataSource = DMCadParametros.dsParametros_Est
       TabOrder = 27
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox6: TDBCheckBox
+      Left = 644
+      Top = 279
+      Width = 463
+      Height = 17
+      Caption = 'Controlar o doc. de estoque por usu'#225'rio (Entrada/Sa'#237'da)'
+      DataField = 'CONTROLA_DOC_SAIDA'
+      DataSource = DMCadParametros.dsParametros_Est
+      TabOrder = 28
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

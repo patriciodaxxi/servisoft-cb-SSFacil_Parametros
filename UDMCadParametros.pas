@@ -1665,6 +1665,10 @@ type
     cdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField;
     sdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField;
     cdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField;
+    sdsParametros_UsuarioCONTROLE_DOC_EST: TStringField;
+    cdsParametros_UsuarioCONTROLE_DOC_EST: TStringField;
+    sdsParametros_EstCONTROLA_DOC_SAIDA: TStringField;
+    cdsParametros_EstCONTROLA_DOC_SAIDA: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

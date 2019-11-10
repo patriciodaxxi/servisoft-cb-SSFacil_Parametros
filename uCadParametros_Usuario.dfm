@@ -253,6 +253,14 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
         Alignment = taRightJustify
         Caption = 'Alterar Pre'#231'o:'
       end
+      object Label1: TLabel
+        Left = 88
+        Top = 266
+        Width = 100
+        Height = 13
+        Alignment = taRightJustify
+        Caption = 'Doc. Ajuste Estoque:'
+      end
       object RxDBComboBox86: TRxDBComboBox
         Left = 190
         Top = 13
@@ -416,7 +424,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox148: TDBCheckBox
         Left = 190
-        Top = 265
+        Top = 288
         Width = 315
         Height = 17
         Caption = 'Mostrar o Custo na OS'
@@ -428,7 +436,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox151: TDBCheckBox
         Left = 190
-        Top = 289
+        Top = 303
         Width = 315
         Height = 17
         Caption = 'Permitir alterar o Material na necessidade de compras'
@@ -440,7 +448,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox152: TDBCheckBox
         Left = 190
-        Top = 305
+        Top = 318
         Width = 315
         Height = 17
         Caption = 'Permitir alterar o consumo na Necessidade de Compras'
@@ -452,7 +460,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox168: TDBCheckBox
         Left = 190
-        Top = 321
+        Top = 333
         Width = 379
         Height = 17
         Caption = 'Permitir alterar o item com pedido com Ordem de Produ'#231#227'o gerada'
@@ -464,7 +472,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox172: TDBCheckBox
         Left = 190
-        Top = 337
+        Top = 349
         Width = 232
         Height = 17
         Caption = 'Solicita confirma'#231#227'o antes de enviar a NFe'
@@ -476,7 +484,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox192: TDBCheckBox
         Left = 190
-        Top = 353
+        Top = 364
         Width = 232
         Height = 17
         Caption = 'Utiliza Cadastro Pessoa Reduzido'
@@ -488,7 +496,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox196: TDBCheckBox
         Left = 190
-        Top = 369
+        Top = 379
         Width = 427
         Height = 17
         Caption = 'Permite alterar o pedido depois de conferido o financeiro'
@@ -500,7 +508,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox197: TDBCheckBox
         Left = 190
-        Top = 385
+        Top = 395
         Width = 427
         Height = 17
         Caption = 'Permite marcar o pedido como conferido o financeiro'
@@ -512,7 +520,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox202: TDBCheckBox
         Left = 190
-        Top = 401
+        Top = 410
         Width = 427
         Height = 17
         Caption = 'Permitir alterar o C'#243'd. Produto do Cliente no Pedido'
@@ -524,7 +532,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox243: TDBCheckBox
         Left = 190
-        Top = 417
+        Top = 425
         Width = 427
         Height = 17
         Caption = 'Permitir aprovar as duplicatas'
@@ -536,7 +544,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox279: TDBCheckBox
         Left = 190
-        Top = 433
+        Top = 440
         Width = 427
         Height = 17
         Caption = 'Permite Cancelar Pedido depois de gerado a Ordem de Produ'#231#227'o'
@@ -548,7 +556,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox286: TDBCheckBox
         Left = 190
-        Top = 449
+        Top = 456
         Width = 427
         Height = 17
         Caption = 
@@ -562,7 +570,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox1: TDBCheckBox
         Left = 190
-        Top = 465
+        Top = 471
         Width = 427
         Height = 17
         Caption = 'Liberar baixa de tal'#227'o mesmo que o anterior n'#227'o esteja encerrada'
@@ -574,7 +582,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox2: TDBCheckBox
         Left = 190
-        Top = 481
+        Top = 486
         Width = 427
         Height = 17
         Caption = 'Liberar Configura'#231#227'o do Representante (Descontos) individual'
@@ -586,7 +594,7 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
       end
       object DBCheckBox3: TDBCheckBox
         Left = 190
-        Top = 497
+        Top = 502
         Width = 427
         Height = 17
         Caption = 'Cupom - Mostrar barra de totais na consulta'
@@ -595,6 +603,26 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
         TabOrder = 24
         ValueChecked = 'S'
         ValueUnchecked = 'N'
+      end
+      object RxDBComboBox1: TRxDBComboBox
+        Left = 190
+        Top = 258
+        Width = 184
+        Height = 21
+        Style = csDropDownList
+        DataField = 'CONTROLE_DOC_EST'
+        DataSource = DMCadParametros.dsParametros_Usuario
+        EnableValues = True
+        ItemHeight = 13
+        Items.Strings = (
+          'Entradas'
+          'Sa'#237'das'
+          'Ambos')
+        TabOrder = 25
+        Values.Strings = (
+          'E'
+          'S'
+          'A')
       end
     end
   end
