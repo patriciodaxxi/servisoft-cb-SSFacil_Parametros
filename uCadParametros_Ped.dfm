@@ -84,9 +84,9 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
       Top = 1
       Width = 1266
       Height = 591
-      ActivePage = TabSheet8
+      ActivePage = TabSheet10
       Align = alClient
-      TabIndex = 0
+      TabIndex = 2
       TabOrder = 0
       FixedDimension = 19
       object TabSheet8: TRzTabSheet
@@ -1614,7 +1614,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
               'S2')
           end
           object DBCheckBox259: TDBCheckBox
-            Left = 16
+            Left = 17
             Top = 123
             Width = 329
             Height = 17
@@ -1635,6 +1635,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             NumGlyphs = 1
             TabOrder = 12
             Text = 'C:\'
+          end
+          object DBCheckBox12: TDBCheckBox
+            Left = 17
+            Top = 139
+            Width = 329
+            Height = 17
+            Caption = 'Imprimir as duplicatas pendentes'
+            DataField = 'IMP_DUPLICATA_PEND'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 13
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
           end
         end
       end

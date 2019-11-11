@@ -7129,6 +7129,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_UsuarioCONTROLE_DOC_EST: TStringField
+      FieldName = 'CONTROLE_DOC_EST'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Usuario: TClientDataSet
     Aggregates = <>
@@ -7270,6 +7275,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object cdsParametros_UsuarioCONTROLE_DOC_EST: TStringField
+      FieldName = 'CONTROLE_DOC_EST'
+      FixedChar = True
+      Size = 1
+    end
   end
   object dsParametros_Usuario: TDataSource
     DataSet = cdsParametros_Usuario
@@ -7408,6 +7418,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_EstCONTROLA_DOC_SAIDA: TStringField
+      FieldName = 'CONTROLA_DOC_SAIDA'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -7530,6 +7545,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_EstUSA_ESTOQUE_GERAL_CAD: TStringField
       FieldName = 'USA_ESTOQUE_GERAL_CAD'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_EstCONTROLA_DOC_SAIDA: TStringField
+      FieldName = 'CONTROLA_DOC_SAIDA'
       FixedChar = True
       Size = 1
     end

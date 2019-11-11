@@ -1371,6 +1371,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           LookupSource = DMCadParametros.dsProcesso
           TabOrder = 80
         end
+        object DBCheckBox11: TDBCheckBox
+          Left = 987
+          Top = 402
+          Width = 235
+          Height = 17
+          Caption = 'Usa Consulta Simples no cadastro do Pedido'
+          DataField = 'USA_CONSULTA_SIMPLES'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 81
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'
