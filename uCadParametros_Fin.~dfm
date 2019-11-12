@@ -315,7 +315,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object Label3: TLabel
       Left = 139
-      Top = 219
+      Top = 220
       Width = 83
       Height = 13
       Alignment = taRightJustify
@@ -1082,7 +1082,7 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
     end
     object RxDBComboBox1: TRxDBComboBox
       Left = 226
-      Top = 211
+      Top = 212
       Width = 184
       Height = 21
       Style = csDropDownList

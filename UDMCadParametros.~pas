@@ -1669,6 +1669,8 @@ type
     cdsParametros_UsuarioCONTROLE_DOC_EST: TStringField;
     sdsParametros_EstCONTROLA_DOC_SAIDA: TStringField;
     cdsParametros_EstCONTROLA_DOC_SAIDA: TStringField;
+    sdsParametros_PedIMP_DUPLICATA_PEND: TStringField;
+    cdsParametros_PedIMP_DUPLICATA_PEND: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

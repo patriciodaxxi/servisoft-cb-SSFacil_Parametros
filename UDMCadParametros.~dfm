@@ -5099,6 +5099,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedIMP_DUPLICATA_PEND: TStringField
+      FieldName = 'IMP_DUPLICATA_PEND'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5460,6 +5465,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField
       FieldName = 'USA_CONSULTA_SIMPLES'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedIMP_DUPLICATA_PEND: TStringField
+      FieldName = 'IMP_DUPLICATA_PEND'
       FixedChar = True
       Size = 1
     end

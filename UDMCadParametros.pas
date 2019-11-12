@@ -1671,6 +1671,8 @@ type
     cdsParametros_EstCONTROLA_DOC_SAIDA: TStringField;
     sdsParametros_PedIMP_DUPLICATA_PEND: TStringField;
     cdsParametros_PedIMP_DUPLICATA_PEND: TStringField;
+    sdsParametros_FinUSA_ID_SAGE_INT: TStringField;
+    cdsParametros_FinUSA_ID_SAGE_INT: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
