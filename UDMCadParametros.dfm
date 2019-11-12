@@ -5732,6 +5732,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField
+      FieldName = 'GERAR_MAT_POR_LOTE'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
@@ -5861,6 +5866,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_LoteRESERVA_EST_LOTE: TStringField
       FieldName = 'RESERVA_EST_LOTE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField
+      FieldName = 'GERAR_MAT_POR_LOTE'
       FixedChar = True
       Size = 1
     end
@@ -7154,6 +7164,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField
+      FieldName = 'PERMITE_ALT_LOTE_MAT'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Usuario: TClientDataSet
     Aggregates = <>
@@ -7297,6 +7312,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_UsuarioCONTROLE_DOC_EST: TStringField
       FieldName = 'CONTROLE_DOC_EST'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField
+      FieldName = 'PERMITE_ALT_LOTE_MAT'
       FixedChar = True
       Size = 1
     end
@@ -8083,5 +8103,26 @@ object DMCadParametros: TDMCadParametros
     DataSet = cdsServico_Int
     Left = 849
     Top = 558
+  end
+  object qParametros_Usuario: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftString
+        Name = 'USUARIO'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'SELECT P.permite_alt_lote_mat'
+      'FROM PARAMETROS_USUARIO P'
+      'WHERE P.USUARIO = :USUARIO')
+    SQLConnection = dmDatabase.scoDados
+    Left = 1037
+    Top = 533
+    object qParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField
+      FieldName = 'PERMITE_ALT_LOTE_MAT'
+      FixedChar = True
+      Size = 1
+    end
   end
 end

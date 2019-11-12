@@ -5732,6 +5732,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField
+      FieldName = 'GERAR_MAT_POR_LOTE'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Lote: TClientDataSet
     Aggregates = <>
@@ -5861,6 +5866,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_LoteRESERVA_EST_LOTE: TStringField
       FieldName = 'RESERVA_EST_LOTE'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField
+      FieldName = 'GERAR_MAT_POR_LOTE'
       FixedChar = True
       Size = 1
     end
@@ -6477,6 +6487,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_FinUSA_ID_SAGE_INT: TStringField
+      FieldName = 'USA_ID_SAGE_INT'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Fin: TClientDataSet
     Aggregates = <>
@@ -6695,6 +6710,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_FinLER_RETORNO: TStringField
       FieldName = 'LER_RETORNO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_FinUSA_ID_SAGE_INT: TStringField
+      FieldName = 'USA_ID_SAGE_INT'
       FixedChar = True
       Size = 1
     end
@@ -7144,6 +7164,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField
+      FieldName = 'PERMITE_ALT_LOTE_MAT'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Usuario: TClientDataSet
     Aggregates = <>
@@ -7287,6 +7312,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_UsuarioCONTROLE_DOC_EST: TStringField
       FieldName = 'CONTROLE_DOC_EST'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField
+      FieldName = 'PERMITE_ALT_LOTE_MAT'
       FixedChar = True
       Size = 1
     end

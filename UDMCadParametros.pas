@@ -1673,6 +1673,12 @@ type
     cdsParametros_PedIMP_DUPLICATA_PEND: TStringField;
     sdsParametros_FinUSA_ID_SAGE_INT: TStringField;
     cdsParametros_FinUSA_ID_SAGE_INT: TStringField;
+    sdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField;
+    cdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField;
+    sdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
+    cdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
+    qParametros_Usuario: TSQLQuery;
+    qParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

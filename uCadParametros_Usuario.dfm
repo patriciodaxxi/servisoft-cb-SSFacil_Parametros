@@ -624,6 +624,18 @@ object frmCadParametros_Usuario: TfrmCadParametros_Usuario
           'S'
           'A')
       end
+      object DBCheckBox4: TDBCheckBox
+        Left = 190
+        Top = 518
+        Width = 426
+        Height = 17
+        Caption = 'Permite alterar o tipo de grava'#231#227'o dos materiais no Lote'
+        DataField = 'PERMITE_ALT_LOTE_MAT'
+        DataSource = DMCadParametros.dsParametros_Usuario
+        TabOrder = 26
+        ValueChecked = 'S'
+        ValueUnchecked = 'N'
+      end
     end
   end
 end
