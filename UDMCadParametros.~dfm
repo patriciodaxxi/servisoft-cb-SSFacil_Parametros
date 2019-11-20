@@ -8104,4 +8104,25 @@ object DMCadParametros: TDMCadParametros
     Left = 849
     Top = 558
   end
+  object qParametros_Usuario: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftString
+        Name = 'USUARIO'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'SELECT P.permite_alt_lote_mat'
+      'FROM PARAMETROS_USUARIO P'
+      'WHERE P.USUARIO = :USUARIO')
+    SQLConnection = dmDatabase.scoDados
+    Left = 1037
+    Top = 533
+    object qParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField
+      FieldName = 'PERMITE_ALT_LOTE_MAT'
+      FixedChar = True
+      Size = 1
+    end
+  end
 end

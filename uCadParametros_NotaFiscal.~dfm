@@ -1176,5 +1176,29 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
+    object DBCheckBox5: TDBCheckBox
+      Left = 840
+      Top = 349
+      Width = 341
+      Height = 17
+      Caption = 'Calcular o Simples mesmo que o Destinat'#225'rio seja do Simples'
+      DataField = 'CALC_SIMPLES_CLI'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 48
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
+    object DBCheckBox6: TDBCheckBox
+      Left = 840
+      Top = 365
+      Width = 341
+      Height = 17
+      Caption = 'Imprimir a cond.de pagamento nos dados adicionais'
+      DataField = 'IMP_CONDPGTO_DADOS'
+      DataSource = DMCadParametros.dsParametros_NFe
+      TabOrder = 49
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

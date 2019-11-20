@@ -2945,6 +2945,16 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeCALC_SIMPLES_CLI: TStringField
+      FieldName = 'CALC_SIMPLES_CLI'
+      FixedChar = True
+      Size = 1
+    end
+    object sdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField
+      FieldName = 'IMP_CONDPGTO_DADOS'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3221,6 +3231,16 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeCOPIA_PEDIDO_REP: TStringField
       FieldName = 'COPIA_PEDIDO_REP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeCALC_SIMPLES_CLI: TStringField
+      FieldName = 'CALC_SIMPLES_CLI'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField
+      FieldName = 'IMP_CONDPGTO_DADOS'
       FixedChar = True
       Size = 1
     end

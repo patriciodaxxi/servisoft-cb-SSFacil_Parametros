@@ -1679,6 +1679,10 @@ type
     cdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
     qParametros_Usuario: TSQLQuery;
     qParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
+    sdsParametros_NFeCALC_SIMPLES_CLI: TStringField;
+    sdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField;
+    cdsParametros_NFeCALC_SIMPLES_CLI: TStringField;
+    cdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
