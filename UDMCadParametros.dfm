@@ -5124,6 +5124,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField
+      FieldName = 'APROVAR_PEDIDO_WEB'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5490,6 +5495,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedIMP_DUPLICATA_PEND: TStringField
       FieldName = 'IMP_DUPLICATA_PEND'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField
+      FieldName = 'APROVAR_PEDIDO_WEB'
       FixedChar = True
       Size = 1
     end

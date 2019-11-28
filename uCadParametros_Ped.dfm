@@ -84,9 +84,9 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
       Top = 1
       Width = 1266
       Height = 591
-      ActivePage = TabSheet10
+      ActivePage = TabSheet8
       Align = alClient
-      TabIndex = 2
+      TabIndex = 0
       TabOrder = 0
       FixedDimension = 19
       object TabSheet8: TRzTabSheet
@@ -296,6 +296,14 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Height = 13
           Alignment = taRightJustify
           Caption = 'Processo que indica o final do Servi'#231'o:'
+        end
+        object Label3: TLabel
+          Left = 141
+          Top = 493
+          Width = 167
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Precisa de Aprova'#231#227'o (Ped. WEB):'
         end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
@@ -1382,6 +1390,26 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           TabOrder = 81
           ValueChecked = 'S'
           ValueUnchecked = 'N'
+        end
+        object RxDBComboBox1: TRxDBComboBox
+          Left = 310
+          Top = 485
+          Width = 184
+          Height = 21
+          Style = csDropDownList
+          DataField = 'APROVAR_PEDIDO_WEB'
+          DataSource = DMCadParametros.dsParametros_Ped
+          EnableValues = True
+          ItemHeight = 13
+          Items.Strings = (
+            'Pedido WEB'
+            'Pedido Local'
+            'Ambos')
+          TabOrder = 82
+          Values.Strings = (
+            'W'
+            'L'
+            'A')
         end
       end
       object TabSheet9: TRzTabSheet

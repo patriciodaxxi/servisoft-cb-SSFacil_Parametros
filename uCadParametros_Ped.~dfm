@@ -297,6 +297,14 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Alignment = taRightJustify
           Caption = 'Processo que indica o final do Servi'#231'o:'
         end
+        object Label3: TLabel
+          Left = 200
+          Top = 493
+          Width = 108
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Precisa de Aprova'#231#227'o:'
+        end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
           Top = 26
@@ -1383,6 +1391,26 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
+        object RxDBComboBox1: TRxDBComboBox
+          Left = 310
+          Top = 485
+          Width = 184
+          Height = 21
+          Style = csDropDownList
+          DataField = 'APROVAR_PEDIDO_WEB'
+          DataSource = DMCadParametros.dsParametros_Ped
+          EnableValues = True
+          ItemHeight = 13
+          Items.Strings = (
+            'Pedido WEB'
+            'Pedido Local'
+            'Ambos')
+          TabOrder = 82
+          Values.Strings = (
+            'W'
+            'L'
+            'A')
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'
@@ -1614,7 +1642,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
               'S2')
           end
           object DBCheckBox259: TDBCheckBox
-            Left = 16
+            Left = 17
             Top = 123
             Width = 329
             Height = 17
@@ -1635,6 +1663,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             NumGlyphs = 1
             TabOrder = 12
             Text = 'C:\'
+          end
+          object DBCheckBox12: TDBCheckBox
+            Left = 17
+            Top = 139
+            Width = 329
+            Height = 17
+            Caption = 'Imprimir as duplicatas pendentes'
+            DataField = 'IMP_DUPLICATA_PEND'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 13
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
           end
         end
       end

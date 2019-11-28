@@ -1683,6 +1683,8 @@ type
     sdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField;
     cdsParametros_NFeCALC_SIMPLES_CLI: TStringField;
     cdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField;
+    sdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField;
+    cdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
