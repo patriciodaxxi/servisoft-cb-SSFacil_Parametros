@@ -4424,6 +4424,11 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_SerVECTO_13: TIntegerField
       FieldName = 'VECTO_13'
     end
+    object sdsParametros_SerUSA_CALC_COMPLETO: TStringField
+      FieldName = 'USA_CALC_COMPLETO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ser: TClientDataSet
     Aggregates = <>
@@ -4541,6 +4546,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_SerVECTO_13: TIntegerField
       FieldName = 'VECTO_13'
+    end
+    object cdsParametros_SerUSA_CALC_COMPLETO: TStringField
+      FieldName = 'USA_CALC_COMPLETO'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Ser: TDataSource

@@ -19,7 +19,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1120
+    Width = 1112
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
   object pnlGeral: TPanel
     Left = 0
     Top = 35
-    Width = 1120
-    Height = 522
+    Width = 1112
+    Height = 514
     Align = alClient
     Enabled = False
     TabOrder = 1
@@ -182,7 +182,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 1
+      TabOrder = 2
       Values.Strings = (
         'S'
         'N')
@@ -200,7 +200,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 2
+      TabOrder = 4
       Values.Strings = (
         'S'
         'N')
@@ -213,7 +213,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Usa tipo de servi'#231'o (Motor/Transformador/Acionamentos)'
       DataField = 'USA_SERVICO_MOTOR'
       DataSource = DMCadParametros.dsParametros
-      TabOrder = 7
+      TabOrder = 1
       ValueChecked = 'S'
       ValueUnchecked = 'N'
       Visible = False
@@ -231,7 +231,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Items.Strings = (
         'Refer'#234'ncia'
         'ID Produto')
-      TabOrder = 3
+      TabOrder = 6
       Values.Strings = (
         'R'
         'P')
@@ -249,7 +249,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 4
+      TabOrder = 8
       Values.Strings = (
         'S'
         'N')
@@ -267,7 +267,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Items.Strings = (
         'Sim'
         'N'#227'o')
-      TabOrder = 5
+      TabOrder = 10
       Values.Strings = (
         'S'
         'N')
@@ -285,7 +285,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Items.Strings = (
         'Por dia Vencimento'
         'Por Condi'#231#227'o de Pagamento')
-      TabOrder = 6
+      TabOrder = 12
       Values.Strings = (
         'D'
         'C')
@@ -298,7 +298,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Gerar duplicatas direto no contrato'
       DataField = 'GERAR_DUPLICATA_CONTRATO'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 8
+      TabOrder = 3
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -310,7 +310,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Usa a Ordem de Servi'#231'o reduzida (esconder alguns campos)'
       DataField = 'USA_OS_REDUZIDA'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 9
+      TabOrder = 5
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -322,7 +322,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Mostrar o campo (N'#186' de S'#233'rie Troca)'
       DataField = 'MOSTRAR_SERIE_TROCA'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 10
+      TabOrder = 7
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -334,7 +334,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Imprimir o N'#186' do Contrato na NFSe'
       DataField = 'IMP_CONTRATO_NFSE'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 11
+      TabOrder = 9
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -346,7 +346,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Mostrar o Status na Ordem de Servi'#231'o'
       DataField = 'MOSTRAR_STATUS'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 12
+      TabOrder = 11
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -370,7 +370,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Mostrar Defeito Encontrado na OS'
       DataField = 'MOSTRA_OS_DEFEITO_ENC'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 14
+      TabOrder = 15
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -382,7 +382,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Mostrar Acess'#243'rios na OS'
       DataField = 'MOSTRA_OS_ACESSORIOS'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 15
+      TabOrder = 17
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -394,7 +394,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Usa Processos na OS'
       DataField = 'USA_PROCESSO_OS'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 16
+      TabOrder = 18
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -406,7 +406,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Controlar o Processo anterior na baixa'
       DataField = 'CONTROLAR_PROCESSO_ANT'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 17
+      TabOrder = 19
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -418,7 +418,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Usa Processos no Setor'
       DataField = 'USA_PROCESSO_SETOR'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 18
+      TabOrder = 20
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -430,7 +430,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Usa C'#225'lculo Novo do PIS / COFINS'
       DataField = 'USA_CALC_PISCOFINS'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 19
+      TabOrder = 21
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -442,7 +442,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       Caption = 'Liberar a quantidade para o Pedido pela OS'
       DataField = 'LIB_QTD_PEDIDO'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 20
+      TabOrder = 22
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -456,7 +456,7 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
         'aturada)'
       DataField = 'MOSTRAR_QTD_NOTA'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 21
+      TabOrder = 23
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end
@@ -471,16 +471,28 @@ object frmCadParametros_Ser: TfrmCadParametros_Ser
       LookupField = 'ID'
       LookupDisplay = 'NOME'
       LookupSource = DMCadParametros.dsServico_Int
-      TabOrder = 22
+      TabOrder = 14
     end
     object DBEdit1: TDBEdit
       Left = 305
       Top = 185
       Width = 121
-      Height = 23
+      Height = 21
       DataField = 'VECTO_13'
       DataSource = DMCadParametros.dsParametros_Ser
-      TabOrder = 23
+      TabOrder = 16
+    end
+    object DBCheckBox2: TDBCheckBox
+      Left = 578
+      Top = 368
+      Width = 380
+      Height = 17
+      Caption = 'Usa c'#225'lculo completo do Or'#231'amento (Supercrom)'
+      DataField = 'MOSTRAR_QTD_NOTA'
+      DataSource = DMCadParametros.dsParametros_Ser
+      TabOrder = 24
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
     end
   end
 end

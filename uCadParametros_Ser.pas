@@ -3,9 +3,8 @@ unit uCadParametros_Ser;
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, DBCtrls, RxDBComb, Buttons, ExtCtrls, UDMCadParametros, DB, rsDBUtils,
-  RxLookup, Mask;
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, Dialogs, StdCtrls, DBCtrls, RxDBComb, Buttons,
+  ExtCtrls, UDMCadParametros, DB, rsDBUtils, RxLookup, Mask;
 
 type
   TfrmCadParametros_Ser = class(TForm)
@@ -47,6 +46,7 @@ type
     RxDBLookupCombo1: TRxDBLookupCombo;
     Label2: TLabel;
     DBEdit1: TDBEdit;
+    DBCheckBox2: TDBCheckBox;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
