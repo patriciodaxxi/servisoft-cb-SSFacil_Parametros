@@ -1098,5 +1098,17 @@ object frmCadParametros_Fin: TfrmCadParametros_Fin
         'N'
         'I')
     end
+    object DBCheckBox6: TDBCheckBox
+      Left = 856
+      Top = 420
+      Width = 377
+      Height = 17
+      Caption = 'Usa ID da Sage na Integra'#231#227'o das Notas de Entrada'
+      DataField = 'USA_ID_SAGE_INT'
+      DataSource = DMCadParametros.dsParametros_Fin
+      TabOrder = 56
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

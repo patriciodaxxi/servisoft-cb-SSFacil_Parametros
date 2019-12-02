@@ -100,6 +100,7 @@ type
     RxDBLookupCombo2: TRxDBLookupCombo;
     Label3: TLabel;
     RxDBComboBox1: TRxDBComboBox;
+    DBCheckBox6: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);

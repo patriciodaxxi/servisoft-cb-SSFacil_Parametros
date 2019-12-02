@@ -51,6 +51,9 @@ type
     DBCheckBox1: TDBCheckBox;
     DBCheckBox2: TDBCheckBox;
     DBCheckBox3: TDBCheckBox;
+    Label1: TLabel;
+    RxDBComboBox1: TRxDBComboBox;
+    DBCheckBox4: TDBCheckBox;
     procedure btnNFeClick(Sender: TObject);
     procedure pnlUsuarioEnter(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -130,7 +133,11 @@ begin
   fDMCadParametros.prc_Consultar_Usuario;
   fDMCadParametros.cdsParametros_Com.Close;
   fDMCadParametros.cdsParametros_Com.Open;
-  DBCheckBox2.Visible := (fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
+  fDMCadParametros.cdsParametros_Est.Close;
+  fDMCadParametros.cdsParametros_Est.Open;
+  DBCheckBox2.Visible   := (fDMCadParametros.cdsParametros_ComUSA_CONFIG_IND.AsString = 'S');
+  Label1.Visible        := (fDMCadParametros.cdsParametros_EstCONTROLA_DOC_SAIDA.AsString = 'S');
+  RxDBComboBox1.Visible := (fDMCadParametros.cdsParametros_EstCONTROLA_DOC_SAIDA.AsString = 'S');
 end;
 
 procedure TfrmCadParametros_Usuario.FormClose(Sender: TObject;

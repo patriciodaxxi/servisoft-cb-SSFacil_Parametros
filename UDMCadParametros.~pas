@@ -1654,9 +1654,35 @@ type
     sdsServico_Int: TSQLDataSet;
     dspServico_Int: TDataSetProvider;
     cdsServico_Int: TClientDataSet;
-    IntegerField2: TIntegerField;
-    StringField2: TStringField;
     dsServico_Int: TDataSource;
+    cdsServico_IntID: TIntegerField;
+    cdsServico_IntNOME: TStringField;
+    sdsParametros_PedID_PROCESSO_FINAL: TIntegerField;
+    cdsParametros_PedID_PROCESSO_FINAL: TIntegerField;
+    sdsParametros_RecXMLUSA_CONTROLE_PRODUTO: TStringField;
+    cdsParametros_RecXMLUSA_CONTROLE_PRODUTO: TStringField;
+    sdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField;
+    cdsParametros_PedUSA_CONSULTA_SIMPLES: TStringField;
+    sdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField;
+    cdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField;
+    sdsParametros_UsuarioCONTROLE_DOC_EST: TStringField;
+    cdsParametros_UsuarioCONTROLE_DOC_EST: TStringField;
+    sdsParametros_EstCONTROLA_DOC_SAIDA: TStringField;
+    cdsParametros_EstCONTROLA_DOC_SAIDA: TStringField;
+    sdsParametros_PedIMP_DUPLICATA_PEND: TStringField;
+    cdsParametros_PedIMP_DUPLICATA_PEND: TStringField;
+    sdsParametros_FinUSA_ID_SAGE_INT: TStringField;
+    cdsParametros_FinUSA_ID_SAGE_INT: TStringField;
+    sdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField;
+    cdsParametros_LoteGERAR_MAT_POR_LOTE: TStringField;
+    sdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
+    cdsParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
+    qParametros_Usuario: TSQLQuery;
+    qParametros_UsuarioPERMITE_ALT_LOTE_MAT: TStringField;
+    sdsParametros_NFeCALC_SIMPLES_CLI: TStringField;
+    sdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField;
+    cdsParametros_NFeCALC_SIMPLES_CLI: TStringField;
+    cdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

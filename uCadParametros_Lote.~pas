@@ -74,6 +74,7 @@ type
     Label3: TLabel;
     RxDBComboBox1: TRxDBComboBox;
     DBCheckBox2: TDBCheckBox;
+    dbckGerar_Mat_Por_Lote: TDBCheckBox;
     procedure FormShow(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
@@ -97,6 +98,8 @@ var
 
 implementation
 
+uses uUtilPadrao;
+
 {$R *.dfm}
 
 procedure TfrmCadParametros_Lote.FormShow(Sender: TObject);
@@ -106,6 +109,12 @@ begin
   fDMCadparametros.prc_Consultar;
   fDMCadparametros.prc_Consultar_Lote;
   fDMCadparametros.cdsSetor.Open;
+  fDMCadparametros.qParametros_Usuario.Close;
+  fDMCadparametros.qParametros_Usuario.ParamByName('USUARIO').AsString := vUsuario;
+  fDMCadparametros.qParametros_Usuario.Open;
+  dbckGerar_Mat_Por_Lote.Visible := fDMCadparametros.qParametros_UsuarioPERMITE_ALT_LOTE_MAT.AsString; 
+
+  prc_Opcao_Textil;
 end;
 
 procedure TfrmCadParametros_Lote.btnAlterarClick(Sender: TObject);

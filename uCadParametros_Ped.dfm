@@ -289,6 +289,22 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Alignment = taRightJustify
           Caption = '% Desconto Padr'#227'o:'
         end
+        object Label2: TLabel
+          Left = 124
+          Top = 471
+          Width = 184
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Processo que indica o final do Servi'#231'o:'
+        end
+        object Label3: TLabel
+          Left = 141
+          Top = 493
+          Width = 167
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Precisa de Aprova'#231#227'o (Ped. WEB):'
+        end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
           Top = 26
@@ -1350,6 +1366,51 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           DataSource = DMCadParametros.dsParametros_Ped
           TabOrder = 79
         end
+        object RxDBLookupCombo1: TRxDBLookupCombo
+          Left = 310
+          Top = 463
+          Width = 323
+          Height = 21
+          DropDownCount = 8
+          DataField = 'ID_PROCESSO_FINAL'
+          DataSource = DMCadParametros.dsParametros_Ped
+          LookupField = 'ID'
+          LookupDisplay = 'NOME'
+          LookupSource = DMCadParametros.dsProcesso
+          TabOrder = 80
+        end
+        object DBCheckBox11: TDBCheckBox
+          Left = 987
+          Top = 402
+          Width = 235
+          Height = 17
+          Caption = 'Usa Consulta Simples no cadastro do Pedido'
+          DataField = 'USA_CONSULTA_SIMPLES'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 81
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
+        object RxDBComboBox1: TRxDBComboBox
+          Left = 310
+          Top = 485
+          Width = 184
+          Height = 21
+          Style = csDropDownList
+          DataField = 'APROVAR_PEDIDO_WEB'
+          DataSource = DMCadParametros.dsParametros_Ped
+          EnableValues = True
+          ItemHeight = 13
+          Items.Strings = (
+            'Pedido WEB'
+            'Pedido Local'
+            'Ambos')
+          TabOrder = 82
+          Values.Strings = (
+            'W'
+            'L'
+            'A')
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'
@@ -1581,7 +1642,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
               'S2')
           end
           object DBCheckBox259: TDBCheckBox
-            Left = 16
+            Left = 17
             Top = 123
             Width = 329
             Height = 17
@@ -1602,6 +1663,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             NumGlyphs = 1
             TabOrder = 12
             Text = 'C:\'
+          end
+          object DBCheckBox12: TDBCheckBox
+            Left = 17
+            Top = 139
+            Width = 329
+            Height = 17
+            Caption = 'Imprimir as duplicatas pendentes'
+            DataField = 'IMP_DUPLICATA_PEND'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 13
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
           end
         end
       end
