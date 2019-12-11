@@ -1687,6 +1687,8 @@ type
     cdsParametros_NFeIMP_CONDPGTO_DADOS: TStringField;
     sdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField;
     cdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField;
+    sdsParametros_ProdUSA_APLICACAO: TStringField;
+    cdsParametros_ProdUSA_APLICACAO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

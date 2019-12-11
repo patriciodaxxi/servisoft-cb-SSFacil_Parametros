@@ -3835,13 +3835,18 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_ProdUSA_APLICACAO: TStringField
+      FieldName = 'USA_APLICACAO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Prod: TClientDataSet
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Prod'
     Left = 105
-    Top = 270
+    Top = 272
     object cdsParametros_ProdID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -4092,6 +4097,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_ProdUSA_SEL_COMB_ETIQUETA: TStringField
       FieldName = 'USA_SEL_COMB_ETIQUETA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_ProdUSA_APLICACAO: TStringField
+      FieldName = 'USA_APLICACAO'
       FixedChar = True
       Size = 1
     end

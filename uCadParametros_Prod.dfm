@@ -19,7 +19,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 1293
+    Width = 1285
     Height = 35
     Align = alTop
     Color = 8404992
@@ -74,8 +74,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
   object RzPageControl1: TRzPageControl
     Left = 0
     Top = 35
-    Width = 1293
-    Height = 622
+    Width = 1285
+    Height = 614
     ActivePage = TS_Usa
     Align = alClient
     TabIndex = 0
@@ -86,8 +86,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object pnlGeral: TPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -538,8 +538,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel1: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -636,6 +636,14 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
           Font.Name = 'MS Sans Serif'
           Font.Style = []
           ParentFont = False
+        end
+        object Label1: TLabel
+          Left = 95
+          Top = 240
+          Width = 149
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Mostrar aplica'#231#227'o (auto pe'#231'as):'
         end
         object RxDBComboBox105: TRxDBComboBox
           Left = 246
@@ -761,7 +769,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
           Caption = 'Mostrar a Obs na tela da consulta'
           DataField = 'MOSTRAR_OBS_CONSULTA'
           DataSource = DMCadParametros.dsParametros_Prod
-          TabOrder = 10
+          TabOrder = 11
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -847,7 +855,7 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
           Caption = 'Mostra somente o Prod. da Tabela de Pre'#231'o do Cliente nos pedidos'
           DataField = 'MOSTRA_PROD_TPRECO'
           DataSource = DMCadParametros.dsParametros_Prod
-          TabOrder = 12
+          TabOrder = 13
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -859,9 +867,27 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
           Caption = 'Mostrar para informar a Forma separada'
           DataField = 'MOSTRAR_FORMA'
           DataSource = DMCadParametros.dsParametros_Prod
-          TabOrder = 11
+          TabOrder = 12
           ValueChecked = 'S'
           ValueUnchecked = 'N'
+        end
+        object RxDBComboBox1: TRxDBComboBox
+          Left = 246
+          Top = 232
+          Width = 150
+          Height = 21
+          Style = csDropDownList
+          DataField = 'USA_APLICACAO'
+          DataSource = DMCadParametros.dsParametros
+          EnableValues = True
+          ItemHeight = 13
+          Items.Strings = (
+            'SIM'
+            'N'#195'O')
+          TabOrder = 10
+          Values.Strings = (
+            'S'
+            'N')
         end
       end
     end
@@ -870,8 +896,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel2: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -1050,8 +1076,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel3: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
@@ -1348,8 +1374,8 @@ object frmCadParametros_Prod: TfrmCadParametros_Prod
       object RzPanel4: TRzPanel
         Left = 0
         Top = 0
-        Width = 1289
-        Height = 599
+        Width = 1281
+        Height = 591
         Align = alClient
         Enabled = False
         TabOrder = 0
