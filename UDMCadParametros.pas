@@ -1689,6 +1689,25 @@ type
     cdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField;
     sdsParametros_ProdUSA_APLICACAO: TStringField;
     cdsParametros_ProdUSA_APLICACAO: TStringField;
+    sdsParametros_GeralUSA_CAE_PESSOA: TStringField;
+    cdsParametros_GeralUSA_CAE_PESSOA: TStringField;
+    sdsParametros_NFeID_CST_DIFERIMENTO: TIntegerField;
+    cdsParametros_NFeID_CST_DIFERIMENTO: TIntegerField;
+    sdsCSTIcms: TSQLDataSet;
+    dspCSTIcms: TDataSetProvider;
+    cdsCSTIcms: TClientDataSet;
+    dsCSTIcms: TDataSource;
+    cdsCSTIcmsID: TIntegerField;
+    cdsCSTIcmsPERCENTUAL: TFloatField;
+    cdsCSTIcmsHISTORICO: TMemoField;
+    cdsCSTIcmsCOD_CST: TStringField;
+    cdsCSTIcmsTIPO: TStringField;
+    cdsCSTIcmsNOME: TStringField;
+    cdsCSTIcmsUSA_DESONERACAO: TStringField;
+    cdsCSTIcmsCOD_DESONERACAO: TSmallintField;
+    cdsCSTIcmsPERC_DIFERIMENTO: TFloatField;
+    cdsCSTIcmsCALCULA_FCP: TStringField;
+    cdsCSTIcmsTIPO_ICMS: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

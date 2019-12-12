@@ -97,7 +97,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
     end
     object Label37: TLabel
       Left = 54
-      Top = 55
+      Top = 56
       Width = 254
       Height = 13
       Alignment = taRightJustify
@@ -288,6 +288,14 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       Height = 13
       Alignment = taRightJustify
       Caption = 'Opera'#231#227'o de Venda:'
+    end
+    object Label1: TLabel
+      Left = 839
+      Top = 378
+      Width = 92
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'CST ICMS Diferido:'
     end
     object DBEdit5: TDBEdit
       Left = 310
@@ -1187,6 +1195,19 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       TabOrder = 48
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object RxDBLookupCombo7: TRxDBLookupCombo
+      Left = 933
+      Top = 370
+      Width = 174
+      Height = 21
+      DropDownCount = 8
+      DataField = 'ID_BANCO_REMESSA'
+      DataSource = DMCadParametros.dsParametros
+      LookupField = 'ID'
+      LookupDisplay = 'COD_CST;PERCENTUAL;NOME'
+      LookupSource = DMCadParametros.dsCSTIcms
+      TabOrder = 49
     end
   end
 end

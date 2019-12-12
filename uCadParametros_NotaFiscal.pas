@@ -105,6 +105,8 @@ type
     DBCheckBox3: TDBCheckBox;
     DBCheckBox4: TDBCheckBox;
     DBCheckBox5: TDBCheckBox;
+    Label1: TLabel;
+    RxDBLookupCombo7: TRxDBLookupCombo;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
@@ -144,6 +146,7 @@ begin
   oDBUtils.SetDataSourceProperties(Self, fDMCadParametros);
   fDMCadParametros.prc_Consultar;
   fDMCadParametros.prc_Consultar_NFE;
+  fDMCadParametros.cdsCSTIcms.Open;
 end;
 
 procedure TfrmCadParametros_NotaFiscal.btnConfirmarClick(Sender: TObject);

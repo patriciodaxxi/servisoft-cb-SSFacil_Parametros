@@ -1286,6 +1286,18 @@ object frmCadParametro: TfrmCadParametro
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
+        object DBCheckBox16: TDBCheckBox
+          Left = 500
+          Top = 266
+          Width = 189
+          Height = 17
+          Caption = 'Usa CAE no cadastro de Pessoas'
+          DataField = 'USA_CAE_PESSOA'
+          DataSource = DMCadParametros.dsParametros_Geral
+          TabOrder = 71
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
     end
   end

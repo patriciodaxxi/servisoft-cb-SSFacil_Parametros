@@ -97,7 +97,7 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
     end
     object Label37: TLabel
       Left = 54
-      Top = 55
+      Top = 56
       Width = 254
       Height = 13
       Alignment = taRightJustify
@@ -1185,18 +1185,6 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       DataField = 'CALC_SIMPLES_CLI'
       DataSource = DMCadParametros.dsParametros_NFe
       TabOrder = 48
-      ValueChecked = 'S'
-      ValueUnchecked = 'N'
-    end
-    object DBCheckBox6: TDBCheckBox
-      Left = 840
-      Top = 365
-      Width = 341
-      Height = 17
-      Caption = 'Imprimir a cond.de pagamento nos dados adicionais'
-      DataField = 'IMP_CONDPGTO_DADOS'
-      DataSource = DMCadParametros.dsParametros_NFe
-      TabOrder = 49
       ValueChecked = 'S'
       ValueUnchecked = 'N'
     end

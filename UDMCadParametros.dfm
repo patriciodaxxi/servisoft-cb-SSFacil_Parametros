@@ -2494,6 +2494,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_GeralUSA_CAE_PESSOA: TStringField
+      FieldName = 'USA_CAE_PESSOA'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Geral: TClientDataSet
     Aggregates = <>
@@ -2655,6 +2660,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_GeralMOSTRAR_DOC_HIST: TStringField
       FieldName = 'MOSTRAR_DOC_HIST'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_GeralUSA_CAE_PESSOA: TStringField
+      FieldName = 'USA_CAE_PESSOA'
       FixedChar = True
       Size = 1
     end
@@ -2955,6 +2965,9 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeID_CST_DIFERIMENTO: TIntegerField
+      FieldName = 'ID_CST_DIFERIMENTO'
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3243,6 +3256,9 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'IMP_CONDPGTO_DADOS'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_NFeID_CST_DIFERIMENTO: TIntegerField
+      FieldName = 'ID_CST_DIFERIMENTO'
     end
   end
   object dsParametros_NFe: TDataSource
@@ -8174,5 +8190,80 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+  end
+  object sdsCSTIcms: TSQLDataSet
+    NoMetadata = True
+    GetMetadata = False
+    CommandText = 
+      'SELECT T.*'#13#10'FROM tab_csticms T'#13#10'WHERE TIPO = '#39'N'#39#13#10'AND T.perc_dif' +
+      'erimento > 0'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = dmDatabase.scoDados
+    Left = 553
+    Top = 384
+  end
+  object dspCSTIcms: TDataSetProvider
+    DataSet = sdsCSTIcms
+    Left = 594
+    Top = 383
+  end
+  object cdsCSTIcms: TClientDataSet
+    Aggregates = <>
+    IndexFieldNames = 'COD_CST'
+    Params = <>
+    ProviderName = 'dspCSTIcms'
+    Left = 633
+    Top = 384
+    object cdsCSTIcmsID: TIntegerField
+      FieldName = 'ID'
+      Required = True
+    end
+    object cdsCSTIcmsPERCENTUAL: TFloatField
+      FieldName = 'PERCENTUAL'
+    end
+    object cdsCSTIcmsHISTORICO: TMemoField
+      FieldName = 'HISTORICO'
+      BlobType = ftMemo
+      Size = 1
+    end
+    object cdsCSTIcmsCOD_CST: TStringField
+      FieldName = 'COD_CST'
+      Size = 3
+    end
+    object cdsCSTIcmsTIPO: TStringField
+      FieldName = 'TIPO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsCSTIcmsNOME: TStringField
+      FieldName = 'NOME'
+      Size = 200
+    end
+    object cdsCSTIcmsUSA_DESONERACAO: TStringField
+      FieldName = 'USA_DESONERACAO'
+      Size = 1
+    end
+    object cdsCSTIcmsCOD_DESONERACAO: TSmallintField
+      FieldName = 'COD_DESONERACAO'
+    end
+    object cdsCSTIcmsPERC_DIFERIMENTO: TFloatField
+      FieldName = 'PERC_DIFERIMENTO'
+    end
+    object cdsCSTIcmsCALCULA_FCP: TStringField
+      FieldName = 'CALCULA_FCP'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsCSTIcmsTIPO_ICMS: TStringField
+      FieldName = 'TIPO_ICMS'
+      FixedChar = True
+      Size = 1
+    end
+  end
+  object dsCSTIcms: TDataSource
+    DataSet = cdsCSTIcms
+    Left = 673
+    Top = 384
   end
 end
