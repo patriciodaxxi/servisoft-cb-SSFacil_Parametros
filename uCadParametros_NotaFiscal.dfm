@@ -1202,8 +1202,8 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       Width = 174
       Height = 21
       DropDownCount = 8
-      DataField = 'ID_BANCO_REMESSA'
-      DataSource = DMCadParametros.dsParametros
+      DataField = 'ID_CST_DIFERIMENTO'
+      DataSource = DMCadParametros.dsParametros_NFe
       LookupField = 'ID'
       LookupDisplay = 'COD_CST;PERCENTUAL;NOME'
       LookupSource = DMCadParametros.dsCSTIcms

@@ -105,6 +105,8 @@ type
     DBCheckBox3: TDBCheckBox;
     DBCheckBox4: TDBCheckBox;
     DBCheckBox5: TDBCheckBox;
+    Label1: TLabel;
+    RxDBLookupCombo7: TRxDBLookupCombo;
     procedure btnAlterarClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
