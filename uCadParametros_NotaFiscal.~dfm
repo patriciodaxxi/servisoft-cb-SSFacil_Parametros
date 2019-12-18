@@ -290,12 +290,12 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       Caption = 'Opera'#231#227'o de Venda:'
     end
     object Label1: TLabel
-      Left = 839
+      Left = 825
       Top = 378
-      Width = 92
+      Width = 106
       Height = 13
       Alignment = taRightJustify
-      Caption = 'CST ICMS Diferido:'
+      Caption = 'ID CST ICMS Diferido:'
     end
     object Label2: TLabel
       Left = 819
@@ -1228,8 +1228,8 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       EnableValues = True
       ItemHeight = 13
       Items.Strings = (
-        '0- Contribuinte Final'
-        '1- Contribuinte Normal'
+        '0- Contribuinte Normal'
+        '1- Contribuinte Final'
         'A- Ambos'
         'N- N'#227'o Enviar')
       TabOrder = 50
