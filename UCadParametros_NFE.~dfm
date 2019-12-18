@@ -84,10 +84,10 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
       Top = 1
       Width = 1317
       Height = 586
-      ActivePage = TS_NFE_Geral
+      ActivePage = TS_NFE_Imp
       ActivePageDefault = TS_NFE_Geral
       Align = alClient
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       FixedDimension = 19
       object TS_NFE_Geral: TRzTabSheet
@@ -807,6 +807,18 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           DataField = 'IMP_NOMEPROD_CLIENTE'
           DataSource = DMCadParametros.dsParametros_NFe
           TabOrder = 9
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
+        object DBCheckBox6: TDBCheckBox
+          Left = 13
+          Top = 176
+          Width = 341
+          Height = 17
+          Caption = 'Imprimir a cond.de pagamento nos dados adicionais'
+          DataField = 'IMP_CONDPGTO_DADOS'
+          DataSource = DMCadParametros.dsParametros_NFe
+          TabOrder = 14
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end

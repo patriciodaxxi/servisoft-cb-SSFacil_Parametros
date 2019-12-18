@@ -1,8 +1,8 @@
 object DMCadParametros: TDMCadParametros
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Left = 51
-  Top = 42
+  Left = 533
+  Top = 59
   Height = 654
   Width = 1290
   object sdsParametros: TSQLDataSet
@@ -1173,7 +1173,7 @@ object DMCadParametros: TDMCadParametros
     IndexFieldNames = 'ID'
     Params = <>
     ProviderName = 'dspParametros'
-    Left = 96
+    Left = 97
     Top = 4
     object cdsParametrosID: TIntegerField
       FieldName = 'ID'
@@ -2968,6 +2968,11 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_NFeID_CST_DIFERIMENTO: TIntegerField
       FieldName = 'ID_CST_DIFERIMENTO'
     end
+    object sdsParametros_NFeENVIAR_ICMS_SUBSTITUTO: TStringField
+      FieldName = 'ENVIAR_ICMS_SUBSTITUTO'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3259,6 +3264,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeID_CST_DIFERIMENTO: TIntegerField
       FieldName = 'ID_CST_DIFERIMENTO'
+    end
+    object cdsParametros_NFeENVIAR_ICMS_SUBSTITUTO: TStringField
+      FieldName = 'ENVIAR_ICMS_SUBSTITUTO'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_NFe: TDataSource
@@ -6914,7 +6924,7 @@ object DMCadParametros: TDMCadParametros
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Imp'
-    Left = 112
+    Left = 113
     Top = 536
     object cdsParametros_ImpID: TIntegerField
       FieldName = 'ID'

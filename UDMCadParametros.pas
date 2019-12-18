@@ -1708,6 +1708,8 @@ type
     cdsCSTIcmsPERC_DIFERIMENTO: TFloatField;
     cdsCSTIcmsCALCULA_FCP: TStringField;
     cdsCSTIcmsTIPO_ICMS: TStringField;
+    sdsParametros_NFeENVIAR_ICMS_SUBSTITUTO: TStringField;
+    cdsParametros_NFeENVIAR_ICMS_SUBSTITUTO: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

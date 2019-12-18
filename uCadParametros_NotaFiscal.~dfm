@@ -297,6 +297,14 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       Alignment = taRightJustify
       Caption = 'CST ICMS Diferido:'
     end
+    object Label2: TLabel
+      Left = 819
+      Top = 400
+      Width = 112
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Enviar ICMS Substituto:'
+    end
     object DBEdit5: TDBEdit
       Left = 310
       Top = 2
@@ -1208,6 +1216,28 @@ object frmCadParametros_NotaFiscal: TfrmCadParametros_NotaFiscal
       LookupDisplay = 'COD_CST;PERCENTUAL;NOME'
       LookupSource = DMCadParametros.dsCSTIcms
       TabOrder = 49
+    end
+    object RxDBComboBox1: TRxDBComboBox
+      Left = 934
+      Top = 391
+      Width = 170
+      Height = 21
+      Style = csDropDownList
+      DataField = 'ENVIAR_ICMS_SUBSTITUTO'
+      DataSource = DMCadParametros.dsParametros_NFe
+      EnableValues = True
+      ItemHeight = 13
+      Items.Strings = (
+        '0- Contribuinte Final'
+        '1- Contribuinte Normal'
+        'A- Ambos'
+        'N- N'#227'o Enviar')
+      TabOrder = 50
+      Values.Strings = (
+        '0'
+        '1'
+        'A'
+        'N')
     end
   end
 end
