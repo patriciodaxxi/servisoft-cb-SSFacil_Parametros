@@ -1,8 +1,8 @@
 object DMCadParametros: TDMCadParametros
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Left = 51
-  Top = 42
+  Left = 533
+  Top = 59
   Height = 654
   Width = 1290
   object sdsParametros: TSQLDataSet
@@ -6924,7 +6924,7 @@ object DMCadParametros: TDMCadParametros
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Imp'
-    Left = 112
+    Left = 113
     Top = 536
     object cdsParametros_ImpID: TIntegerField
       FieldName = 'ID'

@@ -1,8 +1,8 @@
 object DMCadParametros: TDMCadParametros
   OldCreateOrder = False
   OnCreate = DataModuleCreate
-  Left = 533
-  Top = 59
+  Left = 54
+  Top = 27
   Height = 654
   Width = 1290
   object sdsParametros: TSQLDataSet
@@ -2499,6 +2499,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_GeralPERMITE_CNPJ_DUP: TStringField
+      FieldName = 'PERMITE_CNPJ_DUP'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Geral: TClientDataSet
     Aggregates = <>
@@ -2665,6 +2670,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_GeralUSA_CAE_PESSOA: TStringField
       FieldName = 'USA_CAE_PESSOA'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_GeralPERMITE_CNPJ_DUP: TStringField
+      FieldName = 'PERMITE_CNPJ_DUP'
       FixedChar = True
       Size = 1
     end

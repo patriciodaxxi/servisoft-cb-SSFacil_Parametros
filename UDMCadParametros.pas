@@ -1710,6 +1710,8 @@ type
     cdsCSTIcmsTIPO_ICMS: TStringField;
     sdsParametros_NFeENVIAR_ICMS_SUBSTITUTO: TStringField;
     cdsParametros_NFeENVIAR_ICMS_SUBSTITUTO: TStringField;
+    sdsParametros_GeralPERMITE_CNPJ_DUP: TStringField;
+    cdsParametros_GeralPERMITE_CNPJ_DUP: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

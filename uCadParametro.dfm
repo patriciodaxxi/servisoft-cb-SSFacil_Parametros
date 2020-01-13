@@ -1245,9 +1245,9 @@ object frmCadParametro: TfrmCadParametro
           ValueUnchecked = 'N'
         end
         object DBCheckBox5: TDBCheckBox
-          Left = 702
-          Top = 282
-          Width = 294
+          Left = 501
+          Top = 284
+          Width = 187
           Height = 17
           Caption = 'Empresa usa tabela de pre'#231'o'
           DataField = 'USA_TAB_PRECO'
@@ -1295,6 +1295,18 @@ object frmCadParametro: TfrmCadParametro
           DataField = 'USA_CAE_PESSOA'
           DataSource = DMCadParametros.dsParametros_Geral
           TabOrder = 71
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
+        object DBCheckBox19: TDBCheckBox
+          Left = 703
+          Top = 283
+          Width = 341
+          Height = 17
+          Caption = 'Permite CNPJ/CPF Duplicado para todos os registros'
+          DataField = 'PERMITE_CNPJ_DUP'
+          DataSource = DMCadParametros.dsParametros_Geral
+          TabOrder = 72
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
