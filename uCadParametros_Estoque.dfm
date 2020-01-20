@@ -205,6 +205,14 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       Alignment = taRightJustify
       Caption = 'Nome do Arquivo do Estoque(XML):'
     end
+    object Label1: TLabel
+      Left = 51
+      Top = 291
+      Width = 225
+      Height = 13
+      Alignment = taRightJustify
+      Caption = 'Filial da Baixa do Material (Lote_Mat_Prod_Est):'
+    end
     object RxDBComboBox31: TRxDBComboBox
       Left = 278
       Top = 18
@@ -603,6 +611,19 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       TabOrder = 28
       ValueChecked = 'S'
       ValueUnchecked = 'N'
+    end
+    object RxDBLookupCombo1: TRxDBLookupCombo
+      Left = 278
+      Top = 283
+      Width = 329
+      Height = 21
+      DropDownCount = 8
+      DataField = 'ID_FILIAL_LOTE_MAT_EST'
+      DataSource = DMCadParametros.dsParametros_Est
+      LookupField = 'ID'
+      LookupDisplay = 'NOME'
+      LookupSource = DMCadParametros.dsFilial
+      TabOrder = 29
     end
   end
 end

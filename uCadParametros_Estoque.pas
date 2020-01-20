@@ -58,6 +58,8 @@ type
     DBCheckBox4: TDBCheckBox;
     DBCheckBox5: TDBCheckBox;
     DBCheckBox6: TDBCheckBox;
+    Label1: TLabel;
+    RxDBLookupCombo1: TRxDBLookupCombo;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
@@ -133,6 +135,7 @@ procedure TfrmCadParametros_Estoque.FormShow(Sender: TObject);
 begin
   fDMCadparametros := TDMCadParametros.Create(Self);
   oDBUtils.SetDataSourceProperties(Self, fDMCadparametros);
+  fDMCadparametros.cdsFilial.Open;
   fDMCadparametros.prc_Consultar;
   fDMCadparametros.prc_Consultar_Estoque;
   DirectoryEdit12.Text := fDMCadParametros.cdsParametros_EstEND_SALVAR_ARQ.AsString;
