@@ -1411,6 +1411,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             'L'
             'A')
         end
+        object DBCheckBox13: TDBCheckBox
+          Left = 987
+          Top = 418
+          Width = 235
+          Height = 17
+          Caption = 'Controla Item Repetido no Pedido Loja'
+          DataField = 'CONTROLA_ITEM_REPET'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 83
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
       end
       object TabSheet9: TRzTabSheet
         Caption = 'Pedido - Complemento'

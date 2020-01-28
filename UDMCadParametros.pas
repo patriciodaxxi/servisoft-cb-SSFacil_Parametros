@@ -1714,6 +1714,8 @@ type
     cdsParametros_GeralPERMITE_CNPJ_DUP: TStringField;
     sdsParametros_EstID_FILIAL_LOTE_MAT_EST: TIntegerField;
     cdsParametros_EstID_FILIAL_LOTE_MAT_EST: TIntegerField;
+    sdsParametros_PedCONTROLA_ITEM_REPET: TStringField;
+    cdsParametros_PedCONTROLA_ITEM_REPET: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

@@ -298,12 +298,12 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Processo que indica o final do Servi'#231'o:'
         end
         object Label3: TLabel
-          Left = 200
+          Left = 141
           Top = 493
-          Width = 108
+          Width = 167
           Height = 13
           Alignment = taRightJustify
-          Caption = 'Precisa de Aprova'#231#227'o:'
+          Caption = 'Precisa de Aprova'#231#227'o (Ped. WEB):'
         end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
@@ -1410,6 +1410,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             'W'
             'L'
             'A')
+        end
+        object DBCheckBox13: TDBCheckBox
+          Left = 987
+          Top = 418
+          Width = 235
+          Height = 17
+          Caption = 'Controla Item Repetido no Pedido Loja'
+          DataField = 'CONTROLA_ITEM_REPET'
+          DataSource = DMCadParametros.dsParametros_Ped
+          TabOrder = 83
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
         end
       end
       object TabSheet9: TRzTabSheet

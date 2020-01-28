@@ -1174,7 +1174,7 @@ object DMCadParametros: TDMCadParametros
     Params = <>
     ProviderName = 'dspParametros'
     Left = 97
-    Top = 4
+    Top = 5
     object cdsParametrosID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -2509,8 +2509,8 @@ object DMCadParametros: TDMCadParametros
     Aggregates = <>
     Params = <>
     ProviderName = 'dspParametros_Geral'
-    Left = 96
-    Top = 66
+    Left = 95
+    Top = 67
     object cdsParametros_GeralID: TIntegerField
       FieldName = 'ID'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -5185,6 +5185,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedCONTROLA_ITEM_REPET: TStringField
+      FieldName = 'CONTROLA_ITEM_REPET'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5556,6 +5561,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedAPROVAR_PEDIDO_WEB: TStringField
       FieldName = 'APROVAR_PEDIDO_WEB'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_PedCONTROLA_ITEM_REPET: TStringField
+      FieldName = 'CONTROLA_ITEM_REPET'
       FixedChar = True
       Size = 1
     end
