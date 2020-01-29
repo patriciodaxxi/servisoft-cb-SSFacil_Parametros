@@ -1716,6 +1716,8 @@ type
     cdsParametros_EstID_FILIAL_LOTE_MAT_EST: TIntegerField;
     sdsParametros_PedCONTROLA_ITEM_REPET: TStringField;
     cdsParametros_PedCONTROLA_ITEM_REPET: TStringField;
+    sdsParametros_NFeCONTROLAR_ENVIO_EMAIL: TStringField;
+    cdsParametros_NFeCONTROLAR_ENVIO_EMAIL: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

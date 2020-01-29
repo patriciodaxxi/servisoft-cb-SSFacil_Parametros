@@ -2983,6 +2983,11 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_NFeCONTROLAR_ENVIO_EMAIL: TStringField
+      FieldName = 'CONTROLAR_ENVIO_EMAIL'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_NFe: TClientDataSet
     Aggregates = <>
@@ -3277,6 +3282,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_NFeENVIAR_ICMS_SUBSTITUTO: TStringField
       FieldName = 'ENVIAR_ICMS_SUBSTITUTO'
+      FixedChar = True
+      Size = 1
+    end
+    object cdsParametros_NFeCONTROLAR_ENVIO_EMAIL: TStringField
+      FieldName = 'CONTROLAR_ENVIO_EMAIL'
       FixedChar = True
       Size = 1
     end

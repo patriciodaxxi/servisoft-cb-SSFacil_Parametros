@@ -84,10 +84,10 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
       Top = 1
       Width = 1317
       Height = 586
-      ActivePage = TS_NFE_Imp
+      ActivePage = TS_NFE_Geral
       ActivePageDefault = TS_NFE_Geral
       Align = alClient
-      TabIndex = 1
+      TabIndex = 0
       TabOrder = 0
       FixedDimension = 19
       object TS_NFE_Geral: TRzTabSheet
@@ -158,7 +158,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object Label31: TLabel
           Left = 86
-          Top = 329
+          Top = 345
           Width = 172
           Height = 13
           Alignment = taRightJustify
@@ -172,7 +172,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object Label44: TLabel
           Left = 169
-          Top = 351
+          Top = 367
           Width = 89
           Height = 13
           Alignment = taRightJustify
@@ -186,7 +186,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object Label30: TLabel
           Left = 79
-          Top = 383
+          Top = 399
           Width = 179
           Height = 13
           Alignment = taRightJustify
@@ -194,7 +194,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object Label16: TLabel
           Left = 80
-          Top = 405
+          Top = 421
           Width = 178
           Height = 13
           Alignment = taRightJustify
@@ -202,7 +202,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object Label42: TLabel
           Left = 20
-          Top = 427
+          Top = 443
           Width = 238
           Height = 13
           Alignment = taRightJustify
@@ -233,7 +233,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object Label309: TLabel
           Left = 71
-          Top = 448
+          Top = 464
           Width = 187
           Height = 13
           Alignment = taRightJustify
@@ -348,8 +348,8 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           TabOrder = 22
         end
         object DBCheckBox264: TDBCheckBox
-          Left = 134
-          Top = 222
+          Left = 135
+          Top = 220
           Width = 184
           Height = 17
           Caption = 'Usa relat'#243'rio danfe da Flexdocs'
@@ -361,7 +361,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object DBEdit19: TDBEdit
           Left = 260
-          Top = 322
+          Top = 338
           Width = 348
           Height = 21
           DataField = 'EMAILRESPONSAVELSISTEMA'
@@ -370,7 +370,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object DBEdit7: TDBEdit
           Left = 260
-          Top = 344
+          Top = 360
           Width = 348
           Height = 21
           DataField = 'EMAIL_CONTADOR'
@@ -379,7 +379,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object DirectoryEdit2: TDirectoryEdit
           Left = 260
-          Top = 376
+          Top = 392
           Width = 574
           Height = 21
           InitialDir = 'C:\'
@@ -390,7 +390,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object DirectoryEdit3: TDirectoryEdit
           Left = 260
-          Top = 397
+          Top = 413
           Width = 574
           Height = 21
           InitialDir = 'C:\'
@@ -401,7 +401,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object DirectoryEdit1: TDirectoryEdit
           Left = 260
-          Top = 419
+          Top = 435
           Width = 574
           Height = 21
           InitialDir = 'C:\'
@@ -411,8 +411,8 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           Text = 'C:\'
         end
         object DBCheckBox81: TDBCheckBox
-          Left = 134
-          Top = 271
+          Left = 135
+          Top = 269
           Width = 315
           Height = 17
           Caption = 'Copiar os produtos da engenharia para dados comp. da nfe'
@@ -423,8 +423,8 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           ValueUnchecked = 'N'
         end
         object DBCheckBox220: TDBCheckBox
-          Left = 134
-          Top = 255
+          Left = 135
+          Top = 253
           Width = 182
           Height = 17
           Caption = 'Endere'#231'o de Entrega em Branco'
@@ -435,8 +435,8 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           ValueUnchecked = 'N'
         end
         object DBCheckBox244: TDBCheckBox
-          Left = 134
-          Top = 239
+          Left = 135
+          Top = 237
           Width = 291
           Height = 17
           Caption = 'Enviar C'#243'digo de Barras no XML'
@@ -447,8 +447,8 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           ValueUnchecked = 'N'
         end
         object DBCheckBox265: TDBCheckBox
-          Left = 134
-          Top = 190
+          Left = 135
+          Top = 188
           Width = 184
           Height = 17
           Caption = 'Anexar Danfe'
@@ -459,8 +459,8 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           ValueUnchecked = 'N'
         end
         object DBCheckBox266: TDBCheckBox
-          Left = 134
-          Top = 206
+          Left = 135
+          Top = 204
           Width = 184
           Height = 17
           Caption = 'Usa Envio Novo NFe'
@@ -483,8 +483,8 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           ValueUnchecked = 'N'
         end
         object DBCheckBox268: TDBCheckBox
-          Left = 134
-          Top = 286
+          Left = 135
+          Top = 284
           Width = 267
           Height = 17
           Caption = 'Enviar Nota Beneficiamento na NFe'
@@ -526,7 +526,7 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
         end
         object DirectoryEdit14: TDirectoryEdit
           Left = 260
-          Top = 440
+          Top = 456
           Width = 574
           Height = 21
           InitialDir = 'C:\'
@@ -578,6 +578,18 @@ object frmCadParametros_NFE: TfrmCadParametros_NFE
           DataField = 'VALIDAR_PESO_NFE'
           DataSource = DMCadParametros.dsParametros_NFe
           TabOrder = 26
+          ValueChecked = 'S'
+          ValueUnchecked = 'N'
+        end
+        object DBCheckBox4: TDBCheckBox
+          Left = 135
+          Top = 300
+          Width = 336
+          Height = 17
+          Caption = 'Controlar se Envia ou n'#227'o o EMAIL na NFe'
+          DataField = 'CONTROLAR_ENVIO_EMAIL'
+          DataSource = DMCadParametros.dsParametros_NFe
+          TabOrder = 27
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
