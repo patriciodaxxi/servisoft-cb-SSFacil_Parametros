@@ -1718,6 +1718,8 @@ type
     cdsParametros_PedCONTROLA_ITEM_REPET: TStringField;
     sdsParametros_NFeCONTROLAR_ENVIO_EMAIL: TStringField;
     cdsParametros_NFeCONTROLAR_ENVIO_EMAIL: TStringField;
+    sdsParametros_PedID_CFOP_PEDIDO: TIntegerField;
+    cdsParametros_PedID_CFOP_PEDIDO: TIntegerField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

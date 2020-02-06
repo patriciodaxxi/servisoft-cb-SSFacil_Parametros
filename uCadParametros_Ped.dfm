@@ -305,6 +305,14 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Alignment = taRightJustify
           Caption = 'Precisa de Aprova'#231#227'o (Ped. WEB):'
         end
+        object Label4: TLabel
+          Left = 187
+          Top = 516
+          Width = 121
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'CFOP do Pedido Simples:'
+        end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
           Top = 26
@@ -1422,6 +1430,19 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           TabOrder = 83
           ValueChecked = 'S'
           ValueUnchecked = 'N'
+        end
+        object RxDBLookupCombo2: TRxDBLookupCombo
+          Left = 310
+          Top = 508
+          Width = 323
+          Height = 21
+          DropDownCount = 8
+          DataField = 'ID_CFOP_PEDIDO'
+          DataSource = DMCadParametros.dsParametros_Ped
+          LookupField = 'ID'
+          LookupDisplay = 'CODCFOP;NOME_INTERNO'
+          LookupSource = DMCadParametros.dsCFOP
+          TabOrder = 84
         end
       end
       object TabSheet9: TRzTabSheet

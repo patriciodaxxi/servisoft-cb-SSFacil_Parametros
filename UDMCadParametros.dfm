@@ -5200,6 +5200,9 @@ object DMCadParametros: TDMCadParametros
       FixedChar = True
       Size = 1
     end
+    object sdsParametros_PedID_CFOP_PEDIDO: TIntegerField
+      FieldName = 'ID_CFOP_PEDIDO'
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5578,6 +5581,9 @@ object DMCadParametros: TDMCadParametros
       FieldName = 'CONTROLA_ITEM_REPET'
       FixedChar = True
       Size = 1
+    end
+    object cdsParametros_PedID_CFOP_PEDIDO: TIntegerField
+      FieldName = 'ID_CFOP_PEDIDO'
     end
   end
   object dsParametros_Ped: TDataSource
