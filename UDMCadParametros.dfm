@@ -7578,6 +7578,11 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_EstID_FILIAL_LOTE_MAT_EST: TIntegerField
       FieldName = 'ID_FILIAL_LOTE_MAT_EST'
     end
+    object sdsParametros_EstGERAR_REG_H020: TStringField
+      FieldName = 'GERAR_REG_H020'
+      FixedChar = True
+      Size = 1
+    end
   end
   object cdsParametros_Est: TClientDataSet
     Aggregates = <>
@@ -7710,6 +7715,11 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_EstID_FILIAL_LOTE_MAT_EST: TIntegerField
       FieldName = 'ID_FILIAL_LOTE_MAT_EST'
+    end
+    object cdsParametros_EstGERAR_REG_H020: TStringField
+      FieldName = 'GERAR_REG_H020'
+      FixedChar = True
+      Size = 1
     end
   end
   object dsParametros_Est: TDataSource

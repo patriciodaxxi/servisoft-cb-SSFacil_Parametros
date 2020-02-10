@@ -625,5 +625,17 @@ object frmCadParametros_Estoque: TfrmCadParametros_Estoque
       LookupSource = DMCadParametros.dsFilial
       TabOrder = 29
     end
+    object DBCheckBox7: TDBCheckBox
+      Left = 645
+      Top = 295
+      Width = 463
+      Height = 17
+      Caption = 'Gerar Registro H020 no SPED'
+      DataField = 'GERAR_REG_H020'
+      DataSource = DMCadParametros.dsParametros_Est
+      TabOrder = 30
+      ValueChecked = 'S'
+      ValueUnchecked = 'N'
+    end
   end
 end

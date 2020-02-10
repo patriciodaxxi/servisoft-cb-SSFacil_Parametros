@@ -1720,6 +1720,8 @@ type
     cdsParametros_NFeCONTROLAR_ENVIO_EMAIL: TStringField;
     sdsParametros_PedID_CFOP_PEDIDO: TIntegerField;
     cdsParametros_PedID_CFOP_PEDIDO: TIntegerField;
+    cdsParametros_EstGERAR_REG_H020: TStringField;
+    sdsParametros_EstGERAR_REG_H020: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }
