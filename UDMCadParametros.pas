@@ -1722,6 +1722,8 @@ type
     cdsParametros_PedID_CFOP_PEDIDO: TIntegerField;
     cdsParametros_EstGERAR_REG_H020: TStringField;
     sdsParametros_EstGERAR_REG_H020: TStringField;
+    sdsParametros_PedSENHA_EXCLUIR_ORC: TStringField;
+    cdsParametros_PedSENHA_EXCLUIR_ORC: TStringField;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

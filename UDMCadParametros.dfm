@@ -5203,6 +5203,10 @@ object DMCadParametros: TDMCadParametros
     object sdsParametros_PedID_CFOP_PEDIDO: TIntegerField
       FieldName = 'ID_CFOP_PEDIDO'
     end
+    object sdsParametros_PedSENHA_EXCLUIR_ORC: TStringField
+      FieldName = 'SENHA_EXCLUIR_ORC'
+      Size = 10
+    end
   end
   object cdsParametros_Ped: TClientDataSet
     Aggregates = <>
@@ -5584,6 +5588,10 @@ object DMCadParametros: TDMCadParametros
     end
     object cdsParametros_PedID_CFOP_PEDIDO: TIntegerField
       FieldName = 'ID_CFOP_PEDIDO'
+    end
+    object cdsParametros_PedSENHA_EXCLUIR_ORC: TStringField
+      FieldName = 'SENHA_EXCLUIR_ORC'
+      Size = 10
     end
   end
   object dsParametros_Ped: TDataSource

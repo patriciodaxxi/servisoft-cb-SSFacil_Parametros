@@ -157,7 +157,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object Label71: TLabel
           Left = 986
-          Top = 278
+          Top = 302
           Width = 156
           Height = 13
           Alignment = taRightJustify
@@ -196,7 +196,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Usa o controle de Tipo de Venda (M'#227'o de Obra/Venda):'
         end
         object Label119: TLabel
-          Left = 846
+          Left = 902
           Top = 12
           Width = 70
           Height = 13
@@ -204,12 +204,12 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Senha Pedido:'
         end
         object Label120: TLabel
-          Left = 1015
-          Top = 2
-          Width = 139
-          Height = 26
+          Left = 1066
+          Top = 8
+          Width = 117
+          Height = 13
           Alignment = taRightJustify
-          Caption = 'Esta senha serve para excluir'#13#10'e alterar o pedido'
+          Caption = 'serve para excluir/alterar'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clMaroon
           Font.Height = -11
@@ -304,6 +304,36 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Height = 13
           Alignment = taRightJustify
           Caption = 'Precisa de Aprova'#231#227'o (Ped. WEB):'
+        end
+        object Label4: TLabel
+          Left = 187
+          Top = 516
+          Width = 121
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'CFOP do Pedido Simples:'
+        end
+        object Label5: TLabel
+          Left = 883
+          Top = 36
+          Width = 89
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'Senha Or'#231'amento:'
+        end
+        object Label6: TLabel
+          Left = 1067
+          Top = 32
+          Width = 117
+          Height = 13
+          Alignment = taRightJustify
+          Caption = 'serve para excluir/alterar'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clMaroon
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
         end
         object RxDBComboBox24: TRxDBComboBox
           Left = 310
@@ -459,7 +489,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Items.Strings = (
             'SIM'
             'N'#195'O')
-          TabOrder = 70
+          TabOrder = 69
           Values.Strings = (
             'S'
             'N')
@@ -537,14 +567,14 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             'N')
         end
         object dbEdtSenha_Pedido: TDBEdit
-          Left = 918
+          Left = 974
           Top = 3
           Width = 91
           Height = 21
           DataField = 'SENHA_PEDIDO'
           DataSource = DMCadParametros.dsParametros
           PasswordChar = '*'
-          TabOrder = 55
+          TabOrder = 54
         end
         object RxDBComboBox92: TRxDBComboBox
           Left = 310
@@ -612,7 +642,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox34: TDBCheckBox
           Left = 640
-          Top = 67
+          Top = 83
           Width = 193
           Height = 17
           Caption = 'Usa vlr. adiantamento no pedido'
@@ -650,7 +680,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox46: TDBCheckBox
           Left = 640
-          Top = 83
+          Top = 99
           Width = 193
           Height = 17
           Caption = 'Usa Obs. para copiar na NFe'
@@ -662,7 +692,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox47: TDBCheckBox
           Left = 640
-          Top = 98
+          Top = 114
           Width = 193
           Height = 17
           Caption = 'Faturar Somente Pedido Integral'
@@ -675,7 +705,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox48: TDBCheckBox
           Left = 640
-          Top = 114
+          Top = 130
           Width = 193
           Height = 17
           Caption = 'Usa data de expedi'#231#227'o'
@@ -688,7 +718,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox21: TDBCheckBox
           Left = 640
-          Top = 130
+          Top = 146
           Width = 193
           Height = 17
           Caption = 'N'#250'mero do Pedido por Filial'
@@ -700,7 +730,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox50: TDBCheckBox
           Left = 640
-          Top = 146
+          Top = 162
           Width = 280
           Height = 17
           Caption = 'S'#243' mostrar na c'#243'pia para a Nota a filial correspondente'
@@ -749,7 +779,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox55: TDBCheckBox
           Left = 640
-          Top = 160
+          Top = 176
           Width = 291
           Height = 17
           Caption = 'Controlar processo do pedido (Envia emails com o Status)'
@@ -761,7 +791,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox60: TDBCheckBox
           Left = 640
-          Top = 176
+          Top = 192
           Width = 278
           Height = 17
           Caption = 'Exigir o n'#250'mero do pedido do cliente (OC)'
@@ -773,7 +803,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox62: TDBCheckBox
           Left = 640
-          Top = 189
+          Top = 205
           Width = 278
           Height = 17
           Caption = 'Controlar o valor de entrada (Se vai gerar C.Receber)'
@@ -785,7 +815,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox66: TDBCheckBox
           Left = 640
-          Top = 202
+          Top = 218
           Width = 278
           Height = 17
           Caption = 'Repete '#250'ltimo produto na digita'#231#227'o dos itens'
@@ -797,7 +827,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox94: TDBCheckBox
           Left = 640
-          Top = 218
+          Top = 234
           Width = 345
           Height = 17
           Caption = 
@@ -811,7 +841,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox100: TDBCheckBox
           Left = 640
-          Top = 231
+          Top = 247
           Width = 321
           Height = 17
           Caption = 'Usa Confer'#234'ncia do pedido para a libera'#231#227'o ao faturamento'
@@ -823,7 +853,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox106: TDBCheckBox
           Left = 640
-          Top = 244
+          Top = 260
           Width = 161
           Height = 17
           Caption = 'Usa desconto Varejo'
@@ -835,7 +865,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox107: TDBCheckBox
           Left = 640
-          Top = 257
+          Top = 273
           Width = 161
           Height = 17
           Caption = 'Usa OS/Remessa'
@@ -847,7 +877,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox111: TDBCheckBox
           Left = 640
-          Top = 270
+          Top = 286
           Width = 289
           Height = 17
           Caption = 'Desabilitar o n'#250'mero da OC no cadastro do Pedido'
@@ -859,7 +889,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox114: TDBCheckBox
           Left = 640
-          Top = 283
+          Top = 299
           Width = 297
           Height = 17
           Caption = 'Mostrar o bot'#227'o para alterar a data de entrega no pedido'
@@ -871,7 +901,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox121: TDBCheckBox
           Left = 640
-          Top = 296
+          Top = 312
           Width = 297
           Height = 17
           Caption = 'Vai gravar o vendedor no pedido pelo usu'#225'rio'
@@ -883,7 +913,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox122: TDBCheckBox
           Left = 640
-          Top = 310
+          Top = 326
           Width = 313
           Height = 17
           Caption = 'No inserir do pedido trazer autom'#225'tico o cliente Consumidor'
@@ -895,7 +925,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox123: TDBCheckBox
           Left = 640
-          Top = 324
+          Top = 340
           Width = 329
           Height = 17
           Caption = 'Usa Confer'#234'ncia simples (n'#227'o controla qtde. para faturamento)'
@@ -907,7 +937,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox129: TDBCheckBox
           Left = 640
-          Top = 340
+          Top = 356
           Width = 329
           Height = 17
           Caption = 'Usa Opera'#231#227'o de Servi'#231'o no Pedido'
@@ -919,7 +949,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox130: TDBCheckBox
           Left = 640
-          Top = 354
+          Top = 370
           Width = 329
           Height = 17
           Caption = 'Informar Lucratividade'
@@ -931,7 +961,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox136: TDBCheckBox
           Left = 641
-          Top = 369
+          Top = 385
           Width = 335
           Height = 17
           Caption = 
@@ -974,7 +1004,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox149: TDBCheckBox
           Left = 641
-          Top = 381
+          Top = 397
           Width = 332
           Height = 17
           Caption = 'Mostrar a data de recebimento'
@@ -986,25 +1016,13 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox150: TDBCheckBox
           Left = 640
-          Top = 395
+          Top = 411
           Width = 334
           Height = 17
           Caption = 'Usa a op'#231#227'o de copiar OS'
           DataField = 'USAR_COPIA_OS'
           DataSource = DMCadParametros.dsParametros_Ped
           TabOrder = 46
-          ValueChecked = 'S'
-          ValueUnchecked = 'N'
-        end
-        object DBCheckBox156: TDBCheckBox
-          Left = 640
-          Top = 409
-          Width = 368
-          Height = 17
-          Caption = 'Envia SMS'
-          DataField = 'ENVIA_SMS'
-          DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 47
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1016,31 +1034,31 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Usa a Unidade de Venda (converte a unidade do produto)'
           DataField = 'USA_UNIDADE_VENDA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 48
+          TabOrder = 47
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox162: TDBCheckBox
           Left = 987
-          Top = 370
+          Top = 394
           Width = 113
           Height = 17
           Caption = 'Mostrar o fone'
           DataField = 'MOSTRAR_FONE'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 56
+          TabOrder = 55
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox163: TDBCheckBox
           Left = 984
-          Top = 54
+          Top = 78
           Width = 169
           Height = 17
           Caption = 'Mostrar Grupo Pessoa'
           DataField = 'MOSTRAR_GRUPO_PESSOA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 57
+          TabOrder = 56
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1052,103 +1070,103 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Usa o campo OBS da Etiqueta'
           DataField = 'USA_OBS_ETIQUETA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 49
+          TabOrder = 48
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox170: TDBCheckBox
           Left = 984
-          Top = 69
+          Top = 93
           Width = 184
           Height = 17
           Caption = 'Usa Pedido Loja'
           DataField = 'PEDIDO_LOJA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 58
+          TabOrder = 57
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox191: TDBCheckBox
           Left = 985
-          Top = 123
+          Top = 147
           Width = 320
           Height = 17
           Caption = 'Usa NFeConfig para enviar o email dos pedidos conferidos'
           DataField = 'USA_EMAIL_NFECONFIG_CONF'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 60
+          TabOrder = 59
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox195: TDBCheckBox
           Left = 985
-          Top = 170
+          Top = 194
           Width = 157
           Height = 14
           Caption = 'Usa Confer'#234'ncia Financeiro'
           DataField = 'USA_FINANCEIRO_CONF'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 63
+          TabOrder = 62
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox203: TDBCheckBox
           Left = 985
-          Top = 184
+          Top = 208
           Width = 155
           Height = 14
           Caption = 'Usa Retirada no Pedido'
           DataField = 'USA_RETIRADA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 64
+          TabOrder = 63
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox212: TDBCheckBox
           Left = 985
-          Top = 198
+          Top = 222
           Width = 164
           Height = 14
           Caption = 'Concatena Produto/Cor/Tam'
           DataField = 'CONCATENA_PROD_COR_TAM'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 65
+          TabOrder = 64
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox116: TDBCheckBox
           Left = 985
-          Top = 212
+          Top = 236
           Width = 234
           Height = 14
           Caption = 'Copiar o valor do frete do pedido para a nota'
           DataField = 'COPIAR_VLR_FRETE_PED'
           DataSource = DMCadParametros.dsParametros_NFe
-          TabOrder = 66
+          TabOrder = 65
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox224: TDBCheckBox
           Left = 985
-          Top = 225
+          Top = 249
           Width = 234
           Height = 14
           Caption = 'Mostrar a opera'#231#227'o autom'#225'tica no pedido'
           DataField = 'USA_OPERACAO_AUT'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 67
+          TabOrder = 66
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox233: TDBCheckBox
           Left = 985
-          Top = 156
+          Top = 180
           Width = 176
           Height = 14
           Caption = 'Usa Item do Pedido Reduzido'
           DataField = 'USA_ITEM_RED'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 62
+          TabOrder = 61
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1160,43 +1178,43 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Permite alterar o Nome do Produto na dig. do Pedido'
           DataField = 'PERMITE_ALT_NOMEPROD'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 50
+          TabOrder = 49
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox235: TDBCheckBox
           Left = 985
-          Top = 142
+          Top = 166
           Width = 176
           Height = 14
           Caption = 'Aceita Item sem Pre'#231'o'
           DataField = 'ACEITA_SEM_PRECO'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 61
+          TabOrder = 60
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox240: TDBCheckBox
           Left = 985
-          Top = 254
+          Top = 278
           Width = 369
           Height = 17
           Caption = 'Uso da data de entrega obrigat'#243'rio'
           DataField = 'OBRIGA_USO_DTENTREGA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 69
+          TabOrder = 68
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox246: TDBCheckBox
           Left = 985
-          Top = 240
+          Top = 264
           Width = 234
           Height = 14
           Caption = 'Usa Data de Validade Calend'#225'rio (Or'#231')'
           DataField = 'USA_DTVALIDADE'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 68
+          TabOrder = 67
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1208,7 +1226,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Informar a Tabela de Pre'#231'o no Pedido'
           DataField = 'USA_TAB_PRECO'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 51
+          TabOrder = 50
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1220,7 +1238,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Usa N'#250'mero do Pedido por Representante'
           DataField = 'USA_NUM_PEDIDO_POR_VEND'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 52
+          TabOrder = 51
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1232,7 +1250,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Usa Amostra'
           DataField = 'USA_AMOSTRA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 53
+          TabOrder = 52
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1244,7 +1262,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Usa Caixinha (Informar a Caixinha nos itens do Pedido)'
           DataField = 'USA_CAIXINHA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 54
+          TabOrder = 53
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1256,104 +1274,104 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Caption = 'Zerar a Data de Entrega Na Aprova'#231#227'o do Or'#231'amento para o Pedido'
           DataField = 'DTENTREGA_ZERADA_ORC'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 71
+          TabOrder = 70
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox2: TDBCheckBox
           Left = 988
-          Top = 308
+          Top = 332
           Width = 201
           Height = 17
           Caption = 'Mostrar o campo F'#225'brica nos itens'
           DataField = 'USA_FABRICA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 72
+          TabOrder = 71
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox3: TDBCheckBox
           Left = 988
-          Top = 324
+          Top = 348
           Width = 261
           Height = 17
           Caption = 'Gravar o Produto do Cliente no EDI (Produto_Forn)'
           DataField = 'GRAVA_PROD_CLI_EDI'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 73
+          TabOrder = 72
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox4: TDBCheckBox
           Left = 988
-          Top = 340
+          Top = 364
           Width = 261
           Height = 17
           Caption = 'Calcular Edit quando incluir o caracter +'
           DataField = 'CALCULA_EDIT'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 74
+          TabOrder = 73
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox5: TDBCheckBox
           Left = 988
-          Top = 354
+          Top = 378
           Width = 261
           Height = 17
           Caption = 'Usa o Vlr.Unit'#225'rio da Tabela de Pre'#231'o (EDI)'
           DataField = 'EDI_USAR_PRECO_TAB'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 75
+          TabOrder = 74
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox6: TDBCheckBox
-          Left = 808
-          Top = 49
+          Left = 641
+          Top = 66
           Width = 161
           Height = 17
           Caption = 'Usa Aprova'#231#227'o Por Item'
           DataField = 'USA_APROVACAO_ITEM'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 76
+          TabOrder = 75
           ValueChecked = 'S'
           ValueUnchecked = 'N'
           Visible = False
         end
         object DBCheckBox7: TDBCheckBox
           Left = 987
-          Top = 386
+          Top = 410
           Width = 235
           Height = 17
           Caption = 'Exige N'#186' Pedido Cliente (OC)'
           DataField = 'EXIGE_PEDIDO_CLI'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 77
+          TabOrder = 76
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox8: TDBCheckBox
           Left = 984
-          Top = 85
+          Top = 109
           Width = 184
           Height = 17
           Caption = 'Usa Pedido Com'#233'rcio'
           DataField = 'PEDIDO_COMERCIO'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 59
+          TabOrder = 58
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
         object DBCheckBox9: TDBCheckBox
           Left = 984
-          Top = 101
+          Top = 125
           Width = 184
           Height = 17
           Caption = 'Usa Refer'#234'ncia no Ped. Com'#233'rcio'
           DataField = 'USA_REF_DIG_PEDLOJA'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 78
+          TabOrder = 77
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1364,7 +1382,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           Height = 21
           DataField = 'PERC_DESCONTO_PADRAO'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 79
+          TabOrder = 78
         end
         object RxDBLookupCombo1: TRxDBLookupCombo
           Left = 310
@@ -1377,17 +1395,17 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
           LookupField = 'ID'
           LookupDisplay = 'NOME'
           LookupSource = DMCadParametros.dsProcesso
-          TabOrder = 80
+          TabOrder = 79
         end
         object DBCheckBox11: TDBCheckBox
           Left = 987
-          Top = 402
+          Top = 426
           Width = 235
           Height = 17
           Caption = 'Usa Consulta Simples no cadastro do Pedido'
           DataField = 'USA_CONSULTA_SIMPLES'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 81
+          TabOrder = 80
           ValueChecked = 'S'
           ValueUnchecked = 'N'
         end
@@ -1405,7 +1423,7 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             'Pedido WEB'
             'Pedido Local'
             'Ambos')
-          TabOrder = 82
+          TabOrder = 81
           Values.Strings = (
             'W'
             'L'
@@ -1413,15 +1431,38 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
         end
         object DBCheckBox13: TDBCheckBox
           Left = 987
-          Top = 418
+          Top = 442
           Width = 235
           Height = 17
           Caption = 'Controla Item Repetido no Pedido Loja'
           DataField = 'CONTROLA_ITEM_REPET'
           DataSource = DMCadParametros.dsParametros_Ped
-          TabOrder = 83
+          TabOrder = 82
           ValueChecked = 'S'
           ValueUnchecked = 'N'
+        end
+        object RxDBLookupCombo2: TRxDBLookupCombo
+          Left = 310
+          Top = 508
+          Width = 323
+          Height = 21
+          DropDownCount = 8
+          DataField = 'ID_CFOP_PEDIDO'
+          DataSource = DMCadParametros.dsParametros_Ped
+          LookupField = 'ID'
+          LookupDisplay = 'CODCFOP;NOME_INTERNO'
+          LookupSource = DMCadParametros.dsCFOP
+          TabOrder = 83
+        end
+        object DBEdit2: TDBEdit
+          Left = 974
+          Top = 27
+          Width = 91
+          Height = 21
+          DataField = 'SENHA_EXCLUIR_ORC'
+          DataSource = DMCadParametros.dsParametros_Ped
+          PasswordChar = '*'
+          TabOrder = 84
         end
       end
       object TabSheet9: TRzTabSheet
@@ -1771,6 +1812,18 @@ object frmCadParametros_Ped: TfrmCadParametros_Ped
             DataField = 'USA_PROCESSO_SIMPLES'
             DataSource = DMCadParametros.dsParametros_Ped
             TabOrder = 5
+            ValueChecked = 'S'
+            ValueUnchecked = 'N'
+          end
+          object DBCheckBox156: TDBCheckBox
+            Left = 13
+            Top = 133
+            Width = 368
+            Height = 17
+            Caption = 'Envia SMS'
+            DataField = 'ENVIA_SMS'
+            DataSource = DMCadParametros.dsParametros_Ped
+            TabOrder = 6
             ValueChecked = 'S'
             ValueUnchecked = 'N'
           end

@@ -88,7 +88,6 @@ type
     DBEdit42: TDBEdit;
     DBCheckBox149: TDBCheckBox;
     DBCheckBox150: TDBCheckBox;
-    DBCheckBox156: TDBCheckBox;
     DBCheckBox157: TDBCheckBox;
     DBCheckBox162: TDBCheckBox;
     DBCheckBox163: TDBCheckBox;
@@ -158,6 +157,12 @@ type
     Label3: TLabel;
     RxDBComboBox1: TRxDBComboBox;
     DBCheckBox13: TDBCheckBox;
+    Label4: TLabel;
+    RxDBLookupCombo2: TRxDBLookupCombo;
+    DBCheckBox156: TDBCheckBox;
+    Label5: TLabel;
+    DBEdit2: TDBEdit;
+    Label6: TLabel;
     procedure btnAlterarClick(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);
     procedure btnConfirmarClick(Sender: TObject);
